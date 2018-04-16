@@ -1,2 +1,2 @@
-# zhCN4Stonehearth
-What a nice boat!
+# What a nice boat!
+The Simplified Chinese Mod for Stonehearth
