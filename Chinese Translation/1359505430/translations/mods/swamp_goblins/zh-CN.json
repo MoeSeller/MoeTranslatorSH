@@ -1,0 +1,141 @@
+{
+	"data": {
+		"biome": {
+			"swamp": {
+				"display_name": "沼泽",
+				"description": "水系泛滥的平原, 有着茂密的植被. 小心脚下.",
+				"random_location_names": {
+					"000": "孟波斯沼泽"
+				}
+			}
+		},
+		"happiness":{
+			"thoughts":{
+				"water":{
+					"values":{
+						"sticky_water":{
+							"display_name":"黏糊糊的水",
+							"tooltip":"噫! 我不要走进这种泥浆里啊."
+						}
+					}
+				}
+			}
+		},
+		"population": {
+			"firefly_clan": {
+				"display_name": "流萤族",
+				"quote": "",
+				"long_description": "⚠️ 警告!<br> ☠️ 充满漏洞!<br> ⚡ 试验版!<br> 还 不 能 用",
+				"post_selection_description": ", ⚠️ 警告!⚠️ ☠️ 充满漏洞!☠️ ⚡ 试验版!⚡."
+			}
+		}
+	},
+	"entities": {
+		"furniture": {
+			"hammock": {
+				"display_name": "吊床",
+				"description": "todo description"
+			}
+		},
+		"gizmos": {
+			"camp_standard": {
+				"display_name": "营地旗帜",
+				"description": "看到它就知道你回家了"
+			}
+		},
+		"plants": {
+			"cattail": {
+				"display_name": "香蒲",
+				"description": "这种植物的纤维可以纺成丝. 它也是可以吃的.",
+				"unripe_description": "这棵植物已经收割过了, 还没长成熟."
+			},
+			"fern": {
+				"display_name": "蕨",
+				"description": "这种植物的纤维可以纺成丝.",
+				"unripe_description": "这棵植物已经收割过了, 还没长成熟."
+			},
+			"giant_flower": {
+				"display_name": "大芽花",
+				"description": "采集可以获得有治疗效果的药草",
+				"unripe_description": "这棵植物已经收割过了, 还没长成熟."
+			},
+			"white_mushroom": {
+				"display_name": "白蘑菇",
+				"description": "采了也不够塞牙缝.",
+				"unripe_description": "这棵植物已经收割过了, 还没长成熟."
+			}
+		},
+		"resources": {
+			"cattail": {
+				"display_name": "香蒲",
+				"description": "可以纺线还能吃."
+			},
+			"giant_flower": {
+				"display_name": "大芽花",
+				"description": "作医学用途的常见植物"
+			},
+			"white_mushroom": {
+				"display_name": "白蘑菇",
+				"description": "可以吃了"
+			},
+			"fern": {
+				"display_name": "蕨",
+				"description": "可以纺线"
+			}
+		},
+		"trees": {
+			"bogger": {
+				"display_name": "博格树",
+				"description": "它散发着神秘的气息"
+			},
+			"swirl": {
+				"display_name": "风卷树",
+				"description": "顾名思义."
+			}
+		}
+	},
+	"jobs": {
+		"bonesmith": {
+			"bonesmith_description": {
+				"display_name": "骨匠",
+				"description": "骨匠描述",
+				"requirements": "骨匠需求"
+			},
+			"bonesmith_workbench": {
+				"display_name": "骨匠的工作台",
+				"description": "骨匠可以在这里打造东西"
+			}
+		},
+		"shaman": {
+			"shaman_description": {
+				"display_name": "萨满",
+				"description": "我是萨满的描述",
+				"requirements": "窝是萨满的转职需求"
+			},
+			"shaman_workbench": {
+				"display_name": "萨满的工作台",
+				"description": "萨满可以在这里制作东西"
+			}
+		}
+	},
+	"ui":{
+		"game":{
+			"menu":{
+				"crafter_menu":{
+					"items":{
+						"bonesmith":{
+							"display_name": "骨匠的制作菜单",
+							"description": "制作家具与装饰品.",
+							"required_job_text": "需要一位骨匠"
+						},
+						"shaman":{
+							"display_name": "萨满的制作菜单",
+							"description": "萨满的智慧.",
+							"required_job_text": "需要一位萨满"
+						}
+					}
+				}
+			}
+		}
+	}
+}
