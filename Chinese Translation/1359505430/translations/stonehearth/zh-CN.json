@@ -75,7 +75,8 @@
                "holeTool": "钻孔",
                "splitWallTool": "分割墙体",
                "roomTool": "放置房间",
-               "pointerTool": "指向工具"
+               "pointerTool": "指向工具",
+               "roadTool": "修路工具"
             },
             "place_build_banner": "在建筑旁边, 炉民能到达的地方放一面旗帜.",
             "new_building_confirm": {
@@ -1354,7 +1355,8 @@
                "029": "校准波波头...",
                "030": "剪剪羊毛...",
                "031": "消除杂念...",
-               "032": "戳波波鸡中..."
+               "032": "戳波波鸡中...",
+               "033": "接雨滴中..."
             },
             "tips": {
                "000": "如果你的炉民被困在矿井里,您可以建造一个梯子,让他们出去!",
@@ -1652,7 +1654,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24.6 适用于 r825(rickety_building)与r826(latest) 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24.7 适用于 r828(rickety_building)与r831(latest) 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -6967,9 +6969,9 @@
          },
          "lucky": {
             "display_name": "幸运日",
-            "description": "今天, 什么都会变好一点.<ul><li>炉民们发现他们的伤痛没了, 宛如魔法.</li><li>他们随便做什么工作都似乎很走运.</li><li>有时还会看到一条彩虹.</li></ul>",
+            "description": "今天, 什么都会变好一点.<ul><li>炉民们发现他们的伤痛魔法般地消失了.</li><li>他们随便做什么工作都似乎很走运.</li><li>有时还会看到一条彩虹.</li></ul>",
             "pot_of_gold": {
-               "display_name": "金壶",
+               "display_name": "一壶千金",
                "description": "今天是你的幸运日!"
             }
          },
