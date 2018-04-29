@@ -1032,7 +1032,7 @@
                "hollow_stairs": "镂空阶梯"
             },
             "building_templates": {
-               "title": "建筑模板",
+               "title": "建筑模板:",
                "design_custom_building": "设计自定义建筑",
                "search_placeholder": "寻找模板中...",
                "template_names": {
@@ -1654,7 +1654,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24.7 适用于 r828(rickety_building)与r831(latest) 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24.7.1 适用于 r835(multiplayer) 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -6716,7 +6716,7 @@
                   },
                   "beautiful": {
                      "display_name": "环境美丽的工作间",
-                     "tooltip": "The area around my workbench is looking good, everything is in its place."
+                     "tooltip": "我工作台周围真整洁, 完全不乱."
                   },
                   "ugly": {
                      "display_name": "脏乱不堪的工作间",
@@ -8300,8 +8300,8 @@
             }
          },
          "juniper_tree_crop": {
-            "display_name": "杜松子幼树",
-            "description": "Forest running thin? Plant some of these gorgeous Juniper trees.",
+            "display_name": "杜松子苗木",
+            "description": "森林逐渐稀疏? 不如种些高大的杜松子树吧.",
             "growth_stage": {
                "001": {
                   "name": "杜松子幼苗",
@@ -10088,8 +10088,8 @@
          },
          "evil": {
             "loot_chest_fake": {
-               "display_name": "Evil Chest",
-               "description": "Its one of those things that goes bump in the night."
+               "display_name": "邪恶宝箱",
+               "description": "典型的晚上会蹦出来的东西."
             }
          },
          "avian": {

@@ -9,7 +9,7 @@
 	"entities": {
 		"armor": {
 			"turtle_shield": {
-				"display_name": "龟壳盾",
+				"display_name": "龟甲盾",
 				"description": "海龟的壳, 被做成了盾牌"
 			}
 		},
@@ -172,6 +172,17 @@
 				"display_name": "生蟹",
 				"description": "还不能吃"
 			},
+			"crab_bisque": {
+				"display_name": "浓汤蟹",
+				"description": "温暖可口",
+				"recipe": {
+					"description": "用椰汁和蟹肉煲出来的美味浓汤.",
+					"flavor": "这碗集聚了两种美味食材的营养汤无可挑剔."
+				}
+			},
+			"crab_bisque_serving": {
+				"display_name": "小碗美味浓汤蟹"
+			},
 			"crab_cake": {
 				"display_name": "蟹肉饼",
 				"description": "这是一款经典小菜, 先把蟹肉打碎然后在油里滚一下.",
@@ -214,6 +225,22 @@
 			},
 			"fish_stew_serving": {
 				"display_name": "小碗鱼汤"
+			},
+			"papaya_cookie": {
+				"display_name": "木瓜饼干",
+				"description": "还有椰丝",
+				"recipe": {
+					"description": "撒着椰丝的木瓜饼干.",
+					"flavor": "很健康, 但吃多了还是会胖."
+				}
+			},
+			"papaya_smoothie": {
+				"display_name": "木瓜冰沙",
+				"description": "满口都是木瓜的味道",
+				"recipe": {
+					"description": "让你在夏天也保持帅气.",
+					"flavor": "早上吃一杯, 开心一整天."
+				}
 			},
 			"papaya_basket": {
 				"display_name": "木瓜篮",
@@ -260,6 +287,50 @@
 				"description": "手臂, 多到你数不过来"
 			}
 		},
+		"plants": {
+			"hibiscus_plant": {
+				"display_name": "大海槿",
+				"description": "是可以采集的, 有治疗效果的草药.",
+				"unripe_description": "这棵植物已经被收割过了, 还没长好.",
+				"seed": {
+					"display_name": "海槿种子",
+					"description": "种下之后, 会长出一棵草药"
+				},
+				"sprout": {
+					"description": "需要一些时间与爱心.",
+					"display_name": "海槿芽"
+				},
+				"stem": {
+					"description": "还在成长!",
+					"display_name": "海槿苗"
+				},
+				"bud": {
+					"description": "快长成了!  看, 那是花苞!",
+					"display_name": "含苞的海槿"
+				}
+			},
+			"blue_hibiscus_plant": {
+				"display_name": "大蓝海槿",
+				"description": "稀有的品种, 是可以采集的, 有治疗效果的草药",
+				"unripe_description": "This plant has been harvested and has not grown back yet",
+				"seed": {
+					"display_name": "蓝海槿种子",
+					"description": "种下之后, 会长出一棵草药"
+				},
+				"sprout": {
+					"description": "需要一些时间与爱心.",
+					"display_name": "蓝海槿芽"
+				},
+				"stem": {
+					"description": "还在成长!",
+					"display_name": "蓝海槿苗"
+				},
+				"bud": {
+					"description": "快长成了!  看, 那是花苞!",
+					"display_name": "含苞的蓝海槿"
+				}
+			}
+		},
 		"resources": {
 			"pearl": {
 				"display_name": "白珍珠",
@@ -268,6 +339,16 @@
 			"black_pearl": {
 				"display_name": "黑珍珠",
 				"description": "充满了诅咒, 不过可以卖个好价钱"
+			},
+			"herb": {
+				"hibiscus": {
+					"display_name": "海槿花",
+					"description": "带有治疗效果的美丽热带花朵"
+				},
+				"blue_hibiscus": {
+					"display_name": "蓝海槿花",
+					"description": "带有治疗效果的稀有热带花朵"
+				}
 			},
 			"hot_rock": {
 				"display_name": "热岩",
@@ -306,16 +387,64 @@
 			},
 			"dranden": {
 				"display_name": "象鼻板棕",
-				"description": "象鼻一样的主干周围覆着重重的叶子"
+				"description": "象鼻一样的主干周围覆着重重的叶子",
+				"seed": {
+					"display_name": "板棕种子",
+					"description": "种下后能长出一棵象鼻板棕"
+				},
+				"sprout": {
+					"display_name": "板棕嫩芽",
+					"description": "需要一些时间与爱心."
+				},
+				"stem": {
+					"display_name": "板棕幼苗",
+					"description": "还在成长!"
+				},
+				"bud": {
+					"display_name": "板棕幼树",
+					"description": "快长成了! 已经有叶子冒出来了!"
+				}
 			},
 			"smalea": {
 				"display_name": "小花叶榕",
-				"description": "小巧的树却有着浓密的叶子"
+				"description": "小巧的树却有着浓密的叶子",
+				"seed": {
+					"display_name": "小花叶榕种子",
+					"description": "种下后能长出一棵小花叶榕"
+				},
+				"sprout": {
+					"display_name": "榕树嫩芽",
+					"description": "需要一些时间与爱心."
+				},
+				"stem": {
+					"display_name": "榕树幼苗",
+					"description": "还在成长!"
+				},
+				"bud": {
+					"display_name": "榕树幼树",
+					"description": "快长成了! 已经有叶子冒出来了!"
+				}
 			},
 			"papaya": {
 				"display_name": "番木瓜树",
 				"description": "大大的, 像树一样植物 (原来不是树?)",
-				"unripe_description": "果子还没成熟"
+				"unripe_description": "果子还没成熟",
+				"seed": {
+					"display_name": "木瓜籽",
+					"description": "种下后能长出一棵木瓜树"
+				},
+				"sprout": {
+					"display_name": "木瓜树芽",
+					"description": "需要一些时间与爱心."
+				},
+				"stem": {
+					"display_name": "木瓜幼苗",
+					"description": "还在成长!"
+				},
+				"bud": {
+					"display_name": "木瓜幼树",
+					"description": "快长成了! 已经有叶子冒出来了!"
+				}
 			}
 		},
 		"weapons": {
@@ -344,6 +473,11 @@
 		}
 	},
 	"jobs": {
+		"cook": {
+			"recipes": {
+				"tropical_recipes_name": "热带菜系"
+			}
+		},
 		"fisher": {
 			"fisher_description": {
 				"display_name": "渔民",
@@ -420,6 +554,19 @@
 					"recipe_name": "钓鱼码头",
 					"description": "放置在靠海的一边. 渔民会把这个地方视作钓点然后前去钓鱼.",
 					"flavor": "鱼鱼可喜欢它在太阳下投下的影子了"
+				}
+			}
+		},
+		"herbalist": {
+			"recipes": {
+				"papaya_transmute_recipe": {
+					"recipe_name": "木瓜籽 (x3)"
+				},
+				"hibiscus_transmute_recipe": {
+					"recipe_name": "海槿种子 (x3)"
+				},
+				"blue_hibiscus_transmute_recipe": {
+					"recipe_name": "蓝海槿种子 (x3)"
 				}
 			}
 		}
@@ -557,7 +704,7 @@
 						},
 						"lets_trade_again": {
 							"title": "我们再来做笔交易?",
-							"message_start": "嗨! 还想买些没什么用的东西吗?<br> 不好意思, 没看到你们正在招待客人. 我等下再来吧.",
+							"message_start": "嗨! 还想买些没什么用的东西吗?<br>不好意思, 没看到你们正在招待客人. 我等下再来吧.",
 							"choice": "客人?..",
 							"message_those_guys": "那些人不是吗. 我指你看."
 						},
