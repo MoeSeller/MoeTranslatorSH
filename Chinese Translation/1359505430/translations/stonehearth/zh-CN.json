@@ -97,13 +97,13 @@
             "plan_job_status": {
                "COMPLETE": "已开始建造!!",
                "INVALID_BLUEPRINTS": "该建筑存在无效的结构.  请确保建筑中没有结构显示为红色!",
-               "PLANNING_ERROR_GENERIC": "你的炉民看不懂该建筑应该怎么造!  请将模板发送至石炉团队以供调查."
+               "PLANNING_ERROR_GENERIC": "你的炉民看不懂该建筑应该怎么造!  有问题的方块已标红, 请将模板发送至石炉团队以供调查."
             },
             "building_status": {
                "build_button": "建造",
-               "pause_button" : "暂停",
-               "resume_button" : "继续",
-               "finished_button" : "完成",
+               "pause_button": "暂停",
+               "resume_button": "继续",
+               "finished_button": "完成",
                "cost_prefix": "消耗:"
             },
             "material_list": {
@@ -147,6 +147,8 @@
             "you": "[str(town_name)] (你自己!)",
             "offering": "提供: ",
             "requesting": "需求:",
+            "source_gold": "你们的金币数:",
+            "target_gold": "他们的金币数:",
             "give_1": "给出 1",
             "give_10": "给出 10",
             "request_1": "索求 1",
@@ -177,9 +179,12 @@
             "ownership_current_owner_tooltip": "现拥有者",
             "ownership_owns_another_tooltip": "已拥有同类物品"
          },
+         "player_picker": {
+            "title": "选择一位玩家"
+         },
          "multiplayer_menu": {
             "display_name": "联机菜单",
-            "description": "查看管理其他已连接的玩家",
+            "description": "其他已连接的玩家",
             "host": "主机",
             "client": "客户机",
             "online": "在线",
@@ -347,6 +352,8 @@
             "open_game_to_multiplayer": "将游戏开放为多人模式",
             "allow_remote_connections": "开启多人模式",
             "allow_remote_connections_description": "允许其他玩家加入你的游戏",
+            "game_speed_anarchy": "允许客户机控制游戏倍速",
+            "game_speed_anarchy_description": "让其他玩家也可以自由地控制游戏速度",
             "start": "开始",
             "settings": "多人设置",
             "max_players": "最大玩家数",
@@ -451,6 +458,7 @@
                "mine": "挖掘",
                "job": "本职",
                "current_activity": "当前活动",
+               "working_for": "效忠于",
                "status": "状态",
                "morale": "心情"
             },
@@ -465,6 +473,10 @@
                "enrolled": "队员",
                "not_enrolled": "非队员",
                "cannot_enroll": "不能加入"
+            },
+            "working_for": {
+               "title": "转而服务于",
+               "myself": "我镇"
             }
          },
          "create_camp": {
@@ -840,7 +852,9 @@
                "fail": {
                   "title": "交易失败",
                   "source": "对方城镇资源不够完成这次交易.",
-                  "target": "你的城镇资源不够完成这次交易."
+                  "target": "你的城镇资源不够完成这次交易.",
+                  "source_gold": "对方城镇金币不够完成此次交易.",
+                  "target_gold": "你的城镇金币不够完成此次交易."
                }
             },
             "city_dialog": {
@@ -853,7 +867,7 @@
                "summon_herald": "传使者!"
             },
             "level_up_bulletin": {
-               "title": "[name(i18n_data.entity)] 等级获得提升!",
+               "title": "[name(i18n_data.entity)]的等级获得提升!",
                "show_char_sheet": "人物属性"
             },
             "promote_bulletin": {
@@ -1654,7 +1668,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24.7.1 适用于 r835(multiplayer) 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24.8.1 适用于 r838 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -1709,6 +1723,12 @@
             "stop_title": "模组缺失",
             "continue_title": "准备继续游戏",
             "note": "您准备加入的游戏包含下列模组.",
+            "time_elapsed": {
+               "days": "游戏时间已过去: [str(date.day)]日, [str(date.hour)]时",
+               "months": "游戏时间已过去: [str(date.month)]月, [str(date.day)]日, [str(date.hour)]时",
+               "years": "游戏时间已过去: [str(date.year)]年, [str(date.month)]月, [str(date.day)]日, [str(date.hour)]时"
+            },
+            "game_info": "[str(biomeName)]: [str(biomeLocation)], [str(gameMode)]",
             "missing_note": "你准备加入的游戏包含下列模组. 必须拥有相同版本的模组才可进入游戏.",
             "continue": "继续游戏",
             "loading": "加载游戏...",
@@ -2052,6 +2072,9 @@
             },
             "customization_unlock_all": {
                "description": "单击以解锁所有的名字和外貌选项."
+            },
+            "working_for": {
+               "description": "该炉民当前所服务的小镇"
             }
          },
          "constants": {
@@ -4981,6 +5004,10 @@
          "promote_to_job": {
             "display_name": "转职",
             "description": "给这个炉民一个新职位."
+         },
+         "change_working_for": {
+            "display_name": "转而服务于",
+            "description": "改变该炉民服务的小镇."
          },
          "raze_crop": {
             "display_name": "清空地面",
@@ -10101,6 +10128,20 @@
                "display_name": "鸭鸭兽",
                "description": "不会飞的鸟类"
             }
+         },
+         "golems": {
+            "golem_harvesting": {
+               "display_name": "蛮牛",
+               "description": "躯体由石头做成, 被远古的知识赋予了行动力."
+            },
+            "golem_mining": {
+               "display_name": "鼹鼠",
+               "description": "挖掘傀儡, 躯体由石头做成, 被远古的知识赋予了行动力."
+            },
+            "golem_restocking": {
+               "display_name": "蟋蟀",
+               "description": "搬运傀儡, 躯体由石头做成, 被远古的知识赋予了行动力."
+            }
          }
       },
       "peoples": {
@@ -11095,6 +11136,14 @@
          "worker_hammer": {
             "display_name": "锤子",
             "description": "当你只有把锤子时,看什么都会觉得是钉子."
+         },
+         "mining_pick_golem": {
+            "display_name": "傀儡挖掘镐",
+            "description": "大手就拿大号的."
+         },
+         "worker_axe_golem": {
+            "display_name": "傀儡斧子",
+            "description": "大手就拿大号的."
          }
       },
       "toys": {
@@ -13762,7 +13811,7 @@
             "blazing_inlay_recipe": {
                "description": "火纹宝剑内发光的镀层.",
                "recipe_name": "火焰嵌体",
-               "flavor": "因石炉的光芒而闪耀"
+               "flavor": "应石炉的光芒而闪耀"
             }
          },
          "potter_workbench": {
@@ -14611,13 +14660,51 @@
                   "title": "小偷"
                }
             }
+         },
+         "npc_miner": {
+            "npc_miner_description": {
+               "display_name": "矿工",
+               "description": "挖东西.",
+               "requirements": "无",
+               "level_1_data": {
+                  "title": "矿工"
+               }
+            }
+         },
+         "npc_restocker": {
+            "npc_restocker_description": {
+               "display_name": "搬运工",
+               "description": "搬运储存物品.",
+               "requirements": "无",
+               "level_1_data": {
+                  "title": "搬运工"
+               }
+            }
+         },
+         "npc_harvester": {
+            "npc_harvester_description": {
+               "display_name": "采集者",
+               "description": "收获庄稼, 采集野生资源.",
+               "requirements": "无",
+               "level_1_data": {
+                  "title": "采集者"
+               }
+            }
+         }
+      },
+      "amberstone": {
+         "worker": {
+            "worker_outfit_winter_hood": {
+               "display_name": "羽绒服",
+               "description": "毛茸茸地抵御寒冷"
+            }
          }
       }
    },
    "stonehearth_mixins": {
       "base_human": {
          "display_name": "[str(self.unit_info.custom_name)]",
-         "description": "你城镇的炉民",
+         "description": "你镇上的炉民",
          "job": {
             "starting_level_title": "学徒[str(self.stonehearth:job.curr_job_name)]",
             "mid_level_title": "Lvl[str(self.stonehearth:job.curr_job_level)] 满师[str(self.stonehearth:job.curr_job_name)]",

@@ -152,12 +152,22 @@
                "description": "为了注重美观的陶艺师门.",
                "recipe_name": "高级陶轮",
                "flavor": "作品的质量最高不会超出使用器具的质量 -- 坷垃, 陶艺大师"
+            },
+            "legendary_rc_face_recipe": {
+               "description": "龙栖巨盾的防御部件",
+               "recipe_name": "龙皮盾面",
+               "flavor": "反复的上釉与火炼使它如龙鳞般闪耀, 也如龙鳞般坚韧"
+            },
+            "legendary_rc_inlay_recipe": {
+               "description": "沙漠尖牙内发光的镀层",
+               "recipe_name": "闪耀嵌体",
+               "flavor": "应石炉的光芒而闪耀"
             }
          },
          "potter_kiln_upgrade": {
             "potter_kiln_upgrade_ghost": {
                "display_name": "高级窑炉",
-               "description": "让你镇的陶艺室能体面地工作."
+               "description": "让你镇上的陶艺师能体面地工作."
             }
          },
          "potter_workbench_upgrade": {
@@ -170,6 +180,18 @@
       "herbalist": {
          "herbalist_description": {
             "requirements": "草药师的东西, 由陶艺师制作"
+         },
+         "recipes": {
+            "legendary_rc_cloth_recipe": {
+               "description": "猩红头环的传统材料",
+               "recipe_name": "日色布料",
+               "flavor": "浸透在阳光与草药中"
+            },
+            "legendary_rc_stave_recipe": {
+               "description": "习风之弓的肢体",
+               "recipe_name": "古木弓把",
+               "flavor": "用上了特制的树脂, 一支军队才能把它压坏"
+            }
          }
       },
       "mason": {
@@ -178,18 +200,28 @@
          },
          "recipes": {
             "rc_giants_shield_recipe": {
-               "description": "凤凰帝国最引以为傲的盾牌",
-               "recipe_name": "巨人盾牌",
-               "flavor": "哪怕是面对再厉害的坏人和危险, 此盾不会破碎.."
+               "description": "沙漠里最令人骄傲的盾牌",
+               "recipe_name": "龙栖巨盾",
+               "flavor": "哪怕是面对再厉害的坏人和危险, 此盾不会破碎."
+            },
+            "legendary_rc_blade_recipe": {
+               "description": "沙漠尖牙的不破剑刃",
+               "recipe_name": "暴怒之骨",
+               "flavor": "锋利如风"
+            },
+            "legendary_rc_gem_recipe": {
+               "description": "灵魂的中心, 猩红头环的重要部件",
+               "recipe_name": "烈焰红宝石",
+               "flavor": "一颗引领治疗的红色明星"
             }
          }
       },
       "carpenter": {
          "recipes": {
             "rc_bow_valor_recipe": {
-               "description": "凤凰帝国最迅捷的弓",
-               "recipe_name": "古国凤弓",
-               "flavor": "给使用者机械的力量, 以极高的速度射出箭失"
+               "description": "沙漠里最迅捷的弓",
+               "recipe_name": "习风之弓",
+               "flavor": "一把需要使用者有过硬技术的弓, 但与之对应的是暴风般席卷敌人的箭失"
             }
          }
       },
@@ -222,14 +254,19 @@
                "flavor": "它不一定能抓住太阳, 但可以把阳光直接反射进你的眼睛里, 嗷..."
             },
             "rc_two_handed_sword_valor_recipe": {
-               "description": "凤凰帝国最好的宝剑",
-               "recipe_name": "火纹宝剑",
+               "description": "沙漠里最好的剑",
+               "recipe_name": "沙漠尖牙",
                "flavor": "尺寸的把握是完美的, 正如持剑者对敌人的每一次挥斩"
             },
             "rc_circlet_valor_recipe": {
                "description": "凤凰帝国最方的头环",
                "recipe_name": "光耀头环",
                "flavor": "把心里和灵魂中蕴藏的能量都运作治愈之光"
+            },
+            "legendary_rc_frame_recipe": {
+               "description": "龙栖巨盾的加固部件",
+               "recipe_name": "龙骨盾框",
+               "flavor": "巨龙的骨"
             }
          }
       },
@@ -299,6 +336,16 @@
                "description": "用染色的线和金线细致地纹出来的",
                "recipe_name": "金边灰绿地毯",
                "flavor": "要配出细致的绿色是吃技术的; 这种草药浆极易发生反应, 用它涂的图案处理不当一会就会变色"
+            },
+            "rc_legendary_circlet_recipe": {
+               "description": "沙漠里做好的医者才配戴有",
+               "recipe_name": "猩红头环",
+               "flavor": "把心里和灵魂中蕴藏的能量都运作治愈之光"
+            },
+            "legendary_rc_bowstring_recipe": {
+               "description": "把习风之弓两头系起来的弓弦",
+               "recipe_name": "闪耀弓弦",
+               "flavor": "如同火焰编成了丝"
             }
          }
       }
@@ -1487,22 +1534,56 @@
       },
       "armor": {
          "rc_legendary_circlet": {
-            "display_name": "光耀头环",
+            "display_name": "猩红头环",
             "description": "凤凰帝国最方的头环"
          },
          "rc_legendary_shield": {
-            "display_name": "巨人盾牌",
+            "display_name": "龙栖巨盾",
             "description": "凤凰帝国最引以为傲的盾牌"
          }
       },
       "weapons": {
          "rc_legendary_bow": {
-            "display_name": "古国凤弓",
+            "display_name": "习风之弓",
             "description": "凤凰帝国最迅捷的弓"
          },
          "rc_legendary_sword": {
-            "display_name": "火纹宝剑",
+            "display_name": "沙漠尖牙",
             "description": "凤凰帝国最好的宝剑"
+         }
+      },
+      "refined": {
+         "legendary_rc_bowstring": {
+            "display_name": "闪耀弓弦",
+            "description": "把习风之弓两头系起来的弓弦"
+         },
+         "legendary_rc_stave": {
+            "display_name": "古木弓把",
+            "description": "习风之弓的肢体"
+         },
+         "legendary_rc_face": {
+            "display_name": "龙皮盾面",
+            "description": "龙栖巨盾的防御部件"
+         },
+         "legendary_rc_frame": {
+            "display_name": "龙骨盾框",
+            "description": "龙栖巨盾的加固部件"
+         },
+         "legendary_rc_gem": {
+            "display_name": "烈焰红宝石",
+            "description": "灵魂的中心, 猩红头环的重要部件"
+         },
+         "legendary_rc_blade": {
+            "display_name": "暴怒之骨",
+            "description": "沙漠尖牙的不破剑刃"
+         },
+         "legendary_rc_inlay": {
+            "display_name": "闪耀嵌体",
+            "description": "沙漠尖牙内发光的镀层"
+         },
+         "legendary_rc_cloth": {
+            "display_name": "日色布料",
+            "description": "猩红头环的传统材料"
          }
       }
    }
