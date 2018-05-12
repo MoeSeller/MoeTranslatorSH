@@ -605,6 +605,12 @@
                      "tip_title": "点击并拖动以挖掘",
                      "tip_description": "鼠标右键退出"
                   },
+                  "mine_custom_block": {
+                     "display_name": "自定义挖掘",
+                     "description": "挖掘尺寸自定义",
+                     "tip_title": "点击拖动以向下挖掘",
+                     "tip_description": "用快捷键 [str(shrink_horizontal)] 和 [str(grow_horizontal)] 来调整水平尺寸.<br/>用快捷键 [str(shrink_vertical)] 和 [str(grow_vertical)] 来调整竖直尺寸.<br/> 右击退出."
+                  },
                   "loot_item": {
                      "display_name": "掠夺",
                      "description": "从敌人手中抢夺物资.",
@@ -958,7 +964,11 @@
                "destroy": "破坏建筑",
                "wood_resource": "木材",
                "clay_resource": "粘土",
-               "stone_resource": "石材"
+               "stone_resource": "石材",
+               "disabled": {
+                  "destroy": "无法破坏不属于你的建筑.",
+                  "build": "你无法命令建造, 暂停, 继续建造不属于你的建筑."
+               }
             }
          },
          "build_mode": {
@@ -1205,8 +1215,7 @@
                   "tooltip_defense": "防御装置",
                   "tooltip_light": "火把与灯饰",
                   "tooltip_decoration": "装饰物",
-                  "tooltip_refined_weaver": "布匹等",
-                  "tooltip_refined_craftables": "已加工物品",
+                  "tooltip_refined_weaver": "加工品(布匹等)",
                   "tooltip_refined_animal_part": "动物产物",
                   "tooltip_refined_ore": "精炼金属",
                   "tooltip_weapons": "武器",
@@ -1596,6 +1605,11 @@
                   "harvest_harvest": "收集工具",
                   "harvest_mine": "挖掘工具",
                   "harvest_mine_block": "小方块挖掘工具",
+                  "harvest_mine_custom_block": "自定义挖掘工具",
+                  "harvest_mine_custom_block_shrink_horizontal": "挖掘: 水平缩小",
+                  "harvest_mine_custom_block_grow_horizontal": "挖掘: 水平放大",
+                  "harvest_mine_custom_block_shrink_vertical": "挖掘: 竖直缩小",
+                  "harvest_mine_custom_block_grow_vertical": "挖掘: 竖直放大",
                   "harvest_cancel": "任务取消工具",
                   "harvest_loot": "掠夺工具",
                   "harvest_clear": "销毁工具",
@@ -2760,24 +2774,24 @@
                      "dialog_nodes": {
                         "msg2": {
                            "bulletin_message": {
-                              "00": "四周死一般得寂静,但你知道吗……?连鸟儿都停止歌唱了,这是一个不好的迹象."
+                              "00": "四周死一般得寂静, 但你知道吗...? 连鸟儿都停止歌唱了, 这是一个不好的迹象."
                            },
-                           "bulletin_title": "梅尔·布利汉德挠了挠耳朵",
-                           "dialog_title": "梅尔·布利汉德"
+                           "bulletin_title": "旅行者挠了挠耳朵",
+                           "dialog_title": "上了年纪的旅行者"
                         },
                         "msg3": {
                            "bulletin_message": {
-                              "00": "我猜测那些狼是哥布林的狼.看看你领地的边界.当哥布林让狼兴奋起来后你完全不会想去和它们打.如果有必要的话,你可以躲进掩体里.或者逃跑,能跑就最好了!活下去没什么羞耻的."
+                              "00": "我猜测那些狼是哥布林的狼. 看看你领地的边界. 当哥布林让狼兴奋起来后你完全不会想去和它们打.如果有必要的话,你可以躲进掩体里.或者逃跑,能跑就最好了!活下去没什么羞耻的."
                            },
-                           "bulletin_title": "梅尔·布利汉德 坚定地点点头",
-                           "dialog_title": "梅尔·布利汉德"
+                           "bulletin_title": "陌生人坚定地点点头",
+                           "dialog_title": "上了年纪的旅行者"
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "嘿,小镇的居民们好!日子过得怎么样?"
+                              "00": "嘿, 小镇的居民们好! 日子过得怎么样?"
                            },
                            "bulletin_title": "一个头发花白的人出现在地平线上",
-                           "dialog_title": "梅尔·布利汉德"
+                           "dialog_title": "上了年纪的旅行者"
                         }
                      }
                   }
@@ -2830,22 +2844,22 @@
                            "bulletin_message": {
                               "00": "恭喜你的小镇还是那么的井井有条,可以看出来你真的很在乎这些孩子.我来来去去路过这片土地好几次了,似乎你也给这帮哥布林招呼得很周到呢!不用谦虚,他们肯定一直来骚扰你.不过不管怎样,干得漂亮!"
                            },
-                           "bulletin_title": "梅尔·布利汉德 摇了摇头",
-                           "dialog_title": "梅尔·布利汉德"
+                           "bulletin_title": "旅行者摇了摇头",
+                           "dialog_title": "上了年纪的旅行者"
                         },
                         "msg3": {
                            "bulletin_message": {
                               "00": "这是一份礼物,我在一些邻近的城镇收集到的.每个人今晚都会睡觉,因为相信你可以."
                            },
-                           "bulletin_title": "梅尔·布利汉德 坚定地点点头",
-                           "dialog_title": "梅尔·布利汉德"
+                           "bulletin_title": "陌生人坚定地点点头",
+                           "dialog_title": "上了年纪的旅行者"
                         },
                         "msg1": {
                            "bulletin_message": {
                               "00": "你好?在吗?还有人在家吗?"
                            },
-                           "bulletin_title": "梅尔·布利汉德 再次出现",
-                           "dialog_title": "梅尔·布利汉德"
+                           "bulletin_title": "那个旅行者出现了",
+                           "dialog_title": "上了年纪的旅行者"
                         }
                      }
                   }
@@ -4871,11 +4885,55 @@
          },
          "building_brushes": {
             "colors": {
+               "#964d3b": "亮罗宾鸟胸红",
+               "#823e2d": "罗宾鸟胸红",
+               "#643124": "暗罗宾鸟胸红",
+               "#9e7969": "亮桃棕色",
+               "#977161": "桃棕色",
+               "#886758": "暗桃棕色",
+               "#40664a": "亮色橡叶绿",
+               "#37563f": "橡叶绿",
+               "#304435": "暗色橡叶绿",
+               "#537070": "亮鼠尾灰绿",
+               "#4a6363": "鼠尾灰绿",
+               "#425858": "暗鼠尾灰绿",
+               "#5483bd": "亮色绿洲蓝",
+               "#4f7cb3": "绿洲蓝", 
+               "#4771a4": "暗色绿洲蓝",
+               "#ac6863": "亮色刺梨红",
+               "#a2625d": "刺梨红",
+               "#965a4d": "暗色刺梨红",
+               "#a9a597": "台地灰",
+               "#afaa9d": "亮色台地灰",
+               "#a38b7c": "粉岩色",
+               "#bba991": "暗山面色",
+               "#c4b49a": "亮山面色",
+               "#807148": "粘土地层色",
+               "#918155": "亮粘土地层色",
+               "#cbbd96": "沙色",
+               "#d2c6a3": "淡沙色",
+               "#d8ceae": "亮沙色",
+               "#6B6860": "山基灰",
+               "#76726B": "暗崖面色",
+               "#82807b": "中崖面色",
+               "#918D86": "亮崖面色",
+               "#B3B0AA": "崖顶灰",
+               "#C1C0BB": "尖峰灰",
+               "#75B370": "山顶绿",
+               "#87C076": "淡色山顶绿",
+               "#99CE7C": "山顶峭壁青",
+               "#807147": "暗色山顶绿",
+               "#918154": "亮色山顶绿",
+               "#8BB270": "草原绿",
+               "#9DBF76": "淡草原绿",
+               "#AFCC7C": "草原谷崖绿",
+               "#A29161": "地崖棕", 
+               "#B3A16E": "大地棕",
                "#928C76": "石楠灰",
                "#4C2424": "火山红",
                "#C0BBA8": "烟灰白",
                "#693921": "新珀黄",
-               "#A5A199": "浅深山迷雾灰",
+               "#A5A199": "亮深山迷雾灰",
                "#224165": "深色帝王蓝",
                "#958455": "麦片黄",
                "#332B1F": "可可棕",
@@ -4894,12 +4952,12 @@
                "#5A3D2D": "巧克力棕",
                "#D0B884": "冬榛黄",
                "#412B1F": "摩洛哥棕",
-               "#542929": "浅火山红",
+               "#542929": "亮火山红",
                "#403521": "炉渣棕",
                "#A59F8B": "纳帕羊毛灰",
                "#86764A": "暗黄",
                "#65573A": "烟草棕",
-               "#C0BBA7": "淡灰色",
+               "#C0BBA7": "亮灰色",
                "#786322": "育康金",
                "#6E5B21": "古铜色",
                "#69534A": "深色刚果棕",
@@ -4912,7 +4970,7 @@
                "#DCCAA3": "酒椰纤维黄",
                "#9B8F6D": "淡色牡蛎白",
                "#A19D97": "深山迷雾灰",
-               "#C1A975": "浅米色",
+               "#C1A975": "生成色",
                "#676D74": "中灰色",
                "#4E555C": "鳟鱼灰",
                "#864E31": "深色咖喱红",
@@ -4923,23 +4981,33 @@
                "#927923": "柠檬姜茶黄"
             },
             "patterns": {
-               "gold_clay_wall": "由巴甫洛娃淡黄色,酒椰纤维黄和浅米色组成的图案",
-               "tan_clay_wall": "由玫瑰岩色,咖啡蛋糕色和幼鹿黄组成的图案",
+               "peaked_roof_oak_leaf": "由不同色度的橡叶绿染成的木屋顶",
+               "peaked_roof_robin": "由不同色度的罗宾鸟胸红染成的木屋顶",
+               "peaked_roof_peach": "由不同色度的桃棕色染成的木屋顶",
+               "peaked_roof_peach_fancy": "由石锚棕和不同色度的桃棕色染成的木屋顶",
+               "slat_roof_sage": "由鼠尾灰绿的粘土砖和可可棕色的木材建成的屋顶",
+               "slat_roof_oasis": "由绿洲蓝色的粘土砖和可可棕色的木材建成的屋顶",
+               "slat_roof_prickly_pear": "由刺梨红色的粘土砖和和可可棕色的木材建成的屋顶",
+               "clay_wall_sage": "由不同色度的鼠尾灰绿组成的图案",
+               "clay_wall_prickly_pear": "由不同色度的刺梨红组成的图案",
+               "clay_wall_oasis": "由不同色度的绿洲蓝组成的图案",
+               "gold_clay_wall": "由巴甫洛娃淡黄色, 酒椰纤维黄和生成色组成的图案",
+               "tan_clay_wall": "由玫瑰岩色, 咖啡蛋糕色和幼鹿黄组成的图案",
                "wooden_wall": "由石锚棕和烟草棕组成的图案",
                "red_clay_slat_roof": "由深色咖喱红砖和可可棕色的木材建造的屋顶",
                "cobblestone": "由希拉灰,青花大理岩和淡色牡蛎白组成的图案",
                "thatch_peaked_roof": "由青蒜姜黄,柠檬酱茶黄,育康金和古铜色的木材建成的屋顶",
-               "red_slate_peaked_roof": "由中,浅火山红两种颜色以及锈红色的石材建成的屋顶",
-               "gray_clay_wall": "由浅、中、深,三种深山迷雾灰,和云层灰组成的图案",
+               "red_slate_peaked_roof": "由中,亮火山红两种颜色以及锈红色的石材建成的屋顶",
+               "gray_clay_wall": "由亮、中、深,三种深山迷雾灰,和云层灰组成的图案",
                "golden_clay_slat_roof": "由酒椰纤维黄色的砖块与可可棕色的木材建成的屋顶",
-               "castle_roof": "由金枪鱼灰,石梭灰以及中灰色的石材建成的屋顶",
+               "castle_roof": "由金枪鱼灰, 石梭灰以及中灰色的石材建成的屋顶",
                "plastered_wall": "由纳帕羊毛灰和烟灰白组成的图案",
-               "blue_slate_peaked_roof": "由中、浅两种帝王蓝色以及巴哈马蓝色的石材建成的屋顶",
+               "blue_slate_peaked_roof": "由中, 亮两种帝王蓝色以及巴哈马蓝色的石材建成的屋顶",
                "brick_tiled": "由中,深两种刚果棕色以及软木棕组成的图案",
-               "wooden_peaked_roof": "由巧克力棕、深褐色以及摩洛哥棕色的木材建成的屋顶",
+               "wooden_peaked_roof": "由巧克力棕, 深褐色以及摩洛哥棕色的木材建成的屋顶",
                "cobblestone_wall": "由金枪鱼灰与鳟鱼灰构成的图案",
                "slate_blue_checkered": "由石梭灰和中灰色组成的图案",
-               "clay_slat_roof": "由淡灰色的土砖与可可棕色的木材建成的屋顶",
+               "clay_slat_roof": "由亮灰色的土砖与可可棕色的木材建成的屋顶",
                "wood_dark_diagonal": "由麦片黄与草鞋棕组成的图案",
                "red_clay_wall": "由贝克巧克力色和新珀色组成的图案",
                "red_clay_peaked_roof": "由贝克巧克力色、新珀色以及摩洛哥棕色的的木材建成的屋顶"
@@ -9069,6 +9137,50 @@
                "display_name": "虚空岩石",
                "description": "这块岩石里的魔力渴望着一切!"
             }
+         },
+         "summon_stone": {
+            "pond_01": {
+               "pond_01_ghost": {
+                  "display_name": "池塘召唤石",
+                  "description": "这块石头里封印着一潭小小的可爱池塘!"
+               }
+            },
+            "cathedral_ruins": {
+               "cathedral_ruins_ghost": {
+                  "display_name": "教堂废墟召唤石",
+                  "description": 这块石头里封印这一个古代遗迹!"
+               }
+            },
+            "cave_01": {
+               "cave_01_ghost": {
+                  "display_name": "洞穴召唤石",
+                  "description": "这块石头里封印着一个洞穴, 可以穿地而生!"
+               }
+            },
+            "cave_02": {
+               "cave_02_ghost": {
+                  "display_name": "洞穴召唤石",
+                  "description": "这块石头里封印着一个洞穴, 可以穿地而生!"
+               }
+            },
+            "pond_02": {
+               "pond_02_ghost": {
+                  "display_name": "池塘召唤石",
+                  "description": "这块石头里封印着一潭小小的可爱池塘!"
+               }
+            },
+            "pond_03": {
+               "pond_03_ghost": {
+                  "display_name": "池塘召唤石",
+                  "description": "这块石头里封印着一潭小小的可爱池塘!"
+               }
+            },
+            "pond_04": {
+               "pond_04_ghost": {
+                  "display_name": "池塘召唤石",
+                  "description": "这块石头里封印着一潭小小的可爱池塘!"
+               }
+            }
          }
       },
       "food": {
@@ -11754,6 +11866,52 @@
          "ball_of_wax": {
             "display_name": "耳屎球",
             "description": "真恶心!"
+         }
+      },
+      "manipulation": {
+         "summon_stone": {
+            "bounds": {
+               "bounds_ghost": {
+                  "display_name": "临界召唤石",
+                  "description": "这块石头可以封印整个世界!"
+               }
+            },
+            "test_small": {
+               "test_small_ghost": {
+                  "display_name": "测试小石头",
+                  "description": "这块石头封印一个测试, 你懂得, 测试用!"
+               }
+            },
+            "chair": {
+               "chair_ghost": {
+                  "display_name": "椅石",
+                  "description": "这块石头封印着椅子中的椅子, 随时都可能蹦出来!"
+               }
+            },
+            "plains_grassy_01": {
+               "plains_grassy_01_ghost": {
+                  "display_name": "平原召唤石",
+                  "description": "这块石头封印着一片美丽的草地."
+               }
+            },
+            "plains_grassy_02": {
+               "plains_grassy_02_ghost": {
+                  "display_name": "平原召唤石",
+                  "description": "这块石头封印着一片美丽的草地."
+               }
+            },
+            "plains_stones": {
+               "plains_stones_ghost": {
+                  "display_name": "平原石召唤石",
+                  "description": "这块石头封印着一堆石头."
+               }
+            },
+            "plains_spring_hill": {
+               "plains_spring_hill_ghost": {
+                  "display_name": "平原山春召唤石",
+                  "description": "这块石头封印着一片小小的美丽春意!"
+               }
+            }
          }
       },
       "valor_statue": {
