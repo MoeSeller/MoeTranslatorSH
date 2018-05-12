@@ -3,9 +3,10 @@
 		"name" : "Chinese Translation",
 		"namespace" : "chinese_translation",
 		"version" : 3,
+		"author"  : "law",
 		"steam_file_id" : "1359505430",
 		"client_only" : true
-	},
+	 },
    "mixintos" : {
       "stonehearth/locales/supported_languages.json" : "file(added_languages.json)"
    },
@@ -13,11 +14,12 @@
    	"stonehearth/ui/root/css/fonts/autourone/AutourOne-Regular-webfont.woff" : "file(fonts/autourone/zh-CN.woff)",
    	"stonehearth/ui/root/css/fonts/grobold/grobold-webfont.woff" : "file(fonts/grobold/zh-CN.woff)",
 
-   	
+
     "stonehearth/locales/zh-CN.json": "file(translations/stonehearth/zh-CN.json)",
     "rayyas_children/locales/zh-CN.json": "file(translations/rayyas_children/zh-CN.json)",
-	
-    "archipelago_biome/locales/zh-CN.json": "file(translations/mods/archipelago_biome/zh-CN.json)",
+
+
+
     "settlementdecor/locales/zh-CN.json": "file(translations/mods/settlementdecor/zh-CN.json)",
     "cookmod/locales/zh-CN.json": "file(translations/mods/cookmod/zh-CN.json)",
     "cookmod/locales/zh-CN_fix.json": "file(translations/mods/cookmod/zh-CN_fix.json)",
@@ -25,12 +27,18 @@
     "frostfeast/locales/zh-CN.json": "file(translations/mods/frostfeast/zh-CN.json)",
     "don_mod/locales/zh-CN.json": "file(translations/mods/don_mod/zh-CN.json)",
 
-    
+    "betterstorage/locales/zh-CN.json": "file(translations/mods/betterstorage/zh-CN.json)",
+    "canyon_biome/locales/zh-CN.json": "file(translations/mods/canyon_biome/zh-CN.json)",
+    "lorki_biome/locales/zh-CN.json": "file(translations/mods/lorki_biome/zh-CN.json)",
+    "archipelago_biome/locales/zh-CN.json": "file(translations/mods/archipelago_biome/zh-CN.json)",
+    "floating_physics/locales/zh-CN.json": "file(translations/mods/floating_physics/zh-CN.json)",
+    "yangessential/locales/zh-CN.json": "file(translations/mods/yangessential/zh-CN.json)",
+    "armis_maximus/locales/zh-CN.json": "file(translations/mods/armis_maximus/zh-CN.json)",
+
     "stonehearth/ui/shell/embark/images/sold_tag.png" : "file(ui/shell/embark/images/sold_tag.png)",
     "stonehearth/data/gm/campaigns/game_events/arcs/trigger/game_events/encounters/images/morale_intro.png" : "file(ui/gm/morale_intro.png)"
 
 
 
-      
    }
 }
