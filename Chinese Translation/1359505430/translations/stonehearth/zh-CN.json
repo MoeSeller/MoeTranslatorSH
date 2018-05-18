@@ -357,7 +357,8 @@
             "start": "开始",
             "settings": "多人设置",
             "max_players": "最大玩家数",
-            "max_players_description": "设置可以加入的最大玩家数量"
+            "max_players_description": "设置可以加入的最大玩家数量",
+            "max_players_warning": "警告: 三人以上同时游玩可能会出现游戏性能下降的情况 (AI不反应, 停顿)."
          },
          "multiplayer_status_text": {
             "status": {
@@ -609,7 +610,7 @@
                      "display_name": "自定义挖掘",
                      "description": "挖掘尺寸自定义",
                      "tip_title": "点击拖动以向下挖掘",
-                     "tip_description": "用快捷键 [str(shrink_horizontal)] 和 [str(grow_horizontal)] 来调整水平尺寸.<br/>用快捷键 [str(shrink_vertical)] 和 [str(grow_vertical)] 来调整竖直尺寸.<br/> 右击退出."
+                     "tip_description": "Shift + 鼠标滚轮 可以调整水平尺寸.<br>Alt + 鼠标滚轮 可以调整竖直尺寸.<br/>按住Ctrl可减少区域.<br/>右击退出."
                   },
                   "loot_item": {
                      "display_name": "掠夺",
@@ -1058,7 +1059,7 @@
             "building_templates": {
                "title": "建筑模板:",
                "design_custom_building": "设计自定义建筑",
-               "search_placeholder": "寻找模板中...",
+               "search_placeholder": "寻找中...",
                "template_names": {
                   "tiny_cottage": "小别墅",
                   "cottage_for_two": "双人别墅",
@@ -1190,8 +1191,11 @@
                "default_stockpile_name": "仓库",
                "contents": "库存",
                "filter": "分类",
+               "shop": "商店",
                "help": "点击图标选择该仓库中可以存放的物品类型.",
                "help_single_filter": "单击图标以选择容器中储存物品的类别.",
+               "help_player_market_stall": "点击图标来选择该商店中出售的物品种类.",
+               "clear": "取消选择",
                "used_space": "占用:",
                "filters": {
                   "all": "全部",
@@ -1682,7 +1686,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24.9.2 适用于 r841 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24.9.2 适用于 r843 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -4898,7 +4902,7 @@
                "#4a6363": "鼠尾灰绿",
                "#425858": "暗鼠尾灰绿",
                "#5483bd": "亮色绿洲蓝",
-               "#4f7cb3": "绿洲蓝", 
+               "#4f7cb3": "绿洲蓝",
                "#4771a4": "暗色绿洲蓝",
                "#ac6863": "亮色刺梨红",
                "#a2625d": "刺梨红",
@@ -4927,7 +4931,7 @@
                "#8BB270": "草原绿",
                "#9DBF76": "淡草原绿",
                "#AFCC7C": "草原谷崖绿",
-               "#A29161": "地崖棕", 
+               "#A29161": "地崖棕",
                "#B3A16E": "大地棕",
                "#928C76": "石楠灰",
                "#4C2424": "火山红",
@@ -7832,6 +7836,12 @@
             "input_corner_ground_iron_ghost": {
                "display_name": "裱铁补给角架",
                "description": "一种存放补给品的容器, 可以给工匠制作提供便利."
+            }
+         },
+         "market_shelf_tall_ground_wood": {
+            "market_shelf_tall_ground_wood_ghost": {
+               "display_name": "市集高木架",
+               "description": "其他玩家和旅行者可以买在这里储存的物品."
             }
          }
       },
@@ -12738,6 +12748,11 @@
                "description": "商人可以访问这个摊位购买和出售商品",
                "recipe_name": "露天摊位",
                "flavor": "但这群人是谁?他们从何而来?"
+            },
+            "market_shelf_tall_ground_wood_recipe": {
+               "description": "其他玩家和旅行者可以买在这里储存的物品",
+               "recipe_name": "市集高木架",
+               "flavor": "你的砒霜或许就是别人的蜜糖... 对吧?"
             },
             "archer_bow_recipe": {
                "recipe_name": "弓箭手的弓",
