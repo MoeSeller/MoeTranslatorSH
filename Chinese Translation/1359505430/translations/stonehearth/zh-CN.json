@@ -594,23 +594,17 @@
                      "tip_title": "点击拖动鼠标以收获资源",
                      "tip_description": "鼠标右键退出"
                   },
-                  "mining_ui": {
-                     "display_name": "矿道",
-                     "description": "可以开采矿物、挖掘隧道或矿洞",
+                  "mining_basic": {
+                     "display_name": "挖掘隧道",
+                     "description": "可以挖掉4x4的区域做通道或矿洞",
                      "tip_title": "点击并拖动以挖掘",
-                     "tip_description": "鼠标右键退出"
+                     "tip_description": "按住Ctrl可减少区域, 鼠标右键退出"
                   },
-                  "mine_block": {
-                     "display_name": "挖掘方块",
-                     "description": "--可以挖掘单独一个的方块--",
-                     "tip_title": "点击并拖动以挖掘",
-                     "tip_description": "鼠标右键退出"
-                  },
-                  "mine_custom_block": {
+                  "mine_custom": {
                      "display_name": "自定义挖掘",
                      "description": "挖掘尺寸自定义",
-                     "tip_title": "点击拖动以向下挖掘",
-                     "tip_description": "Shift + 鼠标滚轮 可以调整水平尺寸.<br>Alt + 鼠标滚轮 可以调整竖直尺寸.<br/>按住Ctrl可减少区域.<br/>右击退出."
+                     "tip_title": "点击并拖动以挖掘",
+                     "tip_description": "Shift + 鼠标滚轮 可以调整水平尺寸.<br/>Alt + 鼠标滚轮 可以调整竖直尺寸.<br/>按住Ctrl可减少区域.<br/>右击退出."
                   },
                   "loot_item": {
                      "display_name": "掠夺",
@@ -1514,7 +1508,9 @@
                "enable_speed_3_note": "注意: 较大型的城镇开启 游戏加速 X3 会使得游戏性能缓慢!",
                "enable_speed_3_description": "在右下角添加一个新的速度选择的按钮  游戏加速 X4 !",
                "default_storage_filter_none": "默认存储东西时不进行分类",
-               "default_storage_filter_none_description": "创建一个新的仓库或放下新的储物箱时,默认的存储类型将被设置为'无',而不是'全部'",
+               "default_storage_filter_none_description": "创建一个新的仓库或放下新的储物箱时, 默认存储的种类将被设置为'无', 而非'全部'.",
+               "default_mining_zones_suspended": "挖掘开始即暂停",
+               "default_mining_zones_suspended_description": "当画出一块挖掘区域时, 自动暂停挖掘, 等待玩家手动解除暂停才开始挖掘.",
                "show_hearthling_paths": "显示炉民路径",
                "show_hearthling_paths_description": "显示你的炉民要走的路径",
                "max_citizens": "人口上限",
@@ -1538,7 +1534,7 @@
                "localization": "这难道是个翻译模组?",
                "loading_namespace": "[ 加载中... ]",
                "mods_changed_dialog": {
-                  "title": "存在模组改动",
+                  "title": "模组使用变动",
                   "message": "应用该设置需要重新加载游戏. 现在立刻重载?",
                   "accept": "确认",
                   "cancel": "取消"
@@ -1607,13 +1603,8 @@
                   "multiplayer_menu": "多人联机菜单",
                   "harvest_menu": "采集菜单",
                   "harvest_harvest": "收集工具",
-                  "harvest_mine": "挖掘工具",
-                  "harvest_mine_block": "小方块挖掘工具",
-                  "harvest_mine_custom_block": "自定义挖掘工具",
-                  "harvest_mine_custom_block_shrink_horizontal": "挖掘: 水平缩小",
-                  "harvest_mine_custom_block_grow_horizontal": "挖掘: 水平放大",
-                  "harvest_mine_custom_block_shrink_vertical": "挖掘: 竖直缩小",
-                  "harvest_mine_custom_block_grow_vertical": "挖掘: 竖直放大",
+                  "harvest_mine_basic": "挖掘工具",
+                  "harvest_mine_custom": "超强挖掘工具",
                   "harvest_cancel": "任务取消工具",
                   "harvest_loot": "掠夺工具",
                   "harvest_clear": "销毁工具",
@@ -1686,7 +1677,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24.9.2 适用于 r843 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24.10.2 适用于 r848 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -1695,13 +1686,13 @@
             },
             "mod_conflic_dialog": {
                "title": "检测到有冲突的模组!",
-               "message": "警告: 你有两个使用相同命名空间的冲突模组. 请在模组界面中确保只激活其中一个使用该命名空间的模组.<br>如果在相同目录下同时存在'.smod'模组文件与该模组的文件夹, 文件夹将会被优先使用. 受影响的模组有: <br><br>",
+               "message": "警告: 你有两个使用相同命名空间的冲突模组. 请在模组界面中确保只启用其中一个使用该命名空间的模组.<br>如果在相同目录下同时存在'.smod'模组文件与该模组的文件夹, 文件夹将会被优先使用. 受影响的模组有: <br><br>",
                "accept": "继续"
             }
          },
          "mods_menu": {
             "title": "模组",
-            "note": "激活或禁用模组需重载游戏.",
+            "note": "启用或禁用模组需重载游戏.",
             "apply": "应用",
             "open_folder": "打开文件夹",
             "sections": {
@@ -1733,8 +1724,72 @@
             },
             "duplicates_dialog": {
                "title": "存在重复的模组",
-               "message": "你当前激活的模组中存在同名模组. 请确保最多只激活其中一个版本. 当前重复的模组有:<br><br>",
+               "message": "你当前启用的模组中存在同名模组. 请确保最多只启用其中一个版本. 当前重复的模组有:<br><br>",
                "ok": "OK"
+            }
+         },
+         "load_match_mods": {
+            "title": "模组有异",
+            "note": "游戏上次存档时的模组与你当前启用的模组不同.",
+            "old_save_note": "上次游戏存档时模组并未记录. 这是你当前启用的模组.",
+            "warning_dialog": {
+               "title": "警告",
+               "message": "使用不同于游戏云存档上记录的模组游玩可能会发生未知的错误或崩溃. 确定继续?",
+               "continue": "继续",
+               "cancel": "取消"
+            },
+            "statuses": {
+               "missing": {
+                  "header": "模组缺漏",
+                  "description": "这些模组不见了 (即: 被删除了或取消订阅了)."
+               },
+               "type_mismatch": {
+                  "header": "版本不同",
+                  "description": "存档中与当前游戏中的模组版本不同."
+               },
+               "hash_mismatch": {
+                  "header": "模组改动",
+                  "description": "自从上次存档后这些模组的内容有改动."
+               },
+               "additional": {
+                  "header": "新模组",
+                  "description": "这些模组在存档中没有记录."
+               },
+               "disabled": {
+                  "header": "模组禁用",
+                  "description": "这些模组被禁用了."
+               },
+               "normal": {
+                  "header": "准备就绪",
+                  "description": "上次存档以来这些模组未发生改变."
+               }
+            },
+            "descriptions": {
+               "apply_saved": "启用存档中使用的模组, 并禁用其他模组.",
+               "continue_anyway": "使用当前模组设置. 但这可能会导致错误."
+            },
+            "buttons": {
+               "continue_anyway": "继续使用当前模组",
+               "apply_saved": "应用存档模组然后继续"
+            }
+         },
+         "load_match_mod_order": {
+            "title": "模组顺序有异",
+            "note": "游戏上次存档时的模组顺序与你当前启用的模组顺序不同.",
+            "old_save_note": "上次游戏存档时模组顺序并未记录. 这是你当前启用的模组顺序.",
+            "warning_dialog": {
+               "title": "警告",
+               "message": "使用不同于游戏云存档上记录的模组顺序游玩可能会发生未知的错误或崩溃. 确定继续?",
+               "continue": "继续",
+               "cancel": "取消"
+            },
+            "descriptions": {
+               "apply_saved": "使用存档中的顺序.",
+               "continue_anyway": "可能导致错误."
+            },
+            "buttons": {
+               "continue_anyway": "使用当前顺序",
+               "apply_saved": "应用存档顺序"
             }
          },
          "mods_sync": {
@@ -4019,7 +4074,7 @@
                               "reward_message": "由崛起之都的市民一致同意, 我们承认:",
                               "reward_message_ctd": "该据点有意力争成为一个与自然合为一体的地方.",
                               "achievements": {
-                                 "001": "植物作物生长速度加成25%",
+                                 "001": "植物和作物生长速度均加成25%",
                                  "000": "树木产木材加成25%",
                                  "002": "植物美丽值加倍"
                               }
@@ -4053,7 +4108,8 @@
                               "reward_message": "由崛起之都的市民一致同意, 我们承认:",
                               "reward_message_ctd": "该村落有意证明其拥有最为幸福的炉民, 衣食无忧, 安居乐业.",
                               "achievements": {
-                                 "000": "依据炉民心情大幅提升每日更新面板数值"
+                                 "000": "依据炉民心情大幅提升每日更新面板数值",
+                                 "001": "随机每日Buff"
                               }
                            },
                            "shrine_upgrade_guildmaster": {
@@ -4078,7 +4134,7 @@
                               "achievements": {
                                  "001": "草药师的树莓丛",
                                  "003": "石匠幸运喷泉",
-                                 "000": "每日幸运buff",
+                                 "000": "智力, 体能, 精神各+1!",
                                  "002": "铁匠装饰",
                                  "004": "三级音乐"
                               }
@@ -4120,7 +4176,7 @@
                                     },
                                     "clergy_cont": {
                                        "bulletin_message": {
-                                          "00": "教堂中有句格言 <i>'好运垂怜善者'</i>, 受到祝福的丰收之喷泉也确是以魔法般的保佑镇民健康积极的力量而闻名.<br><br>请考虑通过建造一座教堂式的喷泉来向世界展示你们的善良.<br><br><font size=-1><i>建成丰收之喷泉会每天给镇民一个随机buff. 来碰运气吧!</i></font>"
+                                          "00": "教堂中有句格言 <i>'好运垂怜善者'</i>, 受到祝福的丰收之喷泉也确会对人们的智力, 体能和精神带来好处.<br><br>请考虑通过建造一座教堂式的喷泉来向世界展示你们的善良.<br><br><font size=-1><i>建成丰收之喷泉会给镇民的智力, 体力和精神三种属性数值都加1点!</i></font>"
                                        },
                                        "bulletin_title": "恩贝尔·明顿",
                                        "dialog_title": "恩贝尔·明顿",
@@ -4219,7 +4275,7 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "As this shrine bestows its blessing on you all with each passing day, take a moment to reflect on the world, its mysteries, and its many bounties.<br/><br/>May your Town always be a happy home for its people, and a wellspring for the generosity of the Church of Plenty."
+                                          "00": "这座圣碑祝福着你们, 你们在忙碌之余也要不断探寻这个世界, 探寻它的奥秘与极限.<br/><br/>愿你们的小镇永远是片乐土, 也像这座喷泉一样永远慷慨涌流."
                                        },
                                        "bulletin_title": "恩贝尔继续说道",
                                        "dialog_title": "恩贝尔·明顿, 传教士",
@@ -4335,13 +4391,13 @@
                      "dialog_nodes": {
                         "msg_final": {
                            "bulletin_message": {
-                              "00": "你会用哪座圣碑来跨入城镇门槛?<br>[仍使用二级城镇任务! 我们尽量早点把东西赶出来!]<br><br><font size=-1>华贵圣碑 (随机给俩buff!)<br><br>骁勇圣碑 ([还在做, 还没有→WIP, not in yet!] 传说武器)<br><br>佳构圣碑 (解锁师匠级的工艺品! 4倍于卓越级的美丽值和价格!)</font>"
+                              "00": "你会用哪座圣碑来跨入城镇门槛?<br><br><font size=-1>富裕圣碑 (你的所有炉民的三项属性: 智力, 体能, 和精神各+1!)<br><br>骁勇圣碑 (传说武器)<br><br>奇技圣碑 (解锁师匠品质物品! 是四倍于卓越品质物品的美丽值和价钱!)</font>"
                            },
                            "bulletin_title": "选择一座圣碑!",
                            "dialog_title": "选择一座圣碑!",
                            "choice_000": "富裕",
                            "choice_001": "骁勇",
-                           "choice_002": "技艺"
+                           "choice_002": "奇技"
                         }
                      }
                   },
@@ -4351,7 +4407,7 @@
                   },
                   "deity": {
                      "name": "丰收之喷泉",
-                     "description": "<i>这份城镇认定展示了对伶俜之人的慷慨与友善.</i><ul><li>每天随机获得一个buff</li><li>解锁自然主题的装饰配方</li></ul>"
+                     "description": "<i>这份城镇认定展示了对伶俜之人的慷慨与友善.</i><ul><li>所有炉民+1智力, 体能和精神</li><li>解锁自然主题的装饰配方</li></ul>"
                   },
                   "valor": {
                      "name": "希德的骁勇",
@@ -4473,7 +4529,7 @@
                   },
                   "cheer": {
                      "name": "欢愉之石炉",
-                     "description": "<i>证明幸福, 衣食无忧, 是宜居的地方.</i><ul><li>根据炉民整体幸福值大幅提升每日更新净产值的面板数值</li></ul>"
+                     "description": "<i>证明幸福, 衣食无忧, 是宜居的地方.</i><ul><li>根据炉民整体幸福值大幅提升每日更新净产值的面板数值</li><li>每天随机为你的炉民带来一个不同的Buff.</li></ul>"
                   }
                },
                "shrine_quest_deity": {
@@ -4834,6 +4890,10 @@
                   "display_name": "智慧日",
                   "description": "经验获取加成20%."
                }
+            },
+            "stat_buff": {
+               "display_name": "神圣祝福",
+               "description": "主要属性提升1点."
             }
          }
       },
@@ -9980,7 +10040,7 @@
             "town_banner_nature_ghost": {
                "display_name": "蓬勃旗帜",
                "description": "家的标志",
-               "town_bonus_description": "<i>该据点会与大自然和谐统一.</i><ul><li>树木产出木材增加25%</li><li>植物作物生长提速25%</li><li>植物美丽值翻倍</li></ul>"
+               "town_bonus_description": "<i>该据点会与大自然和谐统一.</i><ul><li>树木产出木材增加25%</li><li>植物作物生长均提速25%</li><li>植物美丽值翻倍</li></ul>"
             },
             "town_banner_nature_token_iconic": {
                "display_name": "蓬勃小旗帜",
@@ -9990,7 +10050,7 @@
       },
       "loot": {
          "gold": {
-            "display_name": "金币",
+            "display_name": "金币盒",
             "description": "这有[str(self.stonehearth:stacks.stacks)]金币!",
             "label": "金币"
          },
@@ -10031,7 +10091,7 @@
             },
             "zilla": {
                "display_name": "斯拉",
-               "description": "斯拉的到来使大地也为之震颤."
+               "description": "斯拉到来, 大地也为之震颤."
             },
             "cougar": {
                "display_name": "美洲狮",
@@ -10182,7 +10242,7 @@
             },
             "sarcophagus": {
                "display_name": "石棺",
-               "description": "保存着死者的遗体"
+               "description": "装着死者的遗体"
             },
             "tombstone": {
                "display_name": "墓碑",
@@ -10203,7 +10263,7 @@
          },
          "rabbit": {
             "display_name": "... ",
-            "description": "兔人"
+            "description": "一只兔"
          },
          "ogres": {
             "ogre": {
@@ -10232,7 +10292,7 @@
          "mammoth": {
             "mammoth": {
                "display_name": "猛犸象",
-               "description": "大大的,毛茸茸的小动物"
+               "description": "大大的, 毛茸茸的小动物"
             }
          },
          "evil": {
