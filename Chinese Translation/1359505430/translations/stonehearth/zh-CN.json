@@ -112,6 +112,9 @@
                "floor": "地板",
                "roof": "房顶",
                "stairs": "阶梯"
+            },
+            "template_list": {
+               "title": "建筑模板"
             }
          },
          "game_speed": {
@@ -191,6 +194,7 @@
             "offline": "下线",
             "connecting": "连接中",
             "embarking": "开始游戏中",
+            "invite": "邀请",
             "player": "玩家",
             "players": "玩家们",
             "disconnect_player": "断线该玩家",
@@ -440,7 +444,8 @@
             "placed": "已放置",
             "placement_tags": {
                "turret": "抛射物发射器",
-               "trap": "陷阱"
+               "trap": "陷阱",
+               "golem": "傀儡"
             },
             "quality": {
                "quality-2": "精巧品质",
@@ -466,6 +471,8 @@
             "show_character_sheet": "人物详情",
             "button_suspend": "暂停",
             "button_resume": "继续",
+            "change_all": "改变所有",
+            "change_all_title": "让所有炉民为其他城镇服务",
             "tab": {
                "tasks": "任务",
                "groups": "分组"
@@ -902,6 +909,7 @@
             "reembarkation": {
                "title": "一段新的征程!",
                "dismiss": "再推迟一会儿",
+               "reject": "下个月再说吧",
                "confirm": "出发",
                "prompt": "选择一队炉民离开这里开始新的冒险, 同时选择一些物品让他们一起带着!"
             },
@@ -930,6 +938,10 @@
             "inventory_full": {
                "title": "城镇库存已满",
                "message": "你已达到城镇库存上限! 每位炉民可以给小镇增加物品容量上限. 若小镇物品过剩, 炉民将停止采集. 而制作的箱子等物品容器也算作物品且不会增加城镇可容纳的物品总上限. 请使用销售或者摧毁的方式减少物品数量."
+            },
+            "quest_bulletin_dialog": {
+               "description": "描述",
+               "rewards": "奖励"
             }
          },
          "build_mode2": {
@@ -964,6 +976,31 @@
                   "destroy": "无法破坏不属于你的建筑.",
                   "build": "你无法命令建造, 暂停, 继续建造不属于你的建筑."
                }
+            },
+            "build_mode_title": "建筑与设计",
+            "blocks_tool_context": {
+               "blocks": "方块",
+               "roof": "房顶",
+               "wall": "墙体",
+               "cycle_normal": "标准前方"
+            },
+            "roof_tool_context": {
+               "drop_walls": "放置墙体",
+               "slope": "斜度",
+               "front": "前",
+               "back": "后",
+               "left": "左",
+               "right": "右"
+            },
+            "stairs_designer": {
+               "block_stairs": "台阶",
+               "free_stairs": "自由台阶",
+               "apply_block_style": "应用方块模式",
+               "apply_free_style": "应用自由模式",
+               "rotate": "旋转"
+            },
+            "stairs_tool_context": {
+               "hollow": "镂空"
             }
          },
          "build_mode": {
@@ -1270,7 +1307,9 @@
             "orders_tab": "订单",
             "missing_ingredients": "缺少材料: ",
             "tooltip_appeal_stat": "美丽值",
-            "tooltip_net_worth_stat": "金币数"
+            "tooltip_net_worth_stat": "金币数",
+            "damage_stat": "攻击",
+            "armor_stat": "防御"
          },
          "town_overview": {
             "title": "城镇信息",
@@ -1677,7 +1716,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24.10.2 适用于 r848 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24.10.5 适用于 r852 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -1695,15 +1734,19 @@
             "note": "启用或禁用模组需重载游戏.",
             "apply": "应用",
             "open_folder": "打开文件夹",
+            "quit_to_menu": "保存并退回首页",
+            "base_mod": "基础模组",
             "sections": {
                "base_mods": {
                   "title": "基础模组"
                },
                "unmanaged_mods": {
-                  "title": "本地模组"
+                  "title": "本地模组",
+                  "templates_title": "你的模板"
                },
                "workshop_mods": {
                   "title": "已订阅的创意工坊模组",
+                  "templates_title": "订阅模板包",
                   "browse_workshop": "浏览Steam创意工坊",
                   "unsubscribe": "取消订阅",
                   "view_in_workshop": "查看创意工坊中的该模组",
@@ -1713,8 +1756,17 @@
                },
                "my_items": {
                   "title": "上传创意工坊",
+                  "templates_title": "上传模板包",
                   "create_new_mod": "创建新模组"
                }
+            },
+            "tooltips": {
+               "open_folder": "打开模组文件夹",
+               "view_in_workshop": "在创意工坊中浏览模组",
+               "toggle_view_templates": "展开/收拢模板列表",
+               "edit_templates": "编辑该模组的模板列表",
+               "upload": "上传模组至创意工坊",
+               "unsubscribe": "取消订阅模组"
             },
             "unsubscribe_dialog": {
                "title": "是否确认取消订阅?",
@@ -1777,6 +1829,8 @@
             "title": "模组顺序有异",
             "note": "游戏上次存档时的模组顺序与你当前启用的模组顺序不同.",
             "old_save_note": "上次游戏存档时模组顺序并未记录. 这是你当前启用的模组顺序.",
+            "saved_order": "已保存的顺序",
+            "current_order": "当前顺序",
             "warning_dialog": {
                "title": "警告",
                "message": "使用不同于游戏云存档上记录的模组顺序游玩可能会发生未知的错误或崩溃. 确定继续?",
@@ -1837,6 +1891,8 @@
             "opt_preview_image_placeholder": "未选择",
             "opt_preview_image_info": "(图片大小限制1MB)",
             "opt_preview_image_dialog_title": "打开预览文件",
+            "opt_building_template_preview_images": "使用建筑模板截图作为附加预览图",
+            "opt_building_template_preview_images_tooltip": "给你模板模组中的每一个建筑模板附加一张预览图.<br><br><font color='#eb4c36'><strong>警告:</strong></font> 这会覆盖该steam创意工坊物品中所有当前的预览图(主预览图除外), 并换上你的模板截图.",
             "opt_change_note": "更新日志",
             "opt_change_note_placeholder": "简述对模组作的更改",
             "upload": "上传",
@@ -1850,6 +1906,7 @@
             "exceeded_byte_limit": "* 超出大小上限 ([str(byte_limit)])",
             "debug_mod": "漏洞排除模组",
             "localization_mod": "这难道是个翻译模组?",
+            "building_template_mod": "这难道是个建筑模板模组?",
             "errors": {
                "steam_not_present": "Steam不在运行中",
                "update_handle_invalid": "无法更新模组:[str(modname)]. 请检查是否拥有更新该Steam创意工坊物品的权限.",
@@ -1888,6 +1945,15 @@
                "failed": "Steam无法创建该模组"
             }
          },
+         "edit_template_mod": {
+            "title": "编辑[str(modname)]模组中的模板",
+            "available_templates": "可用模板",
+            "mod_templates": "[str(modname)]",
+            "confirm": {
+               "title": "保存模组模板",
+               "message": "确认保存对模组中模板列表的更改? 该指令不可撤销."
+            }
+         },
          "select_game_story": {
             "title": "选择你的冒险者",
             "story_start": "这是...的故事",
@@ -1922,6 +1988,11 @@
          "select_roster": {
             "reroll_citizens": "摇选所有炉民",
             "reembark_button": "选择已保存",
+            "delete_crew": "删除",
+            "delete_crew_confirm_title": "删除人员?",
+            "delete_crew_confirm_message": "是否确认永久删除选中的冒险小分队成员?",
+            "delete_crew_confirm_yes": "是的",
+            "delete_crew_confirm_no": "取消",
             "select_crew": "选择",
             "cancel_crew": "取消",
             "reembark_title": "选择已保存的炉民",
@@ -1940,6 +2011,9 @@
          "loadout": {
             "title": "选择初始资源",
             "start": "开始"
+         },
+         "template_palette": {
+            "delete_template": "该模板文件将被删除"
          }
       },
       "debug": {
@@ -5183,6 +5257,11 @@
             "description": "取消放置这个物品并放回到仓库去.",
             "disabled_description": "这个物品正在使用, 尝试取消部署."
          },
+         "undeploy_golem": {
+            "display_name": "取消傀儡部署",
+            "description": "关闭这个傀儡, 把它放回储物区.",
+            "disabled_description": "当前状态无法关闭."
+         },
          "unit_control": {
             "abilities": {
                "snare_trap": {
@@ -6352,13 +6431,13 @@
          "featherweight": {
             "featherweight_trait": {
                "display_name": "身轻如燕",
-               "description": "[name(i18n_data.entity)]总是喜欢跑得比别人快一点, 不过他们也因此不能拿太多东西."
+               "description": "[name(i18n_data.entity)]总是喜欢跑得比别人快一点, 除非他们在搬东西, 那样反而会慢很多."
             }
          },
          "pack_mule": {
             "pack_mule_trait": {
                "display_name": "人形骡子",
-               "description": "这位炉民力气大得能移山! 他们可以拿更多的东西在背包里, 不过也会因为重而导致行走速度略微降低."
+               "description": "这位炉民就是喜欢搬东西! 不知为何, 他们在包包里装着东西的时候可以走得快一点."
             }
          },
          "glutton": {
@@ -10313,15 +10392,15 @@
          },
          "golems": {
             "golem_harvesting": {
-               "display_name": "蛮牛",
-               "description": "躯体由石头做成, 被远古的知识赋予了行动力."
+               "display_name": "蛮牛傀儡",
+               "description": "采集傀儡, 躯体由石头做成, 被远古的知识赋予了行动力."
             },
             "golem_mining": {
-               "display_name": "鼹鼠",
+               "display_name": "鼹鼠傀儡",
                "description": "挖掘傀儡, 躯体由石头做成, 被远古的知识赋予了行动力."
             },
             "golem_restocking": {
-               "display_name": "蟋蟀",
+               "display_name": "蟋蟀傀儡",
                "description": "搬运傀儡, 躯体由石头做成, 被远古的知识赋予了行动力."
             }
          }
