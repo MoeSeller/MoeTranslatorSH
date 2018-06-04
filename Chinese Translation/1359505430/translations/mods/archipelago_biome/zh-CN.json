@@ -35,6 +35,18 @@
 				"description": "也被叫做星鱼, 不过不是鱼哦."
 			}
 		},
+		"construction": {
+			"bead_door": {
+				"display_name": "珠帘门",
+				"description": "从天花板上荡下来的线上串着许许多多的珠子",
+				"flavor": "有风的时候很吵."
+			},
+			"porthole": {
+				"display_name": "舷窗",
+				"description": "船上很常见的小圆窗",
+				"flavor": "船上的舷窗为什么是圆的呢?<br>因为这样就算窗坏了, 水也只能圆润地进来了呀."
+			}
+		},
 		"containers": {
 			"input_fish_rack": {
 				"display_name": "晒鱼架",
@@ -102,14 +114,6 @@
 					"flavor": "出口必备"
 				}
 			},
-			"hammock": {
-				"display_name": "吊床",
-				"description": "午后小憩",
-				"recipe": {
-					"description": "睡觉用",
-					"flavor": "螃蟹可以掐到你, 从下面..."
-				}
-			},
 			"lei": {
 				"display_name": "花冠",
 				"description": "可以挂在墙上的花花",
@@ -161,6 +165,11 @@
 					"description": "立在地上的一根长棍, 另一头是可以室外照明的光源.",
 					"flavor": "派对派对嗨起来, 虫儿虫儿快走开."
 				}
+			},
+			"totem": {
+				"display_name": "图腾",
+				"description": "海滩动物全家桶",
+				"flavor": "一个乌龟, 一只螃蟹还有一只海鸥"
 			}
 		},
 		"food": {
@@ -253,6 +262,16 @@
 			"sashimi": {
 				"display_name": "生鱼刺身",
 				"description": "切成片的新鲜的生鱼"
+			}
+		},
+		"furniture":{
+			"hammock": {
+				"display_name": "吊床",
+				"description": "午饭后的小憩",
+				"recipe": {
+					"description": "睡觉用",
+					"flavor": "螃蟹能掐到你, 从下面..."
+				}
 			}
 		},
 		"gizmos": {
@@ -503,6 +522,11 @@
 			"fisher_rod": {
 				"display_name": "鱼竿",
 				"description": "长长的, 弹性十足的竿子, 可以用来捕鱼"
+			},
+			"fisher_firepit": {
+				"display_name": "火堆",
+				"description": "烤制常见的熟食",
+				"flavor": "高品质的食物还是需要拜托您的主厨"
 			},
 			"fisher_outfit": {
 				"display_name": "渔民外套",
