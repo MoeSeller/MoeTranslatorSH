@@ -91,13 +91,28 @@
                "yes": "是!",
                "no": "否"
             },
+            "save_building_confirm": {
+               "title": "保存当前建筑",
+               "message": "是否将当前建筑保存为模板?",
+               "yes": "是!",
+               "no": "否"
+            },
+            "delete_template_confirm": {
+               "title": "删除模板",
+               "message": "是否确认删除此模板?",
+               "yes": "是!",
+               "no": "否"
+            },
             "saving_building": "保存模板中...",
             "success_saving_building": "模板已保存.",
             "error_saving_building": "模板保存出错!",
+            "deleting_template": "删除模板中...",
+            "success_deleting_template": "模板已删除.",
+            "error_deleting_template": "模板删除出错!",
             "plan_job_status": {
                "COMPLETE": "已开始建造!!",
                "INVALID_BLUEPRINTS": "该建筑存在无效的结构.  请确保建筑中没有结构显示为红色!",
-               "PLANNING_ERROR_GENERIC": "你的炉民看不懂该建筑应该怎么造!  有问题的方块已标红, 请将模板发送至石炉团队以供调查."
+               "PLANNING_ERROR_GENERIC": "你的炉民看不懂这座建筑应该怎么造!  有问题的区域已标红."
             },
             "building_status": {
                "build_button": "建造",
@@ -1857,6 +1872,9 @@
             },
             "game_info": "[str(biomeName)]: [str(biomeLocation)], [str(gameMode)]",
             "missing_note": "你准备加入的游戏包含下列模组. 必须拥有相同版本的模组才可进入游戏.",
+            "version_note": "<span class=\"warning\">警告:</span> 你石炉的版本与正在连接的版本不匹配!<br>这个情况可能导致无法连接, 或在游戏过程中产生未知错误.",
+            "your_version": "你的版本: [str(version)]",
+            "their_version": "他们的版本: [str(version)]",
             "continue": "继续游戏",
             "loading": "加载游戏...",
             "subscribe_all": "全部订阅",
