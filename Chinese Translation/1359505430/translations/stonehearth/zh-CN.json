@@ -2,24 +2,24 @@
    "ai": {
       "actions": {
          "status_text": {
-            "chase_entity": "追逐 [name(data.target)]中...",
-            "eat_item": "享用 [name(data.target)]中...",
-            "fill_storage": "填充 [name(data.target)]中...",
-            "harvest_crop": "收获 [name(data.target)] 中...",
-            "harvest_resource": "采集 [name(data.target)] 中...",
-            "harvest_resource_node": "收集 [name(data.target)] 中...",
-            "light_firepit": "点火 [name(data.target)] 中...",
-            "place_item_on_structure": "放置 [name(data.target)] 中...",
-            "work_at_workshop": "制作 [str(data.craftable_name)] 中...",
-            "attack_melee_adjacent": "攻击 [name(data.target)] 中...",
-            "heal_ranged_in_sight": "治疗 [name(data.target)] 中...",
-            "wait_at_safety_point": "在安全旗帜附近等候中...",
-            "repair_entity": "修复 [name(data.target)] 中...",
-            "resting_by_fire": "在篝火旁休息中...",
-            "claiming_animal": "领养动物中...",
-            "looking_for_animals": "放养动物中...",
-            "collect_ingredient": "准备材料中...",
-            "build_workshop": "建造工作台中...",
+            "chase_entity": "追逐[name(data.target)]中",
+            "eat_item": "享用[name(data.target)]中",
+            "fill_storage": "填充[name(data.target)]中",
+            "harvest_crop": "收获[name(data.target)]中",
+            "harvest_resource": "采集[name(data.target)]中",
+            "harvest_resource_node": "收集[name(data.target)]中",
+            "light_firepit": "点亮[name(data.target)]中",
+            "place_item_on_structure": "放置[name(data.target)]中",
+            "work_at_workshop": "制作[str(data.craftable_name)]中",
+            "attack_melee_adjacent": "攻击[name(data.target)]中",
+            "heal_ranged_in_sight": "治疗[name(data.target)]中",
+            "wait_at_safety_point": "在安全点附近等候中",
+            "repair_entity": "修复[name(data.target)]中",
+            "resting_by_fire": "在篝火旁休息中",
+            "claiming_animal": "领养动物中",
+            "looking_for_animals": "寻找动物中",
+            "collect_ingredient": "准备材料中",
+            "build_workshop": "建造工作台中",
             "death": "濒死中...",
             "away_from_town": "远离小镇",
             "eat": "觅食中...",
@@ -34,31 +34,32 @@
             "flee": "逃跑中...",
             "panic": "恐慌中...",
             "mine": "挖掘...",
-            "sleep_in_bed": "睡觉中...",
+            "sleep_in_bed": "睡觉中",
             "sleep_on_ground": "睡在地上",
-            "check_bait_trap": "检查陷阱中...",
-            "set_bait_trap": "设置陷阱中...",
-            "survey_trapping_grounds": "勘察捕猎区域中...",
-            "steal_bait": "偷吃诱饵中...",
-            "build_ladder": "建造梯子中...",
-            "promote": "转职中...",
-            "move_item_to_storage": "把物品搬运到仓库中...",
+            "check_bait_trap": "检查陷阱中",
+            "set_bait_trap": "设置陷阱中",
+            "survey_trapping_grounds": "勘察捕猎区域中",
+            "steal_bait": "偷吃诱饵中",
+            "build_ladder": "建造梯子中",
+            "promote": "转职中",
+            "move_item_to_storage": "把物品搬运到仓库中",
             "teardown_ladder": "拆除梯子",
-            "drop_item_near_workshop": "清理工作台中...",
-            "fabricate_structure": "建造中...",
-            "teardown_structure": "拆除结构中...",
-            "feed_pasture_animals": "饲养小动物中...",
-            "restock": "存储物品中中...",
+            "drop_item_near_workshop": "清理工作台中",
+            "fabricate_structure": "建造中",
+            "teardown_structure": "拆除结构中",
+            "feed_pasture_animals": "饲养小动物中",
+            "restock": "存储物品中",
             "resting_from_injuries": "需要治疗",
-            "healing": "治疗伤口中...",
-            "healing_target": "治疗 [name(data.target)] 中...",
-            "dig_foundation": "挖掘地基中...",
-            "unit_hold_location": "定点防御中...",
+            "healing": "治疗伤口中",
+            "healing_target": "治疗[name(data.target)]中",
+            "dig_foundation": "挖掘地基中",
+            "unit_hold_location": "定点防御中",
             "talk": "与[name(data.target)]谈话中",
             "incapacitated": "濒死",
             "rescue_citizen": "正在营救 [name(data.target)]",
             "recuperating": "恢复中",
-            "celebrating": "庆祝中"
+            "celebrating": "庆祝中",
+            "confused": "混乱中"
          }
       }
    },
@@ -144,15 +145,17 @@
             "pause_overlay": "暂停中"
          },
          "visions": {
-            "building_vision": "建筑显示模式",
+            "building_vision": "建筑视图",
             "building_vision_description": "改变墙体的可见性,允许你看到建筑物内部.",
-            "terrain_slice_vision": "地层显示模式",
+            "terrain_slice_vision": "地层视图",
             "terrain_slice_vision_icon_name": "地层",
             "terrain_slice_vision_description": "改变地形,允许您看到地下结构.改变高度,看到不同的地层.",
-            "terrain_slice_vision_up": "提升",
-            "terrain_slice_vision_down": "降低",
+            "terrain_slice_vision_up": "提高地层 (5层)",
+            "terrain_slice_vision_up_single": "提高地层",
+            "terrain_slice_vision_down_single": "降低地层",
+            "terrain_slice_vision_down": "降低地层 (5层)",
             "terrain_xray_vision_icon_name": "透视",
-            "terrain_xray_vision": "地形透视模式",
+            "terrain_xray_vision": "地形透视视图",
             "terrain_xray_vision_description": "看到透视的地形,切换完整和平面的视图模式来显示地下",
             "terrain_xray_vision_flat": "平面",
             "terrain_xray_vision_full": "全部",
@@ -616,7 +619,7 @@
                      "tip_title": "点击拖动鼠标以收获资源",
                      "tip_description": "鼠标右键退出"
                   },
-                  "mining_basic": {
+                  "mine_basic": {
                      "display_name": "挖掘隧道",
                      "description": "可以挖掉4x4的区域做通道或矿洞",
                      "tip_title": "点击并拖动以挖掘",
@@ -1517,17 +1520,25 @@
             "gameplay": "游戏设置",
             "controls": "快捷键控制",
             "card": "显卡适配器: ",
+            "gfx_custom": "自定义",
+            "gfx_minimum": "最低",
+            "gfx_low": "低",
+            "gfx_medium": "中",
+            "gfx_high": "高",
+            "gfx_ultra": "极高",
             "gfx_cardinfo": "[str(gpuRenderer)] ([str(gpuDriver)]) ",
             "gfx_enable_shadows": "阴影",
             "gfx_enable_vsync": "垂直同步",
             "gfx_enable_fullscreen": "全屏",
-            "gfx_msaa": "抗锯齿级别",
+            "gfx_msaa": "启用抗锯齿",
             "gfx_shadows": "阴影细节",
             "gfx_max_lights": "最大光源数量",
             "gfx_max_shadows": "最大阴影效果",
             "gfx_drawdistance": "景深",
             "gfx_enable_ssao": "环境光遮蔽",
-            "gfx_use_high_quality": "高画质",
+            "gfx_use_high_quality": "禁用延迟渲染器",
+            "gfx_use_recommended_graphics": "使用推荐的显示设置",
+            "gfx_disable_deferred_renderer_description": "<font color='#eb4c36'><strong>警告:</strong></font> 禁用延迟渲染会导致: 游戏在大型城市且有许多光源的情况下性能下降. 禁用需三思.",
             "shadow_0": "关闭",
             "shadow_1": "一点点",
             "shadow_2": "一些",
@@ -1556,11 +1567,10 @@
             },
             "gameplay_tab": {
                "title": "游戏设置",
-               "experimental": "实验",
-               "experimental_description": "这些设置仍在开发中,可能不稳定!使用后果概不负责!",
-               "enable_speed_3": "使用 3 倍数加速游戏运行",
-               "enable_speed_3_note": "注意: 较大型的城镇开启 游戏加速 X3 会使得游戏性能缓慢!",
-               "enable_speed_3_description": "在右下角添加一个新的速度选择的按钮  游戏加速 X4 !",
+               "advanced": "不稳定设置",
+               "advanced_description": "<font color='#eb4c36'><strong>警告:</strong></font> 这些设置可能影响游戏稳定性与性能! 后果自负!",
+               "enable_speed_3": "启用三级加速",
+               "enable_speed_3_description": "在右下角新增一个加速选项, 使用时使游戏进程速度x4!<br><br><font color='#eb4c36'><strong>警告:</strong></font> 大型城镇使用三级加速可能会使得游戏性能缓慢. 务必注意!",
                "default_storage_filter_none": "默认存储东西时不进行分类",
                "default_storage_filter_none_description": "创建一个新的仓库或放下新的储物箱时, 默认存储的种类将被设置为'无', 而非'全部'.",
                "default_mining_zones_suspended": "挖掘开始即暂停",
@@ -1568,12 +1578,15 @@
                "show_hearthling_paths": "显示炉民路径",
                "show_hearthling_paths_description": "显示你的炉民要走的路径",
                "max_citizens": "人口上限",
+               "max_citizens_description": "改变城镇可接纳炉民最大数量.<br><br><font color='#eb4c36'><strong>警告:</strong></font> 20位以上可能导致性能问题, 包括AI不反应/罢工和行走停顿.",
                "randomize_attributes": "随机生成炉民属性",
                "randomize_attributes_description": "如果启用,炉民的创造、身体素质和精神毅力属性会完全随机分配而非平衡分配.",
                "auto_loot": "自动掠夺",
                "auto_loot_description": "当敌人掉落战利品时,自动标记捡起来.",
                "building_auto_queue_crafters": "建筑内置部件自动制作",
-               "building_auto_queue_crafters_description": "当开始建筑时,基本所有家具与装置会自动添加至相应工匠的制作列表中."
+               "building_auto_queue_crafters_description": "当开始建筑时,基本所有家具与装置会自动添加至相应工匠的制作列表中.",
+               "infinite_inventory": "禁用库存上限",
+               "infinite_inventory_description": "这个选项将会移除小镇可拥有物品的最大量.<br><br>注意: 重启游戏方可生效!<br><br><font color='#eb4c36'><strong>警告:</strong></font> 库存过多影响游戏性能."
             },
             "mods": "Mods",
             "mods_tab": {
@@ -1644,8 +1657,10 @@
                   "vision_building_toggle": "切换建筑视图",
                   "vision_xray_toggle": "透视视图",
                   "vision_slice_toggle": "地层视图",
-                  "vision_slice_up": "上一片地层",
-                  "vision_slice_down": "下一片地层",
+                  "vision_slice_up": "提高地层 (5层)",
+                  "vision_slice_up_single": "上一层",
+                  "vision_slice_down_single": "下一层",
+                  "vision_slice_down": "降低地层 (5层)",
                   "vision_appeal_toggle": "开启美丽值视图",
                   "speed_pause": "0倍速",
                   "speed_toggle_pause": "暂停",
@@ -1731,7 +1746,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24.11.1 适用于 r859 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 r862 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -2028,7 +2043,8 @@
          },
          "loadout": {
             "title": "选择初始资源",
-            "start": "开始"
+            "start": "开始",
+            "pets_checkbox": "包括一只随机异域宠物"
          },
          "template_palette": {
             "delete_template": "该模板文件将被删除"
@@ -3235,58 +3251,58 @@
                                  "dialog_nodes": {
                                     "erdene_appears": {
                                        "bulletin_message": {
-                                          "000": "干得好,镇上的孩子们.你们又度过了一个晚上.奥戈,他的魔山还有预言者,都从这片土地上永远消失了,而你们却留了下来.要庆祝吗?"
+                                          "000": "干得好, 镇上的孩子们. 你们又度过了一个晚上. 奥戈, 他的魔山还有预言者, 都从这片土地上永远消失了 ,而你们却留了下来. 要庆祝吗?"
                                        },
                                        "bulletin_title": "披着斗蓬的兽人侦察兵出现了",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵",
-                                       "choice_000": "是的!这是非常酷的",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "是的! 超棒",
                                        "choice_001": "你看起来...很伤心?"
                                     },
                                     "erdene_departs": {
                                        "bulletin_message": {
-                                          "000": "我的可汗大人叫我回家了.美丽的小镇.等到你我实力相当的那天,太阳的初升会让我们再见面的."
+                                          "000": "我的可汗大人要我回去了. 再见, 小镇. 两极平分, 又是新的一天."
                                        },
                                        "bulletin_title": "额尔德尼在思考着",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
                                        "choice_000": "再见!",
                                        "choice_001": "谢谢...的样子?"
                                     },
                                     "ogo_poem_3": {
                                        "bulletin_message": {
-                                          "000": "毫末之成薪,启明之南升.山魔已祛,前途尽见."
+                                          "000": "枯木逢春, 启明南升. 山魔已祛, 前途尽见."
                                        },
                                        "bulletin_title": "额尔德尼在思考着",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵"
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官"
                                     },
                                     "red_kiln_description": {
                                        "bulletin_message": {
-                                          "000": "我的可汗大人已经注意你们良久,现在他身患重病.等到巨星陨落,可汗大人身边的人就会把视线转向山野,寻找战斗以提升自己荣誉.奥戈的责任就转移到你身上了,会有人来找你挑战的."
+                                          "000": "我的可汗大人已经注意你们良久, 现在他身患重病. 等到巨星陨落, 可汗大人身边的人就会把视线转向山野, 寻找战斗以提升自己荣誉. 奥戈的责任就转移到你身上了, 会有人来找你挑战的."
                                        },
                                        "bulletin_title": "额尔德尼在思考着",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
                                        "choice_000": "奥戈的啥?",
-                                       "choice_001": "你们会和我们打吗?"
+                                       "choice_001": "你们的可汗要没了? 真悲伤..."
                                     },
                                     "ogo_poem_2": {
                                        "bulletin_message": {
-                                          "000": "哦,英雄总有落漠的一天,永恒只驻足于炉火的焰舌里"
+                                          "000": "哦, 英雄总有落漠的一天, 永恒只驻足于炉火的焰舌里"
                                        },
                                        "bulletin_title": "额尔德尼在思考着",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵"
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官"
                                     },
                                     "ogo_poem_4": {
                                        "bulletin_message": {
-                                          "000": "正如猴子手掌里的宝石一明一灭,上帝预言里那颗明星获得了重生"
+                                          "000": "明灭圣猕爪上琛, 更生天帝纬中辰"
                                        },
-                                       "bulletin_title": "额尔德尼在思考着",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵"
+                                       "bulletin_title": "额尔德尼思考着",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官"
                                     },
                                     "erdene_discusses": {
                                        "bulletin_message": {
-                                          "000": "以最强力的挑战,致敬最伟大的人们.力量寻找着其他的力量,力量要打败其他力量...你变强大了,就会有更多的人想来挑战你"
+                                          "000": "以强力的挑战, 致敬伟大的人们. 力量寻找着其他的力量, 力量要打败其他力量...你变强大了, 就会有更多的人想来挑战你"
                                        },
                                        "bulletin_title": "额尔德尼在思考着",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
                                        "choice_000": "更多???!",
                                        "choice_001": "我们能轻松应对!"
                                     },
@@ -3295,7 +3311,7 @@
                                           "000": "谁知道呢?我的下属一直都知道...哎,其实现在说这个也不重要了.上帝不是每天都为人,蜥蜴人,或者其他什么着想的.不管怎样,相信明天,尽你所能去发展吧."
                                        },
                                        "bulletin_title": "额尔德尼在思考着",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
                                        "choice_000": "这简直毫无帮助",
                                        "choice_001": "谢谢...的样子?"
                                     },
@@ -3304,7 +3320,7 @@
                                           "000": "要么就来拿骨头卜一卦吧,奥戈的预言者以前就在这片土地上这么干过,你也要来一下么?"
                                        },
                                        "bulletin_title": "额尔德尼在思考着",
-                                       "dialog_title": "额尔德尼,赤烬帝国的侦察兵",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
                                        "choice_000": "当然!",
                                        "choice_001": "不用了,谢谢."
                                     }
@@ -3402,7 +3418,7 @@
                                     },
                                     "ogo_relents": {
                                        "bulletin_message": {
-                                          "000": "呃!!!可是那些财宝!也好.魔山,我的朋友;他不去的话我也不去了.从现在开始你们的小镇安全了...我们等到可汗的病好了再回来"
+                                          "000": "呃!!! 可是那些财宝! 也好. 魔山, 我的朋友; 他不去的话我也不去了. 从现在开始你们的小镇安全了...等到新可汗的命令下来, 我们再回来!"
                                        },
                                        "bulletin_title": "奥戈不服地跺了跺脚",
                                        "dialog_title": "奥戈·斯伽尔邦克",
@@ -3410,14 +3426,14 @@
                                     },
                                     "ogo_notices": {
                                        "bulletin_message": {
-                                          "000": "魔山,为什么你停止了战斗?"
+                                          "000": "魔山, 为什么你停止了战斗?"
                                        },
                                        "bulletin_title": "奥戈·斯伽尔邦克挥挥手,想吸引食人魔的注意力",
                                        "dialog_title": "奥戈·斯伽尔邦克"
                                     },
                                     "mountain_asks": {
                                        "bulletin_message": {
-                                          "000": "不,我不想打了.你们呢,小人们?你们觉得如何?"
+                                          "000": "不, 我不想打了. 你们呢, 小人们? 你们觉得如何?"
                                        },
                                        "bulletin_title": "魔山挥挥大手",
                                        "dialog_title": "食人魔 魔山",
@@ -3432,7 +3448,7 @@
                                  "dialog_nodes": {
                                     "goblin_boss_notices": {
                                        "bulletin_message": {
-                                          "000": "什么?区区人类小村子胆敢亵渎我们哥布林荣耀的象征?!报复他们!!!!!"
+                                          "000": "什么? 区区人类小村子胆敢亵渎我们哥布林神圣的图腾?! 报复他们!!!!!"
                                        },
                                        "bulletin_title": "又传来一阵哥布林的号角声",
                                        "dialog_title": "哥布林 布利"
@@ -3752,14 +3768,14 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "赤色余烬相信只有战争可以令他们更加强大,虽然可汗已经逝去,但是在他的王位上将会迎来更加强大更加狡猾的王."
+                                          "00": "赤烬帝国相信只有公平的战争可以令他们更加强大, 虽然可汗已经逝去, 但是在他的王位上将会迎来更加强大更加狡猾的王."
                                        },
                                        "bulletin_title": "欧甘尔·诺尔威德首领",
                                        "dialog_title": "欧甘尔·诺尔威德首领"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "你站住!额尔德尼和我说了有关你们的故事!她说,你打败了奥戈."
+                                          "00": "你站住. 额尔德尼和我说了有关你们的故事!她说,你打败了奥戈."
                                        },
                                        "bulletin_title": "一个兽人首领途径你的小镇",
                                        "dialog_title": "欧甘尔·诺尔威德首领",
@@ -3768,14 +3784,14 @@
                                     },
                                     "msg4": {
                                        "bulletin_message": {
-                                          "00": "可汗的时代已经逝去,而地平线的那端上渗出了新的曙光.望依希德之嘱,从四色之序,以铁匠之器,铸锣于城,置之以备战."
+                                          "00": "一位可汗的时代已经逝去, 而地平线的那端上渗出了新的曙光. 尔等当依希德之嘱, 从四色之序, 以金匠之器, 铸锣于城, 置之以示备战."
                                        }
                                     },
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "虽然我来了,但我觉得你的实力来不足以抵挡我军队里的一个小队长.你眼中没有对王位的欲望."
+                                          "00": "虽然我来了, 但我觉得你的实力来不足以抵挡我军队里的一个小队长. 你眼中没有对王位的欲望."
                                        },
-                                       "choice_000": "你太粗鲁了!"
+                                       "choice_000": "太没礼貌了!"
                                     }
                                  }
                               }
@@ -3839,7 +3855,7 @@
                                  "dialog_nodes": {
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "我们只是佣兵.一直和兽人做交易,这些兽人就知道名、利、权.新可汗马上就要派兵来了,我们就在这里安营扎寨,又可以大赚一笔了."
+                                          "00": "我们只是佣兵. 我们在这里扎营, 兽人就给我们钱. 这些兽人就知道名、权, 恨不得马上找个新可汗. 他们快要派兵来了, 我们又要打扫战场了."
                                        },
                                        "bulletin_title": "营地哥布林",
                                        "dialog_title": "营地哥布林",
@@ -3847,17 +3863,17 @@
                                     },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "你认识?...不不不我们不认识你们,你说我们都长一个样?"
+                                          "00": "你认识?...不不不我们不认识你们, 你说我们都长一个样?!"
                                        },
                                        "bulletin_title": "一些哥布林老面孔开始在你小镇周围搭起了小棚屋",
                                        "dialog_title": "营地哥布林",
                                        "choice_000": "或许吧",
-                                       "choice_001": "不要?"
+                                       "choice_001": "不一样嘛?"
                                     },
                                     "msg2": {
                                        "bulletin_message": {
-                                          "000": "你要庆幸我们忙着呢没空管你们!看到我们在干嘛没?搭房子.搭帐篷!",
-                                          "001": "...我们很忙的,所以我们就回去自己搭帐篷了不理你们了哈."
+                                          "000": "你要庆幸我们忙着呢没空管你们! 看到我们在干嘛没? 搭房子. 搭帐篷!",
+                                          "001": "...我们很忙的, 所以我们就回去搭帐篷了不理你们了哈."
                                        },
                                        "bulletin_title": "营地哥布林",
                                        "dialog_title": "营地哥布林",
@@ -3871,46 +3887,46 @@
                                  "dialog_nodes": {
                                     "shakedown": {
                                        "bulletin_message": {
-                                          "000": "哦!我想到了个好主意喂!换成你做我们雇主,这样兽人也不会来了!你只要付一点点的财宝,双赢怎么样?!"
+                                          "000": "哦! 我想到了个好主意喂! 换成你做我们雇主, 这样兽人也不会来了! 你只要付一点点的财宝, 双赢怎么样?!"
                                        },
                                        "bulletin_title": "哥布林两只大眼睛顿时放了光",
                                        "dialog_title": "营地哥布林"
                                     },
                                     "collection_due": {
                                        "bulletin_message": {
-                                          "000": "我们回来了!说好的亮晶晶的财宝在哪??"
+                                          "000": "我们回来了! 说好的亮晶晶的财宝在哪??"
                                        },
                                        "bulletin_title": "一群哥布林懒散地走进小镇",
                                        "dialog_title": "营地哥布林"
                                     },
                                     "collection_failed": {
                                        "bulletin_message": {
-                                          "000": "哈?你们变卦?...你们人类真是不为我们的时间着想.恐怕我们要去把那些愚钝的蠢蛋兽人叫回来了,有你们好果子吃!",
-                                          "001": "你们这么穷??你要知道我们可是有后台的啊!真是浪费时间!赶紧去叫兽人来把这小地方踢了!"
+                                          "000": "哈? 你们变卦?...你们人类真是不为我们的时间着想. 恐怕我们要去把那些蠢蛋兽人叫回来了, 有你们好果子吃!",
+                                          "001": "你们这么穷?? 真是浪费时间! 赶紧去叫兽人来把这小地方踢了!"
                                        },
                                        "bulletin_title": "哥布林眉头一皱",
                                        "dialog_title": "营地哥布林"
                                     },
                                     "collection_success": {
                                        "bulletin_message": {
-                                          "000": "补给!财宝!这份差事真是比给奥戈头头打杂要赚啊!谢谢了人类们.不过如果你们还是想挑战下的话,放一个红色的大锣,兽人把红色看作战书.",
-                                          "001": "你们那么怕兽人?好吧,对我来说也算是个好消息!你们不要随便放红色大锣或者更大的东西哦!兽人看到这个会来打你们的.",
-                                          "002": "物资!!我真应该直接帮你做事.啊你问我能干什么?..这个我们在合同里谈好吗.可能在你不小心放了一个大锣引来了兽人的时候会需要我们.",
-                                          "003": "你给了我们好多的物资!我家小狼肯定会很开心的!对了,你见过兽人首领么?他们喜欢红色,特别是红色大锣.你家铁匠应该会做."
+                                          "000": "亮晶晶! 财宝! 这份差事真是比给奥戈头头打杂要赚啊! 谢谢了人类们. 不过如果你们还是想挑战下的话, 放一个红色的大锣, 兽人把红色看作战书.",
+                                          "001": "你们那么怕兽人? 好吧, 对我来说也算是个好消息! 你们不要随便放红色大锣或者更大的东西哦! 兽人看到这个会来打你们的.",
+                                          "002": "物资!! 我真应该直接帮你做事. 啊你问我能干什么?..这个我们在合同里谈好吗. 可能在你不小心放了一个将军大锣引来了兽人的时候会需要我们.",
+                                          "003": "你给了我们好多的物资! 我家小狼肯定会很开心的! 对了, 你见过兽人首领么? 他们喜欢红色, 特别是红色大锣. 你家铁匠应该会做."
                                        },
                                        "bulletin_title": "哥布林露齿一笑,牙齿一亮.",
                                        "dialog_title": "营地哥布林"
                                     },
                                     "collection_progress": {
                                        "bulletin_message": {
-                                          "000": "你同意付钱?很好,大家都开心嘛.我们等下来拿.现在累了先打个盹..."
+                                          "000": "你同意付钱? 很好, 大家都开心嘛. 我们等下来拿. 现在累了先打个盹..."
                                        },
-                                       "bulletin_title": "满足哥布林(又一次)",
+                                       "bulletin_title": "(又一次)满足了哥布林",
                                        "dialog_title": "营地哥布林"
                                     },
                                     "shakedown_refused": {
                                        "bulletin_message": {
-                                          "000": "你不想付钱了?好吧,这次任务有点不同了.看,兽人大军就要来了."
+                                          "000": "你不想付钱了? 好吧, 这次任务有点不同了. 看, 兽人大军就要来了."
                                        },
                                        "bulletin_title": "哥布林眉头一皱",
                                        "dialog_title": "营地哥布林"
@@ -3923,11 +3939,11 @@
                                  "dialog_nodes": {
                                     "msg2": {
                                        "bulletin_message": {
-                                          "00": "你们珍贵的现金已经救不了你们了,鱼唇的人类!"
+                                          "00": "你们珍贵的希德品质已经救不了你们了, 鱼唇的人类!"
                                        },
                                        "bulletin_title": "食人魔首领",
                                        "dialog_title": "食人魔首领",
-                                       "choice_000": "鼓舞士气ing"
+                                       "choice_000": "来者不拒"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
@@ -4027,20 +4043,29 @@
                            "warchief_defeat_dialog": {
                               "dialog_tree_info": {
                                  "dialog_nodes": {
-                                    "msg2": {
+                                    "msg3": {
                                        "bulletin_message": {
-                                          "00": "得知可汗不再, 萨满则探物太深, 以致入魔, 我要回去了. 不过, 如果你还想挑战, 四种颜色的大锣随你放, 我们乐意接下战书."
+                                          "00": "我要回去了. 方才听闻消息: 失去了可汗的智慧, 我们的萨满探物过深, 长时间在邪恶的力量里迷失了自己. 他们认为前人的谬误已经过时, 不再适用, 但我却甚是担心他们的安危."
                                        },
                                        "bulletin_title": "欧格·诺威德酋长",
                                        "dialog_title": "欧格·诺威德酋长"
                                     },
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "和我地位差不多的兽人中还有些仍然认为你们很弱. 尽管他们会遵循条约, 但四色大锣摆出任意一个, 他们都会很乐意前来迎接挑战."
+                                       },
+                                       "bulletin_title": "欧格·诺威德酋长",
+                                       "dialog_title": "欧格·诺威德酋长",
+                                       "choice_000": "来吧!",
+                                       "choice_001": "我们要拿掉..."
+                                    },
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "额尔德尼是对的, 你确实是一个强力的对手. 我们不会忘记你的力量."
+                                          "00": "看来最终还是额尔德尼说得对. 既然如此, 按照希德定下的条约, 由于你们力量的强大, 我承认你们对这片土地的所有权. 我们兽人只关心土地的守护者是否有能力对抗荒蛮与邪恶, 而你们证明了自己能承担起这个责任."
                                        },
                                        "bulletin_title": "酋长谦逊地点着头",
                                        "dialog_title": "欧格·诺威德酋长",
-                                       "choice_000": "没问题"
+                                       "choice_000": "我们有能力守护."
                                     }
                                  }
                               }
@@ -4053,6 +4078,261 @@
                            },
                            "unlock_red_token_recipe": {
                               "bulletin_title": "铁匠解锁了领主装饰锣的合成配方!"
+                           },
+                           "titan_already_killed_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "story2": {
+                                       "bulletin_message": {
+                                          "00": "啊-欧... 你们怎么? 没什么, 不重要了. 我要回去告诉同胞们, 泰坦天灾是可以战胜的. 这一定是重整士气的一大新闻, 不要再听信叛国的萨满了.<br><br>我代表驾崩的可汗, 真诚地感谢你们."
+                                       },
+                                       "bulletin_title": "额尔德尼惊颤着",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "呃, 不用谢, 大概!"
+                                    },
+                                    "story1": {
+                                       "bulletin_message": {
+                                          "00": "我一定要过来提醒你们, 在这片土地的下面潜伏着的泰坦... 请求你们将它消灭, 但是... <br><br>...难道你们已经把这个邪恶的存在剿灭了吗?"
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼十分困惑",
+                                       "choice_000": "哦, 是啊, 我们刚清扫掉呢."
+                                    },
+                                    "greet": {
+                                       "bulletin_message": {
+                                          "00": "勇敢的人类啊, 证明了自己强大的人类啊, 与我们一样强大的人类啊, 请允许我献上我的问候. 这片地域当属你们所有, 你们的星辰总是这么闪亮. 有你们在确是宝贵的财富!"
+                                       },
+                                       "bulletin_title": "赤烬的额尔德尼回来了, 面容十分焦虑",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "谢谢, 额尔德尼"
+                                    },
+                                    "intro": {
+                                       "bulletin_message": {
+                                          "00": "我带了一个十万火急的请求来到, 这是... 等等..."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "哪里不对劲吗?"
+                                    }
+                                 }
+                              }
+                           },
+                           "titan_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "request1": {
+                                       "bulletin_message": {
+                                          "00": "我对你们的请求: 曾经让凤凰帝国陷入混乱的邪恶破片之一在这片土地上聚集, 就在你们的脚下.<br><br>若不去挑战, 让它世世代代沉睡下去的话, 它会重获力量, 扼杀和腐化这片土地的魔力.<br><br>现在唤醒这个泰坦, 它就别无选择, 只能分散它聚集的能量和你们的小镇决一死战了. 若承受得住泰坦之怒, 它就可以被永远消灭, 你们便能世世代代生活在和平中了."
+                                       },
+                                       "bulletin_title": "额尔德尼请求道",
+                                       "dialog_title": "额尔德尼的请求",
+                                       "choice_000": "好! 我们打, 现在怎么办?",
+                                       "choice_001": "别吧. ...我们非得这么做吗?"
+                                    },
+                                    "accept1": {
+                                       "bulletin_message": {
+                                          "00": "我的萨满们搞出了这个大锣 - 拿上它, 放置好. 准备好后, 让锣声震彻天际, 就可以唤醒休眠的泰坦.<br><br>接下去的几天中, 恐怖会缠绕着你们, 甚至可能长达几个礼拜 - 但破碎的邪恶无法自给. 坚持下去. 击其仆从, 挖其根茎, 去其触须. 每一场小胜利都能让它变弱.<br><br>保持韧性, 泰坦便会陨落, 然后凤凰帝国的一小片灾厄便可去除.<br><br>为我们的同胞做一个榜样, 我们可以直面邪恶, 击溃邪恶 - 而不必屈从于它. 求求你们."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "我们要确保自己准备充分了"
+                                    },
+                                    "story2": {
+                                       "bulletin_message": {
+                                          "00": "脚下即谬误. 巨蛇知道. 兔神知道. 圣猕也知道. 但是, 力量总是想寻找力量.<br><br>凤凰帝国, 他们聆听脚下的力量听见了低语. 他们用镐子挖掘发现了头绪, 他们用脑子深究继而看到了知识.<br><br>但不加智慧的知识都是险境."
+                                       },
+                                       "bulletin_title": "额尔德尼低声地说",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "然后呢?"
+                                    },
+                                    "farewell": {
+                                       "bulletin_message": {
+                                          "00": "再会, 勇敢的人类. 愿你们的明星照常闪耀, 成为一颗照彻未来的黑暗的启明星.<br><br><i><font size=-1>[你看到大锣躺在城镇旗帜旁, 或者在你的库存 '装饰品' 分类中]</font></i>"
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "再见, 额尔德尼"
+                                    },
+                                    "story1": {
+                                       "bulletin_message": {
+                                          "00": "这是个外交官之间口口相传的故事, 圣猕第一次为人所知的故事. 先有圣猕再有人类, 那群人团结一心.<br><br>他们创造了一个帝国, 从中央向外延伸, 直至填满整座大陆. 尽管他们华丽的首都直戳天际, 人类的野心让他们一步步走向下面..."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "下面?"
+                                    },
+                                    "reject1": {
+                                       "bulletin_message": {
+                                          "00": "不, 应该不会. 泰坦沉睡下去后, 你们的据点不会有什么危险的.<br><br>或许我把这个本应是我承担的负担来麻烦你们就是错误的. 对不起了. 我要撤了, 回去照顾我自己的子民.<br><br>但我会留着这个特制的大锣 - 万一你改变想法, 放下这个锣, 你会受到指引的.<br><br>再会, 人类."
+                                       },
+                                       "bulletin_title": "额尔德尼叹了口气...",
+                                       "dialog_title": "额尔德尼叹了口气...",
+                                       "choice_000": "多多保重吧."
+                                    },
+                                    "story5": {
+                                       "bulletin_message": {
+                                          "00": "一段时间后, 黑暗褪了下去, 但现在它已经浸透了这片土地, 向那些愿意聆听的人低语. 我们兽人不仅仅是为了荣誉才试炼你们的城镇, 我们还想验证你有抵御邪恶与其腐化的意志.<br><br>尽管, 我们失去了可汗的引导, 赤烬的萨满们仍然在寻找重塑泰坦级别的邪恶的方法, 想要控制它.<br><br>我须要阻止他们 - 这是我的可汗的临终愿望. 但, 这是我辈的家事.<br><br>对于你们, 我有个请求."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "What favor?"
+                                    },
+                                    "greet": {
+                                       "bulletin_message": {
+                                          "00": "勇敢的人类啊, 证明了自己强大的人类啊, 与我们一样强大的人类啊, 请允许我献上我的问候. 这片地域当属你们所有, 你们的星辰总是这么闪亮. 有你们在确是宝贵的财富!"
+                                       },
+                                       "bulletin_title": "赤烬的额尔德尼回来了, 面容十分焦虑",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "谢谢, 额尔德尼"
+                                    },
+                                    "story4": {
+                                       "bulletin_message": {
+                                          "00": "人类四散而逃, 逃到世界的边缘去, 深居简出, 等待黑暗有一天自己平息.<br><br>兽人, 和所有的巨蛇之子一样, 留了下来继续战斗. 与腐化战斗, 在艰难与饥荒中战斗. 是崇高的骁勇还是愚蠢的傲慢, 我不得而知.<br><br>那些兔子, 他们种族已经式微, 打了很深的洞藏起来了, 遗弃了土地上面的世界."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "哦..."
+                                    },
+                                    "story3": {
+                                       "bulletin_message": {
+                                          "00": "巨大的邪恶被唤醒了, 这是我们知道的. 首都没了, 被抹去了, 世界当然也就陷入了末日. 但, 某个英雄, 作出了某些牺牲, 这些都遗失在时间的长河里. 他成功了. 虽然不足以摧毁邪恶, 但能够把邪恶打碎.<br><br>它如迷雾般散开, 将自然之力转化成破坏生物的力量, 使作物凋零, 使思想枯朽."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "帝国怎么样了?"
+                                    },
+                                    "intro": {
+                                       "bulletin_message": {
+                                          "00": "我… 还带着个不情之请而来. 我担心我的子民.<br/><br/>你听说过凤凰帝国吗? 帝国的终结?"
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "[跳过] 我听过这故事",
+                                       "choice_001": "凤凰帝国?"
+                                    }
+                                 }
+                              }
+                           },
+                           "display_titan_summoner_instructions": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "<i><font size=-1>[若准备完毕则可以选中大锣按下 '唤醒泰坦' 按钮. 剿灭泰坦的仆从, 触手, 和根须都可以减少其生命.]<br><br>[祝好运!]</font>"
+                                       },
+                                       "bulletin_title": "字迹潦草的便条, 贴在凶险大锣上",
+                                       "dialog_title": "来自额尔德尼的一封信",
+                                       "choice_000": "[好的!]"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "只有准备好了才敲响大锣 - 接下来的几天你的城镇会被从这个世界剥离.<br><br>腐化的生物会涌出 - 若可以就迎击, 若不行则躲避. 生存并不可耻. 警惕镇民被困, 建筑被袭, 还有随时准备挖洞.<br><br>每场小胜利都可以削弱泰坦的力量 - 相反, 所有对泰坦的正面攻击, 都是遥不可及且虚晃的.<br><br>驱散腐化时要保持坚强, 胜利便会出现."
+                                       },
+                                       "bulletin_title": "字迹潦草的便条, 贴在凶险大锣上",
+                                       "dialog_title": "来自额尔德尼的一封信",
+                                       "choice_000": "我们会活下来的."
+                                    }
+                                 }
+                              }
+                           },
+                           "titan_defeated_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "accept2": {
+                                       "bulletin_message": {
+                                          "00": "很棒! 我们兽人在制作方面没你们这么有天赋, 但我的追随者们个个都是强悍的战士, 我敢肯定不管他们擅长什么, 他们一定能帮上点忙的!<br><br>再见了, 勇敢的人类, 等待未来某天的旭日初升, 会再见面的!"
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "一路顺风, 额尔德尼!"
+                                    },
+                                    "request1": {
+                                       "bulletin_message": {
+                                          "00": "我想说... 因为你们在战斗中表现出的骁勇, 我的子民中有些已经不单单是敬仰你们为勇敢的人类了, 他们觉得你们也是勇敢的兽人. <br/><br/>更有甚者希望移民来此, 成为你们中的一员."
+                                       },
+                                       "bulletin_title": "额尔德尼的帮助",
+                                       "dialog_title": "额尔德尼的帮助",
+                                       "choice_000": "兽人要来加入我们?"
+                                    },
+                                    "accept1": {
+                                       "bulletin_message": {
+                                          "00": "太好了! 那么, 这位兽人追随者可以加入你们了吗?"
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "[接受] 好!",
+                                       "choice_001": "[拒绝] 别..."
+                                    },
+                                    "reject2": {
+                                       "bulletin_message": {
+                                          "00": "很好. 这个消息肯定会让我的追随者们失望, 但你辈的努力与愿望值得我们最崇高的敬意.<br><br>再见, 勇敢的人类, 等待某天的旭日初升, 会再见面的."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "一路顺风, 额尔德尼!"
+                                    },
+                                    "greet": {
+                                       "bulletin_message": {
+                                          "00": "可汗英名长存, 你们成功了!<br><br>我以最快的速度前来祝贺 - 就是赤烬的领土上都能感到周围的气息都变了啊."
+                                       },
+                                       "bulletin_title": "赤烬的额尔德尼回来了, 满面笑容",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "我们成功了!"
+                                    },
+                                    "reject1": {
+                                       "bulletin_message": {
+                                          "00": "哦, 明白了... 我也懂了. 若是换做我, 我也不会轻易地就接纳一个人类来到赤烬, 封他军衔的. <br><br>也就是说, 我的追随者真的不能在这里容身吗?"
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "[拒绝] 毫无疑问",
+                                       "choice_001": "[接受] 再让我考虑考虑..."
+                                    },
+                                    "request2": {
+                                       "bulletin_message": {
+                                          "00": "真好! 实际上, 击败泰坦净化了我带来的大锣, 还有你们的大陆. 这个大锣将作为我的子民对你们长久崇敬的象征.<br><br><i>只要这个白石大锣还放着</i> 你们还有空位, 每个几个晚上就可能会有兽人移民来此."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼比划着",
+                                       "choice_000": "懂!"
+                                    },
+                                    "request3": {
+                                       "bulletin_message": {
+                                          "00": "事实上, 我最忠诚的追随者之一随我跋山涉水而来. 他们坚持说要加入你们. 说真的, 我有点不舍, 但我不能吝啬于他们的愿望.<br><br>你们觉得呢? <i>今天你们会接纳一个虔诚的兽人吗?</i>"
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼伸出了手",
+                                       "choice_000": "欢迎!",
+                                       "choice_001": "呃, 不了, 谢谢..."
+                                    },
+                                    "intro": {
+                                       "bulletin_message": {
+                                          "00": "邪恶的存在被你消灭了, 这可是对我们有利的大新闻, 不用再听信萨满虚伪的谎言了.<br><br>我代表驾崩的可汗, 由衷地感谢你们. 我要回去了, 告诉他们泰坦天灾是, 确实可以打败的."
+                                       },
+                                       "bulletin_title": "额尔德尼继续说道",
+                                       "dialog_title": "额尔德尼, 赤烬帝国的外交官",
+                                       "choice_000": "很高兴能为你们做点事"
+                                    }
+                                 }
+                              }
+                           },
+                           "unlock_titan_ward_carpenter": {
+                              "bulletin_title": "木匠解锁了泰坦护符的配方!"
+                           },
+                           "prompt_for_recurring_orc_citizen": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "你想要让这位兽人加入吗?"
+                                       },
+                                       "bulletin_title": "兽人移民!",
+                                       "dialog_title": "一位受人想加入你的小镇!",
+                                       "choice_000": "好的",
+                                       "choice_001": "拒绝"
+                                    }
+                                 }
+                              }
                            }
                         }
                      }
@@ -4651,6 +4931,93 @@
                "unlock_shrine_recipes": {
                   "bulletin_title": "石匠圣碑配方解锁!"
                }
+            },
+            "titan": {
+               "titan_defeated_town_bonus": {
+                  "name": "净化之地",
+                  "description": "<i>打败了潜伏的泰坦, 镇民们都欢呼雀跃.</i>"
+               },
+               "end_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg2": {
+                           "bulletin_message": {
+                              "00": "开启庆祝仪式!"
+                           },
+                           "bulletin_title": "你们成功了!",
+                           "dialog_title": "征服泰坦",
+                           "choice_000": "耶!"
+                        },
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "随着震天的吼声, 能量支离破碎, 泰坦的虚影褪去, 消失在虚无中.<br><br>阴霾散开, 你的镇民欢呼着迎接慢慢重现的澄澈天空, 自然的法则重归正规, 大地也似乎舒了口气."
+                           },
+                           "bulletin_title": "你们成功了!",
+                           "dialog_title": "征服泰坦",
+                           "choice_000": "松一口气."
+                        }
+                     }
+                  }
+               },
+               "alert_destroy_crops": {
+                  "title": "是凋零! 我们损失了一些庄稼..."
+               },
+               "alert_initial_spawn_roots": {
+                  "title": "光柱一般的触手标志着泰坦的根系. 把它们挖掉, 减少它对这片土地的控制!"
+               },
+               "alert_spawn_camp": {
+                  "title": "一扇新的传送门开启了, 腐化生物守卫着那里"
+               },
+               "alert_spawn_roots": {
+                  "title": "更多的腐化根系在向地表蔓延"
+               },
+               "alert_wave": {
+                  "title": "泰坦喷出了一股邪恶风暴! 找地方躲起来!"
+               },
+               "delivery_quest_dialog": {
+                  "dialog_tree_info": {
+                     "dialog_nodes": {
+                        "msg1": {
+                           "bulletin_message": {
+                              "00": "我们或许可以用胡萝卜给泰坦造成点儿伤害??"
+                           },
+                           "bulletin_title": "萝卜任务",
+                           "dialog_title": "萝卜任务",
+                           "choice_000": "胡萝卜, 马上到!",
+                           "choice_001": "不需要你们的帮助!"
+                        }
+                     }
+                  }
+               },
+               "alert_trance": {
+                  "title": "<Citizen Name>被邪恶的幻影统治了... "
+               },
+               "spawn_raid": {
+                  "mission": {
+                     "sighted_bulletin": {
+                        "title": "邪恶的腐化, 近在咫尺!"
+                     }
+                  }
+               },
+               "alert_destroy_building": {
+                  "title": "一条触手威胁到了我们的建筑物! 杀了它, 赶紧!"
+               },
+               "alert_building_was_destroyed": {
+                  "title": "我们的一座建筑物被摧毁了! 太迟了..."
+               },
+               "alert_tentacle_grab": {
+                  "title": "一条触手抓住了[name(i18n_data.entity)]! 救救他们!"
+               },
+               "alert_initial_camp_spawn": {
+                  "title": "妖魅传送门! 它们由腐化生物守护着, 散播着瘟疫. 若还有余力就去挑战吧..."
+               },
+               "alert_new_bugs": {
+                  "title": "传送门里出来了更多的爬虫, 盯准了你的储物区"
+               },
+               "delivery_quest": {
+                  "title": "萝卜任务",
+                  "dialog_title": "交出胡萝卜"
+               }
             }
          }
       },
@@ -4896,6 +5263,10 @@
             "cold_debuff": {
                "display_name": "冷天",
                "description": "我要变冰块了! 得找个有天花板的地方."
+            },
+            "hit_by_titanstorm_debuff": {
+               "display_name": "淹没在泰坦风暴中",
+               "description": "邪恶风暴吸干了这位炉民的大部分力气. 不会死, 但很痛苦..."
             }
          },
          "deity_town_bonus": {
@@ -4986,6 +5357,30 @@
             "stat_buff": {
                "display_name": "神圣祝福",
                "description": "主要属性提升1点."
+            }
+         },
+         "titan_trance": {
+            "titan_trance_debuff": {
+               "display_name": "凶煞幻视",
+               "description": "被黑暗的虚影所征服. 他们会好起来的... 但愿."
+            }
+         },
+         "titan_building_destroyer": {
+            "titan_building_destroyer_waiting": {
+               "display_name": "摧毁倒数",
+               "description": "一旦完成了觉醒, 便会摧毁建筑!"
+            }
+         },
+         "tentacle_snared": {
+            "tentacle_snared_debuff": {
+               "display_name": "触手捕获",
+               "description": "在触手钢铁般的束缚中挣扎."
+            }
+         },
+         "corrupt_regeneration": {
+            "corrupt_regeneration_buff": {
+               "display_name": "腐化再生",
+               "description": "泰坦赋予它们力量."
             }
          }
       },
@@ -5377,6 +5772,11 @@
             "display_name": "放弃!",
             "description": "取消召唤这次敌袭, 不获得任何荣誉.",
             "disabled_description": "现在不挑战周围的任何敌人."
+         },
+         "summon_titan": {
+            "display_name": "唤醒泰坦",
+            "description": "让泰坦从沉睡中苏醒",
+            "disabled_description": "泰坦不再沉眠"
          }
       },
       "personality": {
@@ -6260,6 +6660,20 @@
             "zilla": {
                "description": "斯拉出没, 请注意!"
             }
+         },
+         "corruption": {
+            "thief": {
+               "display_name": "腐化爬虫",
+               "description": "小而贪婪."
+            },
+            "wolf": {
+               "display_name": "腐化野兽",
+               "description": "也许是条狼, 曾经..."
+            },
+            "zilla": {
+               "display_name": "泰坦 妖蛆",
+               "description": "邪恶. 饕餮."
+            }
          }
       },
       "saved_objects": {
@@ -6707,6 +7121,30 @@
                   }
                }
             },
+            "titan": {
+               "roots": {
+                  "harvested_bramble": {
+                     "display_name": "砍下黑暗荆棘",
+                     "tooltip": "能尽一份力感觉不错, 向着泰坦腐化的树丛挥砍斧子!"
+                  },
+                  "harvested_root": {
+                     "display_name": "砍下一颗邪恶根须",
+                     "tooltip": "向永远踢掉这个泰坦又前进了一步!"
+                  }
+               },
+               "victory": {
+                  "titan_victory": {
+                     "display_name": "泰坦征服!",
+                     "tooltip": "我们成功了! 空气似乎也更清新了, 也不感觉到总有什么在看我了..."
+                  }
+               },
+               "peace": {
+                  "no_more_titan": {
+                     "display_name": "没有泰坦的土地!",
+                     "tooltip": "第一次发现, 生活在一片没有古老黑暗力量潜伏着的土地上感觉真棒!"
+                  }
+               }
+            },
             "town": {
                "founding": {
                   "pioneering_spirit": {
@@ -7105,6 +7543,14 @@
                   "sandstorm_positive": {
                      "display_name": "沙暴",
                      "tooltip": "沙子总是会来检验我们的意志... 我的意志是无法动摇的."
+                  },
+                  "titanstorm_negative": {
+                     "display_name": "末日降临!",
+                     "tooltip": "泰坦摧枯拉朽! 跑吧, 不死就好!"
+                  },
+                  "titanstorm_positive": {
+                     "display_name": "我们会成功的!",
+                     "tooltip": "我们比'泰坦'厉害多了! 邪恶的猛兽又大又吓人, 但我相信我们的小镇!!"
                   }
                }
             }
@@ -7242,6 +7688,32 @@
          "blizzard": {
             "display_name": "暴雪",
             "description": "狂风, 暴雪, 夹杂着冰雹, 我的天!<ul><li>植物生长速度大幅下降.</li><li>视野半径大幅减小.</li><li>不在屋内的炉民由于寒冷而无法照常有效率地工作.</li><li>不在屋内的家畜因寒冷而生命值下降.</li></ul>"
+         },
+         "titanstorm": {
+            "display_name": "泰坦之影",
+            "description": "外面是都是灰茫茫的! 大家, 看见触手直接砍！.",
+            "titan_titles": {
+               "1": "[str(self.stonehearth:unit_info.custom_name)], 方块毁灭者",
+               "2": "不省油的[str(self.stonehearth:unit_info.custom_name)]",
+               "3": "怨念的[str(self.stonehearth:unit_info.custom_name)]",
+               "4": "[str(self.stonehearth:unit_info.custom_name)], 万物吞噬者",
+               "5": "[str(self.stonehearth:unit_info.custom_name)], 低语者",
+               "6": "不可知的[str(self.stonehearth:unit_info.custom_name)]",
+               "7": "[str(self.stonehearth:unit_info.custom_name)], 灭世者",
+               "8": "掠夺的[str(self.stonehearth:unit_info.custom_name)]",
+               "9": "恶心的[str(self.stonehearth:unit_info.custom_name)]",
+               "10": "十恶不赦的[str(self.stonehearth:unit_info.custom_name)]",
+               "11": "[str(self.stonehearth:unit_info.custom_name)], 扭曲的存在",
+               "12": "凶险的[str(self.stonehearth:unit_info.custom_name)]",
+               "13": "灾祸的[str(self.stonehearth:unit_info.custom_name)]",
+               "14": "[str(self.stonehearth:unit_info.custom_name)], 灭顶之灾",
+               "15": "凶煞的[str(self.stonehearth:unit_info.custom_name)]",
+               "16": "[str(self.stonehearth:unit_info.custom_name)], 邪恶的存在",
+               "17": "[str(self.stonehearth:unit_info.custom_name)], 空引用",
+               "18": "[str(self.stonehearth:unit_info.custom_name)], 荣归故里者",
+               "19": "[str(self.stonehearth:unit_info.custom_name)], 大反派",
+               "20": "来自圆形世界的[str(self.stonehearth:unit_info.custom_name)]"
+            }
          }
       }
    },
@@ -7519,6 +7991,12 @@
                "description": "更大的门,相当高端大气上档次."
             }
          },
+         "amberstone_window": {
+            "amberstone_window_ghost": {
+               "display_name": "地穴窗",
+               "description": "让新鲜空气进入"
+            }
+         },
          "wooden_window_frame": {
             "wooden_window_frame_ghost": {
                "display_name": "木制窗框",
@@ -7589,6 +8067,12 @@
             "stone_tunnel_door_ghost": {
                "display_name": "石隧道门",
                "description": "用于封闭矿道."
+            }
+         },
+         "amberstone_tunnel_door": {
+            "amberstone_tunnel_door_ghost": {
+               "display_name": "地穴门",
+               "description": "封闭着保护地底下的居民"
             }
          },
          "clay_tunnel_door": {
@@ -7739,6 +8223,12 @@
                "description": "最多可存储32个物品"
             }
          },
+         "amberstone_chest": {
+            "amberstone_chest_ghost": {
+               "display_name": "编织箱子",
+               "description": "可以储存64件物品"
+            }
+         },
          "leather_bound_chest": {
             "leather_bound_chest_ghost": {
                "display_name": "皮革箱子",
@@ -7845,10 +8335,22 @@
                "display_name": "石质工作架"
             }
          },
+         "output_box_amberstone": {
+            "output_box_amberstone_ghost": {
+               "description": "暂时储存造出来的东西.",
+               "display_name": "兔凿展示架"
+            }
+         },
          "input_bin_clay": {
             "input_bin_clay_ghost": {
                "display_name": "陶瓷补给盆",
                "description": "一种存放补给品的容器, 可以给工匠制作提供便利."
+            }
+         },
+         "input_bin_amberstone": {
+            "input_bin_amberstone_ghost": {
+               "display_name": "兔织补给篮",
+               "description": "一种存放补给品的榕溪, 可以给工匠制作提供便利."
             }
          },
          "input_bin_woven": {
@@ -8712,6 +9214,12 @@
                "description": "也给植物一个整洁的家."
             }
          },
+         "amberstone_lantern": {
+            "amberstone_lantern_ghost": {
+               "display_name": "手工石切灯",
+               "description": "温暖的一点点光亮"
+            }
+         },
          "wooden_garden_lantern": {
             "wooden_garden_lantern_ghost": {
                "display_name": "木制花园灯饰",
@@ -8787,6 +9295,12 @@
                "description": "植物监护神"
             }
          },
+         "amberstone_teapot": {
+            "amberstone_teapot_ghost": {
+               "display_name": "手工石茶壶",
+               "description": "兔兔们珍藏的茶壶"
+            }
+         },
          "decorative_teapot": {
             "decorative_teapot_ghost": {
                "display_name": "装饰性茶壶",
@@ -8821,6 +9335,18 @@
             "sundial_ghost": {
                "display_name": "日规",
                "description": "装饰着花园, 用来测量时间的"
+            }
+         },
+         "amberstone_mat": {
+            "amberstone_mat_ghost": {
+               "display_name": "编织地毯",
+               "description": "用兔子们的手艺编制而成"
+            }
+         },
+         "amberstone_painting_branch": {
+            "amberstone_painting_branch_ghost": {
+               "display_name": "花开图",
+               "description": "描绘着许久以前的一种树"
             }
          },
          "tile_floor_mosaic": {
@@ -9348,6 +9874,16 @@
                   "description": "这块石头里封印着一潭小小的可爱池塘!"
                }
             }
+         },
+         "firepit_titan": {
+            "firepit_titan_ghost": {
+               "display_name": "腐化传送门",
+               "description": "你能听见另一面传来的窸窸窣窣..."
+            }
+         },
+         "cheat_military_chest": {
+            "display_name": "Cheat Military Chest - Debug物件",
+            "description": "有一把最好的非传说级武器和铠甲Contains one of each best non-legendary weapon and armor, plus bandages and turrets."
          }
       },
       "food": {
@@ -9757,7 +10293,7 @@
             "display_name": "野猪肉干"
          },
          "duckduck_jerky": {
-            "display_name": "鸭鸭兽肉干"
+            "display_name": "呆呆鸭肉干"
          },
          "roast_venison": {
             "roast_venison": {
@@ -9807,6 +10343,12 @@
                "description": "如虔诚般美丽."
             }
          },
+         "amberstone_bed": {
+            "amberstone_bed_ghost": {
+               "display_name": "丝织床铺",
+               "description": "真柔软!!"
+            }
+         },
          "comfy_bed": {
             "comfy_bed_ghost": {
                "display_name": "舒适的床",
@@ -9829,6 +10371,12 @@
             "comfy_chair_fine_ghost": {
                "display_name": "精巧舒适的椅子",
                "description": "坐得更舒服!"
+            }
+         },
+         "amberstone_table": {
+            "amberstone_table_ghost": {
+               "display_name": "抛光石桌",
+               "description": "用珀石族的风格凿出来的"
             }
          },
          "dining_table": {
@@ -9953,6 +10501,12 @@
             "clay_dining_table_ghost": {
                "display_name": "粘土餐桌",
                "description": "让你的食物不掉在地上"
+            }
+         },
+         "amberstone_chair": {
+            "amberstone_chair_ghost": {
+               "display_name": "丝织座椅",
+               "description": "用珀石族的风格编出来的"
             }
          },
          "simple_clay_chair": {
@@ -10143,6 +10697,48 @@
                "display_name": "蓬勃小旗帜",
                "description": "来自蓬勃旗帜的一角, 继承着它的魔力."
             }
+         },
+         "titan_ward_stone": {
+            "titan_ward_stone_ghost": {
+               "display_name": "泰坦护符",
+               "description": "伤害附近任何有泰坦味道的东西."
+            }
+         },
+         "titan_ward_clay": {
+            "titan_ward_clay_ghost": {
+               "display_name": "泰坦护符",
+               "description": "伤害附近任何有泰坦味道的东西."
+            }
+         },
+         "anti_titan_ward": {
+            "anti_titan_ward_ghost": {
+               "display_name": "泰坦护符",
+               "description": "伤害附近任何有泰坦味道的东西."
+            }
+         },
+         "titan_slayer": {
+            "titan_slayer_ghost": {
+               "display_name": "工艺弓",
+               "description": "用足以挑战泰坦的力量铸就"
+            }
+         },
+         "orc_titan_gong": {
+            "orc_titan_gong_ghost": {
+               "display_name": "凶险招来之大锣",
+               "description": "用奇怪诡异的光滑石头做成."
+            }
+         },
+         "root_of_evil": {
+            "display_name": "邪恶根须",
+            "description": "杀了它! 烧了它!"
+         },
+         "building_tentacle": {
+            "display_name": "建筑碾压者",
+            "description": "在它觉醒之前杀了它, 否者建筑不保!"
+         },
+         "tentacle_trap": {
+            "display_name": "触手陷阱",
+            "description": "抓住任何路过的人."
          }
       },
       "loot": {
@@ -10404,8 +11000,24 @@
                "description": "不会飞的鸟类"
             },
             "duckduck": {
-               "display_name": "鸭鸭兽",
+               "display_name": "呆呆鸭",
                "description": "不会飞的鸟类"
+            }
+         },
+         "titan": {
+            "corrupt": {
+               "corrupt_zilla": {
+                  "display_name": "腐化巨兽",
+                  "description": "邪恶. 饕餮."
+               },
+               "corrupt_hearthling": {
+                  "display_name": "腐化",
+                  "description": "前身的暗影面"
+               },
+               "corrupt_wolf": {
+                  "display_name": "腐化野兽",
+                  "description": "末世掠食者"
+               }
             }
          },
          "golems": {
@@ -10469,6 +11081,24 @@
          }
       },
       "plants": {
+         "bramble": {
+            "bramble": {
+               "display_name": "黑暗荆棘",
+               "description": "暂时用采集指令清理它, 或者把根须挖出来!"
+            },
+            "sprout": {
+               "bramble_sprout": {
+                  "display_name": "黑暗荆棘芽梢",
+                  "description": "危险而能产, 从地底的根须中长出, 不能忽视."
+               }
+            },
+            "stem": {
+               "bramble_stem": {
+                  "display_name": "爬藤的黑暗荆棘",
+                  "description": "地底的邪恶蔓延而来! 挖出根须, 用材级命令清理掉."
+               }
+            }
+         },
          "berry_bush": {
             "display_name": "浆果树丛",
             "description": "可以收获一些食物.",
@@ -11328,7 +11958,7 @@
             },
             "duckduck_feathers": {
                "description": "一种不会飞的鸟类身上的羽毛",
-               "display_name": "鸭鸭兽羽毛"
+               "display_name": "呆呆鸭羽毛"
             }
          },
          "refined": {
@@ -11912,6 +12542,10 @@
          "bow_valor": {
             "display_name": "古国凤弓",
             "description": "崛起之都最迅捷的弓"
+         },
+         "corruption_beam": {
+            "display_name": "腐化光线",
+            "description": "隐形的武器可以让你瞬间置身腐化之中"
          }
       },
       "consumables": {
@@ -12132,12 +12766,41 @@
                },
                "herald_harold": {
                   "display_name": "哈罗德",
-                  "description": "送信专用鸭鸭兽."
+                  "description": "送信专用呆呆鸭."
                },
                "herald_sasha": {
                   "display_name": "捷足飒莎",
                   "description": "来自珀石部落的使者"
                }
+            }
+         }
+      },
+      "titan": {
+         "corrupt_squid": {
+            "description": "和你长得不像. 和啥都长得不像."
+         }
+      },
+      "corruption": {
+         "corrupt_tentacle_notification": {
+            "tentacle_notification": {
+               "display_name": "警示触手",
+               "description": "象征着某种邪恶的存在."
+            }
+         },
+         "corrupt_beetle": {
+            "display_name": "腐化爬虫",
+            "description": "小而贪婪."
+         },
+         "corrupt_tentacle_dark": {
+            "tentacle_dark": {
+               "display_name": "警示触手",
+               "description": "象征着某种邪恶的存在."
+            }
+         },
+         "orc_friendship_gong": {
+            "orc_friendship_gong_ghost": {
+               "display_name": "兽人敬仰之大锣",
+               "description": "用光滑, 好看的石头做成, 凶险的东西已经收到了净化."
             }
          }
       }
@@ -13082,6 +13745,11 @@
                "description": "崛起之都最迅捷的弓",
                "recipe_name": "古国凤弓",
                "flavor": "给使用者机械的力量, 以极高的速度射出箭失"
+            },
+            "anti_titan_ward_recipe": {
+               "description": "伤害附近任何有泰坦味道的东西.",
+               "recipe_name": "泰坦护符",
+               "flavor": "宝贝不要伤害我! 别再伤害我!"
             }
          }
       },
@@ -13588,6 +14256,12 @@
                "description": "石匠用来制作物品"
             }
          },
+         "mason_pedestal_amberstone": {
+            "mason_pedestal_amberstone_ghost": {
+               "display_name": "珀石石匠基座",
+               "description": "兔子石匠表示同意"
+            }
+         },
          "mason_pedestal": {
             "mason_pedestal_ghost": {
                "display_name": "石匠基座",
@@ -13606,6 +14280,31 @@
                "description": "给可爱的小鸟洗澡漱口的水盆,呵呵.",
                "recipe_name": "小鸟水池",
                "flavor": "没有椅子."
+            },
+            "amberstone_lantern_recipe": {
+               "description": "温暖的一点点光亮",
+               "recipe_name": "手工石切灯",
+               "flavor": "厚实的壁阻挡了他们太多的宝贵阳光, 所以这种风格在他们那里永远不会失传"
+            },
+            "amberstone_teapot_recipe": {
+               "description": "兔兔们珍藏的茶壶",
+               "recipe_name": "手工石茶壶",
+               "flavor": "开头总是有棱有角的, 宛如不是被切下来, 而是大石头摔碎而成的. 然后在一代代的使用中变得光滑."
+            },
+            "amberstone_table_recipe": {
+               "description": "用珀石族的风格凿出来的",
+               "recipe_name": "抛光石桌",
+               "flavor": "兔子石匠们只有满意了才歇工"
+            },
+            "amberstone_tunnel_door_recipe": {
+               "description": "封闭着保护地底下的居民",
+               "recipe_name": "地穴门",
+               "flavor": "外面的人再大的劲也掀不开门, 里面的兔子轻轻一碰就能打开"
+            },
+            "amberstone_window_recipe": {
+               "description": "让新鲜空气进入",
+               "recipe_name": "地穴窗",
+               "flavor": "没有良好的通风就住地下会让人无法忍受"
             },
             "blacksmith_hammer_recipe": {
                "description": "炉民可以用锤子转职为铁匠.",
@@ -13692,6 +14391,11 @@
                "recipe_name": "石匠工作台",
                "flavor": "锤子咣当咣当,大地尽情歌唱,让Brelor灵魂显现,看山脉插上翅膀."
             },
+            "mason_pedestal_amberstone_recipe": {
+               "description": "兔子石匠表示同意",
+               "recipe_name": "珀石石匠基座",
+               "flavor": "石匠的技艺体现在他们工作台的质量上"
+            },
             "mason_pedestal_recipe": {
                "description": "带有照明的工作台.",
                "recipe_name": "石匠的基座",
@@ -13740,6 +14444,11 @@
                "recipe_name": "Wet Stone",
                "flavor": "This stone has been blessed with the tears of Rayya!",
                "description": "This stone will shed water around itself."
+            },
+            "output_box_amberstone_recipe": {
+               "recipe_name": "兔凿展示架",
+               "description": "暂时储存造出来的东西",
+               "flavor": "这个架子很结实. 你甚至可以在上面蹦蹦跳跳. ...请不要这么做."
             },
             "output_box_stone_recipe": {
                "recipe_name": "石质工作架",
@@ -13857,6 +14566,11 @@
                "description": "崛起之都人们最自豪的盾牌",
                "recipe_name": "巨人盾牌",
                "flavor": "哪怕是面对再厉害的坏人和危险, 此盾不会破碎."
+            },
+            "titan_ward_stone_recipe": {
+               "description": "伤害附近任何有泰坦味道的东西.",
+               "recipe_name": "泰坦护符",
+               "flavor": "宝贝不要伤害我! 别再伤害我!"
             }
          }
       },
@@ -14142,6 +14856,11 @@
                "description": "火纹宝剑内发光的镀层.",
                "recipe_name": "火焰嵌体",
                "flavor": "应石炉的光芒而闪耀"
+            },
+            "titan_ward_clay_recipe": {
+               "description": "伤害附近任何有泰坦味道的东西.",
+               "recipe_name": "泰坦护符",
+               "flavor": "宝贝不要伤害我! 别再伤害我!"
             }
          },
          "potter_workbench": {
@@ -14326,6 +15045,31 @@
             }
          },
          "recipes": {
+            "amberstone_bed_recipe": {
+               "description": "真柔软!!",
+               "recipe_name": "丝织床铺",
+               "flavor": "为什么能这么软?!??"
+            },
+            "amberstone_chair_recipe": {
+               "description": "用珀石族的风格编出来的",
+               "recipe_name": "丝织座椅",
+               "flavor": "为了让毛茸茸的兔兔尾巴远离寒冷的石地板而特制的"
+            },
+            "amberstone_chest_recipe": {
+               "description": "能储存64件物品",
+               "recipe_name": "编织箱子",
+               "flavor": "干净的地方是快乐的地方!"
+            },
+            "amberstone_mat_recipe": {
+               "description": "用珀石族的风格编出来的",
+               "recipe_name": "编织地毯",
+               "flavor": "这种编织风格需要高度专注与速度, 快速的小爪爪"
+            },
+            "amberstone_painting_branch_recipe": {
+               "description": "描绘着许久以前的一种树",
+               "recipe_name": "花开图",
+               "flavor": "凡是浪迹天涯不能带上的东西, 兔子们有自己的办法去保存它"
+            },
             "banner_wall_big_recipe": {
                "description": "漂亮大横幅让城镇散发出令人骄傲的气质.",
                "recipe_name": "大型旗帜",
@@ -14380,6 +15124,7 @@
             "toys_name": "玩具",
             "storage_name": "存储用具",
             "decorations_name": "装饰",
+            "furniture_name": "家具",
             "crafting_materials_name": "布料",
             "spool_of_thread_recipe": {
                "description": "线轴需要纤维,毛绒绒的感觉很暖和",
@@ -14443,6 +15188,11 @@
                "recipe_name": "夹层防护帽",
                "description": "为了你的头头又添了一层布",
                "flavor": "他们是给凤凰添翅膀, 还是给蛇添翅膀?"
+            },
+            "input_bin_amberstone_recipe": {
+               "recipe_name": "兔织补给篮",
+               "description": "安全地装着补给品",
+               "flavor": "珀石族的石匠预备兔们要联系好几年辨别石头的质量后, 才能被允许接近凿子. 许多兔永远当不了石匠."
             },
             "input_bin_woven_recipe": {
                "recipe_name": "编织补给篮",
@@ -14787,6 +15537,14 @@
                "display_name": "自然恢复",
                "description": "草药师生命值自然回复的效果得到了提升, 勤奋值增加"
             }
+         },
+         "herbalist_pestle": {
+            "display_name": "草药师的基座",
+            "description": "草药师行业的工具."
+         },
+         "herbalist_mortar": {
+            "display_name": "草药师的研钵",
+            "description": "草药师行业的工具."
          }
       },
       "cleric": {
