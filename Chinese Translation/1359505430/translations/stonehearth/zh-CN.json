@@ -4431,8 +4431,8 @@
                               "reward_message": "由崛起之都的市民一致同意, 我们承认:",
                               "reward_message_ctd": "该据点有意继往开来, 建立一个交易点.",
                               "achievements": {
-                                 "001": "出售物品可多获得50%",
-                                 "000": "道路提速至三倍初始行走速度",
+                                 "001": "出售物品可多获得50%金币",
+                                 "000": "道路给初始行走速度提供3倍加成",
                                  "002": "来访贸易者携带两倍物品与金币"
                               }
                            },
@@ -10879,7 +10879,7 @@
             "town_banner_guardian_ghost": {
                "display_name": "机灵旗帜",
                "description": "家的标志.",
-               "town_bonus_description": "<i>该据点会成为忙碌的交易点.</i><ul><li>道路提速为原始速度的三倍</li><li>物品售价提高50%</li><li>贸易者会带来两倍的金币的物品</li></ul>"
+               "town_bonus_description": "<i>该据点会成为忙碌的交易点.</i><ul><li>道路给初始行走速度提供3倍加成</li><li>物品售价提高50%</li><li>贸易者会带来两倍的金币的物品</li></ul>"
             },
             "town_banner_guardian_token_iconic": {
                "display_name": "机灵小旗帜",
