@@ -130,7 +130,10 @@
                "stairs": "阶梯"
             },
             "template_list": {
-               "title": "建筑模板"
+               "title": "建筑模板",
+               "az_sorting": "排序: A-Z",
+               "za_sorting": "排序: Z-A",
+               "recent_sorting": "排序: 最近使用"
             }
          },
          "game_speed": {
@@ -1105,6 +1108,9 @@
                "solid_stairs": "实心阶梯",
                "hollow_stairs": "镂空阶梯"
             },
+            "fixtures": {
+               "search_placeholder": "查找"
+            },
             "building_templates": {
                "title": "建筑模板:",
                "design_custom_building": "设计自定义建筑",
@@ -1221,6 +1227,8 @@
                "enable": "继续挖掘"
             },
             "trapping_grounds": {
+               "choose_trapping_grounds_type": "选择捕猎区种类",
+               "trapping_ground": "捕猎区",
                "help": "猎人会在指定区域布置陷阱并定期检查陷阱是否捕获到猎物.",
                "disable": "暂停捕猎",
                "enable": "继续捕猎"
@@ -1536,9 +1544,9 @@
             "gfx_max_shadows": "最大阴影效果",
             "gfx_drawdistance": "景深",
             "gfx_enable_ssao": "环境光遮蔽",
-            "gfx_use_high_quality": "禁用延迟渲染器",
+            "gfx_use_high_quality": "使用Fallback渲染器",
             "gfx_use_recommended_graphics": "使用推荐的显示设置",
-            "gfx_disable_deferred_renderer_description": "<font color='#eb4c36'><strong>警告:</strong></font> 禁用延迟渲染会导致: 游戏在大型城市且有许多光源的情况下性能下降. 禁用需三思.",
+            "gfx_disable_deferred_renderer_description": "<font color='#eb4c36'><strong>警告:</strong></font> 使用fallback渲染会导致: 游戏在存在大型城市且有许多光源的情况下性能下降. 若非迫不得已, 不要勾选此选项.",
             "shadow_0": "关闭",
             "shadow_1": "一点点",
             "shadow_2": "一些",
@@ -1583,6 +1591,8 @@
                "randomize_attributes_description": "如果启用,炉民的创造、身体素质和精神毅力属性会完全随机分配而非平衡分配.",
                "auto_loot": "自动掠夺",
                "auto_loot_description": "当敌人掉落战利品时,自动标记捡起来.",
+               "auto_rescue": "自动营救",
+               "auto_rescue_description": "当有炉民濒死, 立即自动标记为可施救对象.",
                "building_auto_queue_crafters": "建筑内置部件自动制作",
                "building_auto_queue_crafters_description": "当开始建筑时,基本所有家具与装置会自动添加至相应工匠的制作列表中.",
                "infinite_inventory": "禁用库存上限",
@@ -1746,7 +1756,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 r862 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 r864 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -2015,16 +2025,16 @@
                }
             },
             "biome_warning_title": "注意, 旅行者...",
-            "biome_warning_text": "将崛起之都的炉民定居在沙漠环境中, 或者瑞娅之裔定居在森林区系可能会导致工匠制作原材料的严重不足. 我们以后可能会解决这一问题.<br><br>你是否仍要坚持当前选择?",
-            "begin_button": "招募炉民"
+            "biome_warning_text": "[str(kingdom)]炉民的宜居区系是[str(preferred_biome)], 若不生活在这个区系中, 工匠制作使用的原材料可能会变得很难获得.<br><br>你是否仍要坚持当前选择?",
+            "begin_button": "招募名单"
          },
          "select_roster": {
-            "reroll_citizens": "摇选所有炉民",
-            "reembark_button": "选择已保存",
+            "reroll_citizens": "重摇所有炉民",
+            "reembark_button": "选择已存炉民",
             "delete_crew": "删除",
             "delete_crew_confirm_title": "删除人员?",
             "delete_crew_confirm_message": "是否确认永久删除选中的冒险小分队成员?",
-            "delete_crew_confirm_yes": "是的",
+            "delete_crew_confirm_yes": "确认",
             "delete_crew_confirm_no": "取消",
             "select_crew": "选择",
             "cancel_crew": "取消",
@@ -2234,16 +2244,8 @@
             "health_status": {
                "description": "炉民当前健康状况."
             },
-			"suspend_button": {
+            "suspend_button": {
                "description": "暂停或继续一类工作."
-            },
-            "current_gender": {
-               "display_name": "性别",
-               "description": "该这个炉民被设定为 [str(gender)]."
-            },
-            "change_gender": {
-               "display_name": "性别",
-               "description": "点击更改该炉民的性别为 [str(gender)]."
             },
             "customization_lock": {
                "description": "在重新摇选个性和属性分配时该炉民的[str(customization)]会被保留."
@@ -2286,7 +2288,7 @@
       "population": {
          "ascendancy": {
             "display_name": "崛起之都",
-            "quote": "绵羊? 带了. 锄头?有了. 剑呢?拿好了. 开始出发!",
+            "quote": "绵羊? 带了. 锄头? 有了. 木剑? 拿好了. 开始出发!",
             "description": "认真, 勤奋, 忠诚, 又有着平衡的身体素质. 崛起之都的炉民通过伐木, 建造, 务农来创造属于自己的家园, 他们相信四海之下, 皆可为家.",
             "post_selection_description": ", 一个繁荣而勤勉的王国.",
             "initial_town_name": "[str(town_number)]号探险队"
@@ -2295,14 +2297,14 @@
       "biome": {
          "temperate": {
             "display_name": "温带",
-            "description": "森林,河流和山脉.这里是崛起之都历来生存的地方.",
+            "description": "森林, 河流和山脉. 这里是崛起之都历来生存的地方.",
             "random_location_names": {
-               "000": "黑泽之森"
+               "000": "黑漠泽森林"
             }
          },
          "arctic": {
             "display_name": "北极",
-            "description": "北方部落的家乡,四处都是皑皑的白雪,高耸的山脉和大范围的水体.",
+            "description": "北方联盟的家乡, 四处都是皑皑的白雪, 高耸的山脉和大范围的水体.",
             "random_location_names": {
                "000": "瓦尔基苔原"
             }
@@ -2362,8 +2364,8 @@
                               "003": "爬山涉水了? 好吧, 现在你们来到了一个好地方. 这些是给你们的一些帮助, 用它们发展起来吧!",
                               "004": "欢迎来到这个地方, 冒险者们!! 这里的物资是给你用来发展的!"
                            },
-                           "bulletin_title": "一名头发斑白的旅行者路过.",
-                           "dialog_title": "梅尔·布利汉德"
+                           "bulletin_title": "一位护林员走了过来",
+                           "dialog_title": "罗尼雅·沃拉克森"
                         }
                      }
                   }
@@ -2659,7 +2661,7 @@
                         "pets_shop_1": {
                            "shop_info": {
                               "name": "雅凡琳的宠物店",
-                              "title": "一名当地弓箭猎手路过, 可以给你几个宠物养养"
+                              "title": "一名当地的护林员路过, 可以给你几个宠物养养"
                            }
                         },
                         "pets_shop_2": {
@@ -4333,6 +4335,12 @@
                                     }
                                  }
                               }
+                           },
+                           "grant_recurring_orc_citizen": {
+                              "notification_title": "新来的一名兽人加入了你的城镇!"
+                           },
+                           "grant_orc_citizen": {
+                              "notification_title": "额尔德尼的追随者加入了你的城镇!"
                            }
                         }
                      }
@@ -4963,16 +4971,16 @@
                   "title": "是凋零! 我们损失了一些庄稼..."
                },
                "alert_initial_spawn_roots": {
-                  "title": "光柱一般的触手标志着泰坦的根系. 把它们挖掉, 减少它对这片土地的控制!"
+                  "title": "遍地的鬼影触手下面藏着的, 是泰坦的根系. 把它们挖掉可以给泰坦造成伤害!"
                },
                "alert_spawn_camp": {
                   "title": "一扇新的传送门开启了, 腐化生物守卫着那里"
                },
                "alert_spawn_roots": {
-                  "title": "更多的腐化根系在向地表蔓延"
+                  "title": "更多的腐化根系在向地表蔓延. 往下挖, 用斧子砍掉它们"
                },
                "alert_wave": {
-                  "title": "泰坦喷出了一股邪恶风暴! 找地方躲起来!"
+                  "title": "泰坦喷出了一股极恶的风暴! 找地方躲起来!"
                },
                "delivery_quest_dialog": {
                   "dialog_tree_info": {
@@ -4988,9 +4996,6 @@
                         }
                      }
                   }
-               },
-               "alert_trance": {
-                  "title": "<Citizen Name>被邪恶的幻影统治了... "
                },
                "spawn_raid": {
                   "mission": {
@@ -5009,10 +5014,10 @@
                   "title": "一条触手抓住了[name(i18n_data.entity)]! 救救他们!"
                },
                "alert_initial_camp_spawn": {
-                  "title": "妖魅传送门! 它们由腐化生物守护着, 散播着瘟疫. 若还有余力就去挑战吧..."
+                  "title": "是传送门! 里面会不断地生成爬虫, 除非传送门被破坏. 但也要小心周围的腐化守卫."
                },
                "alert_new_bugs": {
-                  "title": "传送门里出来了更多的爬虫, 盯准了你的储物区"
+                  "title": "传送门里又出来爬虫了, 它们盯准了你的储物区"
                },
                "delivery_quest": {
                   "title": "萝卜任务",
@@ -6800,7 +6805,8 @@
             "food": "食物",
             "berries": "树莓",
             "carrots": "胡萝卜",
-            "jerky": "肉干"
+            "jerky": "肉干",
+            "sweet_potatoes": "薯类"
          },
          "coming_soon": "即将登场"
       },
@@ -7715,6 +7721,20 @@
                "20": "来自圆形世界的[str(self.stonehearth:unit_info.custom_name)]"
             }
          }
+      },
+      "trapping": {
+         "all_trappable_animals": {
+            "trappable_animals": {
+               "bugs": {
+                  "name": "虫类",
+                  "description": "捕捉虫子可以获得虫肉, 厨师可以烹饪, 还可以获得甲壳, 用于护甲制作"
+               },
+               "critters": {
+                  "name": "小动物",
+                  "description": "捕捉小动物可以获得肉干与毛皮"
+               }
+            }
+         }
       }
    },
    "entities": {
@@ -7904,30 +7924,54 @@
          "large_boulder": {
             "large_boulder_1": {
                "display_name": "巨大石堆",
-               "description": "可以开采的石头"
+               "description": "可以开采获得石头"
             },
             "large_boulder_2": {
                "display_name": "巨大石堆",
-               "description": "可以开采的石头"
+               "description": "可以开采获得石头"
+            },
+            "large_arctic_boulder_1": {
+               "display_name": "巨大石堆",
+               "description": "可以开采获得石头"
+            },
+            "large_arctic_boulder_2": {
+               "display_name": "巨大石堆",
+               "description": "可以开采获得石头"
             }
          },
          "medium_boulder": {
             "medium_boulder_1": {
                "display_name": "中型石堆",
-               "description": "可以开采的石头"
+               "description": "可以开采获得石头"
             },
             "medium_boulder_2": {
                "display_name": "中型石堆",
-               "description": "可以开采的石头"
+               "description": "可以开采获得石头"
             },
             "medium_boulder_3": {
                "display_name": "中型石堆",
-               "description": "可以开采的石头"
+               "description": "可以开采获得石头"
+            },
+            "medium_arctic_boulder_1": {
+               "display_name": "中型石堆",
+               "description": "可以开采获得石头"
+            },
+            "medium_arctic_boulder_2": {
+               "display_name": "中型石堆",
+               "description": "可以开采获得石头"
+            },
+            "medium_arctic_boulder_3": {
+               "display_name": "中型石堆",
+               "description": "可以开采获得石头"
             }
          },
          "small_boulder": {
             "display_name": "小型石堆",
-            "description": "可以开采的石头"
+            "description": "可以开采获得石头"
+         },
+         "small_arctic_boulder": {
+            "display_name": "小型石堆",
+            "description": "可以开采获得石头"
          }
       },
       "construction": {
@@ -8012,7 +8056,7 @@
          "wooden_window_frame_wide": {
             "wooden_window_frame_wide_ghost": {
                "display_name": "宽窗框",
-               "description": "这能看到全景!"
+               "description": "尽入眼帘!"
             }
          },
          "golden_clay_doorframe": {
@@ -8120,7 +8164,7 @@
          "wooden_window_frame_tall_fine": {
             "wooden_window_frame_tall_fine_ghost": {
                "display_name": "精巧高窗框",
-               "description": "加高的窗框可以带来优雅的气氛"
+               "description": "加高的窗框可以带来典雅的气息"
             }
          },
          "wooden_window_frame_wide_fine": {
@@ -8208,6 +8252,66 @@
          "ornate_wooden_tunnel_door": {
             "display_name": "华丽的木制隧道门",
             "description": "可以封闭隧道"
+         },
+         "stone_door": {
+            "stone_door_ghost": {
+               "display_name": "石门",
+               "description": "造出来就是为了耐用!"
+            }
+         },
+         "stone_window_frame": {
+            "stone_window_frame_ghost": {
+               "display_name": "石窗框",
+               "description": "挡一点点风."
+            }
+         },
+         "stone_window_frame_wide": {
+            "stone_window_frame_wide_ghost": {
+               "display_name": "石制宽窗框",
+               "description": "尽入眼帘!"
+            }
+         },
+         "stone_window_frame_wide_wood": {
+            "stone_window_frame_wide_wood_ghost": {
+               "display_name": "木条石制宽窗框",
+               "description": "朴素而宽敞!"
+            }
+         },
+         "stone_window_frame_wood": {
+            "stone_window_frame_wood_ghost": {
+               "display_name": "木石窗框",
+               "description": "挡一点点风."
+            }
+         },
+         "stone_window_frame_tall": {
+            "stone_window_frame_tall_ghost": {
+               "display_name": "石制高窗框",
+               "description": "加高的窗框可以带来典雅的气息"
+            }
+         },
+         "stone_window_frame_short": {
+            "stone_window_frame_short_ghost": {
+               "display_name": "石制矮窗框",
+               "description": "矮也不失典雅."
+            }
+         },
+         "stone_window_frame_crossbeam": {
+            "stone_window_frame_crossbeam_ghost": {
+               "display_name": "十字窗条的石窗框",
+               "description": "小动物跑不进来了."
+            }
+         },
+         "stone_door_2": {
+            "stone_door_2_ghost": {
+               "display_name": "加固石门",
+               "description": "比起你那种市面上的门牢固多了."
+            }
+         },
+         "stone_double_door": {
+            "stone_double_door_ghost": {
+               "display_name": "双开石门",
+               "description": "大门一扇. 很大气."
+            }
          }
       },
       "containers": {
@@ -8616,7 +8720,7 @@
          "deer_horned": {
             "species": "鹿",
             "description": "小心有角!",
-            "display_name": "鹿"
+            "display_name": "北美驯鹿"
          }
       },
       "crops": {
@@ -8796,7 +8900,7 @@
          },
          "silkweed_crop": {
             "display_name": "丝绸草",
-            "description": "这种植物的纤维可以制作丝线",
+            "description": "这种植物的纤维可以纺成丝线",
             "growth_stage": {
                "004": {
                   "name": "成熟丝绸草",
@@ -9082,6 +9186,48 @@
                "002": {
                   "name": "杜松子嫩芽",
                   "description": "兔子刚好可以躲下面."
+               }
+            }
+         },
+         "pine_tree_crop": {
+            "display_name": "松树苗木",
+            "description": "森林逐渐稀疏? 准备开始植树造林吧.",
+            "growth_stage": {
+               "001": {
+                  "name": "松树幼苗",
+                  "description": "生命的脆弱期."
+               },
+               "003": {
+                  "name": "松树幼树",
+                  "description": "准备转移阵地."
+               },
+               "000": {
+                  "name": "松果",
+                  "description": "一棵全新的松树正在这里生根."
+               },
+               "002": {
+                  "name": "松树嫩芽",
+                  "description": "完美的嫩芽. 还在成长!"
+               }
+            }
+         },
+         "sweet_potato_crop": {
+            "display_name": "甘薯",
+            "description": "虽然甘甜, 但生的还是不太好吃",
+            "growth_stage": {
+               "003": {
+                  "name": "成熟的甘薯",
+                  "description": "可以挖了!"
+               },
+               "002": {
+                  "name": "小甘薯"
+               },
+               "011": {
+                  "name": "腐烂甘薯",
+                  "description": "发霉了就不能吃了"
+               },
+               "000": {
+                  "description": "总有一天会长成一种美味的紫色蔬菜."
                }
             }
          }
@@ -9482,6 +9628,12 @@
                "window_frame_barred_ghost": {
                   "display_name": "石制铁条窗框",
                   "description": "给那些喜欢在铁条后面暗中观察的."
+               }
+            },
+            "stone_torch": {
+               "stone_torch_ghost": {
+                  "display_name": "石火炬",
+                  "description": "挂在墙上的火炬, 慢慢燃烧着里面的油."
                }
             }
          },
@@ -9884,6 +10036,30 @@
          "cheat_military_chest": {
             "display_name": "Cheat Military Chest - Debug物件",
             "description": "有一把最好的非传说级武器和铠甲Contains one of each best non-legendary weapon and armor, plus bandages and turrets."
+         },
+         "stone_lantern_simple": {
+            "stone_lantern_simple_ghost": {
+               "display_name": "简约石灯",
+               "description": "毫不亮眼. 可以挂在墙上."
+            }
+         },
+         "stone_garden_lantern_simple": {
+            "stone_garden_lantern_simple_ghost": {
+               "display_name": "简约花园石灯",
+               "description": "经典的握把...虽然只是装饰用的."
+            }
+         },
+         "stone_torch": {
+            "stone_torch_ghost": {
+               "display_name": "石火炬",
+               "description": "挂在墙上的火炬, 慢慢燃烧着里面的油."
+            }
+         },
+         "stone_candle_holder": {
+            "stone_candle_holder_ghost": {
+               "display_name": "石烛杯",
+               "description": "朴素时光中的照明."
+            }
          }
       },
       "food": {
@@ -10328,6 +10504,34 @@
             "cake_serving": {
                "display_name": "一片甜蛋糕"
             }
+         },
+         "bug_meat_kabob": {
+            "bug_meat_kabob_serving": {
+               "display_name": "一份虫肉烤串"
+            },
+            "bug_meat_kabob": {
+               "display_name": "虫肉烤串",
+               "description": "虫子肉的, 看起来稍微能咽得下口一点的形态"
+            }
+         },
+         "sweet_potato": {
+            "sweet_potato_serving": {
+               "display_name": "一份甘薯",
+               "description": "小份的. 甜甜的!"
+            },
+            "sweet_potato_basket": {
+               "display_name": "一篮甘薯",
+               "description": "整整齐齐."
+            }
+         },
+         "roasted_sweet_potato": {
+            "roasted_sweet_potato": {
+               "display_name": "烤甘薯",
+               "description": "温暖你的手儿和心田."
+            },
+            "roasted_sweet_potato_serving": {
+               "display_name": "一份烤甘薯"
+            }
          }
       },
       "furniture": {
@@ -10606,6 +10810,12 @@
             "ornate_wooden_chair_ghost": {
                "display_name": "华丽的木椅",
                "description": "为了给坐着的你加上不止一点典雅."
+            }
+         },
+         "stone_bed": {
+            "stone_bed_ghost": {
+               "display_name": "石床",
+               "description": "随便铺了点草的能睡觉的石头"
             }
          }
       },
@@ -11206,7 +11416,7 @@
          "frostsnap_plant": {
             "display_name": "野生的霜断花",
             "description": "可以采集的治疗草药",
-            "unripe_description": "这植物已经采集了, 还没长回去",
+            "unripe_description": "这植物已经采集了, 还没长好",
             "seed": {
                "frostsnap_plant_seed_ghost": {
                   "display_name": "野霜断花种",
@@ -11491,7 +11701,7 @@
                "display_name": "红郁金香仙人球",
                "description": "顶上的花可以采来做药草"
             },
-            "unripe_description": "这株植物已经被采集过了, 还没长回去",
+            "unripe_description": "这株植物已经被采集过了, 还没长好",
             "stem": {
                "cactus_tulip_red_plant_stem": {
                   "display_name": "未开花的郁金香仙人球",
@@ -11554,7 +11764,7 @@
                "display_name": "蓝郁金香仙人球",
                "description": "顶上的花可以采来做药草"
             },
-            "unripe_description": "这株植物已经被采集过了, 还没长回去"
+            "unripe_description": "这株植物已经被采集过了, 还没长好"
          },
          "cactus_tulip_plant": {
             "yellow": {
@@ -11587,7 +11797,7 @@
                   }
                },
                "cactus_tulip_yellow_plant": {
-                  "unripe_description": "这株植物已经被采集过了, 还没长回去"
+                  "unripe_description": "这株植物已经被采集过了, 还没长好"
                },
                "cactus_tulip_yellow_plant_ghost": {
                   "display_name": "黄郁金香仙人球",
@@ -11659,6 +11869,191 @@
             "stem": {
                "wax_plant_green_plant_stem": {
                   "display_name": "幼绿石莲",
+                  "description": "还在成长!"
+               }
+            }
+         },
+         "sweet_potato": {
+            "sweet_potato_ghost": {
+               "display_name": "甘薯",
+               "description": "管饱的冬日马铃薯"
+            },
+            "bud": {
+               "sweet_potato_plant_bud": {
+                  "display_name": "丰满的甘薯",
+                  "description": "快长成了!"
+               }
+            },
+            "rotten": {
+               "sweet_potato_rotten": {
+                  "display_name": "腐烂甘薯",
+                  "description": "不能吃了, 留种吧"
+               }
+            },
+            "seed": {
+               "sweet_potato_plant_seed": {
+                  "display_name": "甘薯块",
+                  "description": "种下会长出一种美味的紫色蔬菜."
+               }
+            },
+            "sprout": {
+               "sweet_potato_plant_sprout": {
+                  "display_name": "甘薯嫩芽",
+                  "description": "还需要些时间与关爱."
+               }
+            },
+            "stem": {
+               "sweet_potato_plant_stem": {
+                  "display_name": "长叶的甘薯",
+                  "description": "还在成长!"
+               }
+            }
+         },
+         "snow_poppy_plant": {
+            "stem": {
+               "snow_poppy_plant_stem": {
+                  "display_name": "雪罂草",
+                  "description": "还在成长!"
+               }
+            },
+            "sprout": {
+               "snow_poppy_plant_sprout": {
+                  "display_name": "雪罂嫩芽",
+                  "description": "还需要些时间与关爱."
+               }
+            },
+            "seed": {
+               "snow_poppy_plant_seed": {
+                  "display_name": "雪罂花籽",
+                  "description": "种下后会开出绚烂的花朵"
+               },
+               "snow_poppy_plant_seed_ghost": {
+                  "display_name": "雪罂花籽",
+                  "description": "种下后会开出绚烂的花朵"
+               }
+            },
+            "bud": {
+               "snow_poppy_plant_bud": {
+                  "display_name": "雪罂花蕾",
+                  "description": "快开花了!  看, 有花蕾了!"
+               }
+            },
+            "unripe_description": "这棵植物被采过了, 还没长好",
+            "snow_poppy_plant_ghost": {
+               "display_name": "Snow Poppy",
+               "description": "采集可获得有治愈效果药草"
+            }
+         },
+         "gold_snow_poppy_plant": {
+            "stem": {
+               "gold_snow_poppy_plant_stem": {
+                  "display_name": "雪罂草",
+                  "description": "还在成长!"
+               }
+            },
+            "sprout": {
+               "gold_snow_poppy_plant_sprout": {
+                  "display_name": "雪罂嫩芽",
+                  "description": "还需要一些时间和关爱."
+               }
+            },
+            "seed": {
+               "gold_snow_poppy_plant_seed": {
+                  "display_name": "雪罂花籽",
+                  "description": "种下后会开出绚烂的花朵"
+               },
+               "gold_snow_poppy_plant_seed_ghost": {
+                  "display_name": "雪罂花籽",
+                  "description": "种下后会开出绚烂的花朵"
+               }
+            },
+            "bud": {
+               "gold_snow_poppy_plant_bud": {
+                  "display_name": "雪罂花蕾",
+                  "description": "快长成了!  看, 有花蕾了!"
+               }
+            },
+            "unripe_description": "This plant has been harvested and has not grown back yet",
+            "gold_snow_poppy_plant_ghost": {
+               "display_name": "雪罂花",
+               "description": "采集可获得有治愈效果药草"
+            }
+         },
+         "violet_plant": {
+            "violet_plant": {
+               "unripe_description": "这棵植物被采过了, 还没长好."
+            },
+            "violet_plant_ghost": {
+               "display_name": "紫罗兰",
+               "description": "采集可获得有治愈效果药草"
+            },
+            "bud": {
+               "violet_plant_bud": {
+                  "display_name": "紫罗兰花蕾",
+                  "description": "快开花了!  看, 有花蕾了!"
+               }
+            },
+            "seed": {
+               "violet_plant_seed": {
+                  "display_name": "紫罗兰种子",
+                  "description": "种下后会开出紫色的花朵"
+               },
+               "violet_plant_seed_ghost": {
+                  "display_name": "紫罗兰种子",
+                  "description": "种下后会开出紫色的花朵"
+               }
+            },
+            "sprout": {
+               "violet_plant_sprout": {
+                  "display_name": "紫罗兰嫩芽",
+                  "description": "还需要一些时间和关爱."
+               }
+            },
+            "stem": {
+               "violet_plant_stem": {
+                  "display_name": "紫罗兰草",
+                  "description": "还在成长!"
+               }
+            }
+         },
+         "wintermoss": {
+            "wintermoss": {
+               "wintermoss_ghost": {
+                  "display_name": "冬苔茸",
+                  "description": "这种植物的纤维能纺成丝线."
+               }
+            },
+            "bud": {
+               "wintermoss_bud": {
+                  "display_name": "开花的冬苔茸",
+                  "description": "快长成了!  看, 小花花!"
+               },
+               "wintermoss_plant_bud": {
+                  "display_name": "开花的冬苔茸",
+                  "description": "快长成了!"
+               }
+            },
+            "display_name": "冬苔茸",
+            "description": "可以从中获取粗纤维",
+            "seed": {
+               "wintermoss_plant_seed": {
+                  "display_name": "冬苔茸种子",
+                  "description": "种下后长出粗糙纤维的植物."
+               },
+               "wintermoss_plant_seed_ghost": {
+                  "display_name": "冬苔茸种子",
+                  "description": "种下后长出粗糙纤维的植物."
+               }
+            },
+            "sprout": {
+               "wintermoss_plant_sprout": {
+                  "display_name": "冬苔茸嫩芽",
+                  "description": "还需要一些时间和关爱."
+               }
+            },
+            "stem": {
+               "wintermoss_plant_stem": {
+                  "display_name": "冬苔茸草",
                   "description": "还在成长!"
                }
             }
@@ -11777,22 +12172,30 @@
          },
          "fiber": {
             "silkweed_bundle": {
-               "display_name": "纤维",
+               "display_name": "丝绸草捆",
                "description": "可以纺织成线"
             },
             "wool_bundle": {
-               "display_name": "羊毛",
+               "display_name": "羊毛捆",
                "description": "可以纺织成线"
             },
             "coarse_fiber_bundle": {
-               "display_name": "粗纤维",
-               "description": "粗糙和让人觉得发痒"
+               "display_name": "粗纤维捆",
+               "description": "粗糙得让人发痒"
+            },
+            "wintermoss_bundle": {
+               "display_name": "冬苔茸捆",
+               "description": "可以纺织成线"
             }
          },
          "gold": {
             "gold_ore": {
                "display_name": "金矿",
                "description": "一块没精炼过的金子"
+            },
+            "bone_ancient": {
+               "display_name": "古代遗骨",
+               "description": "一块上了年纪的骨头."
             }
          },
          "iron": {
@@ -11931,6 +12334,18 @@
             "cactus_tulip_yellow": {
                "display_name": "黄郁金香仙人球花朵",
                "description": "常规医用药草"
+            },
+            "snow_poppy": {
+               "display_name": "雪罂花",
+               "description": "艳丽的医用药草"
+            },
+            "gold_snow_poppy": {
+               "display_name": "雪罂花",
+               "description": "艳丽的医用药草"
+            },
+            "violet": {
+               "display_name": "紫罗兰花",
+               "description": "艳丽的医用药草"
             }
          },
          "skin": {
@@ -12121,6 +12536,26 @@
                   "display_name": "杜松子幼树",
                   "description": "幼年的杜松子树."
                }
+            },
+            "large_snowy_juniper_tree": {
+               "display_name": "杜松子大树",
+               "description": "了不起的活化石."
+            },
+            "medium_snowy_juniper_tree": {
+               "display_name": "杜松子树",
+               "description": "又高又粗."
+            },
+            "small_snowy_juniper_tree": {
+               "display_name": "小杜松子树",
+               "description": "还是棵树苗."
+            },
+            "medium_gold_juniper_tree": {
+               "display_name": "杜松子树",
+               "description": "又高又粗."
+            },
+            "small_gold_juniper_tree": {
+               "display_name": "小杜松子树",
+               "description": "还是棵树苗."
             }
          },
          "palm_tree": {
@@ -12130,7 +12565,7 @@
             },
             "small_palm_tree": {
                "display_name": "小棕榈树",
-               "description": "仅仅是一颗树苗."
+               "description": "还是棵树苗."
             }
          },
          "acacia_tree": {
@@ -12140,7 +12575,7 @@
             },
             "small_acacia_tree": {
                "display_name": "小金合欢树",
-               "description": "年幼的, 但是很健壮"
+               "description": "年幼但结实"
             },
             "sapling_acacia_tree": {
                "description": "金合欢幼树",
@@ -12218,11 +12653,11 @@
          "pine_tree": {
             "large_pine_tree": {
                "display_name": "大松树",
-               "description": "一百年树龄. 太厉害了..."
+               "description": "百年树龄. 真厉害..."
             },
             "medium_pine_tree": {
                "display_name": "中型松树",
-               "description": "结实的树干, 正在壮年 ."
+               "description": "结实, 旺盛."
             },
             "small_pine_tree": {
                "display_name": "小松树",
@@ -12255,6 +12690,52 @@
                   "display_name": "抽条松树",
                   "description": "快成型了!  成叶也在长出来了!"
                }
+            },
+            "sapling_pine_tree": {
+               "sapling_pine_tree_ghost": {
+                  "display_name": "Pine Tree Sapling",
+                  "description": "Baby Pine Tree."
+               },
+               "sapling_pine_tree_iconic": {
+                  "description": "Plant it in the earth and watch it grow."
+               },
+               "description": "Baby Pine Tree."
+            },
+            "medium_snowy_pine_tree": {
+               "description": "结实, 旺盛.",
+               "display_name": "中型松树"
+            },
+            "large_snowy_pine_tree": {
+               "description": "百年树龄. 真厉害...",
+               "display_name": "大松树"
+            },
+            "small_snowy_pine_tree": {
+               "description": "还是棵树苗.",
+               "display_name": "小松树"
+            },
+            "large_gold_pine_tree": {
+               "display_name": "大松树",
+               "description": "百年树龄. 真厉害..."
+            },
+            "medium_gold_pine_tree": {
+               "display_name": "中型松树",
+               "description": "结实, 旺盛."
+            },
+            "small_gold_pine_tree": {
+               "display_name": "小松树",
+               "description": "还是棵树苗."
+            },
+            "large_silver_pine_tree": {
+               "display_name": "大松树",
+               "description": "百年树龄. 真厉害..."
+            },
+            "small_silver_pine_tree": {
+               "display_name": "小松树",
+               "description": "还是棵树苗."
+            },
+            "medium_silver_pine_tree": {
+               "display_name": "中型松树",
+               "description": "结实, 旺盛."
             }
          },
          "cactus_tree": {
@@ -12312,7 +12793,7 @@
             },
             "large_oak_tree": {
                "display_name": "大橡树",
-               "description": "至少有百年树龄了...甚至更古老...."
+               "description": "百年树龄. 真厉害..."
             },
             "medium_oak_tree": {
                "display_name": "中型橡树",
@@ -13451,7 +13932,7 @@
                "flavor": "最后的防线!"
             },
             "wooden_double_door_recipe": {
-               "description": "两扇门比一扇门好",
+               "description": "两扇更比一扇强",
                "recipe_name": "木制双扇门",
                "flavor": "某些人每天都想着进来... 每天"
             },
@@ -13525,7 +14006,7 @@
                "recipe_name": "木制高窗框"
             },
             "wooden_window_frame_wide_recipe": {
-               "description": "这能看到全景!",
+               "description": "尽入眼帘!",
                "recipe_name": "木制宽窗框"
             },
             "herbalist_staff_recipe": {
@@ -13905,12 +14386,12 @@
                "flavor": "我的心脏上有个喵形的洞."
             },
             "roast_pork_recipe": {
-               "description": "即将推出! 精心烹制的烤猪肘子",
+               "description": "精心烹制的烤猪肘子",
                "recipe_name": "烤猪肘子",
                "flavor": "烤过后淋上了滚烫的油"
             },
             "bacon_and_eggs_recipe": {
-               "description": "即将推出! 就是你喜欢的猪肉和鸡蛋.",
+               "description": "就是你喜欢的猪肉和鸡蛋.",
                "recipe_name": "培根煎蛋",
                "flavor": "培根里的油融入了鸡蛋里, 真美味!"
             },
@@ -13920,7 +14401,7 @@
                "flavor": "只煎一面更好吃!"
             },
             "bug_meat_stew_recipe": {
-               "description": "即将推出! 筋筋拉拉, 还有点辣, 特别适合在热天吃.",
+               "description": "筋筋拉拉, 还有点辣, 特别适合在热天吃.",
                "recipe_name": "炖煮美味昆虫肉",
                "flavor": "什么都别问, 你知道这是虫子肉做的."
             },
@@ -13935,7 +14416,7 @@
                "flavor": "这些腿很适合奔跑.. 但也适合拿来吃!"
             },
             "roast_venison_recipe": {
-               "description": "即将推出! 色泽漂亮, 有一点点腥.",
+               "description": "色泽漂亮, 有一点点腥.",
                "recipe_name": "烤鹿肉块",
                "flavor": "不是家常便饭, 但若能找到便是一次盛宴."
             },
@@ -13948,7 +14429,17 @@
                "recipe_name": "甜蛋糕",
                "flavor": "还有一颗莓在顶上, 真好吃!"
             },
-            "chefs_specials_name": "招牌小菜"
+            "chefs_specials_name": "招牌小菜",
+            "bug_meat_kabob_recipe": {
+               "description": "串烤虫子肉! 口感十分微妙",
+               "recipe_name": "虫肉烤串",
+               "flavor": "给勇敢的吃货准备的"
+            },
+            "roasted_sweet_potato_recipe": {
+               "description": "慢烤的甘薯.",
+               "recipe_name": "烤甘薯",
+               "flavor": "温暖你的手儿和心田."
+            }
          },
          "cook_mill": {
             "cook_mill_ghost": {
@@ -14555,7 +15046,7 @@
             "valor_brazier_large_recipe": {
                "description": "守卫小镇的一束光.",
                "recipe_name": "大火盆",
-               "flavor": "若站在山峦之巅, 你能看到星星点点的火光贯穿着整个黑泽之森."
+               "flavor": "若站在山峦之巅, 你能看到星星点点的火光贯穿着整个黑漠泽森林."
             },
             "lucid_gem_recipe": {
                "description": "灵魂的中心, 光耀头环的重要部件",
@@ -14571,6 +15062,76 @@
                "description": "伤害附近任何有泰坦味道的东西.",
                "recipe_name": "泰坦护符",
                "flavor": "宝贝不要伤害我! 别再伤害我!"
+            },
+            "stone_bed_recipe": {
+               "recipe_name": "石床",
+               "description": "随便铺了点草的能睡觉的石头",
+               "flavor": "The decorative frame might distract you from the discomfort of sleeping on hard stone"
+            },
+            "stone_door_recipe": {
+               "description": "造出来就是为了耐用的门.",
+               "recipe_name": "石门"
+            },
+            "stone_window_frame_recipe": {
+               "description": "很基本的石窗.",
+               "recipe_name": "石窗框",
+               "flavor": "有点凉飕飕的, 但很有风度!"
+            },
+            "stone_window_frame_wide_recipe": {
+               "description": "尽入眼帘!",
+               "recipe_name": "石制宽窗框"
+            },
+            "stone_window_frame_wide_wood_recipe": {
+               "description": "朴素而宽敞!",
+               "recipe_name": "木条石制宽窗框"
+            },
+            "stone_window_frame_wood_recipe": {
+               "description": "很基本的窗.",
+               "recipe_name": "木石窗框",
+               "flavor": "横截面是不是就这个意思?"
+            },
+            "stone_window_frame_tall_recipe": {
+               "description": "加高的窗框可以带来典雅的气息.",
+               "recipe_name": "石制高窗框"
+            },
+            "stone_window_frame_short_recipe": {
+               "description": "矮也不失典雅.",
+               "recipe_name": "石制矮窗框"
+            },
+            "stone_lantern_simple_recipe": {
+               "description": "毫不亮眼. 可以挂在墙上.",
+               "recipe_name": "简约石灯",
+               "flavor": "缺点: 重. 优点: 不像会自焚的样子."
+            },
+            "stone_garden_lantern_simple_recipe": {
+               "description": "经典的握把...虽然只是装饰用的.",
+               "recipe_name": "简约花园石灯",
+               "flavor": "这重量就别想提着它走来走去了."
+            },
+            "stone_torch_recipe": {
+               "description": "挂在墙上的火炬, 慢慢燃烧着里面的油.",
+               "recipe_name": "石火炬",
+               "flavor": "让你更轻松地焚膏油以继晷."
+            },
+            "stone_candle_holder_recipe": {
+               "description": "朴素时光中的照明.",
+               "recipe_name": "石烛杯",
+               "flavor": "浪漫的人觉得浪漫, 读书的人觉得看不清."
+            },
+            "stone_door_2_recipe": {
+               "description": "比起你那种市面上的门牢固多了.",
+               "recipe_name": "加固石门",
+               "flavor": "这形状, 可是我从那些跳方块舞的朋友身上学来的."
+            },
+            "stone_double_door_recipe": {
+               "description": "两扇更比一扇强.",
+               "recipe_name": "双开石门",
+               "flavor": "总有人企图破门而入... 天天如此."
+            },
+            "stone_window_frame_crossbeam_recipe": {
+               "description": "更有型的窗.",
+               "recipe_name": "十字窗条的石窗框",
+               "flavor": "横截面是不是就这个意思?"
             }
          }
       },
