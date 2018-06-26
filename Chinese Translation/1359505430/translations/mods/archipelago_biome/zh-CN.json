@@ -106,6 +106,20 @@
 				"display_name": "装鱼木箱",
 				"description": "出口必备"
 			},
+			"fancy_fisher_sign": {
+				"display_name": "装饰性渔民招牌",
+				"description": "一块标志着渔民职业的漂亮牌子",
+				"recipe": {
+					"flavor": "这里还有更好的鱼呢"
+				}
+			},
+			"fisher_sign": {
+				"display_name": "渔民木招牌",
+				"description": "一块标志着渔民职业的牌子",
+				"recipe": {
+					"flavor": "这里有最好的鱼"
+				}
+			},
 			"fruit_container": {
 				"display_name": "椰子箱",
 				"description": "出口必备",
@@ -600,6 +614,8 @@
 			"build_mode": {
 				"building_templates": {
 					"template_names": {
+						"fisher_hut": "渔棚",
+						"shaded_hammock": "阴凉吊床",
 						"beach_tower": "沙滩瞭望塔",
 						"little_pier": "小码头",
 						"open_house": "休息室",
@@ -676,8 +692,9 @@
 			}
 		},
 		"gm": {
-			"anya": "Anya",
+			"anya": "安雅",
 			"captain_miranda": "米兰达船长",
+			"goblin_bucket": "带了个水桶的哥布林",
 			"campaigns": {
 				"archipelago_tutorial": {
 					"trigger": {
@@ -763,6 +780,16 @@
 							"choice_3": "棒棒哒",
 							"message_4": "谢谢米兰达. 谢谢你们. 我们要走了.<br>但愿一路顺风! 再见!",
 							"choice_end": "再见!"
+						}
+					}
+				},
+				"archipelago_free_bucket": {
+					"trigger": {
+						"goblin_donation": {
+							"title": "一只带着水桶的哥布林走了过来",
+							"message_1": "嘿, 笨蛋们. 我捡到了这个没什么用的桶, 这种垃圾, 就应该是你们的. 当帽子都嫌小, 看吧?<br><br><font size=-1>(指了指自己的头头)</font>",
+							"message_2": "我才不管你们怎么处理它. 烧了也随便!<br><br><font size=-1>(把桶扔在地上, 踢了脚, 然后生气地走开了)</font>",
+							"answer": "谢谢?"
 						}
 					}
 				}

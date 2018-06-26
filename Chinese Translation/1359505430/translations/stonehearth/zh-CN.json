@@ -925,7 +925,10 @@
             },
             "dispatch_quest": {
                "abandon": "放弃",
-               "dispatch": "发布"
+               "dispatch": "发布",
+               "selected": "已选",
+               "select": "选择",
+               "deselect": "取消选中"
             },
             "reembarkation": {
                "title": "一段新的征程!",
@@ -1756,7 +1759,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 r864 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r866 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -2062,7 +2065,7 @@
       },
       "debug": {
          "post_bug": {
-            "title": "文件错误",
+            "title": "填写提交表",
             "message": "感谢参与Stonehearth 的阿尔法测试 ! 这里是你如何可以提交一个bug报告.",
             "file_bug_step_1": "前往http://discourse.stonehearth.net/c/support/bug-reports",
             "file_bug_step_2": "刷新最新的主题列表,如果还没人反映过和你一样的bug,请创建一个新主题.",
@@ -3660,7 +3663,7 @@
                            },
                            "create_necromancer_crypt": {
                               "crypt": {
-                                 "display_name": "一个地下室",
+                                 "display_name": "墓窖",
                                  "description": "由凤凰帝国建造的"
                               },
                               "sarcophagus": {
@@ -3669,7 +3672,7 @@
                               },
                               "crypt_structures": {
                                  "floor_candle": {
-                                    "description": "照亮了地穴入口"
+                                    "description": "照亮了墓窖的入口"
                                  }
                               }
                            }
@@ -6664,6 +6667,10 @@
             },
             "zilla": {
                "description": "斯拉出没, 请注意!"
+            },
+            "giant_stoneling": {
+               "display_name": "大石魔",
+               "description": "不再是块小石头啦!"
             }
          },
          "corruption": {
