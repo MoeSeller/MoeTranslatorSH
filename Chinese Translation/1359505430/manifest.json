@@ -16,6 +16,7 @@
    	
     "stonehearth/locales/zh-CN.json": "file(translations/stonehearth/zh-CN.json)",
     "rayyas_children/locales/zh-CN.json": "file(translations/rayyas_children/zh-CN.json)",
+    "northern_alliance/locales/zh-CN.json": "file(translations/northern_alliance/zh-CN.json)",
 	
     "archipelago_biome/locales/zh-CN.json": "file(translations/mods/archipelago_biome/zh-CN.json)",
     "settlementdecor/locales/zh-CN.json": "file(translations/mods/settlementdecor/zh-CN.json)",

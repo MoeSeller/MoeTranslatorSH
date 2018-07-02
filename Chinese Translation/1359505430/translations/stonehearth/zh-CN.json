@@ -1759,7 +1759,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r866 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r868 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -1852,7 +1852,7 @@
                },
                "disabled": {
                   "header": "模组禁用",
-                  "description": "这些模组被禁用了."
+                  "description": "这些模组在存档中但当前被禁用了."
                },
                "normal": {
                   "header": "准备就绪",
@@ -2002,32 +2002,33 @@
          },
          "select_game_story": {
             "title": "选择你的冒险者",
-            "story_start": "这是...的故事",
-            "kingdom_section_start": "... 这是一队勇敢的冒险者,他们来自于 ",
+            "story_start": "这个故事讲的是...",
+            "kingdom_section_start": "有一队勇敢的冒险者, 他们来自于",
             "select_button": "? ",
             "kingdom_picker_title": "选择一个王国",
-            "biome_section_start": "为了寻找新的土地,他们展开冒险,来到了",
-            "biome_picker_title": "选择一个生物群落",
-            "game_mode_select_start": "确定好了定居点 ",
+            "biome_section_start": "为了开辟新的土地, 他们展开冒险, 来到了",
+            "biome_picker_title": "选择一个生物区系",
+            "game_mode_select_start": ", 在这个",
             "game_mode_picker_title": "选择一个难度",
+            "biome_favored_label": "(优势区系)",
             "game_modes": {
                "normal": {
-                  "display_name": "普通模式",
+                  "display_name": "普通",
                   "description": "在这个充满危险的世界进行冒险,你的城镇将会受到各种敌人的威胁.",
-                  "post_selection_text": "在一个令人振奋的地方重新发展."
+                  "post_selection_text": "令人振奋的地方从零开始."
                },
                "peaceful": {
-                  "display_name": "和平模式",
+                  "display_name": "和平",
                   "description": "在这个沙盒模式中你不用担心入侵者,可以尽情地建造属于你的城镇!",
-                  "post_selection_text": "在一个宁静的地方重新发展."
+                  "post_selection_text": "宁静祥和的地方从零开始."
                },
                "hard": {
                   "display_name": "困难",
                   "description": "将会比正常模式面临更多强大的怪物",
-                  "post_selection_text": "在一个令人生畏的地方开始冒险."
+                  "post_selection_text": "令人生畏的地方从零开始."
                }
             },
-            "biome_warning_title": "注意, 旅行者...",
+            "biome_warning_title": "注意, 旅行者们...",
             "biome_warning_text": "[str(kingdom)]炉民的宜居区系是[str(preferred_biome)], 若不生活在这个区系中, 工匠制作使用的原材料可能会变得很难获得.<br><br>你是否仍要坚持当前选择?",
             "begin_button": "招募名单"
          },
@@ -2294,7 +2295,7 @@
             "quote": "绵羊? 带了. 锄头? 有了. 木剑? 拿好了. 开始出发!",
             "description": "认真, 勤奋, 忠诚, 又有着平衡的身体素质. 崛起之都的炉民通过伐木, 建造, 务农来创造属于自己的家园, 他们相信四海之下, 皆可为家.",
             "post_selection_description": ", 一个繁荣而勤勉的王国.",
-            "initial_town_name": "[str(town_number)]号探险队"
+            "initial_town_name": "[str(town_number)]号考察队"
          }
       },
       "biome": {
@@ -4718,7 +4719,7 @@
                                  "dialog_nodes": {
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "又见面了! 你们的小镇已如此繁忙, 或许是考虑开始下一段征程的时候了.<p>你们中可能有些炉民已经迫不及待想要去出远门了, 带着所有从这里学到的, 去建立一个或许更大的, 更好的小镇.</p><p><font size=-1><i>再次出发需要你选择三位炉民, 并准备十件物品, 带上所有已解锁的配方来建立一个新的城镇.</i></font></p>"
+                                          "00": "又见面了! 你们的小镇已如此繁忙, 或许是考虑开始下一段征程的时候了.<p>你们中可能有些炉民已经迫不及待想要去出远门了, 带着所有从这里学到的, 去建立一个或许更大的, 更好的小镇.</p><p><font size=-1><i>再次出发可以让你选择三位炉民, 并准备十件物品, 带上所有已解锁的配方来建立一个新的城镇.</i></font></p>"
                                        },
                                        "bulletin_title": "又是梅尔!",
                                        "dialog_title": "最后件事",
@@ -10890,7 +10891,7 @@
             },
             "town_banner_guardian_token_iconic": {
                "display_name": "机灵小旗帜",
-               "description": "来自机灵旗帜的一角, 继承着它的魔力."
+               "description": "来自机灵旗帜的一角, 继承着它的祝福."
             }
          },
          "town_banner_might": {
@@ -10901,7 +10902,7 @@
             },
             "town_banner_might_token_iconic": {
                "display_name": "力量小旗帜",
-               "description": "来自力量旗帜的一角, 继承着它的魔力."
+               "description": "来自力量旗帜的一角, 继承着它的祝福."
             }
          },
          "town_banner_nature": {
@@ -10912,7 +10913,7 @@
             },
             "town_banner_nature_token_iconic": {
                "display_name": "蓬勃小旗帜",
-               "description": "来自蓬勃旗帜的一角, 继承着它的魔力."
+               "description": "来自蓬勃旗帜的一角, 继承着它的祝福."
             }
          },
          "titan_ward_stone": {
@@ -11947,7 +11948,7 @@
             },
             "unripe_description": "这棵植物被采过了, 还没长好",
             "snow_poppy_plant_ghost": {
-               "display_name": "Snow Poppy",
+               "display_name": "雪罂花",
                "description": "采集可获得有治愈效果药草"
             }
          },
@@ -12193,6 +12194,10 @@
             "wintermoss_bundle": {
                "display_name": "冬苔茸捆",
                "description": "可以纺织成线"
+            },
+            "coarse_fiber_bundle_winter": {
+               "display_name": "浅色粗纤维捆",
+               "description": "粗糙得让人发痒"
             }
          },
          "gold": {
@@ -12846,6 +12851,46 @@
                "tree_oak_plant_bud": {
                   "display_name": "抽条橡树",
                   "description": "快成型了!  成叶也在长出来了!"
+               }
+            }
+         },
+         "pine_tree_gold": {
+            "seed": {
+               "tree_pine_seed_ghost": {
+                  "display_name": "金松松果",
+                  "description": "种下后能长出一棵大树"
+               }
+            }
+         },
+         "pine_tree_silver": {
+            "seed": {
+               "tree_pine_seed_ghost": {
+                  "display_name": "银松松果",
+                  "description": "种下后能长出一棵大树"
+               }
+            }
+         },
+         "pine_tree_snowy": {
+            "seed": {
+               "tree_pine_seed_ghost": {
+                  "display_name": "雪松松果",
+                  "description": "种下后能长出一棵大树"
+               }
+            }
+         },
+         "juniper_tree_gold": {
+            "seed": {
+               "tree_juniper_seed_ghost": {
+                  "display_name": "金杜松子树种",
+                  "description": "种下后能长出一棵大树"
+               }
+            }
+         },
+         "juniper_tree_snowy": {
+            "seed": {
+               "tree_juniper_seed_ghost": {
+                  "display_name": "雪杜松子树种",
+                  "description": "种下后能长出一棵大树"
                }
             }
          }
@@ -16098,6 +16143,31 @@
                "description": "美丽地保护着光耀头环",
                "recipe_name": "银叶底座",
                "flavor": "以真实叶片为磨具, 注以不同层次的金银 它们比看起来结实多了"
+            },
+            "violet_transmute_recipe": {
+               "description": "从花儿里把种子取出来",
+               "recipe_name": "紫罗兰种子 (x3)",
+               "flavor": "只有老手才能把纤弱的种子剥离出来, 但在这过程中药草也就破坏了."
+            },
+            "tumbleweed_transmute_recipe": {
+               "description": "从纤维里把种子取出来",
+               "recipe_name": "风滚草种子 (x3)",
+               "flavor": "只有老手才能把纤弱的种子剥离出来, 但在这过程中纤维也就破坏了."
+            },
+            "wintermoss_transmute_recipe": {
+               "description": "从花儿里把剩余的种子取出来",
+               "recipe_name": "冬苔茸种子 (x3)",
+               "flavor": "只有老手才能把纤弱的种子剥离出来, 但在这过程中纤维也就破坏了."
+            },
+            "sweet_potato_transmute_recipe": {
+               "description": "薯类可以切块种植哦",
+               "recipe_name": "甘薯块 (x3)",
+               "flavor": "这可不需要什么技术, 把甘薯切成块塞进地里就行了."
+            },
+            "snow_poppy_transmute_recipe": {
+               "description": "P从纤维里把种子取出来",
+               "recipe_name": "雪罂花籽 (x3)",
+               "flavor": "只有老手才能把纤弱的种子剥离出来, 但在这过程中药草也就破坏了."
             }
          },
          "herbalist_buffs": {

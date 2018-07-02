@@ -2,9 +2,9 @@
    "kingdom": {
       "kingdom_name": "瑞雅之裔",
       "quote": "冥思, 冥思, 冥思: 自我的调和让万物脱离混沌, 获得生机.",
-      "long_description": "沙漠民族的人们早早地就学会了如何生存, 他们互相需要, 并且需要尽可能多的彼此. 现在, 来访者都发现他们是多么得好客, 而且还有能力接触世界各地的商品.",
-      "post_selection_description": ",一群富有智慧,精打细算的贸易者.",
-      "initial_town_name": "商队[str(town_number)]"
+      "long_description": "沙漠民族的人们早早地就学会了如何生存, 他们彼此需要, 并需要尽可能多的彼此. 现在, 来访者都发现他们是多么得好客, 而且还有能力接触世界各地的商品.",
+      "post_selection_description": ", 一群富有智慧, 精打细算的贸易者.",
+      "initial_town_name": "[str(town_number)]号商队"
    },
    "jobs": {
       "potter": {
