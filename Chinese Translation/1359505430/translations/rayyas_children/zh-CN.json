@@ -1173,32 +1173,32 @@
          },
          "rc_town_banner_guardian": {
             "rc_town_banner_guardian_ghost": {
-               "display_name": "城镇旗帜",
+               "display_name": "机灵旗帜",
                "description": "回家的标志"
             },
             "rc_town_banner_guardian_token_iconic": {
                "display_name": "机灵小旗帜",
-               "description": "来自机灵旗帜的一角, 继承着它的魔力."
+               "description": "来自机灵旗帜的一角, 继承着它的祝福."
             }
          },
          "rc_town_banner_nature": {
             "rc_town_banner_nature_ghost": {
-               "display_name": "城镇旗帜",
+               "display_name": "蓬勃旗帜",
                "description": "回家的标志"
             },
             "rc_town_banner_nature_token_iconic": {
                "display_name": "蓬勃小旗帜",
-               "description": "来自蓬勃旗帜的一角, 继承着它的魔力."
+               "description": "来自蓬勃旗帜的一角, 继承着它的祝福."
             }
          },
          "rc_town_banner_might": {
             "rc_town_banner_might_ghost": {
-               "display_name": "城镇旗帜",
+               "display_name": "力量旗帜",
                "description": "回家的标志"
             },
             "rc_town_banner_might_token_iconic": {
                "display_name": "力量小旗帜",
-               "description": "来自力量旗帜的一角, 继承着它的魔力."
+               "description": "来自力量旗帜的一角, 继承着它的祝福."
             }
          }
       },
