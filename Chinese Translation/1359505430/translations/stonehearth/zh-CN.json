@@ -977,7 +977,7 @@
                "roof_tool": "屋顶",
                "blocks_tool": "方块",
                "paint_tool": "上色",
-               "hole_tool": "洞",
+               "hole_tool": "钻孔",
                "stairs_tool": "阶梯",
                "road_tool": "道路",
                "fence_tool": "围栏",
@@ -1279,7 +1279,7 @@
                   "tooltip_defense": "防御装置",
                   "tooltip_light": "火把与灯饰",
                   "tooltip_decoration": "装饰物",
-                  "tooltip_refined_weaver": "加工品(布匹等)",
+                  "tooltip_refined_weaver": "加工品",
                   "tooltip_refined_animal_part": "动物产物",
                   "tooltip_refined_ore": "精炼金属",
                   "tooltip_weapons": "武器",
@@ -1759,7 +1759,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r869 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r870 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到 Stonehearth!",
                "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
@@ -2282,6 +2282,7 @@
             "food_container_resource_name": "食物原料",
             "prepared_food_resource_name": "主食",
             "prepared_dessert_resource_name": "甜点",
+            "earth_essence_resource": "石炉精华",
             "gear_resource_name": "零件",
             "ore_resource_name": "矿物",
             "dirt_resource_name": "土堆"
@@ -4322,15 +4323,12 @@
                                  }
                               }
                            },
-                           "unlock_titan_ward_carpenter": {
-                              "bulletin_title": "木匠解锁了泰坦护符的配方!"
-                           },
                            "prompt_for_recurring_orc_citizen": {
                               "dialog_tree_info": {
                                  "dialog_nodes": {
                                     "msg1": {
                                        "bulletin_message": {
-                                          "00": "你想要让这位兽人加入吗?"
+                                          "00": "你想要让这位兽人加入吗?<br><br><i><font size=-1>[他们身体结实, 行动缓慢, 尽管精神属性值不高, 但仍然基本不会胆怯而且生命回复速度快]</font></i>"
                                        },
                                        "bulletin_title": "兽人移民!",
                                        "dialog_title": "一位兽人想加入你的小镇!",
@@ -4972,7 +4970,7 @@
                   }
                },
                "alert_destroy_crops": {
-                  "title": "是凋零! 我们损失了一些庄稼..."
+                  "title": "凋零来袭! 我们损失了一些庄稼..."
                },
                "alert_initial_spawn_roots": {
                   "title": "遍地的鬼影触手下面藏着的, 是泰坦的根系. 把它们挖掉可以给泰坦造成伤害!"
@@ -4986,21 +4984,6 @@
                "alert_wave": {
                   "title": "泰坦喷出了一股极恶的风暴! 找地方躲起来!"
                },
-               "delivery_quest_dialog": {
-                  "dialog_tree_info": {
-                     "dialog_nodes": {
-                        "msg1": {
-                           "bulletin_message": {
-                              "00": "我们或许可以用胡萝卜给泰坦造成点儿伤害??"
-                           },
-                           "bulletin_title": "萝卜任务",
-                           "dialog_title": "萝卜任务",
-                           "choice_000": "胡萝卜, 马上到!",
-                           "choice_001": "不需要你们的帮助!"
-                        }
-                     }
-                  }
-               },
                "spawn_raid": {
                   "mission": {
                      "sighted_bulletin": {
@@ -5012,20 +4995,1341 @@
                   "title": "一条触手威胁到了我们的建筑物! 杀了它, 赶紧!"
                },
                "alert_building_was_destroyed": {
-                  "title": "我们的一座建筑物被摧毁了! 太迟了..."
+                  "title": "一座建筑物被摧毁了! 太迟了..."
                },
                "alert_tentacle_grab": {
                   "title": "一条触手抓住了[name(i18n_data.entity)]! 救救他们!"
                },
                "alert_initial_camp_spawn": {
-                  "title": "是传送门! 里面会不断地生成爬虫, 除非传送门被破坏. 但也要小心周围的腐化守卫."
+                  "title": "传送门出现了! 里面会不断地生成爬虫, 除非传送门被破坏. 但也要小心周围的腐化守卫."
                },
                "alert_new_bugs": {
                   "title": "传送门里又出来爬虫了, 它们盯准了你的储物区"
+               }
+            },
+            "amberstone": {
+               "persons": {
+                  "sasha": {
+                     "title": "飒沙, 珀石族的使节"
+                  }
                },
-               "delivery_quest": {
-                  "title": "萝卜任务",
-                  "dialog_title": "交出胡萝卜"
+               "arcs": {
+                  "trigger": {
+                     "discovery": {
+                        "encounters": {
+                           "titan_already_killed_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "greet": {
+                                       "bulletin_message": {
+                                          "00": "\"又见到你们啦, 圣猕的朋友们啊! 愿你们一切安好.<br><br>尊贵的人类啊, 我... 有件事要向你们忏悔.\""
+                                       },
+                                       "bulletin_title": "珀石族的飒沙回来了!",
+                                       "dialog_title": "飒沙, 珀石族的使节",
+                                       "choice_000": "欢迎啊! 忏悔?"
+                                    },
+                                    "intro": {
+                                       "bulletin_message": {
+                                          "00": "\"一开始找你的时候, 是觉得你们可能... 会对我们有利.\" 他胆怯地说道, 耳朵也耷拉着. \"在你们小镇下面潜伏着的泰坦世世代代都在威胁着我的族人. 看到你们的小镇, 我看到了一丝摆脱这个威胁的希望.<br><br>我为之前没有坦言我的动机而道歉. 希望能得到原谅.\""
+                                       },
+                                       "bulletin_title": "飒沙继续, 局促不安地说着",
+                                       "dialog_title": "飒沙, 珀石族的使节",
+                                       "choice_000": "哦... 不用放在心上!."
+                                    },
+                                    "story1": {
+                                       "bulletin_message": {
+                                          "00": "\"我得承认, 你们小镇超出了我们所有的预期, 居然单独打败了这么大体型的对手.<br><br>不仅如此 - 我们族人, 包括我在内, 也喜欢上你们了\" 他微笑着, 坦白说道. \"你们是我们坚实的友军, 你我从彼此身上都学到了不少. 希望我们俩窝能延续这段正在发芽的友谊.\""
+                                       },
+                                       "bulletin_title": "飒沙继续, 局促不安地说着",
+                                       "dialog_title": "飒沙, 珀石族的使节",
+                                       "choice_000": "谢谢, 当然可以!"
+                                    },
+                                    "story2": {
+                                       "bulletin_message": {
+                                          "00": "飒沙看起来放松了很多. \"真高兴你们能够同意! 我现在得走了, 但我还会来拜访的! 再一次, 祝贺你们清除了泰坦降下的天灾, 辛苦了. 再见!\""
+                                       },
+                                       "bulletin_title": "飒沙微笑着",
+                                       "dialog_title": "飒沙, 珀石族的使节",
+                                       "choice_000": "拜!"
+                                    }
+                                 }
+                              }
+                           },
+                           "56_display_titan_arbalest_instructions": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "00": "<i><font size=-1>[准备充分后, 选中劲弩按下'唤醒泰坦'按钮. 等到劲弩充能完毕, 按下开火按钮给泰坦造成伤害. 杀死或毁掉泰坦的仆从, 触手和根须也可以削减他的生命值.]<br><br>[祝好运!]</font>"
+                                       },
+                                       "bulletin_title": "出征泰坦",
+                                       "dialog_title": "最后一步",
+                                       "choice_000": "[好的!]"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "\"劲弩看起来蓄势待发. 是不是很壮丽? 它闪烁的样子?\"<br><br>他摇了摇头. \"现在不是分心的时候了. 该拿来的已经拿来了, 剩下的就只有激活它, 然后召唤泰坦了. 一旦召唤完成, 充能的任务就交给我们, 但发射还是得有你们来完成. 这是你们的小镇, 所以好像也没什么不对\"<br><br>\"千万要做好应付四面八方来袭敌人的准备再召唤泰坦. 这不是什么轻松的事情, 泰坦也一点都不友好.\""
+                                       },
+                                       "bulletin_title": "飒沙朝着劲弩祷告着",
+                                       "dialog_title": "(TKTK) Sasha Something一朵标题",
+                                       "choice_000": "我们会活下来的."
+                                    }
+                                 }
+                              }
+                           },
+                           "titan_defeated_dialog": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "accept2": {
+                                       "bulletin_message": {
+                                          "00": "<TKTK 一句祝贺>"
+                                       },
+                                       "bulletin_title": "飒沙继续说道",
+                                       "dialog_title": "飒沙, 珀石族的使节",
+                                       "choice_000": "一路顺风, 飒沙!"
+                                    },
+                                    "request1": {
+                                       "bulletin_message": {
+                                          "00": "\"事实上, 既然邪恶已经散去, 这里地表的石炉魔法能量也应该可以维持兔兔们的日常生活了. 只要你们还放着那座石碑, 我们中有些兔子会偶尔移民来此.\""
+                                       },
+                                       "bulletin_title": "飒沙提出了帮助",
+                                       "dialog_title": "飒沙的帮助",
+                                       "choice_000": "TKTK 一只回应"
+                                    },
+                                    "accept1": {
+                                       "bulletin_message": {
+                                          "00": "\"很好, 我得快点让他们知道!\"<br><br>\"那现在, 我觉得... 时间也差不多了. 你们继续庆祝吧!\""
+                                       },
+                                       "bulletin_title": "飒沙继续说道",
+                                       "dialog_title": "飒沙, 珀石族的使节",
+                                       "choice_000": "[接受] 好的!",
+                                       "choice_001": "[拒绝] 别..."
+                                    },
+                                    "greet": {
+                                       "bulletin_message": {
+                                          "00": "\"星辰保佑! 神灵保佑! 你们成功了! 我们成功了! 你们看到他炸开来时候的表情了吗? 瞬间爆炸!\" 飒沙说着, 你从未见过他如此激动."
+                                       },
+                                       "bulletin_title": "飒沙一蹦三尺高, 很是开心!",
+                                       "dialog_title": "飒沙, 十分激动",
+                                       "choice_000": "没错!"
+                                    },
+                                    "reject1": {
+                                       "bulletin_message": {
+                                          "00": "\"哦, 我懂了 - 我不是做决定的那一个, 那么我会尊重你们的愿望的.\"<br><br>\"今天来不光光是为了这个 - 我们一起庆祝吧!\""
+                                       },
+                                       "bulletin_title": "飒沙继续说道",
+                                       "dialog_title": "飒沙, 珀石族的使节",
+                                       "choice_000": "[拒绝] 我们十分肯定",
+                                       "choice_001": "[接受] 再考虑考虑..."
+                                    },
+                                    "request2": {
+                                       "bulletin_message": {
+                                          "00": "\"还有... 工作在制造劲弩第一线的, 让这一切都成为可能的地媒师, 表露了他想留在劲弩这里的愿望, 和守护他的人们一起生活. 我觉得他完全够格, 不过决定权还是在你们手里.\"<br><br>\"你们怎么看, 可以让兔族地媒师加入城镇嘛?\""
+                                       },
+                                       "bulletin_title": "飒沙继续说道",
+                                       "dialog_title": "飒沙手舞足蹈",
+                                       "choice_000": "了解!"
+                                    },
+                                    "request3": {
+                                       "bulletin_message": {
+                                          "00": "<TKTK 任务 3>"
+                                       },
+                                       "bulletin_title": "飒沙继续说道",
+                                       "dialog_title": "飒沙伸出了爪爪",
+                                       "choice_000": "欢迎!",
+                                       "choice_001": "Emmm, 不用谢..."
+                                    },
+                                    "intro": {
+                                       "bulletin_message": {
+                                          "00": "飒沙停了下来, 抱膝喘着气. \"呦... 哦... 看啊, 劲弩上面! 看来... 它的使命完成了, 进入了蛰伏. 现在就当它是座碑像吧, 一座纪念碑, 纪念我们两族的友谊!\""
+                                       },
+                                       "bulletin_title": "飒沙继续说道",
+                                       "dialog_title": "飒沙, 珀石族的使节",
+                                       "choice_000": "很荣幸能做些好事"
+                                    }
+                                 }
+                              }
+                           },
+                           "prompt_for_recurring_bun_citizen": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "00": "想让这只兔子加入你的城镇嘛? <br><br><i><font size=-1>[他们体能低但跑得特别快!]</font></i>"
+                                       },
+                                       "bulletin_title": "兔子移民!",
+                                       "dialog_title": "珀石族的一位成员想要加入你们的城镇!",
+                                       "choice_000": "好的",
+                                       "choice_001": "不要"
+                                    }
+                                 }
+                              }
+                           },
+                           "grant_recurring_bun_citizen": {
+                              "notification_title": "一位新兔民加入了城镇!"
+                           },
+                           "grant_bun_citizen": {
+                              "notification_title": "飒沙的追随者加入了城镇!"
+                           },
+                           "00_sighting": {
+                              "00_sighting_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "我知道听起来不可思议, 但我发誓我过来时, 绝对看到了一双大耳朵从树丛后面探了一下又消失了.<br><br>这让我想起了关于兔人的古老传说. 你不觉得..."
+                                          },
+                                          "bulletin_title": "一位疑虑的旅行者",
+                                          "dialog_title": "一位疑虑的旅行者",
+                                          "choice_000": "哈! 或许我们应该在外面放点胡萝卜...",
+                                          "choice_000b": "哈! 或许我们应该在外面放点蔬菜...",
+                                          "choice_001": "[无视] 怎么可能, 那只是你脑补而已啦."
+                                       }
+                                    }
+                                 }
+                              },
+                              "00_sighting_outro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "我们把胡萝卜放在外面一晚上, 清晨去看它们都不见了... 连篮子都不放过.<br/><br/> 真诡异..."
+                                          },
+                                          "bulletin_title": "失踪的萝卜!",
+                                          "dialog_title": "失踪的萝卜",
+                                          "choice_000": "好吧"
+                                       }
+                                    }
+                                 }
+                              },
+                              "00b_sighting_outro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "我们把那些蔬菜放在外面一晚上, 清晨去看它们都不见了... 连篮子都不放过.<br/><br/> 真诡异..."
+                                          },
+                                          "bulletin_title": "失踪的蔬菜!",
+                                          "dialog_title": "失踪的蔬菜",
+                                          "choice_000": "好吧"
+                                       }
+                                    }
+                                 }
+                              },
+                              "00b_sighting_carrots_placed": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "我们把蔬菜放在镇子边上, 放一晚上. 很好奇它们明天清晨还在不在了呢..."
+                                          },
+                                          "bulletin_title": "等待结果",
+                                          "dialog_title": "等待结果",
+                                          "choice_000": "好的"
+                                       }
+                                    }
+                                 }
+                              },
+                              "00_sighting_carrots_placed": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "我们把胡萝卜放在镇子边上, 放一晚上. 很好奇它们明天清晨还在不在了呢..."
+                                          },
+                                          "bulletin_title": "等待结果",
+                                          "dialog_title": "等待结果",
+                                          "choice_000": "好的"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "14_chase_scene": {
+                              "14_chase_scene_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "heal": {
+                                          "bulletin_message": {
+                                             "00": "\"谢谢! 我应该把他们甩开了, 我们有时间.\""
+                                          },
+                                          "bulletin_title": "受伤的兔人",
+                                          "dialog_title": "受伤的兔人",
+                                          "choice_000": "我们去治疗下吧."
+                                       },
+                                       "fight": {
+                                          "bulletin_message": {
+                                             "00": "\"谢谢! 那我去把他们引过来, 你们要做好迎战准备!\""
+                                          },
+                                          "bulletin_title": "受伤的兔人",
+                                          "dialog_title": "受伤的兔人",
+                                          "choice_000": "我们准备好了!"
+                                       },
+                                       "leave": {
+                                          "bulletin_message": {
+                                             "00": "\"好吧我理解. 我也有一阵子没听见狼嚎了, 或许你们人类的味道让他们放弃了. 我先休息一下, 然后就上路...\""
+                                          },
+                                          "bulletin_title": "受伤的兔人",
+                                          "dialog_title": "受伤的兔人",
+                                          "choice_000": "祝好运!"
+                                       },
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "00": "\"谢天谢地, 我真的没处可去了. 我找个地方躲起来, 你们打完了通知我.\""
+                                          },
+                                          "bulletin_title": "追逐战",
+                                          "dialog_title": "受伤的兔人",
+                                          "choice_000": "好的"
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "一位受伤的兔人跳进了小镇, 喘着气地说道. \"帮帮我! 帮帮我! 我在周围侦查, 不巧被一队狗头人逮到了. 虽然我逃了出来, 但我受伤了, 而且我想他们的狼现在肯定在跟过来...\""
+                                          },
+                                          "bulletin_title": "追逐战",
+                                          "dialog_title": "受伤的兔人",
+                                          "choice_000": "呆在这休息一阵子吧. 我们来保护你.",
+                                          "choice_001": "来包扎一下, 然后你回家去吧.",
+                                          "choice_002": "不好意思, 我们帮不了. 祝好运啊"
+                                       }
+                                    }
+                                 }
+                              },
+                              "14_chase_scene_reward_b": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "000": "\"感谢, 你们救了我.<br><br>...其实, 狗头人 <i>或许</i> 追我, 是因为我 <i>好像</i> 偷了他们的这个东西...\" 年轻的兔人羞怯地说着.<br><br>\"拿着, 你们应得的.\"<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
+                                          },
+                                          "bulletin_title": "感恩的兔人",
+                                          "dialog_title": "感恩的兔人",
+                                          "choice_000": "谢谢, 一路走好!"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "23_borrow_crafter": {
+                              "borrow_intro_shared": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_title": "借来的时间",
+                                          "choice_000": "当然!",
+                                          "choice_001": "对不起, 不行."
+                                       }
+                                    }
+                                 }
+                              },
+                              "23_borrow_crafter_outro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"这是你们的镇民, 安然无恙地回来了! 他们对新环境很是喜欢, 当然我们也得到了巨大的帮助!\"<br><br><font size=-1><i>[在兔人族中的声望上升, 你的炉民十分高兴!]</i></font>"
+                                          },
+                                          "choice_000": "欢迎回来!",
+                                          "bulletin_title": "借来的时间"
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_carpenter": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"我们需要一位富有经验的木匠, 借用两天, 帮我们做点支撑地下通道的东西, 还要多弄几个蔬菜储备仓.\"\"<br><br>\"你们愿意匀出一个人吗? 我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_blacksmith": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"我们需要一位富有经验的铁匠, 借用两天, 帮我们锻造一些新的挖掘装备.\"<br><br>\"你们愿意匀出一个人吗? 我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_herbalist": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"我们部落里的草药师想和你们的草药师交流心得, 可能需要几天时间.\"<br><br>\"你们愿意匀出一个人吗? 我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_trapper": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"亲爱的人类啊, 我族中的一些成员钦佩你们人类猎人的捕猎效率. 你们能让一位猎人来两天嘛, 好让我们学习手法, 看看有没有适合我们的?\"<br><br>\"我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_cook": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"你们愿意派出一位老道的厨师来我们这两天嘛? 我们很想学习点人类的菜肴.\"<br><br>\" 我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_weaver": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"我们想借用一位经验丰富的纺织工, 借两天, 帮助我们理解'织布机', 这种人类神奇的装置.\"<br><br>\"你们愿意匀出一个人吗? 我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_potter": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"亲爱的朋友, 我们想申请, 借用一位经验丰富的陶艺师两天时间. 我族向来专攻石器, 我们认为陶艺会让它锦上添花.\"<br><br>\"你们愿意匀出一个人吗? 我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_engineer": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"我们需要借用一位有工程师经验的人, 大约两天时间, 我们想在一个被哥布林发现的洞穴里布置陷阱, 但又不想让洞塌掉.\"<br><br>\"你们愿意匀出一个人吗? 我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              },
+                              "borrow_intro_farmer": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"我族部分兔子准备在地表种植, 如果有农民专家能给我们答疑解惑的话, 我们一定会受益匪浅.\"<br><br>\"你们愿意匀出一人吗? 我们会提供原材料, 来的客人也会受到我族最尊贵的待遇的.\""
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "30_geomancy": {
+                              "30_geomancy_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_title": "尘封的知识",
+                                          "choice_000": "[跳过故事] 我早就知道了",
+                                          "choice_001": "请, 告诉我们",
+                                          "bulletin_message": {
+                                             "00": "\"亲爱的人类伙伴! 我们兔兔已经好久没找到像你们一样值得信任的盟友了. 我们决定献上一份珍贵的礼物.\"<br><br>\"我们可以一次把你们中的一个人带过来, 教他们地占术的精髓.\"<br><br>\"你们知道地占术对我们, 珀石族的兔子来说是多么重要吗?\""
+                                          }
+                                       },
+                                       "story1": {
+                                          "choice_000": "但你们还在?",
+                                          "bulletin_message": {
+                                             "00": "飒沙意味深长地点点头. \"石炉世界是由天界轮回所主宰的. 每一个时代都会有一个不同的生物昌盛, 随之而来的便是他们自己种族的显赫地位.\"<br><br>\"时下昌神殿里居住的是圣猕, 给你们人类以体态与才智. 上个时代是巨蛇的, 现已不再, 它的兽人也慢慢退回到了蛇蜥的本态. 再前面就是兔子了; 那是好久之前, 但至今你们仍然能看到我们的雕像星星点点地坐落在世界各地.\""
+                                          }
+                                       },
+                                       "offer": {
+                                          "bulletin_message": {
+                                             "00": "\"那么, 回到正事儿 - 你们想派出以为尊贵的炉民来访学习地占之术吗? 我估计要让他们初识皮毛至少得一周.\"<br><br>\"这或许是你们唯一的机会 - 那些老古董们可能瞬间就改变想法了.\""
+                                          },
+                                          "choice_000": "好啊! 听起来很厉害!",
+                                          "choice_001": "[婉拒] 不必了, 谢谢!"
+                                       },
+                                       "reject": {
+                                          "bulletin_message": {
+                                             "00": "\"了解了. 你们确定吗? 如我所说, 这可能是你们获得这项知识的唯一机会.\""
+                                          },
+                                          "choice_000": "很确定, 不必了.",
+                                          "choice_001": "[反悔] 等等, 我改变想法了!"
+                                       },
+                                       "story3a": {
+                                          "bulletin_message": {
+                                             "00": "飒沙继续说道. \"兔子离开昌神殿, 巨蛇便把兽人抬举了起来. 兽人不愿意与其他物种共享这个世界, 并拒绝学习我们的地占术, 说这是背弃轮回之理 – 石炉的一切魔法使用都是禁忌, 危险且动乱的.\"<br><br>\"虽然事实上, 他们也没错.\""
+                                          },
+                                          "choice_000": "哦..."
+                                       },
+                                       "reject2": {
+                                          "bulletin_message": {
+                                             "00": "\"很好, 果然兔子的事情终究还是兔子的事情.\"<br><br>\"我现在就要走了. 你们仍然是我们的朋友和友军, 过一段时间我会回来的! 再会!\""
+                                          },
+                                          "choice_000": "再会!"
+                                       },
+                                       "story2": {
+                                          "bulletin_message": {
+                                             "00": "\"轮回之内, 我们兔族深究魔法. 渐渐了解了魔法的本质, <i>也就是神圣调和</i>, 那是由轮回本身所造, 将我们的形态进化的物质. 我们还知道了石炉世界会渗出魔法, 操运它的人便是 <i>地媒师</i>\".<br><br>\"我们学会了掌控石炉世界的魔法力量, 我们珀石族的地媒师将这些魔法调率, 所以我们的样子才没有变回现在你们所看到的, 在地表跳来跳去的那些个毛茸茸的小东西.\""
+                                          },
+                                          "choice_000": "但不是对每人都有效?"
+                                       },
+                                       "story3b": {
+                                          "bulletin_message": {
+                                             "00": "\"但是, 石炉世界产生魔法的速度快要受不住我们最大城市的耗能速度了, 因此不得不分散开来. 然而, 激进的兽人族视我们为敌, 又迫使我们要团结. 我们那时候已经被逼入死胡同了.\"<br><br>\"于是, 祖先做出了一个极端的决定, 走向地下, 去了珀石族的名字, 沿着兔族地媒师绘制的魔力带的地图, 在地下定居, 并挖掘通道联结彼此. 带有强烈的魔力的地层可以让我们生生不息.\""
+                                          },
+                                          "choice_000": "听起来有点蠢..."
+                                       },
+                                       "accept": {
+                                          "bulletin_message": {
+                                             "00": "\"真棒! 慢慢选人哈, 物色人才着实重要.\""
+                                          },
+                                          "choice_000": "容我想想..."
+                                       },
+                                       "story4": {
+                                          "bulletin_message": {
+                                             "00": "\"你... 没说错, 朋友. 但故事还有很多, 但或许时机还没到.\""
+                                          },
+                                          "choice_000": "嗷, 好的"
+                                       }
+                                    }
+                                 }
+                              },
+                              "30_geomancy_outro": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "\"你们前来学习地占术的学生回来了, 已经是个能独当一面的地媒师了! 你们真是魔法精髓的实践者啊!\"<br><br>\"来 - 这些珍贵的地红蕾可以追寻石炉的魔法并将它浓缩成石炉精华, 地媒师需要用石炉精华来制作 - 请务必种下去.\""
+                                          },
+                                          "choice_000": "欢迎回家, 谢谢你们!"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "01_strange_trading": {
+                              "01_strange_trading_outro_a": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "来访者点头道谢然后蹦蹦跳跳地走了, 手臂上揣着篮子. <br><br>没过多久, 小镇不远处放着几棵树莓丛, 每棵上都绑有琥珀色的小彩带.<br><br><i><font size=-1>[来访者似乎更信任你了]</font></i>"
+                                          },
+                                          "bulletin_title": "奇特的交易",
+                                          "dialog_title": "奇特的交易",
+                                          "choice_000": "哈."
+                                       }
+                                    }
+                                 }
+                              },
+                              "01_strange_trading_outro_b": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "来访者点头道谢然后蹦蹦跳跳地走了, 手臂上揣着篮子.<br><br>没过多久, 小镇不远处放着几棵发光的植物, 每棵上都绑有琥珀色的小彩带.<br><br><i><font size=-1>[来访者似乎更信任你了]</font></i>"
+                                          },
+                                          "bulletin_title": "奇特的交易",
+                                          "dialog_title": "奇特的交易",
+                                          "choice_000": "真奇怪."
+                                       }
+                                    }
+                                 }
+                              },
+                              "01_strange_trading_outro_c": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "来访者点着头, 给了你几袋金砂做回报, 手臂上揣着篮子.<br><br><i><font size=-1>[来访者似乎更信任你了]</font></i>"
+                                          },
+                                          "bulletin_title": "奇特的交易",
+                                          "dialog_title": "奇特的交易",
+                                          "choice_000": "emm."
+                                       }
+                                    }
+                                 }
+                              },
+                              "01_strange_trading_outro_e": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "来访者点着头, 递给你一个袋子. \"为了生存.\"<br><br>他们跳着走远了, 手臂上揣着篮子.<br><br><i><font size=-1>[来访者似乎更信任你了]</font></i>"
+                                          },
+                                          "bulletin_title": "奇特的交易",
+                                          "dialog_title": "奇特的交易",
+                                          "choice_000": "哈."
+                                       }
+                                    }
+                                 }
+                              },
+                              "01_strange_trading_outro_f": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "来访者点着头离开了.<br><br>没过多久, 你在城镇旗帜旁发现了一个篮子, 里面装满了花朵和种子.<br><br><i><font size=-1>[来访者似乎更信任你了]</font></i>"
+                                          },
+                                          "bulletin_title": "奇特的交易",
+                                          "dialog_title": "奇特的交易",
+                                          "choice_000": "奇特."
+                                       }
+                                    }
+                                 }
+                              },
+                              "01_strange_trading_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "00": "\"明白了. 祝你们收成越来越丰.\"<br><br>来访者很失望地离开了.",
+                                             "01": "\"哦, 或许我不该现在来的...\"<br><br>来访者慢慢地走远了.",
+                                             "02": "来访者耷拉着肩. \"哦. 嗯, 好吧, 再见!\" 他们局促地说着, 快速离开了小镇."
+                                          },
+                                          "bulletin_title": "奇特的交易",
+                                          "dialog_title": "奇特的交易",
+                                          "choice_000": "呃. 真奇怪..."
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "一个小小的, 穿着斗篷的身影来到了小镇, 看起来很温顺的样子.. \"我听说了你们有蔬菜,\" 她说道. \"我能拿一些吗, 我保证, 你们不会吃亏的.\"",
+                                             "01": "\"你们有蔬菜, 对嘛? 或许我们可以来交换下品种?\" 一个奇怪的, 穿着斗篷的小身影说道. 似乎她想交换蔬菜?",
+                                             "02": "一个穿着斗篷的身影不闲了, 无声无息, 不知从何而来. \"你们好. 不知你们收成如何. 想来交易一下吗?\" 似乎她想要些蔬菜...",
+                                             "03": "一个小小的, 穿着斗篷的身影来到了小镇, 看起来很温顺的样子.. \"听说你们有蔬菜,\" 他说道. \"我能拿一些吗, 我保证, 你们不会吃亏的.\"",
+                                             "04": "\"你们有蔬菜, 对嘛? 或许我们可以来交换下品种?\" 一个奇怪的, 穿着斗篷的小身影说道. 似乎他想交换蔬菜?",
+                                             "05": "一个穿着斗篷的身影不闲了, 无声无息, 不知从何而来. \"你们好. 不知你们收成如何. 想来交易一下吗?\" 似乎他想要些蔬菜..."
+                                          },
+                                          "bulletin_title": "奇特的交易",
+                                          "dialog_title": "奇特的交易",
+                                          "choice_000": "没问题! 我们去拿篮子...",
+                                          "choice_001": "不行, 对不起, 我们自己也不够吃"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "02_hello": {
+                              "02a_hello_friend_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "00": "你们族人真是慷慨, 你们花园里种出来的也很好吃. 我们族内有许多成员不信任圣猕的子嗣, 但我觉得我们必须伸出友谊的爪子."
+                                          },
+                                          "bulletin_title": "新兔友",
+                                          "choice_000": "我...看到了... 会说话的兔... 人...",
+                                          "choice_001": "你好, 欢迎!"
+                                       },
+                                       "msg3": {
+                                          "bulletin_message": {
+                                             "00": "\"我离开时会留一个这种石灯笼作为礼物, 愿它们能照亮你前方的黑暗.\" <br><br>来访者给你看了一个奇特的, 装饰用石灯, 然后走了, 很快便消失在茂密的树林里."
+                                          },
+                                          "bulletin_title": "新兔友",
+                                          "choice_000": "谢谢!",
+                                          "choice_001": "黑暗? 等等!"
+                                       },
+                                       "msg0": {
+                                          "bulletin_message": {
+                                             "00": "穿着斗篷的身影走近了, 迟疑了一阵, 最终还是放下了帽子..."
+                                          },
+                                          "bulletin_title": "又一个可疑的穿着斗篷的身影",
+                                          "dialog_title": "穿着斗篷的身影",
+                                          "choice_000": " ... "
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "竖起两只耳朵, 那位兔人探出脑袋, 摇了摇头.<br><br>\"你们好. 我是珀石族第二十三代宗室的捷足飒沙. 抱歉之前欺骗了你们, 但这是有必要的.\""
+                                          },
+                                          "bulletin_title": "又是一个穿着斗篷的身影",
+                                          "dialog_title": "穿着斗篷的身影",
+                                          "choice_000": "我就知道!",
+                                          "choice_001": "也就是说蔬菜..."
+                                       }
+                                    }
+                                 }
+                              },
+                              "02b_hello_stranger_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg4": {
+                                          "bulletin_message": {
+                                             "00": "现在, 我得回家了, 但我未来几天还会来的. 再见, 人类."
+                                          },
+                                          "bulletin_title": "你好, 陌生人",
+                                          "dialog_title": "捷足飒沙",
+                                          "choice_000": "再见"
+                                       },
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "00": "我的地洞就在不远处, 我把它藏好了. 其实我们已经看着你们有一段时间了, 你们似乎可以信任. 尽管我们族内还有些不信任圣猕后代的, 但我觉得我们必须伸出友谊的爪子."
+                                          },
+                                          "bulletin_title": "你好, 陌生人",
+                                          "choice_000": "我...看到了... 会说话的兔... 人...",
+                                          "choice_001": "欢迎参观!"
+                                       },
+                                       "msg3": {
+                                          "bulletin_message": {
+                                             "00": "兔族已经好久不能长时间停留在地表了 - 我希望你们或许以后能帮帮我们..."
+                                          },
+                                          "bulletin_title": "你好, 陌生人",
+                                          "choice_000": "有什么能效劳的尽管说"
+                                       },
+                                       "msg0": {
+                                          "bulletin_message": {
+                                             "00": "一个穿着斗篷的身影走近了, 迟疑了一阵, 最终还是放下了帽子..."
+                                          },
+                                          "bulletin_title": "有一个可疑的穿着斗篷的身影",
+                                          "dialog_title": "穿着斗篷的身影",
+                                          "choice_000": " ... "
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "竖起两只耳朵, 那位兔人探出脑袋, 摇了摇头.<br><br>\"你们好. 我是珀石族第二十三代宗室的捷足飒沙. 抱歉之前欺骗了你们, 但我们族曾有过很不好的经历, 我们不得不以此来保证安全.\""
+                                          },
+                                          "bulletin_title": "有一个穿着斗篷的身影",
+                                          "dialog_title": "穿着斗篷的身影",
+                                          "choice_000": "哦... 额... 你好"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "10_recurring_thanks": {
+                              "10_recurring_thanks_dialog": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "000": "兔人使节捷足飒沙走了过来.<br><br>\"你们友善的举动并没有被忽视. 有些宗族里的兔兔想给你们这个.\"<br><br>他递给你一个粗糙的袋子, 里面有:",
+                                             "001": "珀石族的使节飒沙蹦进了小镇.<br><br>\"你们的友善仍然温暖着我. 一份礼物, 我们族给你们的.\"<br><br>他拿出一个粗糙的袋子, 里面有:",
+                                             "002": "\"这次不是为公事而来 - 我的一个亲戚听我提起你们, 觉得你们可能用的上.\"",
+                                             "003": "\"给我们圣猕朋友的一点点礼物.\" 他友善地笑着, 伸出一只爪爪, 是给你们的:"
+                                          },
+                                          "bulletin_title": "感激的兔子",
+                                          "dialog_title": "捷足飒沙",
+                                          "choice_000": "哦, 谢谢!"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "11_shook_down": {
+                              "11_shook_down_outro_a": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "\"谢谢, I'm sure the little Snake ones will find these quite satisfactory. May our friendship ever blossom!.\" He offers you glittering bags as payment.<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                          },
+                                          "bulletin_title": "放刁把滥",
+                                          "choice_000": "Thank you!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "11_shook_down_outro_b": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "\"Thank you. I hope we are not injured, but fortune favors the prepared. May our friendship continue to take root!\" He hands you some glittering bags as compensation.<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                          },
+                                          "bulletin_title": "放刁把滥",
+                                          "choice_000": "Best of luck"
+                                       }
+                                    }
+                                 }
+                              },
+                              "11_shook_down_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg2_b": {
+                                          "bulletin_message": {
+                                             "00": "\"那我们就要战斗了! 请准备好治疗药剂后就送来.\"<br><br>\"做个八瓶吧怎么样, 讨个好彩头?\" 他说着, 笑着, 好像你听懂了一样."
+                                          },
+                                          "bulletin_title": "放刁把滥",
+                                          "choice_000": "就这么办!"
+                                       },
+                                       "msg2_c": {
+                                          "bulletin_message": {
+                                             "00": "飒沙点头. \"宗族还是得自食其力. 我们面临过更大的灾难, 我们会坚持下去的.\" 他走了, 回到了隐蔽的洞里."
+                                          },
+                                          "bulletin_title": "放刁把滥",
+                                          "choice_000": "好的"
+                                       },
+                                       "msg2_a": {
+                                          "bulletin_message": {
+                                             "00": "\"很好! 木门做好了就通知我们吧!\""
+                                          },
+                                          "bulletin_title": "放刁把滥",
+                                          "choice_000": "好的"
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"一群哥布林不知怎么的找到了我们的一个洞穴, 然后问我们要... 一大堆木门? 可是我们爪里既没木头又没木匠, 你们能不能做点给我们?<br><br>不然, 我们就要和他们打, 但我们也缺乏战后治疗的手段.\""
+                                          },
+                                          "bulletin_title": "放刁把滥",
+                                          "choice_000": "我们来做门!",
+                                          "choice_001": "我们来做些药剂",
+                                          "choice_002": "对不起, 帮不了"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "12_heirbloom": {
+                              "12_heirbloom_outro_repeated": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "000": "\"很好! 谢谢你们! 来, 拿着, 回报.\"<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
+                                          },
+                                          "bulletin_title": "历史性进展",
+                                          "dialog_title": "兔子欢快地跳了下",
+                                          "choice_000": "拿去吧!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "12_heirbloom_return": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "00": "\"当然是绿色的部分咯! 我们可从不吃那恶心的红果, 太... 软太湿了, 黏糊糊的. 那些你们自己留着想怎么处理就怎么办吧,\" 飒沙说着, 一脸嫌弃."
+                                          },
+                                          "bulletin_title": "历史性进展 ",
+                                          "choice_000": "呃, 那好吧..."
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"但愿昔红柿能长得不错. 等到那些美味的绿茎长成的时候告诉我, 我去带回来和大家分享!\""
+                                          },
+                                          "bulletin_title": "历史性进展",
+                                          "choice_000": "好的!",
+                                          "choice_001": "等等, 绿色的?"
+                                       }
+                                    }
+                                 }
+                              },
+                              "12_heirbloom_outro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"谢谢你们! 我更喜欢你们人类了. 再见了!\"<br><br>他走开了, 自言自语呢喃着, \"Mmm... 完全无法想象若是一两只兔子失踪了, 我们族人才不会感到失落呢...\"<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
+                                          },
+                                          "bulletin_title": "昔红柿礼包",
+                                          "dialog_title": "昔红柿礼包",
+                                          "choice_000": "再见!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "12_heirbloom_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "00": "\"很好! 我会教他们种植的, 至少, 尽我所知. 你们一旦种下它我就会来看看的!\""
+                                          },
+                                          "bulletin_title": "历史性进展 ",
+                                          "choice_000": "谢谢!"
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"你们好啊! 我来找你们帮个忙. 有一种植物, 我们族称之为 '昔红柿', 它已经被我们废弃了好久好久了. 因为只有获得阳光才能长得好, 但我们又不能长时间待在地表照顾它.\"<br><br>\"这些种子历经几代兔兔, 传到了我们宗族的爪里, 如果你们能为我们耕种它, 我们会十分感激的.\""
+                                          },
+                                          "bulletin_title": "历史性进展",
+                                          "choice_000": "不错啊! 我们的农民也会高兴的.",
+                                          "choice_001": "对不起, 今天不行"
+                                       }
+                                    }
+                                 }
+                              },
+                              "12_heirbloom_return_repeated": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "000": "\"啊... 好吧, 那我等会再来.\" 他们噘着嘴离开了.",
+                                             "001": "\"好吧, 对不起前来打扰你们. 那可以等发芽的时候来和我们通个信儿吗?\""
+                                          },
+                                          "bulletin_title": "历史性进展 ",
+                                          "choice_000": "一路走好!"
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "000": "一只兔兔走了过来, 身着斗篷神色紧张. \"你们好, 嗯, 听飒沙说从你们这儿拿到了昔红柿. 我能来买点儿吗?\"",
+                                             "001": "一只身着斗篷的兔兔来到了镇上, 好像警惕着什么. \"亲爱的人类, 我能来找你们交易点儿昔红柿吗? 我从没尝过这么好吃的, 飒沙说我们可以来问你们要, 顺便促进感情...\""
+                                          },
+                                          "bulletin_title": "历史性进展",
+                                          "dialog_title": "飒沙宗族的兔兔",
+                                          "choice_000": "小事一桩!",
+                                          "choice_001": "对不起, 售罄打烊了"
+                                       }
+                                    }
+                                 }
+                              },
+                              "12_heirbloom_quest": {
+                                 "title": "昔红柿礼包",
+                                 "dialog_title": "昔红柿礼包"
+                              },
+                              "12_heirbloom_quest_2": {
+                                 "title": "昔红柿茎叶捆",
+                                 "dialog_title": "昔红柿茎叶捆"
+                              }
+                           },
+                           "15_crystal_charging": {
+                              "15_crystal_charging_outro": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "\"啊, 珀石最亮的光芒真是一大美景! 谢谢你们的友善, 一份礼物收下吧.\"<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
+                                          },
+                                          "bulletin_title": "充能完毕!",
+                                          "choice_000": "一路走好!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "15_crystal_charging_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg4": {
+                                          "bulletin_message": {
+                                             "00": "\"我理解. 那下次再说吧. 再见, 人类.\""
+                                          },
+                                          "bulletin_title": "水晶充能中",
+                                          "choice_000": "再见"
+                                       },
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "00": "\"很简单 - 把它们放在日光或者月光下, 它们便会自己收集能量.\"<br><br>\"唯一的... 问题就是晚上可能会有野兽被它的光芒吸引. 所以, 准备好战斗, 或者在夜幕降临之前拿掉.\""
+                                          },
+                                          "bulletin_title": "水晶充能中",
+                                          "choice_000": "举手之劳!",
+                                          "choice_001": "不, 今天不可以"
+                                       },
+                                       "msg3": {
+                                          "bulletin_message": {
+                                             "00": "\"太棒了, 我就把充能石放你们旗边上. 它们充能充够了我就回来拿 - 日光或者月光, 反正都来源于一个地方.\""
+                                          },
+                                          "bulletin_title": "水晶充能中",
+                                          "choice_000": "好的!"
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"你们好, 友爱的人类. 如你们所知, 我们常年在地底生活, 因我我们很需要珀石, 和我们同名的一种材料, 来完成大多数事情.\"<br><br>\"珀石可以吸收多种形式的能量, 日光也是其中之一 - 我这里有些石头已经失去它们的光芒了.\""
+                                          },
+                                          "bulletin_title": "水晶充能中",
+                                          "choice_000": "我们怎么帮忙?"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "20_partnership": {
+                              "20_partnership_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg2": {
+                                          "bulletin_message": {
+                                             "00": "\"在兔子文化中, 当一个新的宗族挖洞时, 总要和他们的邻居互换雕像以示相互欢迎. 我们知道你们是没有这个礼仪的, 但我还是送来了我们这一份的\"<br><br>飒沙指指一座精雕的石头雕像, 上面还有布料装饰, 还有一个金色的核心, 想必那就是珀石.<br><br>\"这份友谊史无前例, 但你们或许是我们族人对抗未来黑暗的希望.\"<br><br>\"不久我们还会回来的! 哦, 那个蟋蟀傀儡你们留着好了, 我带上只会拖慢行程. 再见啦!\""
+                                          },
+                                          "bulletin_title": "新的友谊!",
+                                          "choice_000": "谢谢, 我们感到很荣幸!",
+                                          "choice_001": "等等! 蟋蟀? 黑暗?? 回来解释啊!"
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "捷足飒沙来到了小镇, 一只石头小虫子背着包袱跟在后面. \"朋友们! 不久之前, 我们族人还是很畏惧圣猕的后代, 但是你们的举动让我们不再和空气勾心斗角! 你们果然是兔兔们在地上的可靠盟友!\""
+                                          },
+                                          "bulletin_title": "新的友谊",
+                                          "choice_000": "勾心斗... 呃... 好吧",
+                                          "choice_001": "的确! 没错!",
+                                          "choice_002": "也很高兴认识你们"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "21_residents": {
+                              "21_residents_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg2_b": {
+                                          "bulletin_message": {
+                                             "00": "\"这座珀石像我就放这儿了. 找个带两张床位的好房间, 把碑像放在那儿. 准备好后, 我就带着他们来!<br><br><i><font size=-1>将珀石像放在两张床边上, 让美丽值达标 - 检查放下物品的名称可以获得实时讯息!</font></i>"
+                                          },
+                                          "bulletin_title": "兔民",
+                                          "choice_000": "好的, 会安排妥当的!"
+                                       },
+                                       "msg3": {
+                                          "bulletin_message": {
+                                             "00": "Sasha nods. \"很好. 他们肯定会失望的, 但把他们安顿在离窝近一点的地方对我们族的安全也有好处.\""
+                                          },
+                                          "bulletin_title": "兔民",
+                                          "choice_000": "再见"
+                                       },
+                                       "msg2_a": {
+                                          "bulletin_message": {
+                                             "00": "\"真棒! 首先得要适应起来. 你看, 珀石水晶可不仅仅是个光源 - 它们还让我们保持这个形态, 不变回现在你所见到的在地表乱蹦的毛绒小生物.\"<br><br>\"不要害怕, 这个过程需要的时间长得很. 同样的, 一个兔窝中心少了一块珀石也不会觉得难受.\""
+                                          },
+                                          "bulletin_title": "兔民",
+                                          "choice_000": "哦! 听起来很重要..."
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"现在, 我认识的有一对很有冒险精神的兔兔想移民到地上. 实际上, 他们特地让我来问下你们是否还有位置可以留给他们.\""
+                                          },
+                                          "bulletin_title": "兔民",
+                                          "choice_000": "是的, 愿意接纳!",
+                                          "choice_001": "不 - 但祝他们平安!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "21_residents_reward_a_add_citizen": {
+                                 "notification_title": "一位兔人石匠加入了你的小镇!"
+                              },
+                              "21b_residents_reward_a_add_citizen": {
+                                 "notification_title": "一位兔人弓箭手加入了你的小镇!"
+                              },
+                              "21c_residents_reward_a_add_citizen": {
+                                 "notification_title": "一位普通兔工加入了你的小镇!"
+                              },
+                              "21_residents_outro_a": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"你们建的房子多美啊! 他们马上就到, 肯定也会喜欢得不得了!\""
+                                          },
+                                          "bulletin_title": "兔民",
+                                          "choice_000": "好的"
+                                       }
+                                    }
+                                 }
+                              }
+                           },
+                           "50_titan": {
+                              "51_slayer_charging_message": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"有效果了! 武器正在充能!!\"<br><br>\"顶住泰坦的卑劣伎俩, 可以发射了我就来通知你们!\""
+                                          },
+                                          "bulletin_title": "飒沙看起来很开心",
+                                          "dialog_title": "飒沙看起来很开心",
+                                          "choice_000": "这是我们力所能及的!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "52_slayer_ready_again_dialog": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"再次充能完毕! 随意开火吧!\""
+                                          },
+                                          "bulletin_title": "飒沙示意",
+                                          "dialog_title": "飒沙示意",
+                                          "choice_000": "好的!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "52_slayer_ready_dialog": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"充能完毕!!! 随意开火吧!\" 飒沙朝你大叫, 还捂住了自己敏感的耳朵."
+                                          },
+                                          "bulletin_title": "他捂着耳",
+                                          "dialog_title": "飒沙捂着耳",
+                                          "choice_000": "[按下劲弩的按钮!]"
+                                       }
+                                    }
+                                 }
+                              },
+                              "53_slayer_fired_dialog": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "飒沙一蹦三尺高. \"正中靶心!!! 接招吧, 臃肿恶心的臭乌贼!\"<br><br>然后冷静了点, 转向你们. \"充能还需要时间 - 好了我就来通知你们. 保持防御, 我们不能倒下.\""
+                                          },
+                                          "bulletin_title": "飒沙跳来跳去",
+                                          "dialog_title": "飒沙跳来跳去",
+                                          "choice_000": "我们能顶住!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "57_titan_defeated_dialog": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "conclusion_accept": {
+                                          "bulletin_message": {
+                                             "00": "飒沙放松了下来, 很明显放下了巨大的包袱. 他说着, 双耳微微后圈, 双眼亮晶晶的:<br><br>\"听着, 我... 谢谢你们. 谢谢你们. 我这么长时间以来一直担心族人的未来, 然后你们... 你们证明了未来的路是存在的. 而且还是一条<i>康庄大道</i>. 我们永远欠你们的.\"<br><br>\"谢谢, 祝你们未来更加繁荣.\""
+                                          },
+                                          "choice_000": "我们也很难偿还欠你们的债务啊.",
+                                          "choice_001": "很荣幸能帮忙.",
+                                          "choice_002": "朋友之间算什么."
+                                       },
+                                       "request2": {
+                                          "choice_000": "是的, 当然!",
+                                          "choice_001": "不, 但还是要谢谢他们"
+                                       },
+                                       "request1": {
+                                          "choice_000": "哦? 那很好啊!"
+                                       },
+                                       "accept1": {
+                                          "choice_000": "你们也是!"
+                                       },
+                                       "reject1": {
+                                          "choice_000": "我们应该做的.",
+                                          "choice_001": "[返回] 等等!"
+                                       },
+                                       "conclusion_decline": {
+                                          "bulletin_title": "十分感激的飒沙",
+                                          "dialog_title": "十分感激的飒沙"
+                                       }
+                                    }
+                                 }
+                              },
+                              "50_titan_dialog": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "story4": {
+                                          "bulletin_message": {
+                                             "00": "飒沙点点头. \"人类的聪慧创造了它, 人类的聪慧同时也制止了它的天灾. 当那个东西将魔力带一块一块撕开, 还活着的人类知道是时候拿出行动了, 因为此时那个东西已经吸收了太多魔力, 力量也大增.\"<br><br>\"石炉世界的魔力很不稳定. 人类, 绝望的人类, 不知怎么想出了一个方法, 把魔法 <i>能量</i> 转化成了纯净魔法 <i>力量</i>.\"<br><br>\"将那个东西击成无数的碎片, 但它没被杀死, 相反的, 变成了漫无目的游荡的瘴气扫过整片大陆. 原本凤凰帝国坐落的山口已是满目疮痍, 从中源源不断涌出的也只剩下瘴气.\"<br><br>\"这便是我们熟知的 '末日天启'.\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "哦不..."
+                                       },
+                                       "story2": {
+                                          "bulletin_message": {
+                                             "00": "\"好的 - 一个时代过去了; 巨蛇衰落, 圣猕进到了昌神殿. 他们说圣猕是个新来的, 早年还从巨蛇手里夺走了崛起之都, 不过那又是另外个故事了. 不管如何, 人类以惊人的速度建造着, 凤凰帝国仅用了三代的时间便扩张至整个大陆.\"<br><br>\"因不满于地下的生活, 我的祖先们便联系上了凤凰帝国的人, 人们对我们十分负责.\"<br><br>\"实际上, 是我们的地占术让人类着迷. 正如他们天性, 凤凰帝国的人们在利用石炉世界魔力的道路上进展迅猛, 但从没真正理解它是什么. 他们对后果不假思索便直接投入使用.\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "后果?"
+                                       },
+                                       "delay": {
+                                          "bulletin_message": {
+                                             "00": "飒沙点头, 叹着气. \"我懂; 每个种族都有自己要面对的挑战. 不过, 我们继续自个儿做完泰坦武器, 做好之后我便带着它来拜访你们.\"<br><br>\"愿我们的友谊可以继续开花,\" 他说着, 弯了弯腰然后离开了."
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "到时见, 飒沙.",
+                                          "choice_001": "[反悔] 等等!"
+                                       },
+                                       "story1": {
+                                          "bulletin_message": {
+                                             "00": "\"回想一下我之前说的, 灵兔在昌神殿的时候我们族人繁荣昌盛, 发现了地占术和珀石, 让我们即使再之后灵兔衰落巨蛇昌盛之时, 也保持这个形态.\"<br><br>\"我还说, 我们族人为何到地下生存, 迫于石炉世界地表魔力的衰减和地面的敌对势力. 上次我就说到这儿, 对吗?\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "我记得, 是的"
+                                       },
+                                       "story3": {
+                                          "bulletin_message": {
+                                             "00": "\"凤凰帝国的首都是建在一座古老的兔兔城废墟之上的, 也是建在魔力带上. 也就是说那片地是魔力喷涌之地.\"<br><br>\"人类地媒研究者制造了机械来精炼魔力; 储存魔力和压缩魔力, 其规模是我们曾想都不敢想的, 程度也远远超出了所谓的安全剂量和理性范围. 然后, 一扇传送门轰然打开.\"<br><br>\"没人知道是不是故意为之, 还是所有运作着的魔力强行将现实撕破了个洞.我们只知道一个东西从里面出来了, 它对魔力极度饥渴, 对任何其他生命极度对立.\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "嗷... 好像有点糟了."
+                                       },
+                                       "favor1": {
+                                          "bulletin_message": {
+                                             "00": "\"现在, 关于那件事. 就是, 这片土地之下, 是襁褓之中的泰坦. 这块邪恶碎片在不断成长着, 每年都在往地下渗, 迫使我们也越发往地下深层迁移, 因为我们不想因此而被切断和石炉魔法之间的联系导致后代重回兔子的形态.\"<br><br>\"但是: 我们找到了一个解决方法. 我们从古代的设计图中找到了一门武器, 而且已经快完成了, 它能够让泰坦显形, 甚至可以永久杀死它.\"<br><br>\"然而, 我们需要你们的协助才能完工, 而且… 我们需要你们城镇来保护它. 我们力量不足, 人手也不够, 不能长时间抵挡泰坦具象后的暴怒, 而且这门武器运作需要时间. 你们能帮忙吗?\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "我们能做什么?"
+                                       },
+                                       "accept": {
+                                          "bulletin_message": {
+                                             "00": "飒沙的眼神瞬间有了光芒, 满是欣慰和感激. \"选择相信你们果然没错. 请准备好让你们的炉民来我们这儿看看, 之后我会及时交付完工的武器的.\"<br><br>\"或许你可以用这段时间存些粮, 加固防御, 训练士兵. 提拔一些炉民防守, 或者造一个堡垒建筑? 你永远不知道泰坦之怒会以什么形式显形.\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "我们会的."
+                                       },
+                                       "greet": {
+                                          "bulletin_message": {
+                                             "00": "\"亲爱的圣猕友人, 我带来了珀石族第二十三代宗室诚挚的慰问和愿望.\"<br><br>\"我有… 一个大忙需要你们的帮助, 但我觉得你们或许需要个语境来理解下为什么突然提出这么个要求. 末日启示之后凤凰帝国的历史你们人类基本上不知道了, 我说的没错吧?\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "来吧, 和我们说说故事",
+                                          "choice_001": "[跳过] 直接说 - 帮什么忙?"
+                                       },
+                                       "story5": {
+                                          "bulletin_message": {
+                                             "00": "\"人类, 很敏感, 他们逃走了; 逃到了海边, 逃到了北界的山脉里. 直到最近你们才开始继续向内建造. 兽人, 一群傻子, 留下来和腐化战斗, 与自然世界狂怒的幻影作斗, 守卫着人类弃下的土地. 我们兔子, 早就到地下去了, 很乐意等待.\"<br><br>\"但当黑暗能量沉淀下来, 驻足于土地中, 越来越往石炉魔法的深处渗透. 这些碎片也吸收着魔力, 一代一代慢慢恢复着力量, 凝结成你们人类称为 ‘泰坦’ 的邪恶元素.\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "哦."
+                                       },
+                                       "decline": {
+                                          "bulletin_message": {
+                                             "00": "飒沙点着头, 深深地呼了口气. \"我理解. '不轻松的忙, 不会轻易地去帮'. 我们宗族在黑暗侵犯之前还能撑几年.<br><br>\"我们会自个儿完成泰坦武器的, 然后我回来再问问. 但愿你们能改变想法. 但愿我们的友谊之花继续绽放,\" 他说完, 面容有一丝伤心和真诚, 然后离开了."
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "暂别了, 飒沙",
+                                          "choice_001": "[返回] 等等!"
+                                       },
+                                       "favor2": {
+                                          "bulletin_message": {
+                                             "00": "\"首先, 我需要借用你们几位镇民: 一位经验老道的石匠来再次复查我们的工作, 一位经验老道的铁匠负责加固, 外加两个其他镇民来... 爬高高来够我们碰不到的地方.\"<br><br>\"完了之后, 我们回来交付武器, 准备好后, 我们用它来召唤, 攻击, 消灭泰坦. 每次攻击需要耗费很多时间, 准备好应对围攻.\"<br><br>\"我要说... 邪恶对你们并非 <i>迫在眉睫</i>. 这是一个造福你们的后代的任务, 当然还有我们的后代.\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "就这么办!",
+                                          "choice_001": "[推迟] 我们暂时匀不出人, 不过...",
+                                          "choice_002": "[拒绝] 打打杀杀多不好啊."
+                                       }
+                                    }
+                                 }
+                              },
+                              "50_titan_finished_weapon_despite_declining": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "飒沙回来了, 还让一个傀儡摇摇欲坠地顶着一台巨大的, 闪闪发光的弓.<br><br>\"我知道你们之前已经拒绝了和泰坦战斗,\" 他说道, \"但尽管如此我们还是完成了这座劲弩. 有所牺牲, 但我们别无选择.\"<br><br>\"在我们宗族里没人能够使用它, 所以我把它带来, 作为提醒. 若是你们哪天决定直面沉睡的邪恶了, 只要放出晶结劲弩, 之后的事情我会来亲自指导你们的."
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "知道了. 我们考虑考虑..."
+                                       }
+                                    }
+                                 }
+                              },
+                              "50_titan_finished_weapon_without_help": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "飒沙回来了, 还让一个傀儡摇摇欲坠地顶着一台巨大的, 闪闪发光的弓.<br><br>\"有所牺牲, 但我们还是按照祖先的设计完成了劲弩. 我... 希望它能用.\"<br><br>\"若你们还是想与怪物战斗, 放置劲弩来告诉我们准备好了, 我会亲自前来指导的.\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "哇, 漂亮!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "50_titan_weapon_help_complete": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "飒沙回来了, 还让一个傀儡摇摇欲坠地顶着一台巨大的, 闪闪发光的弓.<br><br>\"我回来了, 不仅带上了你们的炉民, 还有一台完工的晶结劲弩, 按照我祖先的设计做出来的. 我... 希望它能用吧.\"<br><br>\"放置劲弩来告诉我们准备好了, 我会亲自前来指导的.\""
+                                          },
+                                          "bulletin_title": "出征泰坦",
+                                          "choice_000": "哇哦, 真是巧夺天工!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "57_bun_geomancer_starter_kit": {
+                                 "donation_dialog_info": {
+                                    "dialog_nodes": {
+                                       "simple_message": {
+                                          "bulletin_message": {
+                                             "00": "地媒师兔人带来了一些地红蕾, 石炉精华, 还有其他的原材料, 来开始他们的地上实验."
+                                          },
+                                          "bulletin_title": "地媒师的事情!",
+                                          "dialog_title": "地媒师的事情!",
+                                          "choice_000": "好吧"
+                                       }
+                                    }
+                                 }
+                              },
+                              "57_grant_bun_geomancer": {
+                                 "notification_title": "一位兔人地媒大师加入了小镇!"
+                              }
+                           },
+                           "40_recipe_sharing": {
+                              "40_grant_recipes_mason": {
+                                 "bulletin_title": "珀石族石匠配方解锁!"
+                              },
+                              "40_grant_recipes_weaver": {
+                                 "bulletin_title": "珀石族纺织配方解锁!"
+                              },
+                              "40_recipe_sharing_intro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "accept": {
+                                          "bulletin_message": {
+                                             "00": "\"太棒了! 我觉得即使是新手石匠和纺织工都没问题, 只要他们愿意学. 最多不超过两天.\""
+                                          },
+                                          "bulletin_title": "兔子样式",
+                                          "choice_000": "我来看看派谁来..."
+                                       },
+                                       "reject2": {
+                                          "bulletin_message": {
+                                             "00": "\"恩. 好吧, 看来关于人类的审美我还有很多要学的呢...\""
+                                          },
+                                          "bulletin_title": "兔子样式",
+                                          "choice_000": "不过还是感谢来访!"
+                                       },
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "\"你们好, 人类朋友! 看你们的工匠干活后我突然萌生一个念头 - 把你们一个石匠一个纺织工送到我们窝里几天怎么样, 他们可以学习我们的多种物品配方和制作工艺?\""
+                                          },
+                                          "bulletin_title": "兔子样式",
+                                          "choice_000": "听起来不错!",
+                                          "choice_001": "[拒绝] 呵. 不要."
+                                       },
+                                       "reject": {
+                                          "bulletin_message": {
+                                             "00": "\"嗯. 我还以为想出了个明智的主意, 我说我自己.\"<br><br>\"你们确定? <i>下次就算求我我也不答应了哦</i>, 你们懂的.\""
+                                          },
+                                          "bulletin_title": "兔子样式",
+                                          "choice_000": "不要, 才不喜欢你们的那种样式呢",
+                                          "choice_001": "[反悔] 等等, 我改变主意了!"
+                                       }
+                                    }
+                                 }
+                              },
+                              "40_recipe_sharing_outro": {
+                                 "dialog_tree_info": {
+                                    "dialog_nodes": {
+                                       "msg1": {
+                                          "bulletin_message": {
+                                             "00": "你们前来学习的石匠和纺织工都回来了, 他们已经学会了各种各样的兔族配方!<br><br>\"我得说, 你们炉民和我们讲了'啵啵叽肉排'的故事. 我想什么时候也尝一尝...\""
+                                          },
+                                          "bulletin_title": "兔子样式",
+                                          "dialog_title": "兔子样式",
+                                          "choice_000": "欢迎回家 - 谢谢你们!"
+                                       }
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               },
+               "entities": {
+                  "amberstone_statue": {
+                     "amberstone_statue_ghost": {
+                        "display_name": "珀石兔雕",
+                        "description": "精细雕刻出来的兔子雕像."
+                     }
+                  }
                }
             }
          }
@@ -5739,7 +7043,7 @@
                "description": "使用普通的箭.点击替换成不同类型的箭头"
             },
             "slow_arrows": {
-               "display_name": "使用冰刺箭矢",
+               "display_name": "使用荆棘箭矢",
                "description": "目前使用的箭头,能使敌人缓慢.单击切换箭头的类型."
             },
             "fire_arrows": {
@@ -5786,6 +7090,11 @@
             "display_name": "唤醒泰坦",
             "description": "让泰坦从沉睡中苏醒",
             "disabled_description": "泰坦不再沉眠"
+         },
+         "fire_titan_slayer": {
+            "display_name": "开火!!",
+            "description": "向泰坦发起攻击",
+            "disabled_description": "需要时间充能."
          }
       },
       "personality": {
@@ -7135,6 +8444,14 @@
                   }
                }
             },
+            "amberstone": {
+               "borrow_crafter": {
+                  "helped_out": {
+                     "display_name": "拜访兔兔",
+                     "tooltip": "哇哦, 珀石族真棒! 能帮到他们倍感荣幸."
+                  }
+               }
+            },
             "titan": {
                "roots": {
                   "harvested_bramble": {
@@ -7142,7 +8459,7 @@
                      "tooltip": "能尽一份力感觉不错, 向着泰坦腐化的树丛挥砍斧子!"
                   },
                   "harvested_root": {
-                     "display_name": "砍下一颗邪恶根须",
+                     "display_name": "砍下邪恶根须",
                      "tooltip": "向永远踢掉这个泰坦又前进了一步!"
                   }
                },
@@ -7728,6 +9045,10 @@
                "19": "[str(self.stonehearth:unit_info.custom_name)], 大反派",
                "20": "来自圆形世界的[str(self.stonehearth:unit_info.custom_name)]"
             }
+         },
+         "test_weather": {
+            "display_name": "测试天气",
+            "description": "不影响测试的天气"
          }
       },
       "trapping": {
@@ -7872,7 +9193,7 @@
             "description": "重量轻又坚固,能保护一个人的头部"
          },
          "simple_quiver": {
-            "display_name": "冰砾箭袋",
+            "display_name": "荆棘箭袋",
             "description": "能使敌人减缓速度的箭矢"
          },
          "fire_quiver": {
@@ -8001,14 +9322,14 @@
          },
          "picket_fence": {
             "picket_fence_ghost": {
-               "display_name": "栅栏",
-               "description": "如果不是白色的,是我们的生命没有实现?"
+               "display_name": "围栏",
+               "description": "如果它不再是白色的, 我们的生活还会圆满吗?"
             }
          },
          "picket_fence_gate": {
             "picket_fence_gate_ghost": {
-               "display_name": "栅栏门",
-               "description": "你不喜欢你领居吗? 喜欢就别装啊."
+               "display_name": "围栏门",
+               "description": "不喜欢你的邻居吗? 不喜欢就别装啊."
             }
          },
          "stockpile": {
@@ -8190,7 +9511,7 @@
          "picket_fence_fine": {
             "picket_fence_fine_ghost": {
                "display_name": "精巧栅栏",
-               "description": "如果生活失去了它的白色调,那么我们还会充实么?"
+               "description": "如果生活失去了它的白色调, 那么我们还会充实么?"
             }
          },
          "picket_fence_gate_fine": {
@@ -8235,13 +9556,13 @@
          },
          "ornate_picket_fence": {
             "ornate_picket_fence_ghost": {
-               "display_name": "华丽的栅栏",
-               "description": "若它不是白色, 我们的生活还会如此充实吗?"
+               "display_name": "华丽的围栏",
+               "description": "一片小小的金叶飘过了长长旅途!"
             }
          },
          "ornate_picket_fence_gate": {
             "ornate_picket_fence_gate_ghost": {
-               "display_name": "华丽的栅栏门",
+               "display_name": "华丽的围栏门",
                "description": "不喜欢你领居? 那就别装门呗."
             }
          },
@@ -8261,10 +9582,94 @@
             "display_name": "华丽的木制隧道门",
             "description": "可以封闭隧道"
          },
+         "cobblestone_fence_single": {
+            "cobblestone_fence_single_ghost": {
+               "display_name": "圆石小围栏条",
+               "description": "土气的, 坚固的墙体."
+            }
+         },
+         "cobblestone_fence_end": {
+            "cobblestone_fence_end_ghost": {
+               "display_name": "圆石围栏桩",
+               "description": "土气的, 坚固的墙体."
+            }
+         },
+         "picket_fence_bar_double": {
+            "picket_fence_bar_double_ghost": {
+               "display_name": "大型围栏条",
+               "description": "如若它不再是白色, 我们的生活还会圆满吗?"
+            }
+         },
+         "picket_fence_bar_single": {
+            "picket_fence_bar_single_ghost": {
+               "display_name": "小型围栏条",
+               "description": "如若它不再是白色, 我们的生活还会圆满吗?"
+            }
+         },
+         "picket_fence_end": {
+            "picket_fence_end_ghost": {
+               "display_name": "围栏桩",
+               "description": "如若它不再是白色, 我们的生活还会圆满吗?"
+            }
+         },
+         "clay_fence_end": {
+            "clay_fence_end_ghost": {
+               "display_name": "粘土围栏桩",
+               "description": "装饰多于安全."
+            }
+         },
+         "clay_fence_bar_single": {
+            "clay_fence_bar_single_ghost": {
+               "display_name": "粘土小围栏",
+               "description": "装饰多于安全."
+            }
+         },
+         "clay_fence_bar_double": {
+            "clay_fence_bar_double_ghost": {
+               "display_name": "粘土大围栏",
+               "description": "装饰多于安全."
+            }
+         },
+         "ornate_picket_fence_end": {
+            "ornate_picket_fence_end_ghost": {
+               "display_name": "华丽的围栏桩",
+               "description": "一片小小的金叶飘过了长长旅途!"
+            }
+         },
+         "ornate_picket_fence_bar_single": {
+            "ornate_picket_fence_bar_single_ghost": {
+               "display_name": "华丽的小型围栏条",
+               "description": "一片小小的金叶飘过了长长旅途!"
+            }
+         },
+         "ornate_picket_fence_bar_double": {
+            "ornate_picket_fence_bar_double_ghost": {
+               "display_name": "华丽的大型围栏条",
+               "description": "一片小小的金叶飘过了长长旅途!"
+            }
+         },
+         "cobblestone_fence_bar_double": {
+            "cobblestone_fence_bar_double_ghost": {
+               "display_name": "圆石大围栏条",
+               "description": "土气的, 坚固的墙体."
+            }
+         },
+         "cobblestone_fence_bar_single": {
+            "cobblestone_fence_bar_single_ghost": {
+               "display_name": "圆石小围栏条",
+               "description": "土气的, 坚固的墙体."
+            }
+         },
          "stone_door": {
             "stone_door_ghost": {
                "display_name": "石门",
                "description": "造出来就是为了耐用!"
+            }
+         },
+         "clay_fence_gate": {
+            "clay_fence_gate_ghost": {
+               "display_name": "黏土围栏门",
+               "description": "这扇装饰性的围栏门保护着你的围栏不被破坏."
             }
          },
          "stone_window_frame": {
@@ -8319,6 +9724,30 @@
             "stone_double_door_ghost": {
                "display_name": "双开石门",
                "description": "大门一扇. 很大气."
+            }
+         },
+         "picket_fence_combo": {
+            "picket_fence_combo_ghost": {
+               "display_name": "围栏柱",
+               "description": "如若它不再是白色, 我们的生活还会圆满吗?"
+            }
+         },
+         "ornate_picket_fence_combo": {
+            "ornate_picket_fence_combo_ghost": {
+               "display_name": "华丽的围栏柱",
+               "description": "一片小小的金叶飘过了长长旅途!"
+            }
+         },
+         "cobblestone_fence_combo": {
+            "cobblestone_fence_combo_ghost": {
+               "display_name": "圆石围栏柱",
+               "description": "土气的, 坚固的墙体."
+            }
+         },
+         "clay_fence_combo": {
+            "clay_fence_combo_ghost": {
+               "display_name": "粘土围栏柱",
+               "description": "装饰多于安全."
             }
          }
       },
@@ -9238,6 +10667,32 @@
                   "description": "总有一天会长成一种美味的紫色蔬菜."
                }
             }
+         },
+         "heirbloom_crop": {
+            "display_name": "昔红柿",
+            "description": "果然那个茎对于珀石族来说才是佳肴?",
+            "growth_stage": {
+               "001": {
+                  "name": "开花的昔红柿",
+                  "description": "花后便结果"
+               },
+               "003": {
+                  "name": "成熟的昔红柿",
+                  "description": "红宝石一般!"
+               },
+               "000": {
+                  "name": "昔红柿芽",
+                  "description": "坚强的小芽儿"
+               },
+               "002": {
+                  "name": "未成熟的昔红柿",
+                  "description": "绿绿的, 小不点儿"
+               },
+               "011": {
+                  "name": "烂掉的昔红柿",
+                  "description": "不能吃了 - 虽然茎还是可以的!"
+               }
+            }
          }
       },
       "decoration": {
@@ -9316,7 +10771,7 @@
          },
          "stone_floor_candle_holder": {
             "stone_floor_candle_holder_ghost": {
-               "display_name": "石落地烛台",
+               "display_name": "石制落地烛台",
                "description": "要有光!"
             }
          },
@@ -9482,7 +10937,7 @@
          "decorative_vase": {
             "decorative_vase_ghost": {
                "display_name": "装饰花瓶",
-               "description": "地球出产的非金属"
+               "description": "地里金属的重生"
             }
          },
          "sundial": {
@@ -9754,13 +11209,13 @@
             },
             "fence_brightbell": {
                "fence_brightbell_ghost": {
-                  "display_name": "粉色花开篱",
+                  "display_name": "俏粉花开篱",
                   "description": "满是光铃花的围栏"
                }
             },
             "fence_frostsnap": {
                "fence_frostsnap_ghost": {
-                  "display_name": "蓝色花开篱",
+                  "display_name": "靛青花开篱",
                   "description": "满是霜断花的围栏"
                }
             },
@@ -9963,13 +11418,13 @@
          },
          "dirt_stone": {
             "dirt_stone_ghost": {
-               "display_name": "大地岩石",
+               "display_name": "大地岩石 测试",
                "description": "这块岩石承载着魔力, 随时准备爆发!"
             },
             "chimney_rock": {
                "chimney_rock_ghost": {
                   "display_name": "屹立岩石",
-                  "description": "这块岩石封印着一座魔塔, 随时准备爆发!"
+                  "description": "这块岩石封印着一座岩石魔塔, 随时准备爆发!"
                }
             },
             "marking_stones": {
@@ -10067,6 +11522,12 @@
             "stone_candle_holder_ghost": {
                "display_name": "石烛杯",
                "description": "朴素时光中的照明."
+            }
+         },
+         "candle_holder_floor_iron": {
+            "candle_holder_floor_iron_ghost": {
+               "display_name": "铁制落地烛台",
+               "description": "这根冰冷的铁棒举着一颗温暖的光源."
             }
          }
       },
@@ -10540,6 +12001,16 @@
             "roasted_sweet_potato_serving": {
                "display_name": "一份烤甘薯"
             }
+         },
+         "heirbloom": {
+            "heirbloom_basket": {
+               "display_name": "昔红柿果",
+               "description": "是蔬菜? 似乎那个茎可是珀石族里的珍馐呢."
+            },
+            "heirbloom_serving": {
+               "display_name": "一颗昔红柿",
+               "description": "美味多汁! 那些兔子们永远不知道自己错过了什么!"
+            }
          }
       },
       "furniture": {
@@ -10936,8 +12407,12 @@
          },
          "titan_slayer": {
             "titan_slayer_ghost": {
-               "display_name": "工艺弓",
-               "description": "用足以挑战泰坦的力量铸就"
+               "display_name": "晶结劲弩",
+               "description": "可以穿刺邪恶的心脏的武器."
+            },
+            "titan_slayer_monument": {
+               "display_name": "匡谬补过之誓证",
+               "description": "一座象征各个种族团结一心对抗黑暗的纪念碑. 里面的晶体闪耀着温暖与祥和."
             }
          },
          "orc_titan_gong": {
@@ -10957,6 +12432,12 @@
          "tentacle_trap": {
             "display_name": "触手陷阱",
             "description": "抓住任何路过的人."
+         },
+         "charging_pedestal": {
+            "charging_pedestal_ghost": {
+               "display_name": "充能石",
+               "description": "这些石头会收集光线, 但如果晚上留在外面的话也会吸引野兽."
+            }
          }
       },
       "loot": {
@@ -11249,7 +12730,11 @@
             },
             "golem_restocking": {
                "display_name": "蟋蟀傀儡",
-               "description": "搬运傀儡, 躯体由石头做成, 被远古的知识赋予了行动力."
+               "description": "搬运傀儡, 躯体由石头做成, 被远古的知识赋予了行动力.",
+               "golem_restocking_ghost_auto": {
+                  "display_name": "自运蟋蟀傀儡",
+                  "description": "不知什么原理, 离开地媒师也能运作的搬运傀儡"
+               }
             }
          }
       },
@@ -12065,13 +13550,48 @@
                   "description": "还在成长!"
                }
             }
+         },
+         "earthbud": {
+            "stem": {
+               "earthbud_plant_stem": {
+                  "display_name": "长叶的地红蕾",
+                  "description": "还在成长!"
+               }
+            },
+            "sprout": {
+               "earthbud_plant_sprout": {
+                  "display_name": "地红蕾嫩芽",
+                  "description": "还需要一些时间与关爱."
+               }
+            },
+            "seed": {
+               "earthbud_plant_seed": {
+                  "display_name": "地红蕾种子",
+                  "description": "种在地下可以长出地红蕾花朵, 来收集石炉精华."
+               },
+               "earthbud_plant_seed_ghost": {
+                  "display_name": "地红蕾种子",
+                  "description": "种在地下可以长出地红蕾花朵, 来收集石炉精华."
+               }
+            },
+            "earthbud_ghost": {
+               "display_name": "地红蕾",
+               "description": "收获采集可以获得浓缩的石炉精华和更多的地红蕾种子"
+            },
+            "unripe_description": "还没成熟不能采摘.",
+            "bud": {
+               "earthbud_plant_bud": {
+                  "display_name": "含苞的地红蕾",
+                  "description": "还只是一朵插在地上的花蕾. 坚持住, 小花蕾."
+               }
+            }
          }
       },
       "rabbit": {
          "lantern_relic": {
             "lantern_relic_ghost": {
                "display_name": "古代遗址",
-               "description": "随着时光的流逝变得摇摇欲坠.."
+               "description": "随着时光的流逝变得摇摇欲坠"
             }
          },
          "rabbit_statue": {
@@ -12163,6 +13683,18 @@
          "shining_setting": {
             "display_name": "银叶底座",
             "description": "美丽地保护着光耀头环"
+         },
+         "golem_backpack": {
+            "display_name": "傀儡背包",
+            "description": "地媒师需要用它来制作蛮牛傀儡"
+         },
+         "golem_parts": {
+            "display_name": "傀儡部件",
+            "description": "地媒师需要用它来制作傀儡"
+         },
+         "golem_pick": {
+            "display_name": "傀儡镐子",
+            "description": "地媒师需要用它来制作鼹鼠傀儡"
          }
       },
       "resources": {
@@ -12194,6 +13726,10 @@
             "wintermoss_bundle": {
                "display_name": "冬苔茸捆",
                "description": "可以纺织成线"
+            },
+            "heirbloom_bundle": {
+               "display_name": "昔红柿茎叶梱",
+               "description": "珀石族的最爱. 也可以纺织成线."
             },
             "coarse_fiber_bundle_winter": {
                "display_name": "浅色粗纤维捆",
@@ -12393,6 +13929,10 @@
                "display_name": "金砂",
                "description": "装饰在家具上, 让它们变得超好看!"
             }
+         },
+         "earth_essence": {
+            "display_name": "石炉精华",
+            "description": "由地红蕾浓缩出来的石炉世界的能量"
          }
       },
       "terrain": {
@@ -13180,6 +14720,14 @@
                   "display_name": "晒干的杜松子",
                   "description": "学习种植杜松子树."
                }
+            },
+            "heirbloom_seeds": {
+               "display_name": "昔红柿种子",
+               "description": "学习种植昔红柿",
+               "heirbloom_seeds_ghost": {
+                  "display_name": "昔红柿种子",
+                  "description": "学习种植昔红柿"
+               }
             }
          }
       },
@@ -13213,7 +14761,7 @@
             "test_small": {
                "test_small_ghost": {
                   "display_name": "测试小石头",
-                  "description": "这块石头封印一个测试, 你懂得, 测试用!"
+                  "description": "这块石头封印了一个测试, 你懂得, 测试用!"
                }
             },
             "chair": {
@@ -13246,6 +14794,18 @@
                   "description": "这块石头封印着一片小小的美丽春意!"
                }
             }
+         },
+         "dry_stone_greater": {
+            "dry_stone_greater_ghost": {
+               "display_name": "干燥巨石",
+               "description": "比普通的干燥岩石还要干四倍."
+            }
+         },
+         "wet_stone_greater": {
+            "wet_stone_greater_ghost": {
+               "display_name": "潮湿巨石",
+               "description": "比普通的潮湿岩石还要润四倍."
+            }
          }
       },
       "valor_statue": {
@@ -13277,7 +14837,7 @@
                },
                "herald_erdene": {
                   "display_name": "额尔德尼·杰木克鲁什",
-                  "description": "一位来自赤烬的不是很情愿的外交使节."
+                  "description": "赤烬帝国的外交官."
                }
             },
             "male": {
@@ -13302,8 +14862,8 @@
                   "description": "送信专用呆呆鸭."
                },
                "herald_sasha": {
-                  "display_name": "捷足飒莎",
-                  "description": "来自珀石部落的使者"
+                  "display_name": "捷足飒沙",
+                  "description": "来自珀石部落的使节"
                }
             }
          }
@@ -13334,6 +14894,122 @@
             "orc_friendship_gong_ghost": {
                "display_name": "兽人敬仰之大锣",
                "description": "用光滑, 好看的石头做成, 凶险的东西已经收到了净化."
+            }
+         }
+      },
+      "landmark": {
+         "summon_stone_block_dirt": {
+            "summon_stone_block_dirt_ghost": {
+               "display_name": "土地地块石",
+               "description": "生成一块8x5x8大小的泥土地块."
+            }
+         },
+         "summon_stone_block_mimic": {
+            "summon_stone_block_mimic_ghost": {
+               "display_name": "拟态地块石",
+               "description": "生成一块8x5x8大小的模拟下层方块的地块."
+            }
+         },
+         "summon_stone_block_rock": {
+            "summon_stone_block_rock_ghost": {
+               "display_name": "岩石地块石",
+               "description": "生成一块8x5x8大小的岩石地块."
+            }
+         },
+         "summon_stone_block_surface": {
+            "summon_stone_block_surface_ghost": {
+               "display_name": "地表地块石",
+               "description": "生成一块8x5x8大小的地表地块, 例如草地或沙子."
+            }
+         },
+         "summon_stone_geyser": {
+            "summon_stone_geyser_ghost": {
+               "display_name": "间歇泉水石",
+               "description": "生成一座间歇泉小山."
+            }
+         },
+         "summon_stone_rune_site": {
+            "summon_stone_rune_site_ghost": {
+               "display_name": "符文景观石",
+               "description": "生成一块画有神圣符文的空地."
+            }
+         },
+         "summon_stone_rabbit_statue": {
+            "summon_stone_rabbit_statue_ghost": {
+               "display_name": "兔兔雕像石",
+               "description": "生成一座古老的兔兔神雕像."
+            }
+         },
+         "summon_stone_rock_field": {
+            "summon_stone_rock_field_ghost": {
+               "display_name": "岩地石",
+               "description": "生成一片可开采的岩石."
+            }
+         },
+         "summon_stone_patch_dirt": {
+            "summon_stone_patch_dirt_ghost": {
+               "display_name": "土地地片石",
+               "description": "生成一片土地, 共12x12大小."
+            }
+         },
+         "summon_stone_patch_mimic": {
+            "summon_stone_patch_mimic_ghost": {
+               "display_name": "拟态地片石",
+               "description": "生成一片地, 共12x12大小, 可以模拟下层方块."
+            }
+         },
+         "summon_stone_patch_rock": {
+            "summon_stone_patch_rock_ghost": {
+               "display_name": "岩地地片石",
+               "description": "生成一片岩地, 共12x12大小."
+            }
+         },
+         "summon_stone_patch_surface": {
+            "summon_stone_patch_surface_ghost": {
+               "display_name": "地表地片石",
+               "description": "生成一片地表地片, 例如草地或沙子, 共12x12大小."
+            }
+         },
+         "summon_stone_vein_coal": {
+            "summon_stone_vein_coal_ghost": {
+               "display_name": "煤炭矿脉石",
+               "description": "生成煤炭矿脉."
+            }
+         },
+         "summon_stone_vein_copper": {
+            "summon_stone_vein_copper_ghost": {
+               "display_name": "铜矿矿脉石",
+               "description": "生成铜矿矿脉."
+            }
+         },
+         "summon_stone_vein_gold": {
+            "summon_stone_vein_gold_ghost": {
+               "display_name": "金矿矿脉石",
+               "description": "生成金矿矿脉."
+            }
+         },
+         "summon_stone_vein_iron": {
+            "summon_stone_vein_iron_ghost": {
+               "display_name": "铁矿矿脉石",
+               "description": "生成铁矿矿脉."
+            }
+         },
+         "summon_stone_vein_silver": {
+            "summon_stone_vein_silver_ghost": {
+               "display_name": "银矿矿脉石",
+               "description": "生成银矿矿脉."
+            }
+         },
+         "summon_stone_vein_tin": {
+            "summon_stone_vein_tin_ghost": {
+               "display_name": "锡矿矿脉石",
+               "description": "生成锡矿矿脉."
+            }
+         },
+         "summon_stone_riverbed_dry": {
+            "summon_stone_riverbed_dry_ghost": {
+               "display_name": "干涸河床石",
+               "description": "唤醒那古老河流的记忆."
             }
          }
       }
@@ -13795,6 +15471,10 @@
                "description": "崛起之都最方的头环",
                "recipe_name": "光耀头环",
                "flavor": "把心里和灵魂中蕴藏的能量都运作治愈之光"
+            },
+            "golem_pick_recipe": {
+               "description": "地媒师需要用它来制作鼹鼠傀儡",
+               "recipe_name": "傀儡镐子"
             }
          }
       },
@@ -13913,14 +15593,14 @@
                "flavor": "生活就像一盘草莓."
             },
             "picket_fence_gate_recipe": {
-               "description": "可以通过的栅栏门",
-               "recipe_name": "栅栏大门",
+               "description": "可以通过的围栏门",
+               "recipe_name": "围栏大门",
                "flavor": "希望你喜欢你的邻居!"
             },
             "picket_fence_recipe": {
-               "description": "栅栏可以保护你的财产.",
-               "recipe_name": "栅栏",
-               "flavor": "如果不是白色的,我们的生活未得到满足?"
+               "description": "围栏可以保护你的财产.",
+               "recipe_name": "围栏",
+               "flavor": "如果它不再是白色的, 我们的生活还会圆满吗?"
             },
             "tools_weapons_name": "工具",
             "storage_name": "储存箱",
@@ -14180,14 +15860,14 @@
                "description": "可以很有范儿地封闭隧道."
             },
             "ornate_picket_fence_gate_recipe": {
-               "recipe_name": "华丽的栅栏门",
-               "description": "让人可以穿过栅栏.",
+               "recipe_name": "华丽的围栏门",
+               "description": "让人可以穿过围栏.",
                "flavor": "希望你喜欢你的邻居!"
             },
             "ornate_picket_fence_recipe": {
-               "recipe_name": "华丽的栅栏",
-               "description": "让人远离你的财产.",
-               "flavor": "若它不是白色, 我们的生活还会如此充实吗?"
+               "recipe_name": "华丽的围栏",
+               "description": "私人财产不可侵犯.",
+               "flavor": "若它不是白色, 我们的生活还会圆满吗?"
             },
             "ornate_wooden_garden_lantern_recipe": {
                "recipe_name": "华丽的木制花园灯",
@@ -14261,18 +15941,18 @@
             },
             "fence_frostsnap_recipe": {
                "description": "满是霜断花的围栏",
-               "recipe_name": "蓝色花开篱",
-               "flavor": "芳开篱下无人撷, 霜断丛中花自阙. 还是接受残缺的美, 慢慢欣赏就好了."
+               "recipe_name": "靛青花开篱",
+               "flavor": "芳开篱下愿君撷, 霜断丛中花不阙. 还是接受它们的存在, 慢慢欣赏就好了."
             },
             "fence_brightbell_recipe": {
                "description": "满是光铃花的围栏",
-               "recipe_name": "粉色花开篱",
-               "flavor": "农夫佩吉的眼瞎里容不得一棵杂草. 但对于花花, 要么是莫名投她所好了, 要么是这些花实在长得太快了."
+               "recipe_name": "俏粉花开篱",
+               "flavor": "农夫佩吉的眼瞎里容不得一棵杂草. 但对于花朵, 要么是莫名投她所好了, 要么是这些花实在长得太快了."
             },
             "giants_face_recipe": {
                "description": "巨人盾牌的防卫部件",
                "recipe_name": "巨人盾面",
-               "flavor": "钢铁盾牌, 坚如崖面"
+               "flavor": "钢铁盾片, 坚如崖面"
             },
             "bow_valor_recipe": {
                "description": "崛起之都最迅捷的弓",
@@ -14283,6 +15963,46 @@
                "description": "伤害附近任何有泰坦味道的东西.",
                "recipe_name": "泰坦护符",
                "flavor": "宝贝不要伤害我! 别再伤害我!"
+            },
+            "ornate_picket_fence_bar_double_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "华丽的长围栏",
+               "flavor": "一片小小的金叶飘过了长长旅途!"
+            },
+            "ornate_picket_fence_bar_single_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "华丽的短围栏",
+               "flavor": "一片小小的金叶飘过了长长旅途!"
+            },
+            "ornate_picket_fence_end_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "华丽的围栏桩",
+               "flavor": "一片小小的金叶飘过了长长旅途!"
+            },
+            "picket_fence_end_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "围栏桩",
+               "flavor": "如若它不再是白色, 我们的生活还会圆满吗?"
+            },
+            "picket_fence_bar_single_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "短围栏",
+               "flavor": "如若它不再是白色, 我们的生活还会圆满吗?"
+            },
+            "picket_fence_bar_double_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "长围栏",
+               "flavor": "如若它不再是白色, 我们的生活还会圆满吗?"
+            },
+            "picket_fence_combo_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "围栏柱",
+               "flavor": "如若它不再是白色, 我们的生活还会圆满吗?"
+            },
+            "ornate_picket_fence_combo_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "华丽的围栏柱",
+               "flavor": "一片小小的金叶飘过了长长旅途!"
             }
          }
       },
@@ -14733,6 +16453,154 @@
             "display_name": "??? ",
             "description": "???  (没有的职业)",
             "requirements": "??? "
+         },
+         "geomancer_outfit": {
+            "display_name": "地媒师的袍服",
+            "description": "地媒师的嵌有宝石的袍服."
+         },
+         "geomancer_workbench": {
+            "geomancer_workbench_ghost": {
+               "display_name": "地卜工作台",
+               "description": "地媒师在这里制作召唤石."
+            }
+         },
+         "geomancer_starter_kit": {
+            "display_name": "地媒师新手工具",
+            "description": "掠夺物品需要有个地媒师"
+         },
+         "geomancer_talisman": {
+            "geomancer_talisman_iconic": {
+               "display_name": "地卜之杖",
+               "description": "加强使用者运用石炉力量的能力."
+            },
+            "display_name": "地媒师转职道具",
+            "description": "加强使用者运用石炉力量的能力."
+         },
+         "geomancer_golem_workbench": {
+            "geomancer_golem_workbench_ghost": {
+               "display_name": "傀儡工作台",
+               "description": "地媒师在这里制作傀儡."
+            }
+         },
+         "recipes": {
+            "golem_restocking_recipe": {
+               "description": "执行搬运任务.",
+               "recipe_name": "蟋蟀傀儡",
+               "flavor": "执行任务时, 你可以听到它们可爱的叫声."
+            },
+            "golem_mining_recipe": {
+               "description": "执行挖掘任务.",
+               "recipe_name": "鼹鼠傀儡",
+               "flavor": "鼹鼠的稿子下没有哪座山能屹立不倒."
+            },
+            "golem_harvesting_recipe": {
+               "description": "执行采集任务.",
+               "recipe_name": "蛮牛傀儡",
+               "flavor": "能温柔到采一朵花花而不惊动一丝尘土."
+            },
+            "geomancer_workbench_recipe": {
+               "description": "地媒师在这里制作召唤石.",
+               "recipe_name": "地卜工作台",
+               "flavor": "用于致敬古老力量的工作台."
+            },
+            "geomancer_golem_workbench_recipe": {
+               "description": "地媒师在这里制作傀儡.",
+               "recipe_name": "傀儡工作台",
+               "flavor": "虽然生于毫末, 但这个工作台能直达更深处的力量."
+            },
+            "dry_stone_recipe": {
+               "flavor": "它的饥渴永远无法被浇灌."
+            },
+            "dry_stone_greater_recipe": {
+               "description": "比普通的干燥岩石还要干四倍.",
+               "recipe_name": "干燥巨石",
+               "flavor": "它的饥渴更加无法被浇灌."
+            },
+            "rabbit_statue_recipe": {
+               "description": "生成一座古老的兔兔神雕像",
+               "recipe_name": "兔兔雕像石"
+            },
+            "summon_stone_block_dirt_recipe": {
+               "description": "生成一块8x5x8大小的泥土地块.",
+               "recipe_name": "土地地块石"
+            },
+            "summon_stone_block_mimic_recipe": {
+               "description": "生成一块8x5x8大小的模拟下层方块的地块.",
+               "recipe_name": "拟态地块石"
+            },
+            "summon_stone_block_rock_recipe": {
+               "description": "生成一块8x5x8大小的岩石地块.",
+               "recipe_name": "岩石地块石"
+            },
+            "summon_stone_block_surface_recipe": {
+               "description": "生成一块8x5x8大小的地表地块, 例如草地或沙子.",
+               "recipe_name": "地表地块石"
+            },
+            "summon_stone_geyser_recipe": {
+               "description": "生成一座间歇泉小山.",
+               "recipe_name": "间歇泉水石"
+            },
+            "summon_stone_patch_dirt_recipe": {
+               "description": "生成一片土地, 共12x12大小",
+               "recipe_name": "土地地片石"
+            },
+            "summon_stone_patch_rock_recipe": {
+               "description": "生成一片岩地, 共12x12大小",
+               "recipe_name": "岩地地片石"
+            },
+            "summon_stone_patch_mimic_recipe": {
+               "description": "生成一片地, 共12x12大小, 可以模拟下层方块.",
+               "recipe_name": "拟态地片石"
+            },
+            "summon_stone_patch_surface_recipe": {
+               "description": "生成一片地表地片, 例如草地或沙子, 共12x12大小.",
+               "recipe_name": "地表地片石"
+            },
+            "summon_stone_rock_field_recipe": {
+               "description": "生成一片可开采的岩石.",
+               "recipe_name": "岩地石"
+            },
+            "summon_stone_rune_site_recipe": {
+               "description": "生成一块画有神圣符文的空地.",
+               "recipe_name": "符文景观石"
+            },
+            "summon_stone_vein_coal_recipe": {
+               "description": "生成煤炭矿脉",
+               "recipe_name": "煤炭矿脉石"
+            },
+            "summon_stone_vein_copper_recipe": {
+               "description": "生成铜矿矿脉",
+               "recipe_name": "铜矿矿脉石"
+            },
+            "summon_stone_vein_gold_recipe": {
+               "description": "生成金矿矿脉",
+               "recipe_name": "金矿矿脉石"
+            },
+            "summon_stone_vein_iron_recipe": {
+               "description": "生成铁矿矿脉",
+               "recipe_name": "铁矿矿脉石"
+            },
+            "summon_stone_vein_silver_recipe": {
+               "description": "生成银矿矿脉",
+               "recipe_name": "银矿矿脉石"
+            },
+            "summon_stone_vein_tin_recipe": {
+               "description": "生成锡矿矿脉",
+               "recipe_name": "锡矿矿脉石"
+            },
+            "wet_stone_greater_recipe": {
+               "description": "比普通的潮湿岩石还要润四倍.",
+               "recipe_name": "潮湿巨石",
+               "flavor": "泪水... 也是开心的泪水."
+            },
+            "wet_stone_recipe": {
+               "flavor": "它为石炉世界而抽泣."
+            },
+            "earthbud_seeds_recipe": {
+               "description": "把种子从花蕾里分离出来",
+               "recipe_name": "地红蕾种子 (x3)",
+               "flavor": "去籽的花蕾失去了魔法能量, 但种子可以长成新的花朵."
+            }
          }
       },
       "hunter": {
@@ -14860,8 +16728,8 @@
                "flavor": "猴子一下就把小刀插进了泥土里,'因为你是我的后代!你不能够索取!'"
             },
             "cobblestone_fence_gate_recipe": {
-               "description": "厚厚的石栅栏门给人安全的感觉.",
-               "recipe_name": "石栅栏门",
+               "description": "厚厚的石围栏门给人安全的感觉.",
+               "recipe_name": "石围栏门",
                "flavor": "羊进去了,但出不来"
             },
             "cobblestone_fence_recipe": {
@@ -15115,10 +16983,25 @@
                "recipe_name": "泰坦护符",
                "flavor": "宝贝不要伤害我! 别再伤害我!"
             },
+            "cobblestone_fence_end_recipe": {
+               "description": "土气的, 坚固的墙体.",
+               "recipe_name": "圆石围栏桩",
+               "flavor": "用地上的材料来做牧场的围栏? 简直天才!"
+            },
+            "cobblestone_fence_bar_single_recipe": {
+               "description": "土气的, 坚固的墙体.",
+               "recipe_name": "圆石短围栏",
+               "flavor": "用地上的材料来做牧场的围栏? 简直天才!"
+            },
+            "cobblestone_fence_bar_double_recipe": {
+               "description": "土气的, 坚固的墙体.",
+               "recipe_name": "圆石长围栏",
+               "flavor": "用地上的材料来做牧场的围栏? 简直天才!"
+            },
             "stone_bed_recipe": {
                "recipe_name": "石床",
                "description": "随便铺了点草的能睡觉的石头",
-               "flavor": "The decorative frame might distract you from the discomfort of sleeping on hard stone"
+               "flavor": "装饰性的框架反而让你不再专注于睡在硬石头上的不舒服"
             },
             "stone_door_recipe": {
                "description": "造出来就是为了耐用的门.",
@@ -15184,6 +17067,21 @@
                "description": "更有型的窗.",
                "recipe_name": "十字窗条的石窗框",
                "flavor": "横截面是不是就这个意思?"
+            },
+            "cobblestone_fence_combo_recipe": {
+               "description": "土气的, 坚固的墙体.",
+               "recipe_name": "圆石围栏柱",
+               "flavor": "用地上的材料来做牧场的围栏? 简直天才!"
+            },
+            "stone_floor_candle_holder_recipe": {
+               "description": "朴素时期的照明手段.",
+               "recipe_name": "石制落地烛台",
+               "flavor": "有些人觉得浪漫, 其他人都觉得要闹鬼."
+            },
+            "golem_parts_recipe": {
+               "description": "地媒师需要用它来制作傀儡",
+               "recipe_name": "傀儡部件",
+               "flavor": "结实地能挡住一头公牛."
             }
          }
       },
@@ -15261,6 +17159,7 @@
             "furniture_name": "家具和装饰",
             "decoration_name": "装饰物",
             "utility_name": "公共设施",
+            "refined_name": "加工品",
             "potter_workbench_recipe": {
                "description": "帮助陶艺师把粘土制作成简单的物品.",
                "recipe_name": "陶艺师的陶轮",
@@ -15474,6 +17373,36 @@
                "description": "伤害附近任何有泰坦味道的东西.",
                "recipe_name": "泰坦护符",
                "flavor": "宝贝不要伤害我! 别再伤害我!"
+            },
+            "golem_parts_recipe": {
+               "description": "地媒师需要用它来制作傀儡",
+               "recipe_name": "傀儡部件",
+               "flavor": "结实地能挡住一头公牛."
+            },
+            "clay_fence_bar_double_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "粘土长围栏",
+               "flavor": "装饰多于安全."
+            },
+            "clay_fence_bar_single_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "粘土短围栏",
+               "flavor": "装饰多于安全."
+            },
+            "clay_fence_end_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "粘土围栏桩",
+               "flavor": "装饰多于安全."
+            },
+            "clay_fence_gate_recipe": {
+               "description": "给人走的.",
+               "recipe_name": "黏土围栏门",
+               "flavor": "这扇装饰性的围栏门保护着你的围栏不被破坏."
+            },
+            "clay_fence_combo_recipe": {
+               "description": "私人财产不可侵犯.",
+               "recipe_name": "粘土围栏柱",
+               "flavor": "装饰多于安全."
             }
          },
          "potter_workbench": {
@@ -15790,8 +17719,8 @@
                "recipe_name": "无边皮革帽"
             },
             "simple_quiver_recipe": {
-               "recipe_name": "冰刺箭袋",
-               "description": "一个弓箭手的箭袋装备.存储冰刺箭失,能够减缓敌人速度"
+               "recipe_name": "荆棘箭袋",
+               "description": "一个弓箭手的箭袋装备.存储荆棘箭失,能够减缓敌人速度"
             },
             "fire_quiver_recipe": {
                "recipe_name": "火焰箭袋",
@@ -15836,6 +17765,10 @@
                "description": "用蓝线和金紧紧地包裹着",
                "recipe_name": "梭织握把",
                "flavor": "火纹宝剑剑柄的装饰"
+            },
+            "golem_backpack_recipe": {
+               "description": "地媒师需要用它来制作蛮牛傀儡",
+               "recipe_name": "傀儡背包"
             }
          },
          "weaver_loom": {
