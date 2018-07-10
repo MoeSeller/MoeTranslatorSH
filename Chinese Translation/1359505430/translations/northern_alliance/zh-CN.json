@@ -31,10 +31,20 @@
             }
          }
       },
+      "buffs": {
+         "valor_town_bonus_strength_buff": {
+            "display_name": "茜芙英灵",
+            "description": "体力属性值+2."
+         }
+      },
       "gm": {
          "campaigns": {
             "hunting": {
-               "wild_game": "野外的狩猎游戏开始了!"
+               "wild_game": "野外的狩猎游戏开始了!",
+               "hungry_caribou_raid": "一群驯鹿朝着你的农作物跑去了!",
+               "hungry_deer_raid": "一群鹿朝着你的农作物跑去了!",
+               "hungry_racoon_raid": "一窝浣熊朝着你的农作物跑去了!",
+               "hungry_rabbit_raid": "一窝兔子朝着你的农作物跑去了!"
             },
             "trader": {
                "arcs": {
@@ -215,7 +225,7 @@
                         },
                         "final": {
                            "bulletin_message": {
-                              "00": "诺妮亚总结道: \"欢愉, 造物和荣誉, 你们的选择会照亮所有追随者的前进方向. 愿瓦伦的智谋将与你同在, 菲蒽, 克努特和茜芙将守护你们的未来…\" "
+                              "00": "诺妮亚总结道: \"欢愉, 造物和荣誉, 你们的选择会照亮所有追随者的前进方向. 愿瓦伦的智谋将与你同在, 菲蒽, 努特和茜芙将守护你们的未来…\" "
                            },
                            "bulletin_title": "一个抉择",
                            "dialog_title": "一个抉择",
@@ -276,19 +286,19 @@
                      "dialog_nodes": {
                         "clergy": {
                            "bulletin_message": {
-                              "00": "诺妮亚又沉浸到了吟诗的语气中: \"牡鹿绯恩, 四蹄可踏出夏日: 以昌盛祝福城镇, 赋予你们与自然轮回和谐相处的智慧.\" <br><i>(落成夏意之圣洗会给镇民的智力, 体力和精神三种属性数值都加1点.)</i>"
+                              "00": "诺妮亚又沉浸到了吟诗的语气中: \"牡鹿菲蒽, 四蹄可踏出夏日: 以昌盛祝福城镇, 赋予你们与自然轮回和谐相处的智慧.\" <br><i>(落成夏意之圣洗会给镇民的智力, 体力和精神三种属性数值都加1点.)</i>"
                            },
                            "bulletin_title": "夏意之圣洗",
                            "dialog_title": "夏意之圣洗",
-                           "choice_000": "沐浴绯恩的祝福."
+                           "choice_000": "沐浴菲蒽的祝福."
                         },
                         "makers": {
                            "bulletin_message": {
-                              "00": "诺妮亚继续说着: \"捷兔克努特, 可转动财运的车轮: 以一时的财富祝福城镇, 赋予你们未雨绸缪的先见之明以备命运的反转. <br><i>(落成财富之圣洗可获得制作师匠品质的家具装饰的能力, 价值远高于卓越品质.) </i>"
+                              "00": "诺妮亚继续说着: \"捷兔努特, 可转动财运的车轮: 以一时的财富祝福城镇, 赋予你们未雨绸缪的先见之明以备命运的反转. <br><i>(落成财富之圣洗可获得制作师匠品质的家具装饰的能力, 价值远高于卓越品质.) </i>"
                            },
                            "bulletin_title": "财富之圣洗",
                            "dialog_title": "财富之圣洗",
-                           "choice_000": "领会克努特的狡黠."
+                           "choice_000": "领会努特的狡黠."
                         },
                         "summary": {
                            "bulletin_message": {
@@ -385,17 +395,17 @@
                            "bulletin_message": {
                               "00": "诺妮亚在兔子面前跪了下来, 双手捧作杯状让它跳进去. 她缓缓地走进落成典礼. 兔子的耳朵灵活地转动着, 一起参加了这场典礼. "
                            },
-                           "bulletin_title": "克努特, 财运之灵",
-                           "dialog_title": "克努特, 财运之灵",
-                           "choice_000": "这是… 克努特?"
+                           "bulletin_title": "努特, 财运之灵",
+                           "dialog_title": "努特, 财运之灵",
+                           "choice_000": "这是… 努特?"
                         },
                         "msg3": {
                            "bulletin_message": {
                               "00": "兔子转而闻了闻篝火, 火星明灭间, 人们看到了一些幻影: 硕大的地图上点点小镇闪耀着光芒, 十个, 上百个, 上千个故事, 各尽所知. 幻影中精巧的工艺品随风飘散, 把创造者和研究再造者紧紧地连在了一起. 然后小东西从诺妮亚的头上跳了下来, 蹦入了人群中去. "
                            },
-                           "bulletin_title": "克努特, 财运之灵",
-                           "dialog_title": "克努特, 财运之灵",
-                           "choice_000": "谢谢, 克努特."
+                           "bulletin_title": "努特, 财运之灵",
+                           "dialog_title": "努特, 财运之灵",
+                           "choice_000": "谢谢, 努特."
                         },
                         "msg1": {
                            "bulletin_message": {
@@ -415,17 +425,17 @@
                            "bulletin_message": {
                               "00": "诺妮亚弓着腰慢慢走近了牡鹿, 她的身子弯得如此之低, 以至于头发都散到地上了, 她引导着它走向石炉. 音乐也似乎让它走近. "
                            },
-                           "bulletin_title": " 绯恩, 夏意之灵",
-                           "dialog_title": " 绯恩, 夏意之灵",
-                           "choice_000": "这是... 绯恩?"
+                           "bulletin_title": " 菲蒽, 夏意之灵",
+                           "dialog_title": " 菲蒽, 夏意之灵",
+                           "choice_000": "这是... 菲蒽?"
                         },
                         "msg3": {
                            "bulletin_message": {
                               "00": "牡鹿转过了身, 光芒闪过周围每一个站着的人. 他们感到自己充满了力量: 更强健, 更聪颖, 更勇敢了. 然后它面朝炉火, 随风而逝, 与这庆典融为一体, 正如这个小镇一样, 已经和联盟脉脉相通了. "
                            },
-                           "bulletin_title": "绯恩, 夏意之灵",
-                           "dialog_title": "绯恩, 夏意之灵",
-                           "choice_000": "谢谢, 绯恩."
+                           "bulletin_title": "菲蒽, 夏意之灵",
+                           "dialog_title": "菲蒽, 夏意之灵",
+                           "choice_000": "谢谢, 菲蒽."
                         },
                         "msg1": {
                            "bulletin_message": {
@@ -517,7 +527,7 @@
                            "dialog_title": "诺妮亚写啊写",
                            "choice_000": "瓦伦寓言中的猛兽?",
                            "bulletin_message": {
-                              "00": "诺妮亚写完并烧掉后, 她若有所思. 最后, 她点了点头, 从她的小袋子里, 掏出, 三块光滑的石头.<br><br>每块都划有一个熟悉的标记: 一块是牡鹿绯恩的星宿, 丰收和夏意的代表. 一块是猎狼茜芙的星宿, 狩猎与轮回的守卫. 最后一块是捷兔克努特的三颗小星, 财富的转轮者. "
+                              "00": "诺妮亚写完并烧掉后, 她若有所思. 最后, 她点了点头, 从她的小袋子里, 掏出, 三块光滑的石头.<br><br>每块都划有一个熟悉的标记: 一块是牡鹿菲蒽的星宿, 丰收和夏意的代表. 一块是猎狼茜芙的星宿, 狩猎与轮回的守卫. 最后一块是捷兔努特的三颗小星, 财富的转轮者. "
                            }
                         },
                         "msg4": {
@@ -605,13 +615,13 @@
          "shrine_stag": {
             "shrine_stag": {
                "display_name": "夏意之圣洗",
-               "description": "供奉绯恩, 大地之灵"
+               "description": "供奉菲蒽, 大地之灵"
             }
          },
          "shrine_hare": {
             "shrine_hare": {
                "display_name": "财富之圣洗",
-               "description": "供奉克努特, 命运之灵"
+               "description": "供奉努特, 命运之灵"
             }
          }
       },
@@ -629,11 +639,11 @@
             },
             "male": {
                "herald_knut": {
-                  "display_name": "克努特",
+                  "display_name": "努特",
                   "description": "命运之灵"
                },
                "herald_firnn": {
-                  "display_name": "绯恩",
+                  "display_name": "菲蒽",
                   "description": "草木之灵"
                }
             }
@@ -645,15 +655,21 @@
          "recipes": {
             "shrine_stag": {
                "recipe_name": "夏意之圣洗",
-               "description": "供奉绯恩, 草木之灵"
+               "description": "供奉菲蒽, 草木之灵"
             },
             "shrine_hare": {
-               "description": "供奉克努特, 命运之灵",
+               "description": "供奉努特, 命运之灵",
                "recipe_name": "财富之圣洗"
             },
             "shrine_wolf": {
                "description": "供奉茜芙, 追猎之灵",
-               "recipe_name": "流火"
+               "recipe_name": "流火之圣洗"
+            },
+            "crude_weaver_spindle_recipe": {
+               "recipe_name": "粗糙纺锤"
+            },
+            "stone_sword_recipe": {
+               "recipe_name": "石制训练剑"
             }
          }
       }
