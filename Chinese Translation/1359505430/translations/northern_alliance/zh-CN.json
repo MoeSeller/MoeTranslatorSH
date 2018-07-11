@@ -358,6 +358,37 @@
                   "reward_message": "(原文文本错误预定, 观望)By decree of Princess Dania of the Ascendancy, 我们就此承认:",
                   "reward_message_ctd": "为表彰战斗中的骁勇. 现批准该镇合法拥有:"
                },
+               "shrine_upgrade_valor": {
+                  "recipe_bulletins": {
+                     "recipe_unlock_mason": "石匠获得了新的容器配方!",
+                     "recipe_unlock_weaver": "纺织工获得了新的狼皮配方!"
+                  },
+                  "achievements": {
+                     "001": "石匠容器配方",
+                     "000": "体力 +2",
+                     "002": "纺织工狼皮配方"
+                  }
+               },
+               "shrine_upgrade_guildmaster": {
+                  "recipe_bulletins": {
+                     "recipe_unlock_blacksmith": "铁匠获得了新的家具配方!",
+                     "recipe_unlock_mason": "石匠获得了新的雕像配方!"
+                  },
+                  "achievements": {
+                     "001": "石匠灵兔雕塑配方",
+                     "002": "铁匠家具配方"
+                  }
+               },
+               "shrine_upgrade_deity": {
+                  "recipe_bulletins": {
+                     "recipe_unlock_mason": "石匠获得了新的窗户配方!",
+                     "recipe_unlock_weaver": "纺织工获得了新的装饰品配方!"
+                  },
+                  "achievements": {
+                     "001": "石匠窗户配方",
+                     "002": "纺织工装饰品配方"
+                  }
+               },
                "valor_dialog_1": {
                   "dialog_tree_info": {
                      "dialog_nodes": {
@@ -623,6 +654,60 @@
                "display_name": "财富之圣洗",
                "description": "供奉努特, 命运之灵"
             }
+         },
+         "banner_wall_small_stag": {
+            "banner_wall_small_stag_ghost": {
+               "display_name": "仙鹿小旗帜",
+               "description": "用这面旗帜展示你们对菲蒽的信仰."
+            }
+         },
+         "banner_wall_big_stag": {
+            "banner_wall_big_stag_ghost": {
+               "display_name": "仙鹿长旗帜",
+               "description": "用这面旗帜展示你们对菲蒽的信仰."
+            }
+         },
+         "window_box_stone_snow_poppy": {
+            "window_box_stone_snow_poppy_ghost": {
+               "display_name": "雪罂花箱",
+               "description": "可爱花朵的干净家园."
+            }
+         },
+         "rug_moss": {
+            "rug_moss_ghost": {
+               "display_name": "苔绒地毯",
+               "description": "用植物做的地毯, 纪念菲蒽."
+            }
+         },
+         "wall_mounted_candle": {
+            "wall_mounted_candle_ghost": {
+               "display_name": "金框烛饰",
+               "description": "一种装饰, 赞美努特的荣光."
+            }
+         },
+         "rug_pelt_wolf": {
+            "rug_pelt_wolf_ghost": {
+               "display_name": "狼皮毯",
+               "description": "赞美茜芙, 杀戮之后没有丢弃."
+            }
+         },
+         "wall_mounted_paw": {
+            "wall_mounted_paw_ghost": {
+               "display_name": "茜芙之爪",
+               "description": "猎人的标志, 无声无息.. 一击毙命."
+            }
+         },
+         "wall_mounted_antlers": {
+            "wall_mounted_antlers_ghost": {
+               "display_name": "鹿茸墙饰",
+               "description": "菲蒽的伙伴用角祝福着我们的厅堂."
+            }
+         },
+         "statue_hare": {
+            "statue_hare_ghost": {
+               "display_name": "努特雕塑",
+               "description": "努特的造型, 就像古老故事中说的那样."
+            }
          }
       },
       "npc": {
@@ -648,6 +733,68 @@
                }
             }
          }
+      },
+      "furniture": {
+         "chair_golden": {
+            "chair_golden_ghost": {
+               "display_name": "金椅",
+               "description": "努特的王座, 但他知道分享."
+            }
+         },
+         "table_stone_gold": {
+            "table_stone_gold_ghost": {
+               "display_name": "环金石桌",
+               "description": "这是努特很愿意躲在它下面吃东西的桌子."
+            }
+         }
+      },
+      "container": {
+         "input_shelf_wall_stone_gold": {
+            "input_shelf_wall_stone_gold_ghost": {
+               "display_name": "黄金壁挂补给架",
+               "description": "配得上努特的荣光的架子."
+            }
+         },
+         "input_bin_stone_wolf": {
+            "input_bin_stone_wolf_ghost": {
+               "display_name": "茜芙的石碗",
+               "description": "一种补给容器, 正如茜芙为我们的肚子提供补给."
+            }
+         },
+         "output_box_stone_wolf": {
+            "output_box_stone_wolf_ghost": {
+               "display_name": "茜芙工作展示架",
+               "description": "临时储物架, 正如茜芙狩猎前的准备."
+            }
+         },
+         "chest_stone_wolf": {
+            "chest_stone_wolf_ghost": {
+               "display_name": "茜芙石箱",
+               "description": "可容纳128件物品, 正如茜芙为寒冬存储粮食."
+            }
+         }
+      },
+      "weapons": {
+         "spear_horn": {
+            "spear_horn_iconic": {
+               "display_name": "鹿茸矛",
+               "description": "给穿戴者注入菲蒽的治愈能量, 能让他们的伤口更快愈合."
+            }
+         }
+      },
+      "armor": {
+         "shield_hare": {
+            "display_name": "兔毛盾",
+            "description": "给穿戴者注入努特的治愈能量, 能让他们的战斗更持久."
+         },
+         "helmet_wolf": {
+            "helmet_wolf_iconic": {
+               "display_name": "狼头盔",
+               "description": "带有茜芙的祝福, 来保卫我们的大家庭."
+            },
+            "display_name": "狼头盔",
+            "description": "给穿戴者注入茜芙的治愈能量, 能让他们的睡眠时间减少."
+         }
       }
    },
    "jobs": {
@@ -670,6 +817,96 @@
             },
             "stone_sword_recipe": {
                "recipe_name": "石制训练剑"
+            },
+            "window_box_stone_snow_poppy_recipe": {
+               "description": "种满雪罂花的花箱, 用来挂在窗户下面的.",
+               "recipe_name": "雪罂窗台花箱",
+               "flavor": "一朵雪罂总能点亮北极昏暗的清晨."
+            },
+            "statue_hare": {
+               "description": "用来赞美努特, 命运的转轮者.",
+               "recipe_name": "努特雕塑"
+            },
+            "chair_golden": {
+               "description": "努特的王座, 但他知道分享.",
+               "recipe_name": "金椅"
+            },
+            "wall_mounted_antlers_recipe": {
+               "description": "菲蒽的伙伴用角祝福着我们的厅堂.",
+               "recipe_name": "鹿茸墙饰"
+            },
+            "wall_mounted_paw_recipe": {
+               "description": "猎人的标志, 无声无息.. 一击毙命.",
+               "recipe_name": "茜芙之爪"
+            },
+            "output_box_stone_wolf_recipe": {
+               "description": "临时储物架, 正如茜芙狩猎前的准备.",
+               "recipe_name": "茜芙工作展示架"
+            },
+            "input_bin_stone_wolf_recipe": {
+               "description": "一种补给容器, 正如茜芙为我们的肚子提供补给.",
+               "recipe_name": "茜芙的石碗"
+            },
+            "chest_stone_wolf_recipe": {
+               "description": "可容纳128件物品, 正如茜芙为寒冬存储粮食.",
+               "recipe_name": "茜芙石箱"
+            }
+         }
+      },
+      "weaver": {
+         "recipes": {
+            "banner_wall_big_stag_recipe": {
+               "description": "用这面旗帜展示你们对菲蒽的信仰.",
+               "recipe_name": "仙鹿长旗帜",
+               "flavor": "也是自然爱好者的标志."
+            },
+            "banner_wall_small_stag_recipe": {
+               "description": "用这面旗帜展示你们对菲蒽的信仰.",
+               "recipe_name": "仙鹿短旗帜",
+               "flavor": "也是自然爱好者的标志."
+            },
+            "rug_moss_recipe": {
+               "description": "用植物做的地毯, 纪念菲恩.",
+               "recipe_name": "苔绒地毯"
+            },
+            "rug_pelt_wolf_recipe": {
+               "description": "赞美茜芙, 杀戮之后没有丢弃.",
+               "recipe_name": "狼皮毯"
+            },
+            "spear_horn_recipe": {
+               "description": "给穿戴者注入菲蒽的治愈能量, 能让他们的伤口更快愈合.",
+               "recipe_name": "鹿茸矛",
+               "flavor": "带有菲蒽的祝福, 来保卫我们的大家庭."
+            },
+            "helmet_wolf_recipe": {
+               "description": "给穿戴者注入茜芙的治愈能量, 能让他们的睡眠时间减少.",
+               "recipe_name": "狼头盔",
+               "flavor": "带有茜芙的祝福, 来保卫我们的大家庭."
+            },
+            "shield_hare_recipe": {
+               "description": "给穿戴者注入努特的治愈能量, 能让他们的战斗更持久.",
+               "recipe_name": "兔毛盾",
+               "flavor": "带有努特的祝福, 来保卫我们的大家庭."
+            }
+         }
+      },
+      "blacksmith": {
+         "recipes": {
+            "chair_golden": {
+               "description": "努特的王座, 但他知道分享.",
+               "recipe_name": "金椅"
+            },
+            "input_shelf_wall_stone_gold": {
+               "description": "和看起来一样有用的补给储存架.",
+               "recipe_name": "黄金壁挂补给架"
+            },
+            "table_stone_gold": {
+               "description": "这是努特很愿意躲在它下面吃东西的桌子.",
+               "recipe_name": "环金石桌"
+            },
+            "wall_mounted_candle": {
+               "description": "一种装饰, 赞美努特的荣光.",
+               "recipe_name": "金框烛饰"
             }
          }
       }
