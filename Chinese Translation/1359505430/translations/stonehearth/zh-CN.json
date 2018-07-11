@@ -537,7 +537,9 @@
             "date_format_short": "i18n(stonehearth:ui.game.calendar.month_format), [str(date.day)]",
             "weather_prefix_0": "今天: ",
             "weather_prefix_1": "明天: ",
-            "weather_prefix_2": "后天: "
+            "weather_prefix_2": "后天: ",
+            "season_reamining_days": "在[str(num)]天后结束.",
+            "season_reamining_day": "会在明天结束."
          },
          "esc_menu": {
             "title": "Stonehearth ",
@@ -587,7 +589,8 @@
                "trophy": "战利品",
                "seed": "种子",
                "pets": "宠物",
-               "none": "空"
+               "none": "空",
+               "geomancer": "召唤石"
             },
             "tooltip_combat_base_damage": "攻击力:",
             "tooltip_combat_base_damage_reduction": "防御力:",
@@ -821,6 +824,11 @@
                      "display_name": "工程师制作菜单",
                      "description": "制作机关与防御性武器",
                      "required_job_text": "需要一名 工程师"
+                  },
+                  "geomancer": {
+                     "display_name": "地媒师制作菜单",
+                     "description": "给召唤石与傀儡注入魔法",
+                     "required_job_text": "需要一位地媒师"
                   }
                }
             },
@@ -1221,6 +1229,8 @@
          "zones_mode": {
             "farm": {
                "choose_crop": "选择一种农作物",
+               "preferred_seasons": "偏好季节: ",
+               "preferred_seasons_tooltip": "在偏好季节中, 农作物的生长速度为平常的[str(num)]倍.",
                "fallow_name": "休耕",
                "fallow_description": "不种植作物 让土壤恢复肥力."
             },
@@ -1279,6 +1289,7 @@
                   "tooltip_defense": "防御装置",
                   "tooltip_light": "火把与灯饰",
                   "tooltip_decoration": "装饰物",
+                  "tooltip_geomancer": "召唤石",
                   "tooltip_refined_weaver": "加工品",
                   "tooltip_refined_animal_part": "动物产物",
                   "tooltip_refined_ore": "精炼金属",
@@ -1293,18 +1304,18 @@
                   "tooltip_raw_food": "生食",
                   "tooltip_prepared_food": "熟食",
                   "tooltip_cooking_ingredients": "食材与饲料",
-                  "tooltip_cooking": "烹饪",
+                  "tooltip_cooking": "烹饪食材",
                   "tooltip_consumables": "治疗品与其他消耗品",
-                  "tooltip_animal_parts": "动物部件"
+                  "tooltip_animal_parts": "动物产品"
                }
             }
          },
          "show_workshop": {
-            "workshop_title": "[str(job_name)] 的制作列表",
+            "workshop_title": "[str(job_name)]的制作列表",
             "placeholder": "键入以搜索",
-            "show_workshop_description": "属于 [name(owner)]",
+            "show_workshop_description": "属于[name(owner)]",
             "unclaimed_workshop_description": "无人认领",
-            "workshop_entity_claimed_description": "属于 [name(self.stonehearth:workshop.crafter)]",
+            "workshop_entity_claimed_description": "属于[name(self.stonehearth:workshop.crafter)]",
             "craft_number_left": "-制作",
             "craft_number_right": "数量.",
             "craft_up_to_left": "-保持",
@@ -1485,6 +1496,7 @@
             "clear_selection": "选择另一个地方",
             "regenerate_map": "随机生成新地图",
             "world_seed": "地图种子: ",
+            "starting_season": "初始季节",
             "terrain_stats": {
                "trees_and_plants_title": "树木 & 植物",
                "trees_and_plants_description": "木头是主要建筑资源.你需要用它们来建造你的建筑和工艺品,如床,桌子,椅子.",
@@ -1759,10 +1771,10 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r870 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r874 版本",
             "alpha_welcome_dialog": {
-               "title": "欢迎来到 Stonehearth!",
-               "message": "警告: 该版本为Alpha质量测试版本, 在功能上有许多缺失, 并且预计你会在游戏的过程中遇到许多bug.<br><br>请问是否愿意自动发送崩溃报告给我们,以便帮助我们完善石炉?",
+               "title": "欢迎来到Stonehearth!",
+               "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
                "accept": "是的, 我愿意帮助!",
                "cancel": "算了吧"
             },
@@ -2066,12 +2078,12 @@
       },
       "debug": {
          "post_bug": {
-            "title": "填写提交表",
-            "message": "感谢参与Stonehearth 的阿尔法测试 ! 这里是你如何可以提交一个bug报告.",
+            "title": "提交漏洞",
+            "message": "感谢游玩石炉! 这是如何提交漏洞的指引.",
             "file_bug_step_1": "前往http://discourse.stonehearth.net/c/support/bug-reports",
-            "file_bug_step_2": "刷新最新的主题列表,如果还没人反映过和你一样的bug,请创建一个新主题.",
-            "file_bug_step_3": "当文件出错时,请一定保留报告中的所有信息,并复制所有引擎错误的文本一字不漏地传上来.游戏错误截图也会有一定帮助.",
-            "file_bug_step_4": "如果你遇到一个崩溃错误,请查看http://discourse.stonehearth.net/t/13297寻找常见解决方案,以及如何解决崩溃.下面是你的唯一的用户id:"
+            "file_bug_step_2": "刷新最新的主题列表, 如果还没人反映过和你一样的bug, 请创建一个新主题.",
+            "file_bug_step_3": "当文件出错时, 请一定保留报告中的所有信息, 并复制所有引擎错误的文本一字不漏地传上来.游戏错误截图也会有一定帮助.",
+            "file_bug_step_4": "如果你遇到一个崩溃错误, 请查看http://discourse.stonehearth.net/t/13297寻找常见解决方案, 以及如何解决崩溃. 下面是你的唯一的用户id:"
          },
          "error_browser": {
             "title": "引擎错误",
@@ -2305,13 +2317,49 @@
             "description": "森林, 河流和山脉. 这里是崛起之都历来生存的地方.",
             "random_location_names": {
                "000": "黑漠泽森林"
+            },
+            "seasons": {
+               "spring": {
+                  "display_name": "春天",
+                  "description": "森林中的春日是复苏的季节, 会一直持续三个月. 春露化雪, 露出了下面积压的新生, 树木也逐渐苏生, 满是五颜六色的花蕾."
+               },
+               "summer": {
+                  "display_name": "夏天",
+                  "description": "树林中的夏日是最温和的季节, 会一直持续三个月. 是在太阳下放松取暖的好时间, 不用担心暴雨或下雪."
+               },
+               "autumn": {
+                  "display_name": "秋天",
+                  "description": "树林中的夏日是收获的季节, 会一直持续三个月. 树木变成了金黄, 草儿要准备躲进冬日的地毯中了, 天空也时常因为暴雨的阴云而黯淡."
+               },
+               "winter": {
+                  "display_name": "冬天",
+                  "description": "树林中的夏日是寒冷的季节, 会一直持续三个月. 树木失去了叶子, 雪覆盖了一切. 只有在石炉边围坐才能抵御寒冷而刺骨的风."
+               }
             }
          },
          "arctic": {
-            "display_name": "北极",
+            "display_name": "北寒带",
             "description": "北方联盟的家乡, 四处都是皑皑的白雪, 高耸的山脉和大范围的水体.",
             "random_location_names": {
                "000": "瓦尔基苔原"
+            },
+            "seasons": {
+               "spring": {
+                  "display_name": "春天",
+                  "description": "北寒带的春日是善变的季节, 短短只有一个月. 高原上的积雪经年不化, 湖边的地底里却已开始融雪, 随而青草也开始冒芽了."
+               },
+               "summer": {
+                  "display_name": "夏天",
+                  "description": "北寒带的夏日是休整的季节, 会一直持续三个月. 天气温和, 绿油油的低地已经长满了草. 这是从严冬中获得的假期, 也是一段积蓄力气, 为下个严冬做准备的时期."
+               },
+               "autumn": {
+                  "display_name": "秋天",
+                  "description": "北寒带的秋日是冰封的季节, 短短只有一个月. 尽管暴风雪并不常见, 但风雪还是会天天光顾的. 这是无情的凛冬来到之前建造庇护所的最后机会."
+               },
+               "winter": {
+                  "display_name": "冬天",
+                  "description": "北寒带的冬日是苦难的季节, 绵延长达七个月. 恶劣的天气, 带着刺骨的寒风和暴风雪让务农变得尤为艰难. 甚至不穿冬服莽然外出都有可能造成很严重的后果."
+               }
             }
          },
          "desert": {
@@ -2319,6 +2367,24 @@
             "description": "酷热和贫瘠,到处都是厚实的山丘和稀疏的植被.是瑞雅之裔的故乡.",
             "random_location_names": {
                "000": "帕莱姆沙漠"
+            },
+            "seasons": {
+               "spring": {
+                  "display_name": "春天",
+                  "description": "沙漠中的春日是潮湿的季节, 会一直持续两个月. 是补充水源的珍贵时节, 这段时间里当地的花卉也争相开放."
+               },
+               "summer": {
+                  "display_name": "夏天",
+                  "description": "沙漠中的夏日是暴躁的季节, 会一直持续四个月. 沙尘暴几乎每日一光顾, 若是小镇没有可以躲藏的地方, 包括墙壁, 山体, 或地下, 可能会很难抵挡住沙尘的猛攻."
+               },
+               "autumn": {
+                  "display_name": "秋天",
+                  "description": "沙漠中的秋日是宁静的季节, 会一直持续四个月. 天气炎热, 但比夏天温顺多了, 没有沙尘暴也没有大降水. 是个经历了夏天尘暴之后传统的休息节气."
+               },
+               "winter": {
+                  "display_name": "冬天",
+                  "description": "沙漠中的冬日是凉爽的季节, 会一直持续两个月. 凉风吹过沙丘, 带来了比秋天更为舒适的天气, 甚至偶尔还有一两片雪云飘过."
+               }
             },
             "sandy_poyo": {
                "display_name": "沙漠波波鸡",
@@ -5492,7 +5558,7 @@
                                        },
                                        "accept": {
                                           "bulletin_message": {
-                                             "00": "\"真棒! 慢慢选人哈, 物色人才着实重要.\""
+                                             "00": "\"真棒! 慢慢选人哈, 物色人才着实重要.\"<br><br>\"我说过了, 他们要来七天左右, 所以可别把顶梁柱送来了啊.\""
                                           },
                                           "choice_000": "容我想想..."
                                        },
@@ -5798,7 +5864,7 @@
                                              "000": "\"很好! 谢谢你们! 来, 拿着, 回报.\"<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
                                           },
                                           "bulletin_title": "历史性进展",
-                                          "dialog_title": "兔子欢快地跳了下",
+                                          "dialog_title": "兔子激动地跳着",
                                           "choice_000": "拿去吧!"
                                        }
                                     }
@@ -5873,8 +5939,8 @@
                                        },
                                        "msg1": {
                                           "bulletin_message": {
-                                             "000": "一只兔兔走了过来, 身着斗篷神色紧张. \"你们好, 嗯, 听飒沙说从你们这儿拿到了昔红柿. 我能来买点儿吗?\"",
-                                             "001": "一只身着斗篷的兔兔来到了镇上, 好像警惕着什么. \"亲爱的人类, 我能来找你们交易点儿昔红柿吗? 我从没尝过这么好吃的, 飒沙说我们可以来问你们要, 顺便促进感情...\""
+                                             "000": "一只兔兔走了过来, 谨慎却友善. \"你们好, 嗯, 听飒沙说从你们这儿拿到了昔红柿. 我能来买点儿吗?\"",
+                                             "001": "一只兔兔来到了镇上, 好像警惕着什么. \"亲爱的人类, 我能来找你们交易点儿昔红柿吗? 我从没尝过这么好吃的, 飒沙说我们可以来问你们要, 顺便促进感情...\""
                                           },
                                           "bulletin_title": "历史性进展",
                                           "dialog_title": "飒沙宗族的兔兔",
@@ -6694,6 +6760,12 @@
             "corrupt_regeneration_buff": {
                "display_name": "腐化再生",
                "description": "泰坦赋予它们力量."
+            }
+         },
+         "amberstone": {
+            "amberstone_visit_buff": {
+               "display_name": "珀石光环",
+               "description": "因前去拜访珀石族而灵感满满, 受到鼓舞且充满力量"
             }
          }
       },
@@ -7819,37 +7891,37 @@
                      "002": "根据研究,人每天至少需要2000卡路里的能量来维持生命."
                   },
                   "hopeless_optimist": {
-                     "000": "哇~!我竟然整整24个小时没吃药了,我感觉萌萌嗒~!",
+                     "000": "哇~!我竟然整整24个小时没吃东西了,我感觉萌萌嗒~!",
                      "001": "晚上也没有吃的呢,也许可以把月亮摘下来咬两口~!",
                      "002": "好饿....也许明天能找到点浆果."
                   },
                   "beleaguered_leader": {
-                     "000": "只是24小时没有吃药而已,不用惊慌",
+                     "000": "只是24小时没有吃东西而已,不用惊慌",
                      "001": "饥饿是最磨练人意志的事情.",
                      "002": "我要去我的梦里和我美味的食物约会.",
-                     "003": "整整一天没有吃药了, 不能抱怨; 一定要树立好榜样."
+                     "003": "整整一天没有吃东西了, 不能抱怨; 一定要树立好榜样."
                   },
                   "psychopathic_misanthrope": {
-                     "000": "一整天没有食物!?别开玩笑了!我的胃都开始吃自己了!",
-                     "001": "嘿!小伙伴们,告诉你们个事,我一天没吃东西,你们明天都给我小心点!",
-                     "002": "我今天也许一天没吃到东西,但是我依然不会和你们合作!",
-                     "003": "今天营地没有吃的吗?也许我明天能在森林里找到些什么杀来吃吧."
+                     "000": "一整天没有食物?! 别开玩笑了! 我的胃都开始吃自己了!",
+                     "001": "嘿! 小伙伴们, 告诉你们个事, 我一天没吃东西, 你们明天都给我小心点!",
+                     "002": "我今天也许一天没吃到东西, 但是我依然不会和你们合作!",
+                     "003": "今天营地没有吃的吗? 也许我明天能在森林里找到些什么杀来吃吧."
                   },
                   "generic": {
                      "000": "这一整天都没东西吃吗? ::叹气::",
                      "001": "我希望能有点吃的东西.",
-                     "002": "都过去一天了,腹中空荡空荡滴,心中拔凉拔凉滴!"
+                     "002": "都过去一天了, 腹中咕噜咕噜滴, 心里拔凉拔凉滴!"
                   },
                   "diligent_sweetheart": {
-                     "000": "没事没事!一两天不吃都没事~!",
-                     "001": "根据教会的戒律,我们至少应该一天吃一次饭",
+                     "000": "没事没事! 一两天不吃都没事~!",
+                     "001": "根据教会的戒律, 我们至少应该一天吃一次饭",
                      "teacher": {
-                        "000": "一天没食物了? 没事,以前常去的 [str(entry.teacher)]的家里有不少吃的!!"
+                        "000": "一天没食物了? 没事, 以前常去的[str(entry.teacher)]的家里有不少吃的!!"
                      }
                   },
                   "lovable_rogue": {
-                     "000": "切!竟然24小时没东西吃, 我本来是可以遇上点好事的, 如果不是饿得手脚发软的话.",
-                     "001": "没东西吃了,如果我能得到一个妈妈做的苹果馅饼,我可以为了这个杀人.",
+                     "000": "切! 竟然24小时没东西吃, 我本来是可以遇上点好事的, 如果不是饿得手脚发软的话.",
+                     "001": "没东西吃了, 如果我能得到一个妈妈做的苹果馅饼, 我可以为了这个杀人.",
                      "002": "整天不吃东西, 简直了, 谁办得到啊."
                   }
                }
@@ -7887,7 +7959,7 @@
                      "001": "真遗憾,无法吃银子和金子.",
                      "002": "这个世界越来越像巧克力了...",
                      "teacher": {
-                        "000": "在 [str(entry.teacher)]的见证下, 我再也不会挨饿了!"
+                        "000": "在[str(entry.teacher)]的见证下, 我再也不会挨饿了!"
                      }
                   },
                   "insufferable_academic": {
@@ -8882,6 +8954,52 @@
                   "titanstorm_positive": {
                      "display_name": "我们会成功的!",
                      "tooltip": "我们比'泰坦'厉害多了! 邪恶的猛兽又大又吓人, 但我相信我们的小镇!!"
+                  },
+                  "sandy_negative": {
+                     "display_name": "尘土飞扬!",
+                     "tooltip": "哦不... 到处都是沙尘!  到眼睛里了!"
+                  },
+                  "snow_sunny_positive": {
+                     "display_name": "冬日奇境!",
+                     "tooltip": "冬天太阳一照积雪闪闪发亮."
+                  },
+                  "rain_sunny_positive": {
+                     "display_name": "下雨了...",
+                     "tooltip": "雨一下太阳就黯淡了..."
+                  },
+                  "snow_sunny_negative": {
+                     "display_name": "又冷又炫!",
+                     "tooltip": "好冷啊! 而且雪地里反射的太阳光都要把我晃瞎了!"
+                  },
+                  "rain_sunny_negative": {
+                     "display_name": "被毁掉的一天.",
+                     "tooltip": "今天本来是如此完美的一天, 如果不下雨的话."
+                  },
+                  "sandy_positive": {
+                     "display_name": "沙粒滚滚",
+                     "tooltip": "这沙尘暴让我想起了生命的轮回..."
+                  }
+               }
+            },
+            "debug": {
+               "values": {
+                  "super_happy": {
+                     "display_name": "DEBUG: 超开心"
+                  },
+                  "super_sad": {
+                     "display_name": "DEBUG: 超悲伤"
+                  }
+               }
+            },
+            "kitties": {
+               "values": {
+                  "koda": {
+                     "display_name": "愉快精灵",
+                     "tooltip": "一只想要被挠痒痒的可爱幽灵小猫!"
+                  },
+                  "jacko": {
+                     "display_name": "暴躁鬼影",
+                     "tooltip": "我看到一只透明的豹子!  它保护着小镇不被危险侵袭!"
                   }
                }
             }
@@ -8990,15 +9108,27 @@
          },
          "snow": {
             "display_name": "雪天",
-            "description": "寒冷, 霜冻, 还有阳光: 奇迹的一天! 老兄, 为什么你, 还在被窝里啊?<ul><li>植物生长速度减缓.</li><li>视野半径微减.</li><li>不在屋内的炉民由于寒冷而无法照常有效率地工作.</li><li>不在屋内的家畜因寒冷而生命值下降.</li></ul>"
+            "description": "寒冷, 霜冻, 还有阳光: 奇迹的一天! 老兄, 为什么你, 还在被窝里啊?<ul><li>植物生长速度减缓.</li><li>视野半径微减.</li><li>不在屋内的炉民由于寒冷而无法照常有效率地工作.</li><li>不在屋内的家畜因寒冷而生命值下降.</li></ul>",
+            "snow_sunny": {
+               "display_name": "雪晴",
+               "description": "今天是多么美丽的冬日奇境啊!<ul><li>植物生长速度减缓.</li><li>视野半径微减.</li><li>不在屋内的炉民由于寒冷而无法照常有效率地工作.</li><li>不在屋内的家畜因寒冷而生命值下降.</li></ul>"
+            }
          },
          "sandstorm": {
             "display_name": "沙暴",
-            "description": "蒙上眼睛. 盖上耳朵. 实际上, 躲屋里不就完了吗.<ul><li不在屋内的炉民无法照常有效率地工作.</li><li>视野半径微减.</li><li>沙尘云横扫周围, 摧毁植物, 伤害人畜.</li></ul>"
+            "description": "蒙上眼睛. 盖上耳朵. 实际上, 躲屋里不就完了吗.<ul><li>不在屋内的炉民由于炎热而无法照常有效率地工作.</li><li>视野半径微减.</li><li>沙尘云横扫周围, 摧毁植物, 伤害人畜.</li></ul>",
+            "sandy_day": {
+               "display_name": "尘暴",
+               "description": "沙子和尘土... 飞得到处都是!<ul><li>不在屋内的炉民由于炎热而无法照常有效率地工作.</li><li>视野半径微减.</li></ul>"
+            }
          },
          "rain": {
             "display_name": "雨天",
-            "description": "水! 此水乃是天上来!<ul><li>植物生长速度微增.</li><li>视野半径微减.</li></ul>"
+            "description": "水! 此水乃是天上来!<ul><li>植物生长速度微增.</li><li>视野半径微减.</li></ul>",
+            "rain_sunny": {
+               "display_name": "太阳雨",
+               "description": "下着雨, 但太阳还在偷看!<ul><li>植物生长速度提升.</li><li>视野半径微减.</li></ul>"
+            }
          },
          "lucky": {
             "display_name": "幸运日",
@@ -9767,7 +9897,7 @@
          "amberstone_chest": {
             "amberstone_chest_ghost": {
                "display_name": "编织箱子",
-               "description": "可以储存64件物品"
+               "description": "可以储存64件物品 - 那可是8x8, 运上加运!"
             }
          },
          "leather_bound_chest": {
@@ -9879,7 +10009,7 @@
          "output_box_amberstone": {
             "output_box_amberstone_ghost": {
                "description": "暂时储存造出来的东西.",
-               "display_name": "兔凿展示架"
+               "display_name": "兔式展示架"
             }
          },
          "input_bin_clay": {
@@ -9890,7 +10020,7 @@
          },
          "input_bin_amberstone": {
             "input_bin_amberstone_ghost": {
-               "display_name": "兔织补给篮",
+               "display_name": "兔式补给篮",
                "description": "一种存放补给品的榕溪, 可以给工匠制作提供便利."
             }
          },
@@ -10955,7 +11085,7 @@
          "amberstone_painting_branch": {
             "amberstone_painting_branch_ghost": {
                "display_name": "花开图",
-               "description": "描绘着许久以前的一种树"
+               "description": "描绘着好多轮回之前的一种树"
             }
          },
          "tile_floor_mosaic": {
@@ -11976,10 +12106,10 @@
          },
          "bug_meat_kabob": {
             "bug_meat_kabob_serving": {
-               "display_name": "一份虫肉烤串"
+               "display_name": "一份虫肉串"
             },
             "bug_meat_kabob": {
-               "display_name": "虫肉烤串",
+               "display_name": "虫肉串",
                "description": "虫子肉的, 看起来稍微能咽得下口一点的形态"
             }
          },
@@ -12058,8 +12188,8 @@
          },
          "amberstone_table": {
             "amberstone_table_ghost": {
-               "display_name": "抛光石桌",
-               "description": "用珀石族的风格凿出来的"
+               "display_name": "茅草石桌",
+               "description": "用珀石族的风格凿和编织出来的"
             }
          },
          "dining_table": {
@@ -12437,6 +12567,12 @@
             "charging_pedestal_ghost": {
                "display_name": "充能石",
                "description": "这些石头会收集光线, 但如果晚上留在外面的话也会吸引野兽."
+            }
+         },
+         "keystone_pedestal": {
+            "keystone_pedestal_ghost": {
+               "display_name": "珀石台座",
+               "description": "顶上有一块珀石的台座, 是珀石家庭的必备."
             }
          }
       },
@@ -13755,19 +13891,19 @@
          "pelt": {
             "rabbit_pelt": {
                "display_name": "兔子皮",
-               "description": "柔软是很柔软, 但是这是死物."
+               "description": "顺滑柔软, 毫无生气."
             },
             "racoon_pelt": {
                "display_name": "浣熊皮",
-               "description": "柔软是很柔软, 但是这是死物"
+               "description": "顺滑柔软, 毫无生气"
             },
             "red_fox_pelt": {
                "display_name": "狐狸皮",
-               "description": "柔软是很柔软, 但是这是死物"
+               "description": "顺滑柔软, 毫无生气"
             },
             "squirrel_pelt": {
                "display_name": "松鼠皮",
-               "description": "柔软是很柔软, 但是这是死物"
+               "description": "顺滑柔软, 毫无生气"
             },
             "wolf_pelt": {
                "display_name": "狼皮",
@@ -13775,11 +13911,11 @@
             },
             "deer_pelt": {
                "display_name": "鹿皮",
-               "description": "柔软是很柔软, 但是这是死物"
+               "description": "顺滑柔软, 毫无生气"
             },
             "cougar_pelt": {
                "display_name": "Cougar Pelt",
-               "description": "柔软是很柔软, 但是这是死物"
+               "description": "顺滑柔软, 毫无生气"
             },
             "beetle_pelt": {
                "display_name": "甲壳虫的壳",
@@ -13796,6 +13932,10 @@
             "boar_pelt": {
                "description": "顺滑柔软, 毫无生气",
                "display_name": "野猪皮"
+            },
+            "deer_horn": {
+               "display_name": "鹿茸",
+               "description": "又硬又尖锐, 可能有用吧.."
             }
          },
          "silver": {
@@ -13912,8 +14052,8 @@
          },
          "feathers": {
             "poyo_feathers": {
-               "display_name": "波波鸡羽毛",
-               "description": "羽毛来源于丰满的鸟类"
+               "display_name": "羽毛",
+               "description": "来自于丰满鸟类的羽毛"
             },
             "ostrich_feathers": {
                "description": "来自一只大型鸟类的羽毛, 它不会飞",
@@ -14205,7 +14345,7 @@
          "pine_tree": {
             "large_pine_tree": {
                "display_name": "大松树",
-               "description": "百年树龄. 真厉害..."
+               "description": "看起来很老了. 真厉害..."
             },
             "medium_pine_tree": {
                "display_name": "中型松树",
@@ -14258,7 +14398,7 @@
                "display_name": "中型松树"
             },
             "large_snowy_pine_tree": {
-               "description": "百年树龄. 真厉害...",
+               "description": "看起来很老了. 真厉害...",
                "display_name": "大松树"
             },
             "small_snowy_pine_tree": {
@@ -14267,7 +14407,7 @@
             },
             "large_gold_pine_tree": {
                "display_name": "大松树",
-               "description": "百年树龄. 真厉害..."
+               "description": "看起来很老了. 真厉害..."
             },
             "medium_gold_pine_tree": {
                "display_name": "中型松树",
@@ -14279,7 +14419,7 @@
             },
             "large_silver_pine_tree": {
                "display_name": "大松树",
-               "description": "百年树龄. 真厉害..."
+               "description": "看起来很老了. 真厉害..."
             },
             "small_silver_pine_tree": {
                "display_name": "小松树",
@@ -14345,7 +14485,7 @@
             },
             "large_oak_tree": {
                "display_name": "大橡树",
-               "description": "百年树龄. 真厉害..."
+               "description": "看起来很老了. 真厉害..."
             },
             "medium_oak_tree": {
                "display_name": "中型橡树",
@@ -14932,6 +15072,12 @@
             "summon_stone_rune_site_ghost": {
                "display_name": "符文景观石",
                "description": "生成一块画有神圣符文的空地."
+            }
+         },
+         "summon_stone_stump": {
+            "summon_stone_stump_ghost": {
+               "display_name": "巨大树桩石",
+               "description": "生成一块巨大的树桩."
             }
          },
          "summon_stone_rabbit_statue": {
@@ -15645,7 +15791,7 @@
                "flavor": "标志高度的文明."
             },
             "wooden_buckler_recipe": {
-               "description": "木盾牌可以给士兵携带,但是可能在未来的版本中才能使用!",
+               "description": "武装你的步兵...!",
                "recipe_name": "木制圆盾"
             },
             "wooden_diamond_window_recipe": {
@@ -15694,9 +15840,9 @@
                "flavor": "摆满了很多精品,有时还有点火的作品."
             },
             "wooden_sign_recipe": {
-               "description": "有人模仿我的城,但模仿不了我的标志",
+               "description": "通用的标志, 用来标记你的建筑",
                "recipe_name": "木制招牌",
-               "flavor": "但如果它是 *通用的*, 怎么会...? NM. (-sdee)"
+               "flavor": "但如果它是*通用的*, 怎么用来...? 算了, 就这样吧."
             },
             "wooden_sign_weaver_recipe": {
                "description": "织工的标志,放在墙上",
@@ -16204,7 +16350,7 @@
             "chefs_specials_name": "招牌小菜",
             "bug_meat_kabob_recipe": {
                "description": "串烤虫子肉! 口感十分微妙",
-               "recipe_name": "虫肉烤串",
+               "recipe_name": "虫肉串",
                "flavor": "给勇敢的吃货准备的"
             },
             "roasted_sweet_potato_recipe": {
@@ -16441,6 +16587,14 @@
             "speed_buff": {
                "display_name": "率先攻击",
                "description": "步兵移动速度更快"
+            },
+            "shield_hare_buff": {
+               "display_name": "猎人力量",
+               "description": "勇气提升20%"
+            },
+            "spear_horn_buff": {
+               "display_name": "猎人意志",
+               "description": "意志力提升20%"
             }
          },
          "footman_outfit": {
@@ -16450,9 +16604,35 @@
       },
       "geomancer": {
          "geomancer_description": {
-            "display_name": "??? ",
-            "description": "???  (没有的职业)",
-            "requirements": "??? "
+            "display_name": "地媒师",
+            "description": "地形构造与傀儡制作.",
+            "requirements": "来自珀石族与石炉世界信任的转职道具.",
+            "level_2_data": {
+               "perk_000_name": "质量操纵",
+               "perk_000_description": "地媒师现在可以制作召唤石用于操纵水体或生成大规模的地层了."
+            },
+            "level_6_data": {
+               "perk_000_name": "大地之力",
+               "perk_000_description": "地媒师现在可以制作所有类型的傀儡了, 并可同时保持10个傀儡处于激活状态."
+            },
+            "level_1_data": {
+               "perk_000_name": "传召之术",
+               "perk_000_description": "地媒师现在可以制作召唤石用于生成地块或普通地片了."
+            },
+            "level_4_data": {
+               "perk_001_name": "奇观招来",
+               "perk_000_name": "土中珍宝",
+               "perk_001_description": "地媒师现在可以制作召唤石生成地标建筑了.",
+               "perk_000_description": "地媒师现在可以制作召唤石生成矿脉了."
+            },
+            "level_5_data": {
+               "perk_000_name": "傀儡构建",
+               "perk_000_description": "地媒师现在可以制作进阶傀儡了, 并同时保持6个傀儡处于激活状态."
+            },
+            "level_3_data": {
+               "perk_000_name": "生命吐息",
+               "perk_000_description": "地媒师现在可以制作基础傀儡了, 并同时保持3个傀儡处于激活状态."
+            }
          },
          "geomancer_outfit": {
             "display_name": "地媒师的袍服",
@@ -18206,6 +18386,10 @@
             "legendary_circlet_buff": {
                "display_name": "光耀头环",
                "description": "增加10%意志力, 勇气与爱心"
+            },
+            "wolf_helmet_buff": {
+               "display_name": "猎人意识",
+               "description": "勤奋提升20%"
             }
          }
       },
