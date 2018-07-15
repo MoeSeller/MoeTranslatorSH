@@ -1586,5 +1586,8 @@
             "description": "猩红头环的传统材料"
          }
       }
+   },
+   "kingdoms": {
+      "rayyas_children": "瑞娅之裔"
    }
 }

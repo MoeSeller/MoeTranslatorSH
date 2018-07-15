@@ -777,7 +777,7 @@
                      "tip_description": "使用信息框按键安排管理小队成员"
                   },
                   "party": {
-                     "required_job_text": "需要一名 战斗职业"
+                     "required_job_text": "需要战斗单位"
                   }
                }
             },
@@ -788,47 +788,47 @@
                   "carpenter": {
                      "display_name": "木匠制作菜单",
                      "description": "制造木制家具和装饰.",
-                     "required_job_text": "需要一名 木匠"
+                     "required_job_text": "需要一名木匠"
                   },
                   "weaver": {
                      "display_name": "纺织工制作菜单",
                      "description": "纺织衣服,布匹和装饰.",
-                     "required_job_text": "需要一名 纺织工"
+                     "required_job_text": "需要一名纺织工"
                   },
                   "mason": {
                      "display_name": "石匠制作菜单",
                      "description": "雕刻石头武器和家具.",
-                     "required_job_text": "需要一名 石匠"
+                     "required_job_text": "需要一名石匠"
                   },
                   "blacksmith": {
                      "display_name": "铁匠制作菜单",
                      "description": "冶炼矿石可锻造武器和盔甲.",
-                     "required_job_text": "需要一名 铁匠"
+                     "required_job_text": "需要一名铁匠"
                   },
                   "cook": {
                      "display_name": "厨师制作菜单",
                      "description": "让食材变得更加美味,且可以保存更长时间.",
-                     "required_job_text": "需要一名 厨师"
+                     "required_job_text": "需要一名厨师"
                   },
                   "potter": {
                      "display_name": "陶艺师制作菜单",
                      "description": "把粘土制作成砖块和商品.",
-                     "required_job_text": "需要一名 陶艺师"
+                     "required_job_text": "需要一名陶艺师"
                   },
                   "herbalist": {
                      "display_name": "草药师制作菜单",
                      "description": "把草药制作成治疗药.",
-                     "required_job_text": "需要一名 草药师"
+                     "required_job_text": "需要一名草药师"
                   },
                   "engineer": {
                      "display_name": "工程师制作菜单",
                      "description": "制作机关与防御性武器",
-                     "required_job_text": "需要一名 工程师"
+                     "required_job_text": "需要一名工程师"
                   },
                   "geomancer": {
                      "display_name": "地媒师制作菜单",
                      "description": "给召唤石与傀儡注入魔法",
-                     "required_job_text": "需要一位地媒师"
+                     "required_job_text": "需要一名地媒师"
                   }
                }
             },
@@ -1348,13 +1348,14 @@
             "missing_ingredients": "缺少材料: ",
             "tooltip_appeal_stat": "美丽值",
             "tooltip_net_worth_stat": "金币数",
+            "tooltip_effort_stat": "进度(制作时间)",
             "damage_stat": "攻击",
             "armor_stat": "防御"
          },
          "town_overview": {
-            "title": "城镇信息",
+            "title": "城镇总览",
             "town_morale": "整体心情",
-            "initial_town_name": "探险队 [str(town_number)]",
+            "initial_town_name": "[str(town_number)]号探险队",
             "journal": {
                "default_message": "尚无日记!",
                "signature": "--[name(entry.person)]",
@@ -1653,7 +1654,7 @@
                },
                "key_category_names": {
                   "other": "其他",
-                  "camera": "视角(相机)",
+                  "camera": "视角(镜头)",
                   "vision": "视图",
                   "speed": "速度",
                   "menus": "菜单",
@@ -1666,18 +1667,20 @@
                   "debug": "Debug"
                },
                "key_binding_names": {
-                  "cam_drag": "移动相机",
-                  "cam_home": "相机回到中心",
-                  "cam_pan_fwrd": "相机前移",
-                  "cam_pan_back": "相机后移",
-                  "cam_pan_left": "相机左移",
-                  "cam_pan_right": "相机右移",
-                  "cam_orb_left": "相机左旋",
-                  "cam_orb_right": "相机右旋",
+                  "cam_drag": "移动镜头",
+                  "cam_home": "镜头回到中心",
+                  "cam_pan_fwrd": "镜头前移",
+                  "cam_pan_back": "镜头后移",
+                  "cam_pan_left": "镜头左移",
+                  "cam_pan_right": "镜头右移",
+                  "cam_orb_left": "镜头左旋",
+                  "cam_orb_right": "镜头右旋",
                   "cam_orb_up": "镜头上旋",
                   "cam_orb_down": "镜头下旋",
                   "cam_zoom_in": "放大",
                   "cam_zoom_out": "缩小",
+                  "cam_move_up": "提高镜头",
+                  "cam_move_down": "降低镜头",
                   "cam_follow": "镜头跟随",
                   "vision_building_toggle": "切换建筑视图",
                   "vision_xray_toggle": "透视视图",
@@ -1763,7 +1766,7 @@
             "exit": "退出",
             "settings": "设置",
             "about": "关于",
-            "kingdom_of": "王国: ",
+            "kingdom_of": "据点名称: ",
             "continue_game": "继续游戏",
             "new_game": "新建游戏",
             "singleplayer_game": "单人模式",
@@ -1771,7 +1774,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r874 版本",
+            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r875 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到Stonehearth!",
                "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
@@ -1877,8 +1880,9 @@
             },
             "buttons": {
                "continue_anyway": "继续使用当前模组",
-               "apply_saved": "应用存档模组然后继续"
-            }
+               "apply_saved": "应用存档中的模组然后继续"
+            },
+            "view_in_workshop": "在创意工坊中查看模组. 注意: 若订阅了该模组, 你需要重启游戏来应用改动后的设置."
          },
          "load_match_mod_order": {
             "title": "模组顺序有异",
@@ -2306,7 +2310,7 @@
          "ascendancy": {
             "display_name": "崛起之都",
             "quote": "绵羊? 带了. 锄头? 有了. 木剑? 拿好了. 开始出发!",
-            "description": "认真, 勤奋, 忠诚, 又有着平衡的身体素质. 崛起之都的炉民通过伐木, 建造, 务农来创造属于自己的家园, 他们相信四海之下, 皆可为家.",
+            "description": "认真, 勤奋, 忠诚, 又有着平衡的身体素质. 崛起之都的炉民通过伐木, 建造, 务农来创造属于自己的家园, 他们相信四海之下, 皆可为家.<div style='text-shadow: -2px -2px 0px #000000, 0px -2px 0px #000000, 2px -2px 0px #000000, -2px 0px 0px #000000, 2px 0px 0px #000000, -2px 2px 0px #000000, 0px 2px 0px #000000, 2px 2px 0px #000000;font-size: 15px;font-weight: bold;margin-top: 6px;'>适合新玩家起手.</div>",
             "post_selection_description": ", 一个繁荣而勤勉的王国.",
             "initial_town_name": "[str(town_number)]号考察队"
          }
@@ -5058,13 +5062,13 @@
                   }
                },
                "alert_destroy_building": {
-                  "title": "一条触手威胁到了我们的建筑物! 杀了它, 赶紧!"
+                  "title": "有条触手威胁到了建筑物! 杀了它, 赶紧!"
                },
                "alert_building_was_destroyed": {
                   "title": "一座建筑物被摧毁了! 太迟了..."
                },
                "alert_tentacle_grab": {
-                  "title": "一条触手抓住了[name(i18n_data.entity)]! 救救他们!"
+                  "title": "有条触手抓住了[name(i18n_data.entity)]! 救救他们!"
                },
                "alert_initial_camp_spawn": {
                   "title": "传送门出现了! 里面会不断地生成爬虫, 除非传送门被破坏. 但也要小心周围的腐化守卫."
@@ -6411,19 +6415,19 @@
             }
          },
          "combat_basics": {
-            "display_name": "基础战斗训练",
+            "display_name": "基础训练",
             "description": "几小时的战斗训练让勇气提升了"
          },
          "defender": {
             "defender_buff": {
-               "display_name": "防御者",
+               "display_name": "守卫者",
                "description": "提升勇气和力量!"
             }
          },
          "devoted": {
             "devoted_buff": {
                "display_name": "专注",
-               "description": "速度增加 20 "
+               "description": "速度增加20 "
             }
          },
          "groggy": {
@@ -6434,16 +6438,20 @@
          },
          "shepherding": {
             "compassionate_shepherd_buff": {
-               "display_name": "爱心",
-               "description": "一个有爱心的牧羊人照顾的绵羊会生产更多的羊毛."
+               "display_name": "关爱",
+               "description": "一个有爱心的牧羊人照顾的绵羊可以产出更多的羊毛."
             },
             "shepherding_speed_bonus": {
-               "display_name": "提升群体速度",
-               "description": "牧羊人赶羊群的速度快了那么一点点."
+               "display_name": "提升畜群速度",
+               "description": "牧羊人赶畜群的速度快了点."
             },
             "stenched_shepherd_buff": {
                "display_name": "杀戮气息",
                "description": "附近的动物能嗅到这个牧羊人近期屠杀过动物, 只有等到杀戮气息褪去该牧羊人才可以找到新的野生动物."
+            },
+            "shepherding_solitary": {
+               "display_name": "社交需求降低",
+               "description": "牧羊人可以在野外找到平静, 不那么想找人谈话了."
             }
          },
          "sleeping": {
@@ -7063,17 +7071,17 @@
          "unit_control": {
             "abilities": {
                "snare_trap": {
-                  "display_name": "陷阱",
-                  "description": "春天的时间偶更喜欢捕捉兔子和松鼠."
+                  "display_name": "捕猎陷阱",
+                  "description": "弹出一张很重的网困住一些像兔子或松鼠一样的小动物."
                }
             },
             "move_unit": {
                "display_name": "移动",
-               "description": "告诉这个物品要移动到什么地方."
+               "description": "告诉他们要移动到什么地方."
             },
             "unload_inventory": {
-               "display_name": "卸载背包",
-               "description": "回到城镇, 清空你的背包的物品."
+               "display_name": "清空背包",
+               "description": "回到城镇, 寄存你的背包里的物品."
             }
          },
          "plant_tree": {
@@ -8509,6 +8517,20 @@
                   "display_name": "平淡的一餐",
                   "tooltip": "我记得那又是乏味的[str(foodname)]. 它给了我坚持下去的力量, 但吃这个东西太无聊了."
                },
+               "item_quality": {
+                  "ate_item_quality_fine": {
+                     "display_name": "精巧的料理",
+                     "tooltip": "最近吃了<font color='#6be9e7'>精心</font>料理的[str(foodname)], 特别好吃!"
+                  },
+                  "ate_item_quality_excellent": {
+                     "display_name": "卓越的料理",
+                     "tooltip": "最近吃了<font color='#ce71d2'>完美</font>料理的[str(foodname)]! 有点东西啊!"
+                  },
+                  "ate_item_quality_masterwork": {
+                     "display_name": "大师般的料理!",
+                     "tooltip": "最近吃了<font color='#E3AC53'>大师般</font>料理的[str(foodname)]! 我从来没发现它能这么好吃!"
+                  }
+               },
                "values": {
                   "ate_cooked": {
                      "display_name": "熟食",
@@ -9173,7 +9195,15 @@
                "17": "[str(self.stonehearth:unit_info.custom_name)], 空引用",
                "18": "[str(self.stonehearth:unit_info.custom_name)], 荣归故里者",
                "19": "[str(self.stonehearth:unit_info.custom_name)], 大反派",
-               "20": "来自圆形世界的[str(self.stonehearth:unit_info.custom_name)]"
+               "20": "来自圆形世界的[str(self.stonehearth:unit_info.custom_name)]",
+               "21": "[str(self.stonehearth:unit_info.custom_name)], 恐怖之角",
+               "22": "[str(self.stonehearth:unit_info.custom_name)], 隆娜特里的末日",
+               "23": "厚脸皮的[str(self.stonehearth:unit_info.custom_name)]",
+               "24": "神经的[str(self.stonehearth:unit_info.custom_name)]",
+               "25": "拆迁队的[str(self.stonehearth:unit_info.custom_name)]",
+               "26": "[str(self.stonehearth:unit_info.custom_name)], 噪声与走调之王",
+               "27": "[str(self.stonehearth:unit_info.custom_name)], 方块工匠",
+               "28": "[str(self.stonehearth:unit_info.custom_name)], 潜伏之影"
             }
          },
          "test_weather": {
@@ -10181,7 +10211,7 @@
             "description": "肥满又美味的野生禽类",
             "poyo_egg": {
                "display_name": "受精的波波鸡蛋",
-               "description": "还没浮出来吗?"
+               "description": "还没孵出来吗?"
             },
             "young": {
                "display_name": "波波小鸡",
@@ -10943,13 +10973,13 @@
          },
          "window_box_brightbell": {
             "window_box_brightbell_ghost": {
-               "display_name": "光铃花花盆",
+               "display_name": "光铃花花箱",
                "description": "也给植物一个整洁的家."
             }
          },
          "window_box_frostsnap": {
             "window_box_frostsnap_ghost": {
-               "display_name": "霜断花花盆",
+               "display_name": "霜断花花箱",
                "description": "也给植物一个整洁的家."
             }
          },
@@ -11478,13 +11508,13 @@
          },
          "window_box_brightbell_fine": {
             "window_box_brightbell_fine_ghost": {
-               "display_name": "精巧的光铃花花盆",
+               "display_name": "精巧的光铃花花箱",
                "description": "也给植物一个温馨的家."
             }
          },
          "window_box_frostsnap_fine": {
             "window_box_frostsnap_fine_ghost": {
-               "display_name": "精巧的霜断花花盆",
+               "display_name": "精巧的霜断花花箱",
                "description": "也给植物一个温馨的家."
             }
          },
@@ -15279,11 +15309,11 @@
             },
             "level_3_data": {
                "perk_000_name": "满师之识",
-               "perk_000_description": "当灵感来敲门时, 铁匠可以锻造出精巧品质的铁器(装备暂未开放)."
+               "perk_000_description": "当灵感来敲门时, 铁匠可以锻造出精巧品质的可放置物品."
             },
             "level_5_data": {
                "perk_000_name": "师匠之察",
-               "perk_000_description": "铁匠现在可以制作出卓越品质的器物了, 且制作精巧品质物品的概率提高了.  (装备暂未开放!)"
+               "perk_000_description": "铁匠现在可以制作出卓越品质的器物了, 且制作精巧品质物品的概率提高了."
             }
          },
          "blacksmith_forge": {
@@ -15778,17 +15808,17 @@
             "weaver_spindle_recipe": {
                "description": "炉民可以转职为纺织工.",
                "recipe_name": "纺织工的纺锤",
-               "flavor": "从纤维,到织物,到文明."
+               "flavor": "从纤维, 到织物, 到文明."
             },
             "window_box_brightbell_recipe": {
-               "description": "摆在窗户下的光铃花 花架.",
-               "recipe_name": "光铃花 花架",
-               "flavor": "光铃花每天总是摆出吃人的样子!"
+               "description": "摆在窗户下的光铃花花箱.",
+               "recipe_name": "光铃花花箱",
+               "flavor": "一天一朵光铃花, 怪物见了也害怕!"
             },
             "window_box_frostsnap_recipe": {
-               "description": "摆在窗户下的霜断花 花架.",
-               "recipe_name": "霜断花 花架",
-               "flavor": "标志高度的文明."
+               "description": "摆在窗户下的霜断花花箱.",
+               "recipe_name": "霜断花花箱",
+               "flavor": "标志着一位有品位的居民."
             },
             "wooden_buckler_recipe": {
                "description": "武装你的步兵...!",
@@ -16161,30 +16191,30 @@
                "name": "石锅",
                "long_description": "巨大又重型的锅, 适合烹饪一次盛宴!"
             },
-            "level_6_data": {
-               "title": "皇家御厨",
-               "perk_000_name": "10,000 Hours (未实现)",
-               "perk_000_description": "厨师烹饪的食物会带给你不一样的的感觉."
-            },
             "level_2_data": {
                "perk_000_name": "烹饪美学",
-               "perk_000_description": "厨师学到了比较美味的的食谱."
-            },
-            "level_4_data": {
-               "perk_000_name": "厨艺提升 (未实现)",
-               "perk_000_description": "厨师已经学会给经典食谱添加其他功效了."
+               "perk_000_description": "厨师学会了制作一些好看点的东西了."
             },
             "level_1_data": {
                "perk_000_name": "营地野炊",
-               "perk_000_description": "厨师可以做出基本的,营养的食谱."
+               "perk_000_description": "厨师可以料理基础而有营养的食物了."
             },
             "level_3_data": {
-               "perk_000_name": "满师之识",
-               "perk_000_description": "当灵感来敲门时, 厨师可以烹饪出精巧品质的食品(食物暂未开放)."
+               "perk_000_name": "派里的肉",
+               "perk_000_description": "厨师现在可以烹制又大又好吃的肉类食物了, 外加一种皮脆味美的派.",
+               "perk_001_name": "满师之识",
+               "perk_001_description": "当灵感来敲门时, 厨师可以烹饪出精巧品质的食品.<br><br>(精巧品质的食物可以额外提供一个开心的想法, 炉民可以吃的更快, 也能卖更多钱!)"
+            },
+            "level_4_data": {
+               "perk_000_name": "甜食吃货",
+               "perk_000_description": "厨师现在可以制作加工白糖了."
             },
             "level_5_data": {
                "perk_000_name": "师匠之察",
-               "perk_000_description": "厨师现在可以烹饪出精巧品质的食品了, 且烹饪精巧品质食品的概率提高了.  (食物暂未开放!)"
+               "perk_000_description": "厨师现在可以烹饪出卓越品质的食品了, 且烹饪精巧品质食品的概率提高了.<br><br>(卓越品质的食物吃得还要快, 也可以获得一个开心的想法, 卖得还要更贵!!)"
+            },
+            "level_6_data": {
+               "title": "皇家御厨"
             }
          },
          "cook_outfit": {
@@ -16497,27 +16527,29 @@
             "description": "农民到农田收割农作物,提供食品和烹饪食品的原材料.",
             "requirements": "由木匠制作.",
             "level_6_data": {
-               "perk_000_name": "自然恩惠(未实现)",
-               "perk_000_description": "偶尔,农民会收获更多的作物... 特殊的农作物.",
-               "title": "庄稼大师"
+               "perk_000_name": "农民大师"
+            },
+            "level_5_data": {
+               "perk_000_name": "植树还林",
+               "perk_000_description": "农民成功发挥出了树栖动物的惊人优势! (他们能种树啦.)"
             },
             "level_1_data": {
                "perk_000_name": "速度提升",
-               "perk_000_description": "从现场搬运生鲜食品到餐桌上,增加了农民的移动速度."
+               "perk_000_description": "从田里搬运生鲜食品到餐桌上的来回跑动, 增加了农民的移动速度."
             },
             "level_2_data": {
                "perk_000_name": "职业提升",
-               "perk_000_description": "对于作物的熟悉程度让农夫产生了烹饪的灵感.详见转职界面."
+               "perk_000_description": "对于作物的熟悉程度让农民产生了烹饪的灵感. 详见转职界面."
             },
             "level_3_data": {
-               "perk_000_name": "大丰收",
-               "perk_000_description": "农民让每颗植物的产量增加."
+               "perk_000_name": "岁稔年丰",
+               "perk_000_description": "每棵植物的产量增加."
             }
          },
          "farmer_buffs": {
             "speed_1_buff": {
                "description": "从现场搬运生鲜食品到餐桌上,增加了农民的移动速度.",
-               "display_name": "农民移动速度提升 +10"
+               "display_name": "农民移动速度提升10"
             }
          },
          "farmer_hoe": {
@@ -16800,9 +16832,7 @@
                "long_description": "石匠在这里把石头等材料制造成雕刻品与艺术品和建筑物."
             },
             "level_6_data": {
-               "title": "石匠大师",
-               "perk_000_name": "雕刻10,000小时! (未实现)",
-               "perk_000_description": "石匠在他这一行的大师级水平,已经可以让他用全新的方式来处理石头了."
+               "title": "石匠大师"
             },
             "level_2_data": {
                "perk_000_name": "精美石器",
@@ -17262,6 +17292,11 @@
                "description": "地媒师需要用它来制作傀儡",
                "recipe_name": "傀儡部件",
                "flavor": "结实地能挡住一头公牛."
+            },
+            "window_box_violet_recipe": {
+               "description": "栽满紫罗兰的花香, 可以放在窗框下面.",
+               "recipe_name": "紫罗兰花箱",
+               "flavor": "有品味到了极致."
             }
          }
       },
@@ -17422,9 +17457,9 @@
                "flavor": "'糖、香料和地球的血液:它是用托盘带给他们的,和我们在一起' --瑞雅"
             },
             "potted_cactus_recipe": {
-               "description": "一棵仙人掌植物种在盆子里.",
+               "description": "一棵种在盆子里的仙人掌.",
                "recipe_name": "仙人掌盆栽",
-               "flavor": "嗷哧! —— 盆栽扎人都这么痛!"
+               "flavor": "沃去! -- 和仙人掌打交道的陶艺师, 都很容易受.!"
             },
             "blown_glass_vase_recipe": {
                "description": "神奇的",
@@ -17607,25 +17642,29 @@
          },
          "potter_outfit": {
             "display_name": "陶艺师服装",
-            "description": "世界上都在流行这一风格的衣服."
+            "description": "土斑也是这个紧俏设计的一部分."
          }
       },
       "shepherd": {
          "shepherd_description": {
             "display_name": "牧人",
-            "description": "驯化野生动物,捕猎它们用于食品和材料.",
+            "description": "驯化野生动物并从它们身上获取食物或者材料.",
             "requirements": "由木匠制作.",
             "level_4_data": {
                "perk_000_name": "动物亲和",
                "perk_000_description": "当牧羊人正在寻找野生动物时,他们更有可能会出现."
             },
             "level_1_data": {
-               "perk_000_name": "速度提升",
-               "perk_000_description": "牧民现在能让羊群走快一点."
+               "perk_000_name": "跟我来!",
+               "perk_000_description": "牧人现在可以很熟练地驱使牧群, 让它们走得快了点."
+            },
+            "level_2_data": {
+               "perk_000_name": "自然孤独",
+               "perk_000_description": "在喂食动物和与动物的漫长步行中, 牧人找到了安慰, 这让他们不再那么频繁地停下脚步寻求交谈了."
             },
             "level_3_data": {
-               "perk_000_name": "额外奖励",
-               "perk_000_description": "牧民的技能可以获得更多的动物副产品收益."
+               "perk_000_name": "剃刀精通",
+               "perk_000_description": "牧人精湛的技术让他们能获得更多的动物产品."
             },
             "level_6_data": {
                "title": "放牧大师"
@@ -17679,27 +17718,33 @@
                "perk_001_description": "猎人现在满足等级需要了可以转职更高的职业,点击查看详细信息."
             },
             "level_6_data": {
-               "perk_000_name": "致命诱惑(未实现!)",
-               "perk_000_description": "放置特殊的诱捕区,以'震慑'贪婪的邻居.",
-               "title": "猎人大师"
+               "title": "捕猎大师",
+               "perk_000_name": "陷阱专精",
+               "perk_000_description": "猎人可以将陷阱放置的心得与工程师分享. 提升6个镇上放置陷阱的上限."
             },
             "level_5_data": {
                "perk_000_name": "多齿陷阱",
-               "perk_000_description": "陷阱现在提升25%的抓捕几率"
+               "perk_000_description": "更好的隐藏技巧提升了陷阱25%的抓捕几率"
             },
             "level_4_data": {
                "perk_000_name": "背包容量 +2",
-               "perk_000_description": "猎人能更高效的打包战利品."
+               "perk_000_description": "猎人能更高效的打包战利品.",
+               "perk_001_name": "生存专家",
+               "perk_001_description": "当他们倒地濒临绝境, 猎人可以坚持更久以等待救援"
             }
          },
          "snare_trap": {
-            "display_name": "网套陷阱",
+            "display_name": "捕猎陷阱",
             "description": "可以安全地固定住抓到的猎物."
          },
          "trapper_buffs": {
             "speed_1_buff": {
                "description": "长距离步行增加了猎人的移动速度.",
                "display_name": "猎人速度提升 +10"
+            },
+            "survivalist_1_buff": {
+               "display_name": "猎人濒死时间延长",
+               "description": "在一命呜呼之前, 猎人能比大多数人在地上苟延残喘更长时间."
             }
          },
          "trapper_knife": {
@@ -17739,19 +17784,13 @@
          "weaver_description": {
             "display_name": "纺织工",
             "description": "纺织工用纤维和染料制作线,织物和窗帘.",
-            "requirements": "由木匠制作.",
+            "requirements": "由木匠制作",
             "level_6_data": {
-               "title": "织工大师",
-               "perk_000_name": "纺织10,000小时(未实现)",
-               "perk_000_description": "纺织工的大师级水平在他这一行,已经可以用全新的方式来处理布匹了."
+               "title": "纺织大师"
             },
             "level_2_data": {
                "perk_000_name": "协作能力",
                "perk_000_description": "织工现在可以熟练地使用其他工匠创造的材料."
-            },
-            "level_4_data": {
-               "perk_000_name": "心灵手巧(未实现)",
-               "perk_000_description": "纺织工人的新一等级里增加了更多实用的功能性纺织配方."
             },
             "level_1_data": {
                "perk_000_name": "基础能力",
@@ -17759,11 +17798,11 @@
             },
             "level_3_data": {
                "perk_000_name": "满师之识",
-               "perk_000_description": "当灵感来敲门时, 纺织工可以编织出精巧品质的织物."
+               "perk_000_description": "当灵感来敲门时, 纺织工可以编织出精巧品质的装饰品."
             },
             "level_5_data": {
                "perk_000_name": "师匠之察",
-               "perk_000_description": "纺织工现在可以编织卓越品质的织物了, 且制作精巧品质物品的概率提高了."
+               "perk_000_description": "纺织工现在可以编织卓越品质的装饰品了, 且制作精巧品质装饰品的概率提高了."
             }
          },
          "recipes": {
@@ -17815,7 +17854,7 @@
             "cloth_padded_vest_recipe": {
                "description": "棉厚背心不仅仅是服装还可以给作战部队更加一些保护,不是很多但也不错!",
                "recipe_name": "填充棉背心",
-               "flavor": "需要.....更厚地....填满它!"
+               "flavor": "需要...更厚地...填满它!"
             },
             "curtains_recipe": {
                "description": "把千遍一律的窗户装扮得美美哒.",
@@ -18042,9 +18081,7 @@
             },
             "level_3_data": {
                "perk_000_name": "药品精通",
-               "perk_000_description": "草药师对医疗方面的精通可以提升治疗物品50%的疗效.",
-			   "perk_001_name": "满师之识",
-               "perk_001_description": "当灵感来敲门时, 医疗师可以做出精巧品质的物品(医疗物品暂未开放)."
+               "perk_000_description": "草药师对医疗方面的精通可以提升治疗物品50%的疗效."
             },
             "level_5_data": {
                "perk_000_name": "师匠之察",
