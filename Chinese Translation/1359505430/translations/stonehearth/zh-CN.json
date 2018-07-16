@@ -5654,7 +5654,7 @@
                                           },
                                           "bulletin_title": "奇特的交易",
                                           "dialog_title": "奇特的交易",
-                                          "choice_000": "奇特."
+                                          "choice_000": "奇怪."
                                        }
                                     }
                                  }
@@ -5725,7 +5725,7 @@
                                           "bulletin_title": "又是一个穿着斗篷的身影",
                                           "dialog_title": "穿着斗篷的身影",
                                           "choice_000": "我就知道!",
-                                          "choice_001": "也就是说蔬菜..."
+                                          "choice_001": "也就是说, 蔬菜..."
                                        }
                                     }
                                  }
@@ -5743,7 +5743,7 @@
                                        },
                                        "msg2": {
                                           "bulletin_message": {
-                                             "00": "我的地洞就在不远处, 我把它藏好了. 其实我们已经看着你们有一段时间了, 你们似乎可以信任. 尽管我们族内还有些不信任圣猕后代的, 但我觉得我们必须伸出友谊的爪子."
+                                             "00": "我的地洞就在不远处, 我把它藏好了. 其实我们已经看着你们有一段时间了, 你们似乎可以信任. 尽管我们族内还有些不相信圣猕后代的, 但我觉得我们必须伸出友谊的爪子."
                                           },
                                           "bulletin_title": "你好, 陌生人",
                                           "choice_000": "我...看到了... 会说话的兔... 人...",
@@ -5801,10 +5801,10 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "\"谢谢, I'm sure the little Snake ones will find these quite satisfactory. May our friendship ever blossom!.\" He offers you glittering bags as payment.<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                             "00": "\"谢谢, 我肯定那群蛇怪们会很愉悦的. 愿我们的友谊之花永远绽放!.\" 他给了你们几袋闪闪发亮的东西作为报酬.<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
                                           },
                                           "bulletin_title": "放刁把滥",
-                                          "choice_000": "Thank you!"
+                                          "choice_000": "谢谢!"
                                        }
                                     }
                                  }
@@ -5814,10 +5814,10 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "\"Thank you. I hope we are not injured, but fortune favors the prepared. May our friendship continue to take root!\" He hands you some glittering bags as compensation.<br><br><font size=-1><i>[Rabbit reputation increased]</i></font>"
+                                             "00": "\"谢谢. 但愿我们不会受伤, 但命运只会垂怜于有准备的人. 愿我们的友谊之花继续生根发芽!\" H他给了你们几袋闪闪发亮的东西作为补偿.<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
                                           },
                                           "bulletin_title": "放刁把滥",
-                                          "choice_000": "Best of luck"
+                                          "choice_000": "祝好运"
                                        }
                                     }
                                  }
