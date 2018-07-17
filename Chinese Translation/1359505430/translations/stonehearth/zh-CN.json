@@ -978,7 +978,7 @@
          },
          "build_mode2": {
             "tooltips": {
-               "pointer_tool": "指向工具",
+               "pointer_tool": "箭头工具",
                "room_tool": "房间",
                "wall_tool": "墙体",
                "split_wall_tool": "分割墙体",
@@ -14415,13 +14415,13 @@
             },
             "sapling_pine_tree": {
                "sapling_pine_tree_ghost": {
-                  "display_name": "Pine Tree Sapling",
-                  "description": "Baby Pine Tree."
+                  "display_name": "松树苗木",
+                  "description": "松树幼树."
                },
                "sapling_pine_tree_iconic": {
-                  "description": "Plant it in the earth and watch it grow."
+                  "description": "植入泥土, 看着它一天天长大吧."
                },
-               "description": "Baby Pine Tree."
+               "description": "松树幼树."
             },
             "medium_snowy_pine_tree": {
                "description": "结实, 旺盛.",
@@ -17102,9 +17102,9 @@
                "flavor": "当炉民们一起合作时什么都能办得到!"
             },
             "sign_mason_recipe": {
-               "description": "A heavy stone sign, to be displayed outside a mason's workshop",
+               "description": "坚如磐石的石头牌子, 以体现房子里面是个石匠铺",
                "recipe_name": "石匠招牌",
-               "flavor": "Probably wouldn't even swing in a hurricane"
+               "flavor": "或许在暴风中都不会动摇一下"
             },
             "statue_rabbit_flat_recipe": {
                "description": "两只耳朵放下去!!",
@@ -18315,7 +18315,7 @@
                "flavor": "这可不需要什么技术, 把甘薯切成块塞进地里就行了."
             },
             "snow_poppy_transmute_recipe": {
-               "description": "P从纤维里把种子取出来",
+               "description": "从纤维里把种子取出来",
                "recipe_name": "雪罂花籽 (x3)",
                "flavor": "只有老手才能把纤弱的种子剥离出来, 但在这过程中药草也就破坏了."
             }
