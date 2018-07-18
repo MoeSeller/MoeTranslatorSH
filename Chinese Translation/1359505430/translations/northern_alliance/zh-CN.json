@@ -355,8 +355,8 @@
                   "title": "城镇建立",
                   "dialog_title": "达成城镇规模!",
                   "tier_title": "城镇",
-                  "reward_message": "(原文文本错误预定, 观望)By decree of Princess Dania of the Ascendancy, 我们就此承认:",
-                  "reward_message_ctd": "为表彰战斗中的骁勇. 现批准该镇合法拥有:"
+                  "reward_message": "在英灵的指引下, 我们承认:",
+                  "reward_message_ctd": "为表彰对世界的不断探知. 该镇现合法拥有:"
                },
                "shrine_upgrade_valor": {
                   "recipe_bulletins": {
@@ -367,7 +367,8 @@
                      "001": "石匠容器配方",
                      "000": "体力 +2",
                      "002": "纺织工狼皮配方"
-                  }
+                  },
+                  "reward_message_ctd": "为表彰战斗中的英勇无畏. 该镇现合法拥有:"
                },
                "shrine_upgrade_guildmaster": {
                   "recipe_bulletins": {
@@ -377,15 +378,16 @@
                   "achievements": {
                      "001": "石匠灵兔雕塑配方",
                      "002": "铁匠家具配方"
-                  }
+                  },
+                  "reward_message_ctd": "为表彰对世界的不断探知. 该镇现合法拥有:"
                },
                "shrine_upgrade_deity": {
                   "recipe_bulletins": {
-                     "recipe_unlock_mason": "石匠获得了新的窗户配方!",
+                     "recipe_unlock_mason": "石匠获得了新的花箱配方!",
                      "recipe_unlock_weaver": "纺织工获得了新的装饰品配方!"
                   },
                   "achievements": {
-                     "001": "石匠窗户配方",
+                     "001": "石匠花箱配方",
                      "002": "纺织工装饰品配方"
                   }
                },
@@ -410,7 +412,7 @@
                         },
                         "msg1": {
                            "bulletin_message": {
-                              "00": "一声低吼在营火四周回响. 石炉里有的两粒火星跳动着, 随即形成了一匹狼, 和冬天一样雪白, 双眼却闪耀着黄光.  "
+                              "00": "一声低吼在营火四周回响. 石炉里有两粒火星跳动着, 随即形成了一匹狼, 和冬天一样雪白, 双眼却闪耀着金光.  "
                            },
                            "bulletin_title": "流火之狼",
                            "dialog_title": "一条双眼如同琥珀的狼",
