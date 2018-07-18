@@ -20,25 +20,25 @@
             "looking_for_animals": "寻找动物中",
             "collect_ingredient": "准备材料中",
             "build_workshop": "建造工作台中",
-            "death": "濒死中...",
+            "death": "濒死中",
             "away_from_town": "远离小镇",
-            "eat": "觅食中...",
-            "find_stray_animal": "找回失散的动物中...",
-            "harvest_field": "耕作农田中...",
+            "eat": "觅食中",
+            "find_stray_animal": "找回失散的动物中",
+            "harvest_field": "耕作农田中",
             "idle": "空闲",
-            "patrol": "巡逻中...",
-            "plant_crop": "种植农作物中...",
-            "return_animals": "返回牧场中...",
-            "combat": "参与战斗中...",
-            "cower": "发抖中...",
-            "flee": "逃跑中...",
-            "panic": "恐慌中...",
-            "mine": "挖掘...",
+            "patrol": "巡逻中",
+            "plant_crop": "种植农作物中",
+            "return_animals": "返回牧场中",
+            "combat": "参与战斗中",
+            "cower": "发抖中",
+            "flee": "逃跑中",
+            "panic": "恐慌中",
+            "mine": "挖掘",
             "sleep_in_bed": "睡觉中",
             "sleep_on_ground": "睡在地上",
             "check_bait_trap": "检查陷阱中",
             "set_bait_trap": "设置陷阱中",
-            "survey_trapping_grounds": "勘察捕猎区域中",
+            "survey_trapping_grounds": "勘察捕猎区中",
             "steal_bait": "偷吃诱饵中",
             "build_ladder": "建造梯子中",
             "promote": "转职中",
@@ -56,9 +56,10 @@
             "unit_hold_location": "定点防御中",
             "talk": "与[name(data.target)]谈话中",
             "incapacitated": "濒死",
-            "rescue_citizen": "正在营救 [name(data.target)]",
+            "rescue_citizen": "正在营救[name(data.target)]",
             "recuperating": "恢复中",
             "celebrating": "庆祝中",
+            "shopping": "交易中",
             "confused": "混乱中"
          }
       }
@@ -884,8 +885,11 @@
                "exchange": "换取:",
                "request": "需求:",
                "cancelled": "[str(i18n_data.town_name)]取消了交易",
+               "cancelled_no_name": "交易取消",
                "accepted": "[str(i18n_data.town_name)]接受了交易",
+               "accepted_no_name": "交易已接受",
                "declined": "[str(i18n_data.town_name)]拒绝了交易",
+               "declined_no_name": "交易已拒绝",
                "fail": {
                   "title": "交易失败",
                   "source": "对方城镇资源不够完成这次交易.",
@@ -1356,6 +1360,9 @@
             "title": "城镇总览",
             "town_morale": "整体心情",
             "initial_town_name": "[str(town_number)]号探险队",
+            "num_workers": "工人",
+            "num_crafters": "工匠",
+            "num_soldiers": "战士",
             "journal": {
                "default_message": "尚无日记!",
                "signature": "--[name(entry.person)]",
@@ -1561,6 +1568,8 @@
             "gfx_drawdistance": "景深",
             "gfx_enable_ssao": "环境光遮蔽",
             "gfx_use_high_quality": "使用Fallback渲染器",
+            "gfx_enable_dynamic_icons": "启用对话气泡图标",
+            "gfx_enable_dynamic_icons_tooltip": "若禁用, 对话气泡不会显示图标, 但这可以解决旧显卡上会发生的问题.",
             "gfx_use_recommended_graphics": "使用推荐的显示设置",
             "gfx_disable_deferred_renderer_description": "<font color='#eb4c36'><strong>警告:</strong></font> 使用fallback渲染会导致: 游戏在存在大型城市且有许多光源的情况下性能下降. 若非迫不得已, 不要勾选此选项.",
             "shadow_0": "关闭",
@@ -1585,7 +1594,7 @@
             "enable_lua_jit": "使用 Lua JIT (需要重新启动) ",
             "send_anon_data": "发送匿名反馈,以帮助改善 石炉!",
             "language_select": "语言",
-			"unsaved_changes_dialog": {
+            "unsaved_changes_dialog": {
                "title": "放弃更改?",
                "message": "是否放弃未保存的设置更改?"
             },
@@ -1774,7 +1783,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志【倒茶汉化组】-v24 适用于 Beta r875 版本",
+            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于 Beta r876 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到Stonehearth!",
                "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
@@ -1879,7 +1888,7 @@
                "continue_anyway": "使用当前模组设置. 但这可能会导致错误."
             },
             "buttons": {
-               "continue_anyway": "继续使用当前模组",
+               "continue_anyway": "应用改动的模组",
                "apply_saved": "应用存档中的模组然后继续"
             },
             "view_in_workshop": "在创意工坊中查看模组. 注意: 若订阅了该模组, 你需要重启游戏来应用改动后的设置."
@@ -2844,15 +2853,15 @@
                         },
                         "erdenes_help": {
                            "choice_000": "呃... 没事吧?",
-                           "choice_001": "可能迷糊了. 不好意思.",
+                           "choice_001": "听不懂. 不好意思.",
                            "bulletin_message": {
                               "000": "借助外力才能获得的成功 也就意味着 失去外力之后的惨败.而奥戈的力量也并不是来源于所谓的预言者,而仅仅是来自于他偷走的宝贝而已."
                            },
-                           "bulletin_title": "图腾歪了",
+                           "bulletin_title": "她歪着头",
                            "dialog_title": "??? "
                         },
                         "erdene_description": {
-                           "choice_000": "阴冷!",
+                           "choice_000": "好酷!",
                            "choice_001": "不祥的声音.",
                            "bulletin_message": {
                               "000": "我?我是注视着你们的人.注视着你们,还有'他',还有天上的星辰,还有你们的命运.",
@@ -2864,7 +2873,7 @@
                            "dialog_title": "??? "
                         },
                         "accept_offer": {
-                           "choice_000": "等等!你是谁?",
+                           "choice_000": "等等! 你是谁?",
                            "choice_001": "哼~!.",
                            "bulletin_message": {
                               "000": "努力带领你的村民吧!首领,命运也许会决定你的未来,但你要努力做的更好."
@@ -3866,7 +3875,7 @@
                                     },
                                     "msg3": {
                                        "bulletin_message": {
-                                          "00": "虽然我来了, 但我觉得你的实力来不足以抵挡我军队里的一个小队长. 你眼中没有对王位的欲望."
+                                          "00": "虽然我来了, 但我看你的实力甚至不足以抵挡我军队里的一个侦查营营长. 你眼中没有对王位的欲望."
                                        },
                                        "choice_000": "太没礼貌了!"
                                     }
@@ -5313,6 +5322,16 @@
                                        }
                                     }
                                  }
+                              },
+                              "00b_sighting_quest": {
+                                 "title": "给一只或许存在的兔子准备的果蔬",
+                                 "dialog_title": "放些蔬菜在外面!",
+                                 "text": "我们在外面放些蔬菜吧, 放一晚上, 以防万一."
+                              },
+                              "00_sighting_quest": {
+                                 "title": "给一只或许存在的兔子准备的果蔬",
+                                 "dialog_title": "放些胡萝卜在外面!",
+                                 "text": "我们在外面放些胡萝卜吧, 放一晚上, 以防万一."
                               }
                            },
                            "14_chase_scene": {
@@ -5688,6 +5707,11 @@
                                        }
                                     }
                                  }
+                              },
+                              "01_strange_trading_quest": {
+                                 "title": "Strange Trading",
+                                 "dialog_title": "奇怪的交易",
+                                 "text": "给他们一点蔬菜吧."
                               }
                            },
                            "02_hello": {
@@ -10203,12 +10227,22 @@
                "display_name": "市集高木架",
                "description": "其他玩家和旅行者可以买在这里储存的物品."
             }
+         },
+         "gem_chest": {
+            "gem_chest_ghost": {
+               "display_name": "古代宝石",
+               "description": "一块古代的宝石悬在空中, 看起来很值钱啊!"
+            },
+            "gem_bits": {
+               "display_name": "自然宝石破片",
+               "description": "大宝石的破片, 或许还能卖钱些钱."
+            }
          }
       },
       "critters": {
          "poyo": {
             "display_name": "波波鸡",
-            "description": "肥满又美味的野生禽类",
+            "description": "丰满又美味的野生禽类",
             "poyo_egg": {
                "display_name": "受精的波波鸡蛋",
                "description": "还没孵出来吗?"
@@ -10217,7 +10251,13 @@
                "display_name": "波波小鸡",
                "description": "叽叽叽叽!"
             },
-            "species": "波波鸡"
+            "species": "波波鸡",
+            "egg": {
+               "ostrich_egg": {
+                  "display_name": "受精的鸵鸟蛋",
+                  "description": "还没孵出来吗?"
+               }
+            }
          },
          "rabbit": {
             "display_name": "兔子",
@@ -10269,7 +10309,7 @@
          },
          "woodchuck": {
             "display_name": "土拨鼠",
-            "description": "贪婪到几乎什么都吃,特别是树木.",
+            "description": "贪婪到几乎什么都吃, 特别是树木.",
             "species": "土拨鼠"
          },
          "deer": {
@@ -10318,6 +10358,9 @@
             "species": "鹿",
             "description": "小心有角!",
             "display_name": "北美驯鹿"
+         },
+         "ghost": {
+            "species": "鬼魂"
          }
       },
       "crops": {
@@ -11689,6 +11732,12 @@
                "display_name": "铁制落地烛台",
                "description": "这根冰冷的铁棒举着一颗温暖的光源."
             }
+         },
+         "window_box_stone_violet": {
+            "window_box_stone_violet_ghost": {
+               "display_name": "紫罗兰花箱",
+               "description": "可爱花朵的干净家园."
+            }
          }
       },
       "food": {
@@ -12653,7 +12702,8 @@
             },
             "cougar": {
                "display_name": "美洲狮",
-               "description": "一只大猫"
+               "description": "一只大猫",
+               "species": "美洲狮"
             },
             "jacko": {
                "display_name": "杰克的灵魂",
@@ -12711,10 +12761,10 @@
                "description": "由粗略劈过的木板制成"
             },
             "goblin_large_totem": {
-               "display_name": "大型图腾"
+               "display_name": "哥布林大图腾"
             },
             "goblin_small_totem": {
-               "display_name": "小型图腾"
+               "display_name": "哥布林小图腾"
             },
             "goblin_soldier": {
                "display_name": "哥布林战士",
@@ -12748,7 +12798,12 @@
             },
             "goblin_cage": {
                "display_name": "大型笼子",
-               "description": "凶残骷髅小队长的物品"
+               "description": "凶残骷髅中队长的物品"
+            },
+            "goblin_barricade_single": {
+               "goblin_barricade_single_ghost": {
+                  "display_name": "路障"
+               }
             }
          },
          "kobolds": {
@@ -12862,11 +12917,33 @@
          "avian": {
             "ostrich": {
                "display_name": "鸵鸟",
-               "description": "不会飞的鸟类"
+               "description": "不会飞的, 生的蛋很大的鸟类",
+               "species": "ostrich",
+               "egg": {
+                  "ostrich_egg_fertilized": {
+                     "display_name": "受精的鸵鸟蛋",
+                     "description": "还没孵出来吗?"
+                  }
+               }
             },
             "duckduck": {
                "display_name": "呆呆鸭",
-               "description": "不会飞的鸟类"
+               "description": "不会飞的, 生的蛋很大的鸟类",
+               "species": "duckduck",
+               "egg": {
+                  "duckduck_egg_fertilized": {
+                     "display_name": "受精的呆呆鸭蛋",
+                     "description": "还没孵出来吗?"
+                  }
+               }
+            },
+            "ostrich_young": {
+               "display_name": "小鸵鸟",
+               "description": "不会飞的, 刚孵化的鸟类!"
+            },
+            "duckduck_young": {
+               "display_name": "小呆呆鸭",
+               "description": "不会飞的, 刚孵化的鸟类!"
             }
          },
          "titan": {
@@ -12941,7 +13018,13 @@
          "dragon_whelp_nature": {
             "display_name": "密林幼龙",
             "description": "一条幼龙, 可以出色地管理你的花园.",
-            "species": "龙"
+            "species": "龙",
+            "egg": {
+               "dragon_nature_egg_fertilized_ghost": {
+                  "display_name": "自然龙蛋",
+                  "description": "十分神秘!  得放在安全又温暖的地方..."
+               }
+            }
          },
          "dragon_whelp_ice": {
             "display_name": "冰结幼龙",
@@ -13944,7 +14027,7 @@
                "description": "顺滑柔软, 毫无生气"
             },
             "cougar_pelt": {
-               "display_name": "Cougar Pelt",
+               "display_name": "美洲狮皮",
                "description": "顺滑柔软, 毫无生气"
             },
             "beetle_pelt": {
@@ -14103,6 +14186,10 @@
          "earth_essence": {
             "display_name": "石炉精华",
             "description": "由地红蕾浓缩出来的石炉世界的能量"
+         },
+         "gem_nature": {
+            "display_name": "自然宝石破片",
+            "description": "大宝石的破片, 或许还能卖钱些钱."
          }
       },
       "terrain": {
@@ -15662,7 +15749,7 @@
             "level_6_data": {
                "title": "木匠大师",
                "perk_000_name": "锯木10,000小时",
-               "perk_000_description": "木匠在他这一行的大师级水平, 已经可以让他用全新的方式来处理木头了."
+               "perk_000_description": "木匠在他这一行的大师级水平, 已经可以做出让小镇脱颖而出的物品了."
             },
             "level_2_data": {
                "perk_000_name": "协作能力",
@@ -16189,7 +16276,7 @@
             "requirements": "由石匠制作.",
             "workshop": {
                "name": "石锅",
-               "long_description": "巨大又重型的锅, 适合烹饪一次盛宴!"
+               "long_description": "又大又重的锅, 可以容纳超多的食材!"
             },
             "level_2_data": {
                "perk_000_name": "烹饪美学",
@@ -16524,10 +16611,10 @@
       "farmer": {
          "farmer_description": {
             "display_name": "农民",
-            "description": "农民到农田收割农作物,提供食品和烹饪食品的原材料.",
-            "requirements": "由木匠制作.",
+            "description": "农民到农田收割农作物, 提供食品和烹饪食品的原材料.",
+            "requirements": "由木匠制作",
             "level_6_data": {
-               "perk_000_name": "农民大师"
+               "title": "农民大师"
             },
             "level_5_data": {
                "perk_000_name": "植树还林",
@@ -16549,7 +16636,7 @@
          "farmer_buffs": {
             "speed_1_buff": {
                "description": "从现场搬运生鲜食品到餐桌上,增加了农民的移动速度.",
-               "display_name": "农民移动速度提升10"
+               "display_name": "农民移动速度 +10"
             }
          },
          "farmer_hoe": {
@@ -16631,7 +16718,7 @@
          },
          "footman_outfit": {
             "display_name": "军服",
-            "description": "战士统一的军装"
+            "description": "所有战士统一的军装"
          }
       },
       "geomancer": {
@@ -17459,7 +17546,7 @@
             "potted_cactus_recipe": {
                "description": "一棵种在盆子里的仙人掌.",
                "recipe_name": "仙人掌盆栽",
-               "flavor": "沃去! -- 和仙人掌打交道的陶艺师, 都很容易受.!"
+               "flavor": "沃去! -- 和仙人掌打交道的陶艺师, 都很容易受伤!"
             },
             "blown_glass_vase_recipe": {
                "description": "神奇的",
@@ -18077,15 +18164,11 @@
             },
             "level_4_data": {
                "perk_000_name": "战地医疗",
-               "perk_000_description": "这位草药师现在已经可以一次照看4位炉民了."
+               "perk_000_description": "这位草药师现在已经可以同时照看4位炉民了."
             },
             "level_3_data": {
                "perk_000_name": "药品精通",
                "perk_000_description": "草药师对医疗方面的精通可以提升治疗物品50%的疗效."
-            },
-            "level_5_data": {
-               "perk_000_name": "师匠之察",
-               "perk_000_description": "草药师现在可以制作出卓越品质的物品了, 且制作精巧品质物品的概率提高了(医疗物品暂未开放)."
             },
             "level_6_data": {
                "title": "草药大师"
@@ -18728,5 +18811,8 @@
             }
          }
       }
+   },
+   "kingdoms": {
+      "ascendancy": "崛起之都"
    }
 }
