@@ -719,7 +719,7 @@
                   },
                   "cannot_place_item": {
                      "tip_title": "无法放置此物品",
-                     "tip_description": "已达到物品[str(tag)]放置上限:[str(num)] / [str(max)]"
+                     "tip_description": "已达到[str(tag)]放置上限:[str(num)] / [str(max)]"
                   },
                   "build_ladder": {
                      "display_name": "建造梯子",
@@ -1021,7 +1021,7 @@
                "cycle_normal": "标准前方"
             },
             "roof_tool_context": {
-               "drop_walls": "放置墙体",
+               "drop_walls": "墙体支撑",
                "slope": "斜度",
                "front": "前",
                "back": "后",
@@ -1426,7 +1426,63 @@
       "shell": {
          "about": {
             "title": "关于石炉",
-            "attributions": "下面所列出的开源软件是在Stonehearth中使用的:"
+            "attributions": "下面所列出的开源软件是在Stonehearth中使用的:",
+            "tabs": {
+               "credits": "鸣谢",
+               "attributions": "条款"
+            },
+            "credits": {
+               "sections": {
+                  "team": "Team Stonehearth",
+                  "team_additional": "其他开发者",
+                  "candledark_and_frostfeast": "黯烛节与冰霜祭",
+                  "moderators": "社区模组制作者",
+                  "special_thanks": "特别感谢",
+                  "special_thanks_endnote": "...所有为把discourse.stonehearth.net建设成一个精彩的社区奉献的人,",
+                  "special_thanks_endnote_2": "...所有关注我们周四直播的人,",
+                  "special_thanks_endnote_3": "...和所有给石炉一个机会的人!",
+                  "kickstarter_tiers": {
+                     "30": "Kickstarter 赞助者 - 移民级",
+                     "45": "Kickstarter 赞助者 - 移民级, Beta版",
+                     "50": "Kickstarter 赞助者 - 无畏移民级",
+                     "75": "Kickstarter 赞助者 - 偶像级",
+                     "100": "Kickstarter 赞助者 - 冒险者级",
+                     "150": "Kickstarter 赞助者 - 勇敢冒险者级",
+                     "250": "Kickstarter 赞助者 - 老道冒险者级",
+                     "500": "Kickstarter 赞助者 - 探索者级",
+                     "525": "Kickstarter 赞助者 - 泰坦级",
+                     "1000": "Kickstarter 赞助者 - 创世级",
+                     "2000": "Kickstarter 赞助者 - 史诗级",
+                     "5000": "Kickstarter 赞助者 - 顾问级"
+                  }
+               },
+               "team_titles": {
+                  "tom": "Final Boss",
+                  "tony": "Destroyer of Worlds",
+                  "stephanie": "Paladin of Wombats",
+                  "albert": "0110000101110111",
+                  "chris": "Professional Scaffolding Tamer",
+                  "brad": "",
+                  "linda": "馃",
+                  "allie": "Parakeet",
+                  "malley": "",
+                  "ana": "The True Hero",
+                  "richard": "Foxclan Ambassador",
+                  "nikki": "Fence Crusader",
+                  "justin": "I, Goblin",
+                  "morgan": "Destroyer of Worlds II",
+                  "angelo": "Turnip Farmer",
+                  "luke": "",
+                  "max": "Enabler",
+                  "aaron": "Phonic Phoenix",
+                  "raj": "Troubadour",
+                  "yang": "",
+                  "doug": "",
+                  "carl": "",
+                  "winnie": "",
+                  "jack": ""
+               }
+            }
          },
          "loading_screen": {
             "initial_load_game_text": "加载中...",
@@ -1467,51 +1523,51 @@
                "033": "接雨滴中..."
             },
             "tips": {
-               "000": "如果你的炉民被困在矿井里,您可以建造一个梯子,让他们出去!",
-               "001": "如果为你的炉民提供床,他们会睡的更香.",
-               "002": "在你的牧场建造栅栏,以确保把动物圈养在原地.",
-               "003": "仓库可以改变存储物品的种类.",
+               "000": "如果你的炉民被困在矿井里, 你可以建造一个梯子, 让他们出去!",
+               "001": "如果为你的炉民提供床, 他们会睡的更香.",
+               "002": "在你的牧场建造围栏, 以确保把动物不会乱跑.",
+               "003": "可以对储存区进行设置, 让它只存储某类物品.",
                "004": "你可以种植丝绸草来确保供应足够的纤维和线.",
                "005": "一个衣食无忧的城镇是一个快乐的城镇.",
-               "006": "在放置之前,使用键盘上的   <  和  >  [逗号和句号]来旋转一个物品或建筑.",
-               "007": "你的炉民在道路上走动的会更快.",
-               "008": "纺织工可以制作新制服,来增加你的工作效率.",
-               "009": "坐着吃饭可以帮助消化,为你的炉民建造桌子和椅子.",
-               "010": "牧羊人会自动去寻找羊并带回牧羊场.",
-               "011": "如果你想提高你的净产值,试试把你的物品卖给商人吧.",
+               "006": "在放置之前, 使用键盘上的 < 和 > , 即逗号和句号来旋转物品或建筑.",
+               "007": "你的炉民在道路上走得会更快.",
+               "008": "纺织工可以制作新制服, 来增加你的工作效率.",
+               "009": "坐着吃饭可以帮助消化, 为你的炉民建造桌子和椅子吧.",
+               "010": "牧羊人会自动去寻找羊并带回牧场.",
+               "011": "如果你想提高你的净产值, 试试把你的物品卖给商人吧.",
                "012": "资源和食品不参与镇上的净产值计算.",
                "013": "好奇心属性会增加获得的经验值.",
                "014": "精巧的物品会比普通的物品有更高的价值.",
-               "015": "一个物品的价值是它的出售价",
-               "016": "您可以使用一个隧道门封住了你的矿井隧道入口",
-               "017": "不想让你的炉民离开小镇?可以让工程师制作一个带锁的门",
-               "018": "具有高智力属性的炉民会制造出更好的物品.",
-               "019": "把食物仓库放置在靠近工作区域,因此你的炉民更容易获得粮食",
-               "020": "猎人可以在山区和沙漠放置陷阱,但也有动物少的情况存在.",
-               "021": "你可以在炉民管理窗口禁止战斗人员的工作,迫使他们战斗后好好的休息.",
+               "015": "一个物品的净产值是它的出售价",
+               "016": "你可以使用隧道门来封住矿道入口",
+               "017": "不想让你的炉民离开小镇? 可以让工程师制作一扇带锁的门",
+               "018": "智力属性高的炉民会成为很好的工匠的.",
+               "019": "把食物储存区放置在靠近工作区域的地方, 这样你的炉民就可以少跑些路.",
+               "020": "猎人虽然也可以在山区和沙漠放置陷阱, 但那些地方动物会比较少.",
+               "021": "你可以在炉民管理窗口关掉战斗人员的工作, 让他们战斗后可以好好休息.",
                "022": "挖掘土地时会偶尔掉落一些粘土和石头.",
-               "023": "你可以直观的看到山体侧面的矿脉",
+               "023": "你可以直观地看到山体侧面的矿脉",
                "024": "需要初始的食物来源? 把浆果丛或者刺梨仙人掌移栽到小镇旁边吧.",
-               "025": "击败哥布林首领后,你可以领养蓝羚羊.",
+               "025": "击败哥布林首领后, 你可以领养蓝羚羊.",
                "026": "你的炉民不喜欢长时间待在狭窄逼仄的空间里.",
                "027": "当圈里有至少两只同类家畜时才会繁育."
             }
          },
          "select_settlement": {
             "title": "在地图上选择要前往冒险的位置",
-            "loading": "加载中...",
+            "loading": "加载中",
             "settle_at_this_location": "踏上征程!",
-            "clear_selection": "选择另一个地方",
-            "regenerate_map": "随机生成新地图",
+            "clear_selection": "选择其他地方",
+            "regenerate_map": "摇选新地图",
             "world_seed": "地图种子: ",
             "starting_season": "初始季节",
             "terrain_stats": {
-               "trees_and_plants_title": "树木 & 植物",
-               "trees_and_plants_description": "木头是主要建筑资源.你需要用它们来建造你的建筑和工艺品,如床,桌子,椅子.",
+               "trees_and_plants_title": "树木植被",
+               "trees_and_plants_description": "木头是主要建筑资源. 你需要用它们来建造或制作例如床, 桌子, 椅子等的物品.",
                "wildlife_title": "野生动物",
                "wildlife_description": "捕猎当地的野生动物可以获得食物和可用于制作的原材料.",
-               "minerals_title": "矿物",
-               "minerals_description": "如果你想用石头或金属制造东西,你需要矿石."
+               "minerals_title": "矿物资源",
+               "minerals_description": "如果你想用石头或金属制造东西, 你需要矿石."
             },
             "terrain_codes": {
                "water": "水",
@@ -1725,8 +1781,8 @@
                   "build_custom": "设计建筑",
                   "build_place": "放置物品",
                   "build_ladder": "搭建楼梯",
-                  "build_rotate_left": "左旋物品",
-                  "build_rotate_right": "右旋物品",
+                  "build_rotate_left": "左旋",
+                  "build_rotate_right": "右旋",
                   "build_raise_template": "模板上提",
                   "build_sink_template": "模板下降",
                   "craft_menu": "工匠制作菜单",
@@ -1738,6 +1794,7 @@
                   "craft_potter": "陶艺师菜单",
                   "craft_herbalist": "草药师菜单",
                   "craft_engineer": "工程师菜单",
+                  "craft_geomancer": "地媒师菜单",
                   "fight_menu": "战斗菜单",
                   "fight_alert": "城镇警戒模式",
                   "fight_party_1": "战队1",
@@ -1783,7 +1840,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于 Beta r876 版本",
+            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于 Beta r880 版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到Stonehearth!",
                "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
@@ -2304,6 +2361,9 @@
             "fiber_resource_name": "纤维",
             "ingot_resource_name": "金属",
             "herb_resource_name": "草药",
+            "seed_resource_name": "种子",
+            "seed_hard_resource_name": "硬实",
+            "seed_fruit_resource_name": "水果种子",
             "food_container_resource_name": "食物原料",
             "prepared_food_resource_name": "主食",
             "prepared_dessert_resource_name": "甜点",
@@ -5141,7 +5201,7 @@
                                        "bulletin_message": {
                                           "00": "<i><font size=-1>[准备充分后, 选中劲弩按下'唤醒泰坦'按钮. 等到劲弩充能完毕, 按下开火按钮给泰坦造成伤害. 杀死或毁掉泰坦的仆从, 触手和根须也可以削减他的生命值.]<br><br>[祝好运!]</font>"
                                        },
-                                       "bulletin_title": "出征泰坦",
+                                       "bulletin_title": "艰巨的事业",
                                        "dialog_title": "最后一步",
                                        "choice_000": "[好的!]"
                                     },
@@ -5396,6 +5456,11 @@
                                        }
                                     }
                                  }
+                              },
+                              "14_chase_scene_quest_b": {
+                                 "title": "追逐战: 治疗兔人",
+                                 "dialog_title": "治疗兔人!",
+                                 "text": "让我们来用一些绷带与治疗药剂给兔人包扎吧."
                               }
                            },
                            "23_borrow_crafter": {
@@ -5521,6 +5586,51 @@
                                        }
                                     }
                                  }
+                              },
+                              "borrow_quest_blacksmith": {
+                                 "title": "派遣一名铁匠",
+                                 "dialog_title": "派遣一名铁匠",
+                                 "text": "选一名铁匠(3级以上)去帮助珀石族."
+                              },
+                              "borrow_quest_carpenter": {
+                                 "title": "派遣一名木匠",
+                                 "dialog_title": "派遣一名木匠",
+                                 "text": "选一名木匠(3级以上)去帮助珀石族."
+                              },
+                              "borrow_quest_cook": {
+                                 "title": "派遣一名厨师",
+                                 "dialog_title": "派遣一名厨师",
+                                 "text": "选一名厨师(3级以上)去帮助珀石族."
+                              },
+                              "borrow_quest_engineer": {
+                                 "title": "派遣一名工程师",
+                                 "dialog_title": "派遣一名工程师",
+                                 "text": "选一名工程师(2级以上)去帮助珀石族."
+                              },
+                              "borrow_quest_farmer": {
+                                 "title": "派遣一名农民",
+                                 "dialog_title": "派遣一名农民",
+                                 "text": "选一名 农民(4级以上)去帮助珀石族."
+                              },
+                              "borrow_quest_herbalist": {
+                                 "title": "派遣一名草药师",
+                                 "dialog_title": "派遣一名草药师",
+                                 "text": "选一名草药师(3级以上)去帮助珀石族."
+                              },
+                              "borrow_quest_potter": {
+                                 "title": "派遣一名陶艺师",
+                                 "dialog_title": "派遣一名陶艺师",
+                                 "text": "选一名陶艺师(3级以上)去帮助珀石族."
+                              },
+                              "borrow_quest_trapper": {
+                                 "title": "派遣一名猎人",
+                                 "dialog_title": "派遣一名猎人",
+                                 "text": "选一名猎人(3级以上)去帮助珀石族."
+                              },
+                              "borrow_quest_weaver": {
+                                 "title": "派遣一名纺织工",
+                                 "dialog_title": "派遣一名纺织工",
+                                 "text": "选一名纺织工(3级以上+)去帮助珀石族."
                               }
                            },
                            "30_geomancy": {
@@ -5530,9 +5640,9 @@
                                        "msg1": {
                                           "bulletin_title": "尘封的知识",
                                           "choice_000": "[跳过故事] 我早就知道了",
-                                          "choice_001": "请, 告诉我们",
+                                          "choice_001": "请告诉我们",
                                           "bulletin_message": {
-                                             "00": "\"亲爱的人类伙伴! 我们兔兔已经好久没找到像你们一样值得信任的盟友了. 我们决定献上一份珍贵的礼物.\"<br><br>\"我们可以一次把你们中的一个人带过来, 教他们地占术的精髓.\"<br><br>\"你们知道地占术对我们, 珀石族的兔子来说是多么重要吗?\""
+                                             "00": "\"亲爱的人类伙伴! 我们兔族已经好久没找到像你们一样值得信任的盟友了. 我们决定献上一份珍贵的礼物.\"<br><br>\"我们可以一次把你们中的一个人带过来, 教他们地占术的精髓.\"<br><br>\"你们知道地占术对我们, 珀石族的兔子来说是多么重要吗?\""
                                           }
                                        },
                                        "story1": {
@@ -5605,6 +5715,9 @@
                                        }
                                     }
                                  }
+                              },
+                              "30_geomancy_quest": {
+                                 "text": "选一位镇民去珀石族接受训练成为地媒师."
                               }
                            },
                            "01_strange_trading": {
@@ -5881,6 +5994,16 @@
                                        }
                                     }
                                  }
+                              },
+                              "11_shook_down_quest_a": {
+                                 "title": "敲诈: 制作木门",
+                                 "dialog_title": "敲诈: 制作木门",
+                                 "text": "我们必须给珀石族制作些木门."
+                              },
+                              "11_shook_down_quest_b": {
+                                 "title": "敲诈: 制作治疗药剂",
+                                 "dialog_title": "敲诈: 制作治疗药剂",
+                                 "text": "我们必须给珀石族制作些治疗药剂."
                               }
                            },
                            "12_heirbloom": {
@@ -5980,11 +6103,13 @@
                               },
                               "12_heirbloom_quest": {
                                  "title": "昔红柿礼包",
-                                 "dialog_title": "昔红柿礼包"
+                                 "dialog_title": "昔红柿礼包",
+                                 "text": "我们去收点昔红柿吧!"
                               },
                               "12_heirbloom_quest_2": {
                                  "title": "昔红柿茎叶捆",
-                                 "dialog_title": "昔红柿茎叶捆"
+                                 "dialog_title": "昔红柿茎叶捆",
+                                 "text": "我们来交易昔红柿吧!"
                               }
                            },
                            "15_crystal_charging": {
@@ -6075,7 +6200,7 @@
                                        },
                                        "msg3": {
                                           "bulletin_message": {
-                                             "00": "Sasha nods. \"很好. 他们肯定会失望的, 但把他们安顿在离窝近一点的地方对我们族的安全也有好处.\""
+                                             "00": "Sasha nods. \"很好. 虽然他们肯定会有点失望, 但把他们安顿在离窝近一点的地方对我们族的安全也有好处.\""
                                           },
                                           "bulletin_title": "兔民",
                                           "choice_000": "再见"
@@ -6217,21 +6342,21 @@
                                           "bulletin_message": {
                                              "00": "飒沙点点头. \"人类的聪慧创造了它, 人类的聪慧同时也制止了它的天灾. 当那个东西将魔力带一块一块撕开, 还活着的人类知道是时候拿出行动了, 因为此时那个东西已经吸收了太多魔力, 力量也大增.\"<br><br>\"石炉世界的魔力很不稳定. 人类, 绝望的人类, 不知怎么想出了一个方法, 把魔法 <i>能量</i> 转化成了纯净魔法 <i>力量</i>.\"<br><br>\"将那个东西击成无数的碎片, 但它没被杀死, 相反的, 变成了漫无目的游荡的瘴气扫过整片大陆. 原本凤凰帝国坐落的山口已是满目疮痍, 从中源源不断涌出的也只剩下瘴气.\"<br><br>\"这便是我们熟知的 '末日天启'.\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "哦不..."
                                        },
                                        "story2": {
                                           "bulletin_message": {
                                              "00": "\"好的 - 一个时代过去了; 巨蛇衰落, 圣猕进到了昌神殿. 他们说圣猕是个新来的, 早年还从巨蛇手里夺走了崛起之都, 不过那又是另外个故事了. 不管如何, 人类以惊人的速度建造着, 凤凰帝国仅用了三代的时间便扩张至整个大陆.\"<br><br>\"因不满于地下的生活, 我的祖先们便联系上了凤凰帝国的人, 人们对我们十分负责.\"<br><br>\"实际上, 是我们的地占术让人类着迷. 正如他们天性, 凤凰帝国的人们在利用石炉世界魔力的道路上进展迅猛, 但从没真正理解它是什么. 他们对后果不假思索便直接投入使用.\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "后果?"
                                        },
                                        "delay": {
                                           "bulletin_message": {
                                              "00": "飒沙点头, 叹着气. \"我懂; 每个种族都有自己要面对的挑战. 不过, 我们继续自个儿做完泰坦武器, 做好之后我便带着它来拜访你们.\"<br><br>\"愿我们的友谊可以继续开花,\" 他说着, 弯了弯腰然后离开了."
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "到时见, 飒沙.",
                                           "choice_001": "[反悔] 等等!"
                                        },
@@ -6239,35 +6364,35 @@
                                           "bulletin_message": {
                                              "00": "\"回想一下我之前说的, 灵兔在昌神殿的时候我们族人繁荣昌盛, 发现了地占术和珀石, 让我们即使再之后灵兔衰落巨蛇昌盛之时, 也保持这个形态.\"<br><br>\"我还说, 我们族人为何到地下生存, 迫于石炉世界地表魔力的衰减和地面的敌对势力. 上次我就说到这儿, 对吗?\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "我记得, 是的"
                                        },
                                        "story3": {
                                           "bulletin_message": {
                                              "00": "\"凤凰帝国的首都是建在一座古老的兔兔城废墟之上的, 也是建在魔力带上. 也就是说那片地是魔力喷涌之地.\"<br><br>\"人类地媒研究者制造了机械来精炼魔力; 储存魔力和压缩魔力, 其规模是我们曾想都不敢想的, 程度也远远超出了所谓的安全剂量和理性范围. 然后, 一扇传送门轰然打开.\"<br><br>\"没人知道是不是故意为之, 还是所有运作着的魔力强行将现实撕破了个洞.我们只知道一个东西从里面出来了, 它对魔力极度饥渴, 对任何其他生命极度对立.\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "嗷... 好像有点糟了."
                                        },
                                        "favor1": {
                                           "bulletin_message": {
                                              "00": "\"现在, 关于那件事. 就是, 这片土地之下, 是襁褓之中的泰坦. 这块邪恶碎片在不断成长着, 每年都在往地下渗, 迫使我们也越发往地下深层迁移, 因为我们不想因此而被切断和石炉魔法之间的联系导致后代重回兔子的形态.\"<br><br>\"但是: 我们找到了一个解决方法. 我们从古代的设计图中找到了一门武器, 而且已经快完成了, 它能够让泰坦显形, 甚至可以永久杀死它.\"<br><br>\"然而, 我们需要你们的协助才能完工, 而且… 我们需要你们城镇来保护它. 我们力量不足, 人手也不够, 不能长时间抵挡泰坦具象后的暴怒, 而且这门武器运作需要时间. 你们能帮忙吗?\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "我们能做什么?"
                                        },
                                        "accept": {
                                           "bulletin_message": {
                                              "00": "飒沙的眼神瞬间有了光芒, 满是欣慰和感激. \"选择相信你们果然没错. 请准备好让你们的炉民来我们这儿看看, 之后我会及时交付完工的武器的.\"<br><br>\"或许你可以用这段时间存些粮, 加固防御, 训练士兵. 提拔一些炉民防守, 或者造一个堡垒建筑? 你永远不知道泰坦之怒会以什么形式显形.\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "我们会的."
                                        },
                                        "greet": {
                                           "bulletin_message": {
                                              "00": "\"亲爱的圣猕友人, 我带来了珀石族第二十三代宗室诚挚的慰问和愿望.\"<br><br>\"我有… 一个大忙需要你们的帮助, 但我觉得你们或许需要个语境来理解下为什么突然提出这么个要求. 末日启示之后凤凰帝国的历史你们人类基本上不知道了, 我说的没错吧?\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "来吧, 和我们说说故事",
                                           "choice_001": "[跳过] 直接说 - 帮什么忙?"
                                        },
@@ -6275,14 +6400,14 @@
                                           "bulletin_message": {
                                              "00": "\"人类, 很敏感, 他们逃走了; 逃到了海边, 逃到了北界的山脉里. 直到最近你们才开始继续向内建造. 兽人, 一群傻子, 留下来和腐化战斗, 与自然世界狂怒的幻影作斗, 守卫着人类弃下的土地. 我们兔子, 早就到地下去了, 很乐意等待.\"<br><br>\"但当黑暗能量沉淀下来, 驻足于土地中, 越来越往石炉魔法的深处渗透. 这些碎片也吸收着魔力, 一代一代慢慢恢复着力量, 凝结成你们人类称为 ‘泰坦’ 的邪恶元素.\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "哦."
                                        },
                                        "decline": {
                                           "bulletin_message": {
                                              "00": "飒沙点着头, 深深地呼了口气. \"我理解. '不轻松的忙, 不会轻易地去帮'. 我们宗族在黑暗侵犯之前还能撑几年.<br><br>\"我们会自个儿完成泰坦武器的, 然后我回来再问问. 但愿你们能改变想法. 但愿我们的友谊之花继续绽放,\" 他说完, 面容有一丝伤心和真诚, 然后离开了."
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "暂别了, 飒沙",
                                           "choice_001": "[返回] 等等!"
                                        },
@@ -6290,7 +6415,7 @@
                                           "bulletin_message": {
                                              "00": "\"首先, 我需要借用你们几位镇民: 一位经验老道的石匠来再次复查我们的工作, 一位经验老道的铁匠负责加固, 外加两个其他镇民来... 爬高高来够我们碰不到的地方.\"<br><br>\"完了之后, 我们回来交付武器, 准备好后, 我们用它来召唤, 攻击, 消灭泰坦. 每次攻击需要耗费很多时间, 准备好应对围攻.\"<br><br>\"我要说... 邪恶对你们并非 <i>迫在眉睫</i>. 这是一个造福你们的后代的任务, 当然还有我们的后代.\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "就这么办!",
                                           "choice_001": "[推迟] 我们暂时匀不出人, 不过...",
                                           "choice_002": "[拒绝] 打打杀杀多不好啊."
@@ -6305,7 +6430,7 @@
                                           "bulletin_message": {
                                              "00": "飒沙回来了, 还让一个傀儡摇摇欲坠地顶着一台巨大的, 闪闪发光的弓.<br><br>\"我知道你们之前已经拒绝了和泰坦战斗,\" 他说道, \"但尽管如此我们还是完成了这座劲弩. 有所牺牲, 但我们别无选择.\"<br><br>\"在我们宗族里没人能够使用它, 所以我把它带来, 作为提醒. 若是你们哪天决定直面沉睡的邪恶了, 只要放出晶结劲弩, 之后的事情我会来亲自指导你们的."
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "知道了. 我们考虑考虑..."
                                        }
                                     }
@@ -6318,7 +6443,7 @@
                                           "bulletin_message": {
                                              "00": "飒沙回来了, 还让一个傀儡摇摇欲坠地顶着一台巨大的, 闪闪发光的弓.<br><br>\"有所牺牲, 但我们还是按照祖先的设计完成了劲弩. 我... 希望它能用.\"<br><br>\"若你们还是想与怪物战斗, 放置劲弩来告诉我们准备好了, 我会亲自前来指导的.\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "哇, 漂亮!"
                                        }
                                     }
@@ -6331,7 +6456,7 @@
                                           "bulletin_message": {
                                              "00": "飒沙回来了, 还让一个傀儡摇摇欲坠地顶着一台巨大的, 闪闪发光的弓.<br><br>\"我回来了, 不仅带上了你们的炉民, 还有一台完工的晶结劲弩, 按照我祖先的设计做出来的. 我... 希望它能用吧.\"<br><br>\"放置劲弩来告诉我们准备好了, 我会亲自前来指导的.\""
                                           },
-                                          "bulletin_title": "出征泰坦",
+                                          "bulletin_title": "艰巨的事业",
                                           "choice_000": "哇哦, 真是巧夺天工!"
                                        }
                                     }
@@ -6353,6 +6478,11 @@
                               },
                               "57_grant_bun_geomancer": {
                                  "notification_title": "一位兔人地媒大师加入了小镇!"
+                              },
+                              "50_titan_weapon_quest": {
+                                 "title": "艰巨的事业",
+                                 "dialog_title": "艰巨的事业",
+                                 "text": "选一名石匠(4级), 一名铁匠(4级), 外加任意两名其他镇民去帮助珀石族"
                               }
                            },
                            "40_recipe_sharing": {
@@ -6411,6 +6541,11 @@
                                        }
                                     }
                                  }
+                              },
+                              "40_recipe_sharing_quest": {
+                                 "title": "兔子样式",
+                                 "dialog_title": "兔子样式",
+                                 "text": "选择一名石匠和纺织工(1级以上)去学习珀石族的工艺品配方"
                               }
                            }
                         }
@@ -6799,6 +6934,20 @@
                "display_name": "珀石光环",
                "description": "因前去拜访珀石族而灵感满满, 受到鼓舞且充满力量"
             }
+         },
+         "food_preference": {
+            "omnivore_buff": {
+               "display_name": "杂食动物",
+               "description": "这只宠物基本上什么都吃."
+            },
+            "herbivore_buff": {
+               "display_name": "食草动物",
+               "description": "这只宠物只吃植物."
+            },
+            "carnivore_buff": {
+               "display_name": "食肉动物",
+               "description": "这只宠物只吃肉."
+            }
          }
       },
       "build": {
@@ -6985,11 +7134,11 @@
       "commands": {
          "build_workshop": {
             "display_name": "建造工作台",
-            "description": "建造工作台"
+            "description": "为产量开辟空间!"
          },
          "chop_tree": {
             "display_name": "收获",
-            "description": "收获木材,或者只是把它移走."
+            "description": "为获取木材, 或者只是为了开路."
          },
          "destroy_entity": {
             "display_name": "摧毁",
@@ -7006,12 +7155,12 @@
          },
          "loot_item": {
             "display_name": "掠夺",
-            "description": "为了部落!去掠夺他人吧!"
+            "description": "为了部落! 去掠夺吧!"
          },
          "move_item": {
             "display_name": "移动物品",
             "description": "移动这个东西到其他地方.",
-            "disabled_description": "此物品在使用中,稍后尝试移动它."
+            "disabled_description": "此物品在使用中, 稍后再尝试移动它."
          },
          "open_character_sheet": {
             "display_name": "角色菜单",
@@ -7028,13 +7177,13 @@
          "plant_crop": {
             "plant_corn": {
                "display_name": "种植玉米!",
-               "description": "可使用的玉米."
+               "description": "可以吃的黄金."
             },
             "display_name": "种植一种农作物!",
             "description": "在农田上种植农作物.",
             "plant_turnip": {
-               "display_name": "种植萝卜!",
-               "description": "在农田上种植萝卜."
+               "display_name": "种植芜菁!",
+               "description": "在农田上种植芜菁."
             }
          },
          "promote_to_job": {
@@ -7143,7 +7292,7 @@
          },
          "archer_arrows": {
             "default_arrows": {
-               "display_name": "使用默认箭头",
+               "display_name": "使用默认箭失",
                "description": "使用普通的箭.点击替换成不同类型的箭头"
             },
             "slow_arrows": {
@@ -9053,8 +9202,26 @@
       },
       "hotkeys": {
          "keys": {
+            "ui_character": {
+               "display_name": "个人界面"
+            },
+            "fight_move": {
+               "display_name": "移动命令"
+            },
+            "fight_attack": {
+               "display_name": "移动攻击"
+            },
+            "fight_defend": {
+               "display_name": "区域防守"
+            },
+            "fight_cancelOrders": {
+               "display_name": "取消战斗命令"
+            },
+            "ui_move_place_item": {
+               "display_name": "移动/放置物品"
+            },
             "build_roof": {
-               "display_name": "房顶绘制工具"
+               "display_name": "屋顶绘制工具"
             },
             "build_slab": {
                "display_name": "方块工具"
@@ -9062,38 +9229,23 @@
             "build_erase": {
                "display_name": "擦除工具"
             },
-            "ui_character": {
-               "display_name": "个人界面"
-            },
-            "fight_move": {
-               "display_name": "队伍移动命令"
-            },
-            "ui_move_place_item": {
-               "display_name": "放置"
-            },
-            "fight_cancelOrders": {
-               "display_name": "取消战斗命令"
-            },
             "build_wall": {
-               "display_name": "围墙绘制工具"
-            },
-            "fight_defend": {
-               "display_name": "区域防御命令"
+               "display_name": "墙体绘制工具"
             },
             "build_floor_grow": {
                "display_name": "地板绘制工具"
             },
             "build_decoration": {
-               "display_name": "装饰物放置工具"
+               "display_name": "装饰面板"
             },
             "build_furniture": {
-               "display_name": "家具放置工具"
+               "display_name": "家具面板"
             },
             "build_stair": {
-               "display_name": "楼梯绘制工具"
+               "display_name": "阶梯绘制工具"
             },
             "build_window": {
-               "display_name": "窗户放置工具"
+               "display_name": "窗类面板"
             },
             "build_floor": {
                "display_name": "地基绘制工具"
@@ -9102,13 +9254,10 @@
                "display_name": "道路绘制工具"
             },
             "build_door": {
-               "display_name": "门纺织工具"
+               "display_name": "门类面板"
             },
             "build_wall_grow": {
                "display_name": "墙体绘制工具"
-            },
-            "fight_attack": {
-               "display_name": "攻击命令"
             },
             "ui_notification_popup": {
                "display_name": "打开消息弹窗"
@@ -9118,24 +9267,75 @@
             },
             "ui_undeploy_item": {
                "display_name": "收回放置物"
-            }
-         },
-         "data": {
-            "hotkeys": {
-               "keys": {
-                  "ui_building_redo": {
-                     "display_name": "重做"
-                  },
-                  "ui_building_undo": {
-                     "display_name": "撤销"
-                  },
-                  "ui_building_move_support": {
-                     "display_name": "移动支撑结构"
-                  },
-                  "ui_toggle_selection": {
-                     "display_name": "一同选中"
-                  }
-               }
+            },
+            "ui_building_redo": {
+               "display_name": "重做"
+            },
+            "ui_building_undo": {
+               "display_name": "撤销"
+            },
+            "ui_building_move_support": {
+               "display_name": "移动支撑结构"
+            },
+            "ui_toggle_selection": {
+               "display_name": "一同选中"
+            },
+            "build_pointer": {
+               "display_name": "箭头工具"
+            },
+            "build_roofDropWalls": {
+               "display_name": "屋顶支撑"
+            },
+            "build_blocksRadio": {
+               "display_name": "可见设置为方块"
+            },
+            "build_wallRadio": {
+               "display_name": "可见设置为墙体"
+            },
+            "build_hole": {
+               "display_name": "钻孔工具"
+            },
+            "build_splitwall": {
+               "display_name": "墙体分割工具"
+            },
+            "build_roofBack": {
+               "display_name": "屋顶后坡"
+            },
+            "build_roofRadio": {
+               "display_name": "可见设置为屋顶"
+            },
+            "build_fence": {
+               "display_name": "围栏绘制工具"
+            },
+            "build_roofFront": {
+               "display_name": "屋顶前坡"
+            },
+            "build_visup": {
+               "display_name": "建筑Vis Up"
+            },
+            "build_blocks": {
+               "display_name": "方块工具"
+            },
+            "build_stairs": {
+               "display_name": "阶梯工具"
+            },
+            "build_visdown": {
+               "display_name": "建筑Vis Down"
+            },
+            "build_roofLeft": {
+               "display_name": "屋顶左坡"
+            },
+            "build_paint": {
+               "display_name": "上色工具"
+            },
+            "build_room": {
+               "display_name": "房间绘制工具"
+            },
+            "build_wallRadioCycle": {
+               "display_name": "标准前方视图"
+            },
+            "build_roofRight": {
+               "display_name": "屋顶右坡"
             }
          }
       },
@@ -9219,7 +9419,7 @@
                "17": "[str(self.stonehearth:unit_info.custom_name)], 空引用",
                "18": "[str(self.stonehearth:unit_info.custom_name)], 荣归故里者",
                "19": "[str(self.stonehearth:unit_info.custom_name)], 大反派",
-               "20": "来自圆形世界的[str(self.stonehearth:unit_info.custom_name)]",
+               "20": "来自圆球世界的[str(self.stonehearth:unit_info.custom_name)]",
                "21": "[str(self.stonehearth:unit_info.custom_name)], 恐怖之角",
                "22": "[str(self.stonehearth:unit_info.custom_name)], 隆娜特里的末日",
                "23": "厚脸皮的[str(self.stonehearth:unit_info.custom_name)]",
@@ -10235,14 +10435,24 @@
             },
             "gem_bits": {
                "display_name": "自然宝石破片",
-               "description": "大宝石的破片, 或许还能卖钱些钱."
+               "description": "大宝石的破片, 或许能卖很多钱."
+            }
+         },
+         "wheat_pile_old": {
+            "wheat_pile_old_ghost": {
+               "display_name": "旧小麦捆",
+               "description": "还没坏, 就是有几处有点烂."
+            },
+            "wheat_pile_old_iconic": {
+               "display_name": "旧小麦捆",
+               "description": "放置在地上时可以收获采集获得小麦"
             }
          }
       },
       "critters": {
          "poyo": {
             "display_name": "波波鸡",
-            "description": "丰满又美味的野生禽类",
+            "description": "丰满又美味的野生禽类.  它什么都要吃一点.",
             "poyo_egg": {
                "display_name": "受精的波波鸡蛋",
                "description": "还没孵出来吗?"
@@ -10261,7 +10471,7 @@
          },
          "rabbit": {
             "display_name": "兔子",
-            "description": "噢姆 喏姆 喏姆",
+            "description": "噢姆 喏姆 喏姆  这只可爱的小东西只吃植物.",
             "rabbit_jerky": {
                "display_name": "兔肉干"
             },
@@ -10269,7 +10479,7 @@
          },
          "racoon": {
             "display_name": "浣熊",
-            "description": "小树林里的动物",
+            "description": "小树林里的动物, 什么都吃.",
             "racoon_jerky": {
                "display_name": "浣熊肉干"
             },
@@ -10286,7 +10496,7 @@
          "sheep": {
             "display_name": "绵羊",
             "description": "毛绒绒的!",
-            "unripe_description": "这仍然是只裸羊",
+            "unripe_description": "这仍然是只裸羊!  它吃植物, 有时候还会反刍",
             "sheep_young": {
                "display_name": "羔羊",
                "description": "Awww! "
@@ -10296,7 +10506,7 @@
          },
          "squirrel": {
             "display_name": "松鼠",
-            "description": "树林里的小动物",
+            "description": "树林里的小动物, 只吃植物",
             "squirrel_jerky": {
                "display_name": "松鼠肉干"
             },
@@ -10323,7 +10533,7 @@
          "boar": {
             "display_name": "野猪",
             "species": "野猪",
-            "description": "有味儿.."
+            "description": "有味儿... 臭...  它什么都要吃一点"
          },
          "beetle": {
             "species": "甲壳虫",
@@ -11263,7 +11473,7 @@
             "portcullis_valor": {
                "portcullis_valor_ghost": {
                   "display_name": "城门",
-                  "description": "最强城门的时代."
+                  "description": "用于你实在不想让邻居进来的时候."
                }
             },
             "window_arrow_tall": {
@@ -11906,6 +12116,10 @@
             "poyo_feed_ground": {
                "display_name": "波波鸡饲料",
                "description": "波波鸡非常喜欢吃这饲料."
+            },
+            "feed_fodder_ground": {
+               "display_name": "动物草料",
+               "description": "实际上动物不怎么喜欢吃, 只是比较便捷而已."
             }
          },
          "rabbit_feed": {
@@ -12101,7 +12315,7 @@
          "roast_sausage": {
             "roast_sausage": {
                "display_name": "烤香肠",
-               "description": "烤至完美, 吊足他们胃口"
+               "description": "烤至完美, 吊足他们胃口, 任何种类的肉都能做!"
             },
             "roast_sausage_serving": {
                "display_name": "一份烤香肠"
@@ -12176,7 +12390,7 @@
          },
          "cake": {
             "cake": {
-               "display_name": "甜蛋糕",
+               "display_name": "树莓蛋糕",
                "description": "甜美可口."
             },
             "cake_serving": {
@@ -12219,6 +12433,60 @@
             "heirbloom_serving": {
                "display_name": "一颗昔红柿",
                "description": "美味多汁! 那些兔子们永远不知道自己错过了什么!"
+            }
+         },
+         "wolf_jerky": {
+            "display_name": "狼肉干"
+         },
+         "fodder": {
+            "fodder": {
+               "display_name": "动物草料",
+               "description": "所有食草动物的公共饲料."
+            }
+         },
+         "pie_berry": {
+            "pie_berry_serving": {
+               "display_name": "一片树莓派"
+            },
+            "pie_berry": {
+               "display_name": "甜莓派",
+               "description": "酥皮和树莓太搭了."
+            }
+         },
+         "pie_pear": {
+            "pie_pear_serving": {
+               "display_name": "一片刺梨派"
+            },
+            "pie_pear": {
+               "display_name": "刺梨派",
+               "description": "名为'刺梨'但刺都被剔掉了."
+            }
+         },
+         "cake_layered": {
+            "cake_layered": {
+               "display_name": "千层蛋糕",
+               "description": "好漂亮的蛋糕!  还有诱人的甜食!"
+            },
+            "cake_layered_serving": {
+               "display_name": "一片千层蛋糕"
+            }
+         },
+         "dumpling_meat": {
+            "dumpling_meat_serving": {
+               "display_name": "一份肉馒头"
+            },
+            "dumpling_meat": {
+               "display_name": "肉馒头",
+               "description": "小小的外皮里面塞满了肉."
+            }
+         },
+         "dumpling_vegetarian": {
+            "dumpling_vegetarian": {
+               "display_name": "素馒头",
+               "description": "小小的外皮里面塞满了素菜."
+            },
+            "dumpling_vegetarian_serving": {
+               "display_name": "一份素馒头"
             }
          }
       },
@@ -12662,8 +12930,8 @@
             "label": "金币"
          },
          "dusty_tome": {
-            "display_name": "布满灰尘的巨著",
-            "description": "保存着古老智慧的文字"
+            "display_name": "尘封古籍",
+            "description": "里面的文字中保存着古老的智慧"
          }
       },
       "monsters": {
@@ -12702,7 +12970,7 @@
             },
             "cougar": {
                "display_name": "美洲狮",
-               "description": "一只大猫",
+               "description": "一只大型高贵的, 猫.  是掠食者",
                "species": "美洲狮"
             },
             "jacko": {
@@ -12917,7 +13185,7 @@
          "avian": {
             "ostrich": {
                "display_name": "鸵鸟",
-               "description": "不会飞的, 生的蛋很大的鸟类",
+               "description": "不会飞的, 生的蛋很大的鸟类.  它什么都要吃一点.",
                "species": "ostrich",
                "egg": {
                   "ostrich_egg_fertilized": {
@@ -12928,7 +13196,7 @@
             },
             "duckduck": {
                "display_name": "呆呆鸭",
-               "description": "不会飞的, 生的蛋很大的鸟类",
+               "description": "不会飞的, 生的蛋很大的鸟类.  它什么都要吃一点.",
                "species": "duckduck",
                "egg": {
                   "duckduck_egg_fertilized": {
@@ -12989,12 +13257,12 @@
       "pets": {
          "collie": {
             "display_name": "牧羊犬",
-            "description": "非常勇敢!",
+            "description": "非常勇敢!  它什么都要吃一点.",
             "species": "狗"
          },
          "kitten": {
             "display_name": "小猫",
-            "description": "它太可爱了!",
+            "description": "太可爱了!  它是个肉食小猎手.",
             "species": "猫",
             "jacko": {
                "display_name": "杰克的阴魂",
@@ -13007,17 +13275,17 @@
          },
          "mammoth": {
             "display_name": "幼年猛犸",
-            "description": "毛绒绒的!",
+            "description": "毛绒绒的!  它喜欢吃植物, 超大量的植物.",
             "species": "猛犸"
          },
          "dragon_whelp_fire": {
             "display_name": "烈焰幼龙",
-            "description": "一条幼龙, 务必使之远离易燃物.",
+            "description": "务必使之远离易燃物.  这种龙特别喜欢精加工过的肉食.",
             "species": "龙"
          },
          "dragon_whelp_nature": {
             "display_name": "密林幼龙",
-            "description": "一条幼龙, 可以出色地管理你的花园.",
+            "description": "可以出色地管理你的花园.  不同于其他龙, 它们肉和草都要吃.",
             "species": "龙",
             "egg": {
                "dragon_nature_egg_fertilized_ghost": {
@@ -13028,7 +13296,7 @@
          },
          "dragon_whelp_ice": {
             "display_name": "冰结幼龙",
-            "description": "一条幼龙, 冷藏食物的利器.",
+            "description": "一条幼龙, 冷藏食物的利器.  这种龙特别喜欢冷藏的肉食.",
             "species": "龙"
          }
       },
@@ -14032,14 +14300,14 @@
             },
             "beetle_pelt": {
                "display_name": "甲壳虫的壳",
-               "description": "坚硬且闪亮, 也是死物"
+               "description": "坚硬闪亮, 毫无生气"
             },
             "bitsy_ant_pelt": {
-               "description": "坚硬且闪亮, 也是死物",
+               "description": "坚硬闪亮, 毫无生气",
                "display_name": "小蚂蚁的壳"
             },
             "doodles_pelt": {
-               "description": "坚硬且闪亮, 也是死物",
+               "description": "坚硬闪亮, 毫无生气",
                "display_name": "涂鸦虫的壳"
             },
             "boar_pelt": {
@@ -15206,7 +15474,7 @@
          "summon_stone_rock_field": {
             "summon_stone_rock_field_ghost": {
                "display_name": "岩地石",
-               "description": "生成一片可开采的岩石."
+               "description": "生成一大块方正的岩石."
             }
          },
          "summon_stone_patch_dirt": {
@@ -15272,7 +15540,25 @@
          "summon_stone_riverbed_dry": {
             "summon_stone_riverbed_dry_ghost": {
                "display_name": "干涸河床石",
-               "description": "唤醒那古老河流的记忆."
+               "description": "召唤出那古老河流的记忆."
+            }
+         },
+         "summon_stone_sun": {
+            "summon_stone_sun_ghost": {
+               "display_name": "太阳石",
+               "description": "生成一个太阳的可爱标记."
+            }
+         },
+         "summon_stone_moon": {
+            "summon_stone_moon_ghost": {
+               "display_name": "月亮石",
+               "description": "生成一个月亮的可爱标记."
+            }
+         },
+         "summon_stone_sleeping_giant": {
+            "summon_stone_sleeping_giant_ghost": {
+               "display_name": "沉眠石",
+               "description": "召唤出那古老的, 沉睡着的劳工的记忆."
             }
          }
       }
@@ -15337,11 +15623,11 @@
             },
             "slowing_arrow": {
                "display_name": "迟缓",
-               "description": "因冰冻箭矢而受到的减速效果"
+               "description": "因荆棘箭矢而受到的减速效果"
             },
             "fire_arrow": {
                "display_name": "灼烧",
-               "description": "点燃敌人! 火焰伤害频率为1次/3秒"
+               "description": "着火啦! 火焰伤害频率为1次/3秒"
             }
          }
       },
@@ -15570,6 +15856,7 @@
                "description": "增加防御和抵御攻击",
                "recipe_name": "青铜盾"
             },
+            "furniture_name": "家具",
             "decoration_name": "装饰品",
             "steel_shield_recipe": {
                "recipe_name": "钢盾",
@@ -16037,8 +16324,8 @@
                "description": "一堆原木堆放在一起.一个很好存储大量木材的方式,方便以后使用."
             },
             "wheat_pile_recipe": {
-               "recipe_name": "大块小麦捆",
-               "description": "正常的小麦捆太小了.这样有利于有效的存储大量的小麦"
+               "recipe_name": "大型小麦捆",
+               "description": "正常的小麦捆太小了. 这样有利于有效的存储大量的小麦"
             },
             "blue_market_stall_recipe": {
                "description": "商人可以访问这个摊位购买和出售商品",
@@ -16461,7 +16748,7 @@
             },
             "cake_recipe": {
                "description": "小麦与糖做成的美味蛋糕.",
-               "recipe_name": "甜蛋糕",
+               "recipe_name": "树莓蛋糕",
                "flavor": "还有一颗莓在顶上, 真好吃!"
             },
             "chefs_specials_name": "招牌小菜",
@@ -16474,7 +16761,48 @@
                "description": "慢烤的甘薯.",
                "recipe_name": "烤甘薯",
                "flavor": "温暖你的手儿和心田."
-            }
+            },
+            "sausage_recipe": {
+               "description": "把肉切碎, 混入调料, 卷起来, 就完成啦!",
+               "recipe_name": "生香肠",
+               "flavor": "是个稍稍延长食物保质期的好方法."
+            },
+            "roast_sausage_recipe": {
+               "description": "烤至完美, 吊足他们胃口, 任何种类的肉都能做!",
+               "recipe_name": "烤香肠",
+               "flavor": "是肉, 不知道是什么肉..."
+            },
+            "feed_fodder_recipe": {
+               "description": "任何食草动物都能喂.",
+               "recipe_name": "动物草料",
+               "flavor": "多余的种子得到了有效的利用!"
+            },
+            "pie_berry_recipe": {
+               "description": "一种工序很复杂的美味派.",
+               "recipe_name": "甜莓派",
+               "flavor": "酥皮和树莓太搭了."
+            },
+            "pie_pear_recipe": {
+               "description": "一种工序很复杂的美味派.",
+               "recipe_name": "刺梨派",
+               "flavor": "名为'刺梨'但刺都被剔掉了."
+            },
+            "cake_layered_recipe": {
+               "description": "制作工序十分复杂, 但实在是太好吃了, 太管饱了...",
+               "recipe_name": "千层蛋糕",
+               "flavor": "好漂亮的蛋糕!  还有诱人的甜食!"
+            },
+            "dumpling_meat_recipe": {
+               "description": "小小的外皮里面塞满了调味的肉.",
+               "recipe_name": "肉馒头",
+               "flavor": "做起来有点繁琐, 但能吃得很饱."
+            },
+            "dumpling_vegetarian_recipe": {
+               "description": "小小的外皮里面塞满了调味的素食.",
+               "recipe_name": "素馒头",
+               "flavor": "做起来有点繁琐, 但能吃得很饱."
+            },
+            "chefs_desserts_name": "私家甜品"
          },
          "cook_mill": {
             "cook_mill_ghost": {
@@ -16782,6 +17110,14 @@
             }
          },
          "recipes": {
+            "categories": {
+               "workbenches": "工作台",
+               "resources": "资源",
+               "terrain": "地形",
+               "landmarks": "地标",
+               "water": "水体控制",
+               "golems": "傀儡"
+            },
             "golem_restocking_recipe": {
                "description": "执行搬运任务.",
                "recipe_name": "蟋蟀傀儡",
@@ -16856,7 +17192,7 @@
                "recipe_name": "地表地片石"
             },
             "summon_stone_rock_field_recipe": {
-               "description": "生成一片可开采的岩石.",
+               "description": "生成一大块方正的岩石.",
                "recipe_name": "岩地石"
             },
             "summon_stone_rune_site_recipe": {
@@ -16899,6 +17235,22 @@
                "description": "把种子从花蕾里分离出来",
                "recipe_name": "地红蕾种子 (x3)",
                "flavor": "去籽的花蕾失去了魔法能量, 但种子可以长成新的花朵."
+            },
+            "summon_stone_sleeping_giant_recipe": {
+               "description": "召唤出那古老的, 沉睡着的劳工的记忆.",
+               "recipe_name": "沉眠石"
+            },
+            "summon_stone_riverbed_dry_recipe": {
+               "description": "召唤出那古老河流的记忆.",
+               "recipe_name": "干涸河床石"
+            },
+            "summon_stone_moon_recipe": {
+               "description": "生成一个月亮的可爱标记.",
+               "recipe_name": "月亮石"
+            },
+            "summon_stone_sun_recipe": {
+               "description": "生成一个太阳的可爱标记.",
+               "recipe_name": "太阳石"
             }
          }
       },
@@ -18721,8 +19073,12 @@
       },
       "resources": {
          "fur_pelt": {
-            "display_name": "动物皮毛",
-            "description": "柔软是很柔软,但是这是死物"
+            "display_name": "皮毛",
+            "description": "顺滑柔软, 毫无生气."
+         },
+         "hard_pelt": {
+            "display_name": "硬皮",
+            "description": "坚硬闪亮, 毫无生气."
          }
       },
       "base_human_npc": {
