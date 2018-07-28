@@ -36,6 +36,11 @@
     "yangessential/locales/zh-CN.json": "file(translations/mods/yangessential/zh-CN.json)",
     "armis_maximus/locales/zh-CN.json": "file(translations/mods/armis_maximus/zh-CN.json)",
 
+
+    "stonehearth/ui/shell/title/title.less" : "file(ui/less/title.less)",
+    "stonehearth/ui/game/citizens/citizens.less" : "file(ui/less/citizens.less)",
+
+
     "stonehearth/ui/shell/embark/images/sold_tag.png" : "file(ui/shell/embark/images/sold_tag.png)",
     "stonehearth/data/gm/campaigns/game_events/arcs/trigger/game_events/encounters/images/morale_intro.png" : "file(ui/gm/morale_intro.png)"
 

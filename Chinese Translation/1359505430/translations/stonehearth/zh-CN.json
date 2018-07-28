@@ -163,7 +163,7 @@
             "terrain_xray_vision_description": "看到透视的地形,切换完整和平面的视图模式来显示地下",
             "terrain_xray_vision_flat": "平面",
             "terrain_xray_vision_full": "全部",
-            "appeal_vision_icon_name": "appeal",
+            "appeal_vision_icon_name": "美丽值",
             "appeal_vision": "美丽值视图",
             "appeal_vision_description": "查看这片地对炉民们有多大的吸引力."
          },
