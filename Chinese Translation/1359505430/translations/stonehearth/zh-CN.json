@@ -959,7 +959,7 @@
             "immigration_report": {
                "title": "每日更新",
                "immigration_report_title": "移民报告",
-               "population_label": "[str(town_name)] 城镇人口",
+               "population_label": "[str(town_name)]城镇人口",
                "next_requirements_label": "下一个新炉民的加入需要...",
                "tooltips": {
                   "food": "更高质量的食物能提供更高的分数.",
@@ -1001,7 +1001,7 @@
                "erase_tool": "擦除",
                "undo_tool": "撤销",
                "redo_tool": "重做",
-               "new_building": "新建筑",
+               "new_building": "新建建筑",
                "save_building": "保存建筑",
                "template_list": "模板",
                "destroy": "破坏建筑",
@@ -1022,7 +1022,7 @@
             },
             "roof_tool_context": {
                "drop_walls": "墙体支撑",
-               "slope": "斜度",
+               "slope": "斜顶朝向",
                "front": "前",
                "back": "后",
                "left": "左",
@@ -1091,7 +1091,7 @@
                "required_item": "所需材料"
             },
             "overview": {
-               "title": "建筑设计师 - [str(building_name)]",
+               "title": "建筑设计器 - [str(building_name)]",
                "building_name": "建筑名称",
                "building_cost": "建造成本",
                "start_building": "开始建造!",
@@ -1100,8 +1100,8 @@
                "save_building_template": "保存",
                "finished_editing": "完成编辑",
                "start_editing": "编辑",
-               "build_complete_title": "祝 贺!",
-               "build_complete_description": "该建筑已竣工",
+               "build_complete_title": "祝贺!",
+               "build_complete_description": "建筑已竣工",
                "compute_scaffolding": "建筑规划"
             },
             "roof": {
@@ -1112,7 +1112,7 @@
                "max_height": "最大高度",
                "rise_slope": "提升坡度",
                "y_offset": "天花板高度",
-               "show_gradient": "坡度",
+               "show_gradient": "斜顶朝向",
                "show_margin": "屋檐伸展"
             },
             "stairs_shape": {
@@ -2402,11 +2402,11 @@
                },
                "autumn": {
                   "display_name": "秋天",
-                  "description": "树林中的夏日是收获的季节, 会一直持续三个月. 树木变成了金黄, 草儿要准备躲进冬日的地毯中了, 天空也时常因为暴雨的阴云而黯淡."
+                  "description": "树林中的秋日是收获的季节, 会一直持续三个月. 树木变成了金黄, 草儿要准备躲进冬日的地毯中了, 天空也时常因为暴雨的阴云而黯淡."
                },
                "winter": {
                   "display_name": "冬天",
-                  "description": "树林中的夏日是寒冷的季节, 会一直持续三个月. 树木失去了叶子, 雪覆盖了一切. 只有在石炉边围坐才能抵御寒冷而刺骨的风."
+                  "description": "树林中的冬日是寒冷的季节, 会一直持续三个月. 树木失去了叶子, 雪覆盖了一切. 只有在石炉边围坐才能抵御寒冷而刺骨的风."
                }
             }
          },
@@ -2480,7 +2480,7 @@
                   "morale_label": "幸福指数 ",
                   "net_worth_label": "净产值 ",
                   "conclusion_positive": "一名新炉民想加入你的城镇",
-                  "conclusion_negative": "尚有差距.或许明天就可以了!",
+                  "conclusion_negative": "尚有差距. 或许明天就可以了!",
                   "success_title": "[name(i18n_data.citizen)] 加入了 [str(i18n_data.town_name)]城镇!",
                   "messages": {
                      "000": "我听过很多关于你们城镇的传说!",
@@ -2493,7 +2493,7 @@
             },
             "trader": {
                "simple_caravan_encounter": {
-                  "message": "你好 [str(i18n_data.town_name)] 城镇! 带着一些货物想来交易, 你愿意给我 <strong>[str(i18n_data.your_item)]x[str(i18n_data.your_quantity)]</strong> 来换取 <strong>[str(i18n_data.my_item)]x[str(i18n_data.my_quantity)]</strong> 吗?",
+                  "message": "你好[str(i18n_data.town_name)]城镇! 我带着一些货物想来交易, 你愿意给我 <strong>[str(i18n_data.your_item)]x[str(i18n_data.your_quantity)]</strong> 来换取 <strong>[str(i18n_data.my_item)]x[str(i18n_data.my_quantity)]</strong> 吗?",
                   "title": "有商队经过!"
                },
                "starting_food_donation": {
@@ -7381,17 +7381,17 @@
                "text": "伐木时:",
                "logs": {
                   "beleaguered_leader": {
-                     "000": "今天,我们砍伐树林的木材.恩......我确定我已经厌倦这木材笑话了.",
+                     "000": "今天, 我们砍伐树林的木材. 我确定我已经厌倦这木材笑话了.",
                      "001": "Timbeerrrrr!!!(类似砍伐音) 我想我会习惯这个发音.",
-                     "002": "我得让这团队保持最佳的砍树量. 这样我就必须得去教他们数学知识,那样的话,我还不如只是在我的砍伐总数里增加一颗树呢.",
+                     "002": "那群人在算谁砍了最多的树, 我知道是我. 但与其去纠正他们的数学还不如再砍一棵树呢.",
                      "003": "我想我在搬运木头的过程中看到了个马蜂窝. 幸运的是, 那会大家正好都已经走远了.",
                      "004": "木头说: 我们那没完没了的工头. 请保持注意力在目标上.",
-                     "005": "啊哈!大家跟我一起砍!砍!砍!砍!yeah~!!!",
-                     "006": "小的们!休息时间结束了! 回林地喽!",
-                     "007": "每当我挥舞着斧头砍树的时候,我总想象着我那梦想中的房子以及我该如何建设它.这一切的结果就是:我那房子规划得越来越小了.",
-                     "008": "树倒下了!散开,大伙!散开!",
+                     "005": "啊哈! 大家跟我一起砍! 砍! 砍! 砍! 耶~!!!",
+                     "006": "小的们! 休息时间结束了! 回林地喽!",
+                     "007": "每当我挥舞着斧头砍树的时候, 我总想象着我那梦想中的房子以及我该如何建设它. 这一切的结果就是: 我那房子规划得越来越小了.",
+                     "008": "树倒下了! 散开, 大伙! 散开!",
                      "teacher": {
-                        "000": "今天撸倒了更多的树. 在[str(entry.teacher)] 这里还有很多树,还有得砍伐."
+                        "000": "今天撸倒了更多的树. [str(entry.teacher)]说过, 这里还有很多树, 还有得砍伐."
                      }
                   },
                   "lovable_rogue": {
@@ -7420,10 +7420,10 @@
                      "002": "树先生,虽然很抱歉,但我们为了居住依然决定要把你砍倒.我们不会忘记因为你的牺牲为我们带来的温暖和安全.噗噗噗!",
                      "003": "看到这些比我大得多的东西真让人愉悦!",
                      "004": "我是Paul Revere(保罗·里维尔)!厄......其实我是想说, Bunyan(约翰·班扬--英国著名著作家,布道家.)!",
-                     "005": "如果土拨鼠能扔木材,那么它能扔多少?如果我叫土拨鼠,那么答案就是:很多!(自言自语:以后要去看看土拨鼠长啥样)",
+                     "005": "如果土拨鼠能啃木材, 那么它能啃多少? 如果我叫土拨鼠, 那么答案就是: 很多!(自言自语: 以后要去看看土拨鼠长啥样)",
                      "006": "木材!木材!木材!在樵夫的世界里必须是木材!啊哈哈哈哈哈!所有事情都难不倒我,只要我有了木材.啊哈哈哈哈哈!只!要!我!有~~!了~~!木~~~!材~~~!!!!!",
                      "007": "听说在我砍掉了树之后就唱不了歌了.嘛无所谓!",
-                     "008": "哦不! 松鼠先生!我真的很抱歉.我不是故意要拆了你的家.也许你可以跟着我回家!坚果免费.喔!也许我不该再提到家这个字......"
+                     "008": "哦不! 松鼠先生! 我真的很抱歉. 我不是故意要拆了你的家. 也许你可以跟着我回家! 坚果免费. 喔! 也许我不该再提到家这个字..."
                   },
                   "insufferable_academic": {
                      "000": "这是对我优秀智力的一大浪费.",
@@ -9775,7 +9775,7 @@
          "golden_clay_doorframe": {
             "golden_clay_doorframe_ghost": {
                "display_name": "金色粘土门框",
-               "description": "在外墙镶上金色的黏土"
+               "description": "在外墙镶上金色的粘土"
             }
          },
          "red_clay_door": {
@@ -10052,7 +10052,7 @@
          },
          "clay_fence_gate": {
             "clay_fence_gate_ghost": {
-               "display_name": "黏土围栏门",
+               "display_name": "粘土围栏门",
                "description": "这扇装饰性的围栏门保护着你的围栏不被破坏."
             }
          },
@@ -11202,14 +11202,14 @@
          },
          "tapestry_wall": {
             "tapestry_wall_ghost": {
-               "display_name": "壁挂毛毯",
-               "description": "一幅装饰的毛毯,是由线和皮毛编织成的."
+               "display_name": "壁毯",
+               "description": "用彩色的丝和线织出来的装饰图案."
             }
          },
          "throw_rug": {
             "throw_rug_ghost": {
                "display_name": "装饰地毯",
-               "description": "让地板不再积满灰尘."
+               "description": "本来满是灰尘的地板也让人刮目相看."
             }
          },
          "tower_brazier": {
@@ -11665,7 +11665,7 @@
             "lamppost_rustic_double": {
                "lamppost_rustic_double_ghost": {
                   "display_name": "生锈双头路灯",
-                  "description": "大胆的尝试才能照亮前方的路途"
+                  "description": "更大胆的尝试才能照亮前方的路途"
                }
             },
             "lantern_iron": {
@@ -14154,8 +14154,8 @@
             "description": "建筑中很关键的部件"
          },
          "thread": {
-            "display_name": "线",
-            "description": "没人想得到这东西曾经是羊毛或者植物."
+            "display_name": "线卷",
+            "description": "从羊毛或者植物中纺出."
          },
          "tin_ingot": {
             "display_name": "锡锭",
@@ -15944,14 +15944,14 @@
                "flavor": "有着铁铸的框框, 但仍然如此地令人安心"
             },
             "lamppost_rustic_recipe": {
-               "description": "Humbly illuminates any pathway or patio",
+               "description": "谦卑地照亮每一条小路, 每一座院落",
                "recipe_name": "生锈路灯",
-               "flavor": "Chase away the night"
+               "flavor": "赶跑黑夜"
             },
             "lamppost_rustic_double_recipe": {
-               "description": "More boldly lights the way",
+               "description": "更大胆的尝试才能照亮前方的路途",
                "recipe_name": "生锈双头路灯",
-               "flavor": "Two heads are better than one"
+               "flavor": "双头更比一头强"
             },
             "gate_iron_recipe": {
                "description": "快要搬不动了",
@@ -15987,7 +15987,7 @@
             "lantern_poyo_recipe": {
                "description": "青铜做的快乐小鸟灯",
                "recipe_name": "波波灯",
-               "flavor": "灯光是如此柔软, 温暖如一条波波鸡羽毛毯"
+               "flavor": "灯光是如此柔软和温暖, 宛如一条波波鸡羽毛毯"
             },
             "weathervane_poyo_recipe": {
                "description": "像极了波波鸡的风向标",
@@ -18050,7 +18050,7 @@
             },
             "clay_fence_gate_recipe": {
                "description": "给人走的.",
-               "recipe_name": "黏土围栏门",
+               "recipe_name": "粘土围栏门",
                "flavor": "这扇装饰性的围栏门保护着你的围栏不被破坏."
             },
             "clay_fence_combo_recipe": {
@@ -18073,7 +18073,7 @@
          },
          "potter_cutter": {
             "display_name": "陶艺师的刀具",
-            "description": "用来把泥土变成'文明' .",
+            "description": "用来把泥土变成文明.",
             "potter_cutter_talisman": {
                "display_name": "陶艺师的刀具",
                "description": "用来转职成为陶艺师."
@@ -18140,7 +18140,7 @@
       "trapper": {
          "trapper_description": {
             "display_name": "猎人",
-            "description": "猎人的陷阱捕捉和 (咳咳) '处理' 小动物作为可靠的食物来源和供应.",
+            "description": "猎人的陷阱可以捕捉小动物, 然后可靠地把它们(咳咳)&quot;处理&quot;成食物和补给.",
             "requirements": "由石匠制作",
             "level_1_data": {
                "perk_000_name": "速度提升",
@@ -18320,30 +18320,30 @@
                "recipe_name": "毛茸茸的玩具兔兔",
                "flavor": "她爱你!"
             },
-            "clothing_armor_name": "衣服 & 护甲",
+            "clothing_armor_name": "衣服&护甲",
             "toys_name": "玩具",
             "storage_name": "存储用具",
             "decorations_name": "装饰",
             "furniture_name": "家具",
-            "crafting_materials_name": "布料",
+            "crafting_materials_name": "制作材料",
             "spool_of_thread_recipe": {
-               "description": "线轴需要纤维,毛绒绒的感觉很暖和",
-               "recipe_name": "线",
+               "description": "布料制作的必需品, 毛绒绒的感觉很暖和",
+               "recipe_name": "线卷",
                "flavor": "每克纤维都渴望成为漂亮的毛衣."
             },
             "tapestry_wall_recipe": {
-               "description": "挂毯,也称为壁毯,作壁面华丽的.",
+               "description": "用彩色的丝和线织出来的装饰图案.",
                "recipe_name": "壁毯",
-               "flavor": "你可以看到画上所面述的画面."
+               "flavor": "你从画里看到的错综复杂也是你自己一部分的写照."
             },
             "thread_recipe": {
-               "description": "线需要纤维,毛绒绒的感觉很暖和",
-               "recipe_name": "丝线",
+               "description": "布料制作的必需品, 毛绒绒的感觉很暖和",
+               "recipe_name": "线卷",
                "flavor": "每克纤维都渴望成为漂亮的毛衣."
             },
             "throw_rug_recipe": {
-               "description": "漂亮的地毯闪闪发光,闪瞎氪金狗眼.",
-               "recipe_name": "地毯",
+               "description": "本来满是灰尘的地板也让人刮目相看.",
+               "recipe_name": "装饰地毯",
                "flavor": "都不忍心踩在上面."
             },
             "worker_outfit_2_recipe": {
@@ -18358,22 +18358,22 @@
             },
             "workbenches_name": "工作台",
             "weaver_loom_recipe": {
-               "description": "纺线、织布然后缝纫出作品.",
+               "description": "把线和线连起来, 直到衣服成型.",
                "recipe_name": "织布机",
-               "flavor": "耐心的蜘蛛,睿智的作家和韧性的机杼可以织出通向未来的坦途.--瑞雅诗歌"
+               "flavor": "耐心的蜘蛛是纺工也是作家, 编织出通向未来的坦途. --瑞雅诗歌"
             },
             "weaver_spinning_wheel_recipe": {
-               "description": "多次旋转,从混乱纺出丝线",
+               "description": "转啊转, 从混乱毛刺中转出丝线",
                "recipe_name": "纺车",
-               "flavor": "蜘蛛微笑着;八个眼睛都闪闪发光,'创造从无到有,尝遍酸甜苦辣.'"
+               "flavor": "蜘蛛微笑着; 八个眼睛都闪闪发光, '创造从无到有, 尝遍酸甜苦辣.'"
             },
             "weaver_workbench_recipe": {
                "description": "用来制造工艺复杂的丝线和织物",
                "recipe_name": "纺织工工作台",
-               "flavor": "一开始我们什么都没有,直到后来'蜘蛛'出现了"
+               "flavor": "一开始我们什么都没有, 直到后来'蜘蛛'出现了"
             },
             "leather_helmet_recipe": {
-               "description": "稍微地保护你的头部!",
+               "description": "稍微保护你的头部!",
                "recipe_name": "无边皮革帽"
             },
             "simple_quiver_recipe": {
@@ -18447,8 +18447,8 @@
                "description": "把纤维纺成线"
             },
             "weaver_spindle_talisman": {
-               "display_name": "纺锤",
-               "description": "把纤维纺成线"
+               "display_name": "纺织工的纺锤",
+               "description": "可以将炉民转职成纺织工"
             }
          },
          "weaver_spinning_wheel": {
@@ -19101,7 +19101,7 @@
                         "description": "现在我们需要一个可以储存东西的地方"
                      },
                      "step003": {
-                        "title": "单击'确定' 完成确认",
+                        "title": "单击'确定'完成确认",
                         "description": "使用储存过滤器来决定你想在这片区域储存什么种类的东西"
                      },
                      "step002": {
