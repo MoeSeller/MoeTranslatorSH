@@ -8,6 +8,10 @@
 	},
 	"entities": {
 		"armor": {
+			"fish_quiver": {
+				"display_name": "咸鱼箭袋",
+				"description": "飞鱼骑脸, 降低敌人勇气"
+			},
 			"turtle_shield": {
 				"display_name": "龟甲盾",
 				"description": "海龟的壳, 被做成了盾牌"
@@ -101,6 +105,10 @@
 			"dock": {
 				"display_name": "钓鱼码头",
 				"description": "一个能让渔民钓鱼的平台"
+			},
+			"ice_dock": {
+				"display_name": "冰钓区",
+				"description": "在冰上凿了个洞, 渔夫可以去钓鱼"
 			},
 			"fish_container": {
 				"display_name": "装鱼木箱",
@@ -302,6 +310,12 @@
 				"description": "吸引螃蟹然后抓住它们."
 			}
 		},
+		"landmark":{
+			"summon_stone_tropical_island":{
+				"display_name": "热带岛屿",
+				"description": "召唤一整个迷你岛屿."
+			}
+		},
 		"monsters": {
 			"cocoling": {
 				"display_name": "椰子精",
@@ -488,6 +502,10 @@
 			"crab_pincer": {
 				"display_name": "蟹螯",
 				"description": "手头很紧!"
+			},
+			"fish_arrow": {
+				"display_name": "咸鱼箭失",
+				"description": "飞鱼骑脸, 对面谁敢上."
 			}
 		},
 		"humans": {
@@ -506,6 +524,14 @@
 		}
 	},
 	"jobs": {
+		"archer":{
+			"archer_buffs":{
+				"fish_arrow":{
+					"display_name":"找不着北",
+					"description":"因脸上都是鱼而勇气下降"
+				}
+			}
+		},
 		"cook": {
 			"recipes": {
 				"tropical_recipes_name": "热带菜系"
@@ -523,6 +549,10 @@
 				"level_2": {
 					"perk_name": "蟹可殇客",
 					"perk_description": "渔民可以制造并放置小陷阱来抓螃蟹了."
+				},
+				"level_3": {
+					"perk_name": "简易料理",
+					"perk_description": "做个烤架, 渔夫现在可以烹饪一些基础食物了."
 				}
 			},
 			"fisher_bucket": {
@@ -538,7 +568,7 @@
 				"description": "长长的, 弹性十足的竿子, 可以用来捕鱼"
 			},
 			"fisher_firepit": {
-				"display_name": "火堆",
+				"display_name": "烤架",
 				"description": "烤制常见的熟食",
 				"flavor": "高品质的食物还是需要拜托您的主厨"
 			},
@@ -568,6 +598,10 @@
 					"description": "这样更好卖.",
 					"flavor": "出口必备"
 				},
+				"fish_quiver_recipe": {
+					"recipe_name": "咸鱼箭袋",
+					"description": "被飞来的鱼砸中的话, 敌人会失去勇气, 会被恶心到, 还会找不着北."
+				},
 				"input_fish_rack_recipe": {
 					"recipe_name": "晒鱼架",
 					"description": "放鱼的补给容器, 让你的工匠不愁原材料.",
@@ -591,7 +625,20 @@
 				"dock_recipe": {
 					"recipe_name": "钓鱼码头",
 					"description": "放置在靠海的一边. 渔民会把这个地方视作钓点然后前去钓鱼.",
-					"flavor": "鱼鱼可喜欢它在太阳下投下的影子了"
+					"flavor": "鱼鱼可喜欢它在太阳里投下的影子了"
+				},
+				"ice_dock_recipe": {
+					"recipe_name": "冰钓区",
+					"description": "在冰雪上凿个洞. 渔民会把这个地方视作钓点然后前去钓鱼.",
+					"flavor": "鱼鱼可喜欢在洞周围游来游去了"
+				}
+			}
+		},
+		"geomancer": {
+			"recipes": {
+				"summon_stone_tropical_island_recipe":{
+					"recipe_name": "热带岛屿",
+					"description": "召唤一整个迷你岛屿."
 				}
 			}
 		},
@@ -666,6 +713,20 @@
 				"description": "哪里都是水, 哪里都是沙, 好像处处都是一样的",
 				"random_location_names": {
 					"000": "莫纳罗亚群岛"
+				},
+				"seasons":{
+					"dry":{
+						"display_name":"旱季",
+						"description":"海岛的旱季阳光明媚, 持续长达八个月的时间. 是度假的好时光, 不过有时候大风大雨也是在所难免的.",
+					},
+					"hurricane":{
+						"display_name":"暴风季",
+						"description":"海岛的暴风季节十分危险, 仅持续一个月. 狂风暴雨乃是家常便饭.",
+					},
+					"wet":{
+						"display_name":"雨季",
+						"description":"海岛的雨季十分湿润, 持续三个月. 风雨乃是常客, 晴天十分罕见",
+					}
 				}
 			}
 		},
@@ -682,6 +743,12 @@
 			"open_crate": {
 				"display_name": "开箱",
 				"description": "把它锤开"
+			},
+			"archer_arrows":{
+				"fish_arrows": {
+					"display_name": "使用咸鱼箭失",
+					"description": "当前使用的是咸鱼箭失, 可以降低敌人勇气. 点击切换箭失种类."
+				}
 			}
 		},
 		"monster_tuning": {
@@ -706,7 +773,11 @@
 							"message_trees": "首先会找木材, 找吃的对吧?<br>这些东西既能给你提供木头, 又能给你们充饥!<br>看到那些椰子树了吗?<br>如果你选择采集收获, 那你就能获得椰子. 虽然可能不是太管饱.<br>如果再次使用采集命令(当树上没有椰子的时候)就会把树砍下来获得木材.",
 							"message_oysters": "啊, 还有这些大贝壳超棒的, 只有渔民才知道怎么采珍珠哦, 珍珠能拿去卖个好价钱.<br>听说还会有稀有的黑珍珠, 不过我从来没遇见过.",
 							"message_broken_boats": "看看四周, 你可能会发现些不幸船只的遗骸.<br>你可以把那些船拆解掉, 说不定能发现宝藏.",
-							"message_bye": "那我就解释这么多啦.<br>以后我也会回来看看你们的.<br>我要趁着这阵好风赶紧出海了, 我的船可不会自己赚钱<br>祝好运, 拜拜."
+							"message_bye": "那我就解释这么多啦.<br>以后我也会回来看看你们的.<br>我要趁着这阵好风赶紧出海了, 我的船可不会自己赚钱<br>祝好运, 拜拜.",
+
+							"na_message_start": "嘿, 雪原来的朋友们! 我怎么知道你们来自雪原? 瞧你们这身打扮, 这大棉袄的!..<br>哦对了, 我叫米兰达. 需要一些帮助吗?<br>如果你们是新来的话, 我可以给你们简单介绍一下.",
+							"na_message_decline": "好吧, 保重.<br>祝好运. 祝你们穿这么多衣服别晕过去了!",
+							"na_message_bye": "那我就解释这么多了.<br>以后我也会回来看看你们的. 但愿你们穿这么多衣服别被大太阳烤熟了!<br>我要趁着这阵好风赶紧出海了, 我的船可不会自己赚钱.<br>祝好运, 拜拜."
 						}
 					}
 				},
