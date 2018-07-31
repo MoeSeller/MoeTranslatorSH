@@ -1429,7 +1429,7 @@
             "attributions": "下面所列出的开源软件是在Stonehearth中使用的:",
             "tabs": {
                "credits": "鸣谢",
-               "attributions": "条款"
+               "attributions": "涉及的开源服务"
             },
             "credits": {
                "sections": {
@@ -1525,7 +1525,7 @@
             "tips": {
                "000": "如果你的炉民被困在矿井里, 你可以建造一个梯子, 让他们出去!",
                "001": "如果为你的炉民提供床, 他们会睡的更香.",
-               "002": "在你的牧场建造围栏, 以确保把动物不会乱跑.",
+               "002": "在你的牧场建造围栏, 以确保动物不会乱跑.",
                "003": "可以对储存区进行设置, 让它只存储某类物品.",
                "004": "你可以种植丝绸草来确保供应足够的纤维和线.",
                "005": "一个衣食无忧的城镇是一个快乐的城镇.",
@@ -3219,7 +3219,7 @@
                },
                "goblin_raiding_camp_1": {
                   "boss": {
-                     "display_name": "[str(self.stonehearth:unit_info.custom_name)] 首领",
+                     "display_name": "[str(self.stonehearth:unit_info.custom_name)]首领",
                      "description": "我内心充满着绿色的战斗火焰!!!"
                   },
                   "sheep": {
@@ -5822,7 +5822,7 @@
                                  }
                               },
                               "01_strange_trading_quest": {
-                                 "title": "Strange Trading",
+                                 "title": "奇怪的交易",
                                  "dialog_title": "奇怪的交易",
                                  "text": "给他们一点蔬菜吧."
                               }
@@ -8463,7 +8463,7 @@
          "night_owl": {
             "night_owl_trait": {
                "display_name": "夜猫子",
-               "description": "太阳落山才是一天的开始."
+               "description": "太阳落山之时, 才是一天真正的开始."
             }
          },
          "optimistic": {
@@ -12022,7 +12022,7 @@
             }
          },
          "sheep_jerky": {
-            "display_name": "羊肉"
+            "display_name": "羊肋排"
          },
          "unknown_food": {
             "display_name": "可食用的东西"
@@ -12064,12 +12064,12 @@
          },
          "poyo_pot_pie": {
             "poyo_pot_pie": {
-               "display_name": "鸡肉派",
+               "display_name": "波波鸡肉派",
                "description": "窝心又美味."
             },
             "poyo_pot_pie_serving": {
                "display_name": "一份鸡肉派",
-               "description": "嗯~ ... 派."
+               "description": "嗯~... 派."
             }
          },
          "omelette": {
@@ -12079,16 +12079,16 @@
             },
             "omelette_serving": {
                "display_name": "一份煎蛋卷",
-               "description": "为什么不跟你分享爱那个呢?"
+               "description": "为嘛要分享?"
             }
          },
          "roast_poyo": {
             "roast_poyo": {
-               "display_name": "烤鸡肉",
+               "display_name": "烤鸡",
                "description": "好吃有多汁."
             },
             "roast_poyo_serving": {
-               "display_name": "一份烤鸡肉"
+               "display_name": "一份烤鸡"
             }
          },
          "fried_eggs": {
@@ -12324,7 +12324,7 @@
          "bug_meat_stew": {
             "bug_meat_stew": {
                "description": "筋筋拉拉, 还很鲜",
-               "display_name": "炖煮美味昆虫肉"
+               "display_name": "美味虫肉炖汤"
             },
             "bug_meat_stew_serving": {
                "display_name": "一碗美味昆虫肉"
@@ -16693,7 +16693,7 @@
             },
             "decoration_name": "装饰品",
             "roast_mutton_recipe": {
-               "recipe_name": "烤羊肉",
+               "recipe_name": "烤羊肋排",
                "description": "营养可口",
                "flavor": "传统膳食, 与树莓酱是绝配!"
             },
@@ -16724,7 +16724,7 @@
             },
             "bug_meat_stew_recipe": {
                "description": "筋筋拉拉, 还有点辣, 特别适合在热天吃.",
-               "recipe_name": "炖煮美味昆虫肉",
+               "recipe_name": "美味虫肉炖汤",
                "flavor": "什么都别问, 你知道这是虫子肉做的."
             },
             "roast_varanus_recipe": {
