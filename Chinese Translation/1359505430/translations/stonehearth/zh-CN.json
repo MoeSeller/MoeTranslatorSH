@@ -393,7 +393,7 @@
                "disconnected": "未连接",
                "removed": "从游戏中移除",
                "placed_camp": "移动他人城镇",
-               "changed_town_name": "他人城镇重命名"
+               "changed_town_name": "他人城镇命名为"
             }
          },
          "disconnected": {
@@ -514,7 +514,7 @@
             "click_banner_tip": "点击旗帜来选择你们要进行定居的地方",
             "select_camp_tip": "现在你可以选择地图上的任何一个地点",
             "name_camp_title": "命名你的城镇",
-            "name_camp_prompt": "为你的城镇命名一个名字吧!"
+            "name_camp_prompt": "为你的城镇起一个名字吧!"
          },
          "calendar": {
             "months": {
@@ -610,7 +610,7 @@
          "menu": {
             "town_menu": {
                "display_name": "城镇信息",
-               "description": "关于你城镇的信息,你的炉民的满意度还有你财产详情."
+               "description": "关于你城镇的信息, 炉民的满意度和你积累的财产."
             },
             "citizen_manager": {
                "display_name": "炉民",
@@ -853,7 +853,7 @@
                   "mining": "挖掘中",
                   "trapping": "捕猎中"
                },
-               "percent_full": "[str(percent)] 百分之百",
+               "percent_full": "库存占用百分之[str(percent)]",
                "active": "激活",
                "paused": "已暂停"
             },
@@ -864,11 +864,11 @@
          "bulletin": {
             "bulletin_list_title": "通知",
             "shop": {
-               "buy_1": "购买 1个",
-               "buy_10": "购买 10个",
+               "buy_1": "购买1个",
+               "buy_10": "购买10个",
                "buy_all": "购买全部",
-               "sell_1": "出售 1个",
-               "sell_10": "出售 10个",
+               "sell_1": "出售1个",
+               "sell_10": "出售10个",
                "sell_all": "出售全部",
                "buy_tab": "购买",
                "sell_tab": "出售",
@@ -928,7 +928,7 @@
                   "earned": "获得金币"
                },
                "net_worth_label": "净产值",
-               "placed_item_label": "已放置数 [str(itemName)] ",
+               "placed_item_label": "已放置数[str(itemName)] ",
                "quality_label": {
                   "quality_2": "拥有的精巧品质物品",
                   "quality_3": "拥有的卓越品质物品",
@@ -1262,9 +1262,9 @@
                "num_animals": "动物:"
             },
             "stockpile": {
-               "default_stockpile_name": "仓库",
-               "contents": "库存",
-               "filter": "分类",
+               "default_stockpile_name": "储物区",
+               "contents": "存储品",
+               "filter": "过滤器",
                "shop": "商店",
                "help": "点击图标选择该仓库中可以存放的物品类型.",
                "help_single_filter": "单击图标以选择容器中储存物品的类别.",
@@ -1286,7 +1286,7 @@
                   "tooltip_clay": "粘土",
                   "tooltip_ore": "矿石",
                   "tooltip_animal_part": "动物皮肉",
-                  "tooltip_resource_pile": "资源储存区",
+                  "tooltip_resource_pile": "资源仓库",
                   "tooltip_plant": "植物",
                   "tooltip_portal": "门窗",
                   "tooltip_furniture": "家具",
@@ -1370,7 +1370,7 @@
                "town_log": "城镇日志",
                "praises": "赞扬",
                "gripes": "抱怨",
-               "praise_empty": "今天值得称赞的事没有发生",
+               "praise_empty": "今天没有发生什么值得称赞的事",
                "gripe_empty": "哇. 好像并没有人抱怨."
             },
             "networth": {
@@ -1519,8 +1519,8 @@
                "029": "校准波波头...",
                "030": "剪剪羊毛...",
                "031": "消除杂念...",
-               "032": "戳波波鸡中...",
-               "033": "接雨滴中..."
+               "032": "戳波波鸡...",
+               "033": "接雨滴..."
             },
             "tips": {
                "000": "如果你的炉民被困在矿井里, 你可以建造一个梯子, 让他们出去!",
@@ -2945,14 +2945,14 @@
                            "choice_000": "听起来不错!",
                            "choice_001": "不. 谢了.",
                            "bulletin_message": {
-                              "000": "在卷轴中,你将找到安魂曲来抚慰山的灵魂.你看到一个被盗的长笛.叫你的木匠将它打造出来,让你最勇敢的牧人演奏出它的旋律.当奥戈的猛犸象出现的时候,你会知道它的用处."
+                              "000": "在卷轴中, 你会看到可以抚慰魔山灵魂的摇篮曲. 找到被盗的长笛. 让你的木工去校准它. 摆在奥戈食人魔的必经之路上, 你定会看到奥戈自傲的下场."
                            },
                            "bulletin_title": "她拿出一张破碎的卷轴",
-                           "dialog_title": "??? "
+                           "dialog_title": "???"
                         },
                         "departure": {
                            "bulletin_message": {
-                              "000": "奋斗吧!首领."
+                              "000": "奋斗吧! 小镇."
                            },
                            "bulletin_title": "她耸了耸肩膀",
                            "dialog_title": "??? "
@@ -2965,7 +2965,7 @@
                      "dialog_nodes": {
                         "soothsayer_description": {
                            "choice_000": "没门!",
-                           "choice_001": "哼.",
+                           "choice_001": "呵.",
                            "bulletin_message": {
                               "000": "老哥布林说过!占卜魔法看到了未来!他看见…他看见火光落下,新星升起.那颗星是 奥戈.这一次,运气站在我们一边!",
                               "001": "老占卜师的千年之蛇已经死了.但是它用骨头和鳞片说话,它看到未来!见到了循环的结束,永远结束.虽然不知道他什么意思,但是是好的消息!",
@@ -2975,25 +2975,25 @@
                            "dialog_title": "奥戈的旗手"
                         },
                         "snooty_introduction": {
-                           "choice_000": "哼!",
+                           "choice_000": "呵!",
                            "choice_001": "Gagh! ",
                            "bulletin_message": {
-                              "000": "你好啊,小首领,我给你们带来了坏消息.",
-                              "001": "小城镇!颤抖吧!臣服于我!",
-                              "002": "姆呼呼哈哈哈哈! 这?这就是你们的蜗牛壳吗?简直笑死我了!"
+                              "000": "你们好啊, 弹丸小镇, 我们带来了坏消息！",
+                              "001": "弹丸小镇! 颤抖吧! 臣服于我!",
+                              "002": "姆呼呼哈哈哈哈! 这? 这就是你们的蜗牛壳吗? 简直笑死我了!"
                            },
                            "bulletin_title": "一个哥布林大摇大摆的走进了你的村庄",
                            "dialog_title": "奥戈的旗手"
                         },
                         "ogo_introduction": {
-                           "choice_000": "奥戈 ?谁?",
-                           "choice_001": "恩... 不.",
+                           "choice_000": "奥戈? 谁?",
+                           "choice_001": "恩... 不要.",
                            "bulletin_message": {
-                              "000": "未来的哥布林最高统帅,尊敬的 奥戈·斯伽尔邦克 颁布指令,你们的小镇和所有物资现在都要被贡到我赤窑帝国的大耀光军团里去了!",
-                              "001": "我是 奥戈·斯伽尔邦克 的外交官,大山里的驯兽师!伟大的奥戈要得到一切,包括你们,还有你们的金子!",
-                              "002": "我至高无上的 奥戈·斯伽尔邦克 马上就要带领着大耀光军团一统赤窑帝国!不好意思你碰巧站在了我们的战利品旁边,给你个选择,来给我们种金子吧怎么样?!",
-                              "003": "我是 奥戈·斯伽尔邦克 的旗手,大山里的骑士!我的主人来问你收贡品了,全部拿来!不然你们就要付出代价!",
-                              "004": "我,是 奥戈·斯伽尔邦克 的旗手!在你击败哥布林小队长的时候,奥戈之眼就开始注意你了!奥戈之眼无所不知!给我们进贡吧,否则奥戈之眼会见证你们的覆灭!"
+                              "000": "未来的哥布林最高统帅, 尊敬的, 奥戈·斯伽尔邦克, 颁布指令, 你们的小镇和所有物资现在都要被贡到我赤烬帝国和大耀光军团里去了!",
+                              "001": "我是奥戈·斯伽尔邦克的外交官, 魔山的训练师! 伟大的奥戈要得到一切, 包括你们, 还有你们的金子!",
+                              "002": "我至高无上的奥戈·斯伽尔邦克, 马上就要带领着大耀光军团一统赤烬帝国! 你们就是这下一个, 给你们个选择, 来给我们种金子吧怎么样?!",
+                              "003": "我是奥戈·斯伽尔邦克的旗手, 魔山的骑手! 我的主人来问你收贡品了, 什么都要, 全部拿来! 不然你们就要付出代价!",
+                              "004": "我, 是奥戈·斯伽尔邦克的旗手! 在你们击败哥布林小队长的时候, 奥戈之眼就开始注意你了! 奥戈之眼无所不知! 给我们进贡吧, 否则奥戈之眼会见证你们的覆灭!"
                            },
                            "bulletin_title": "哥布林整装待发",
                            "dialog_title": "奥戈的旗手"
@@ -3002,10 +3002,10 @@
                            "choice_000": "占卜师?",
                            "choice_001": "呃?",
                            "bulletin_message": {
-                              "000": "占卜者告诉你,奥戈是强大的哥布林,你注定要给他进贡黄金",
-                              "001": "占卜者说,金子太少,不要有别的想法,要么你给奥戈进贡,要么他亲自来拿!",
-                              "002": "哥布林占卜者提醒你不要忘了进贡,如果你进贡的少了,奥戈将杀了你们,我们需要吃的,我们要改变一切,你只需要进贡就可以了!",
-                              "003": "占卜者永远不会错.占卜者说,想要活命就为我们进贡吧!"
+                              "000": "占卜者说, 奥戈将会成为英雄中的英雄! 你注定要给他进贡黄金",
+                              "001": "占卜者虽然个子矮, 但思想伟岸! 占卜者从来没说错过. 他说要么你给奥戈进贡, 要么奥戈亲自来拿!",
+                              "002": "哥布林长久以来都饱受屈辱. 占卜者说了, 奥戈, 我的队长, 会改变这一切! 因此, 他需要黄金和劳工!",
+                              "003": "奥戈·斯伽尔邦克, 王中之王, 天命所在, 统领万物! 占卜者说的; 占卜者从来没说错过. 他还说, 你会前来助我们一臂之力!"
                            },
                            "bulletin_title": "哥布林的眼睛闪着光",
                            "dialog_title": "奥戈的旗手"
@@ -3057,14 +3057,14 @@
                            "choice_000": "Wow! ",
                            "choice_001": "不祥的声音.",
                            "bulletin_message": {
-                              "000": "你觉得好笑,因为是我们的朋友,我告诉你:奥戈很冷血的,有空的时候,一次吃一只小狗.但是…预言家说他命中注定的!想要把每个人都踩在脚下!我只是小人物,你知道吗?不管怎样你也很小."
+                              "000": "你真滑稽, 因为是我们的朋友, 我告诉你: 奥戈很酷的, 有时候还有点刁, 曾经一口吃了只小狗. 但是…预言家说他命中注定的! 要把每个人都踩在脚下! 我只是小人物, 懂? 虽然你们更小, 算了跟你们没什么好说的."
                            },
-                           "bulletin_title": "哥布林狡诈地笑",
+                           "bulletin_title": "哥布林笑了",
                            "dialog_title": "[name(i18n_data.boss)] "
                         },
                         "msg1": {
                            "choice_000": "谢天谢地!",
-                           "choice_001": "奥戈?奥戈是谁?",
+                           "choice_001": "奥戈? 奥戈是谁?",
                            "bulletin_message": {
                               "000": "好消息,孩子们!我们至高无上的首领奥戈·斯伽尔邦克,邀请我们去他的部落了.是时候回到我们共同的家了,也请务必准备好你们的贡品!如果你们幸运的话,或许...不久之后我们还会来拜访的..."
                            },
@@ -3103,7 +3103,7 @@
                            "bulletin_message": {
                               "00": "嘿, 小镇的居民们好! 日子过得怎么样?"
                            },
-                           "bulletin_title": "一个头发花白的人出现在地平线上",
+                           "bulletin_title": "一个上了年纪的人出现在地平线上",
                            "dialog_title": "上了年纪的旅行者"
                         }
                      }
@@ -4173,15 +4173,15 @@
                                        "bulletin_message": {
                                           "00": "大队长和战士的战败让我们不得不承认你们的力量.我们后会有期,下一次战斗我会带来更多精英,也承载着更多荣誉和勇猛."
                                        },
-                                       "bulletin_title": "欧格·诺威德酋长",
-                                       "dialog_title": "欧格·诺威德酋长"
+                                       "bulletin_title": "欧甘尔·诺威德酋长",
+                                       "dialog_title": "欧甘尔·诺威德酋长"
                                     },
                                     "msg1": {
                                        "bulletin_message": {
                                           "00": "如我所言, 命运让你我再次相遇"
                                        },
-                                       "bulletin_title": "欧格·诺威德酋长大步踏向小镇,毫无畏惧地虚张声势",
-                                       "dialog_title": "欧格·诺威德酋长"
+                                       "bulletin_title": "欧甘尔·诺威德酋长大步踏向小镇,毫无畏惧地虚张声势",
+                                       "dialog_title": "欧甘尔·诺威德酋长"
                                     }
                                  }
                               }
@@ -4193,15 +4193,15 @@
                                        "bulletin_message": {
                                           "00": "我要回去了. 方才听闻消息: 失去了可汗的智慧, 我们的萨满探物过深, 长时间在邪恶的力量里迷失了自己. 他们认为前人的谬误已经过时, 不再适用, 但我却甚是担心他们的安危."
                                        },
-                                       "bulletin_title": "欧格·诺威德酋长",
-                                       "dialog_title": "欧格·诺威德酋长"
+                                       "bulletin_title": "欧甘尔·诺威德酋长",
+                                       "dialog_title": "欧甘尔·诺威德酋长"
                                     },
                                     "msg2": {
                                        "bulletin_message": {
                                           "00": "和我地位差不多的兽人中还有些仍然认为你们很弱. 尽管他们会遵循条约, 但四色大锣摆出任意一个, 他们都会很乐意前来迎接挑战."
                                        },
-                                       "bulletin_title": "欧格·诺威德酋长",
-                                       "dialog_title": "欧格·诺威德酋长",
+                                       "bulletin_title": "欧甘尔·诺威德酋长",
+                                       "dialog_title": "欧甘尔·诺威德酋长",
                                        "choice_000": "来吧!",
                                        "choice_001": "我们要拿掉..."
                                     },
@@ -4210,7 +4210,7 @@
                                           "00": "看来最终还是额尔德尼说得对. 既然如此, 按照希德定下的条约, 由于你们力量的强大, 我承认你们对这片土地的所有权. 我们兽人只关心土地的守护者是否有能力对抗荒蛮与邪恶, 而你们证明了自己能承担起这个责任."
                                        },
                                        "bulletin_title": "酋长谦逊地点着头",
-                                       "dialog_title": "欧格·诺威德酋长",
+                                       "dialog_title": "欧甘尔·诺威德酋长",
                                        "choice_000": "我们有能力守护."
                                     }
                                  }
@@ -8220,7 +8220,7 @@
          },
          "orcs": {
             "warchief_boss": {
-               "display_name": "欧格·诺威德酋长",
+               "display_name": "欧甘尔·诺威德酋长",
                "description": "她就是老大."
             }
          },
@@ -10168,7 +10168,7 @@
          },
          "stone_chest": {
             "stone_chest_ghost": {
-               "display_name": "石头柜子",
+               "display_name": "石箱",
                "description": "最多可存储64个物品"
             }
          },
@@ -11191,7 +11191,7 @@
          "stone_garden_lantern": {
             "stone_garden_lantern_ghost": {
                "display_name": "石制花园灯饰",
-               "description": "一盏充满古代风格的石灯."
+               "description": "古旧的灯笼还是可以营造气氛的."
             }
          },
          "stone_wall_lantern": {
@@ -12602,7 +12602,7 @@
          "stone_bench": {
             "stone_bench_ghost": {
                "display_name": "石长凳",
-               "description": "户外活动时可以坐下来放松身体"
+               "description": "户外休闲时刻的歇脚处"
             }
          },
          "stone_chair": {
@@ -12636,7 +12636,7 @@
             },
             "tombstone": {
                "display_name": "墓碑",
-               "description": "逝去的纪念"
+               "description": "对逝去的纪念"
             }
          },
          "writing_desk": {
@@ -12704,7 +12704,7 @@
          },
          "statue_of_cid_wanderer": {
             "statue_of_cid_wanderer_ghost": {
-               "display_name": "雕像:漂泊的希德",
+               "display_name": "漂泊的希德雕像",
                "description": "展现了希德的晚年"
             }
          },
@@ -12785,20 +12785,20 @@
          "camp_standard": {
             "camp_standard_ghost": {
                "display_name": "领地旗帜",
-               "description": "使用它来,文明地,标记领土."
+               "description": "使用它来, 文明地, 标记领土."
             }
          },
          "safety_standard": {
-            "display_name": "木制 安全旗帜",
+            "display_name": "木制安全旗帜",
             "clay_safety_standard": {
-               "display_name": "土制 安全旗帜"
+               "display_name": "土制安全旗帜"
             },
-            "description": "标记一个安全点 让村民在警戒模式下自行逃至该处"
+            "description": "标记一个安全点, 让镇民在警戒模式下自行逃至该处"
          },
          "mountains_windchime": {
             "mountains_windchime_ghost": {
                "display_name": "山之风铃",
-               "description": "令人愉悦的音符"
+               "description": "发出令人心情平和的音符"
             }
          },
          "small_turret": {
@@ -12904,7 +12904,7 @@
          },
          "building_tentacle": {
             "display_name": "建筑碾压者",
-            "description": "在它觉醒之前杀了它, 否者建筑不保!"
+            "description": "在它觉醒之前杀了它, 否则建筑不保!"
          },
          "tentacle_trap": {
             "display_name": "触手陷阱",
@@ -12925,7 +12925,7 @@
       },
       "loot": {
          "gold": {
-            "display_name": "金币盒",
+            "display_name": "金币箱",
             "description": "这有[str(self.stonehearth:stacks.stacks)]金币!",
             "label": "金币"
          },
@@ -13158,8 +13158,8 @@
                "description": "一名来自赤色余烬的战士"
             },
             "orc_boss_banner": {
-               "display_name": "Oghar Grakbash首领的旗帜",
-               "description": "吓得胆小的人都快心脏衰竭了 "
+               "display_name": "欧甘尔·格拉克巴什首领的旗帜",
+               "description": "吓得胆小的都快心脏衰竭了 "
             },
             "orc_hut": {
                "display_name": "兽人小屋",
@@ -16346,12 +16346,12 @@
                "description": "曲线远离持用者的弓,允许更强,更快箭攻击"
             },
             "mountains_windchime_recipe": {
-               "description": "请阻止魔山!它是奥戈手下训练有素的食人魔",
+               "description": "请阻止魔山! 它是奥戈手下训练有素的食人魔",
                "recipe_name": "山之风铃",
                "flavor": "这个旋律让食人魔重新拾起了藏在记忆角落里那久远的摇篮曲"
             },
             "statue_of_cid_wanderer_recipe": {
-               "recipe_name": "雕像:漂泊的希德",
+               "recipe_name": "漂泊的希德雕像",
                "description": "展现了晚年的希德",
                "flavor": "而希德所到之处,信仰都在生根发芽..."
             },
@@ -17319,7 +17319,7 @@
          "mason_pedestal_amberstone": {
             "mason_pedestal_amberstone_ghost": {
                "display_name": "珀石石匠基座",
-               "description": "兔子石匠表示同意"
+               "description": "兔子石匠表示认可"
             }
          },
          "mason_pedestal": {
@@ -17389,17 +17389,17 @@
             "cook_spoon_recipe": {
                "description": "可以使农民转职为厨师.",
                "recipe_name": "勺子",
-               "flavor": "烹饪!!!!!! --吟游诗人 Alton"
+               "flavor": "烧!!!菜!!! --吟游诗人 埃尔顿"
             },
             "gargoyle_recipe": {
-               "description": "哥特式壁挂石像,用来装饰墙壁.",
+               "description": "哥特式壁挂石像, 用来装饰墙壁.",
                "recipe_name": "壁挂式装饰石像",
                "flavor": "旧王国残留下来的雕像."
             },
             "stone_bench_recipe": {
-               "description": "约会时恋人们常常会坐在石凳上卿卿我我.",
-               "recipe_name": "石凳",
-               "flavor": "有漂亮又实用,与墓碑搭配使用...."
+               "description": "户外休闲时刻的歇脚处.",
+               "recipe_name": "石长凳",
+               "flavor": "有漂亮又实用, 与墓碑搭配使用...."
             },
             "stone_brazier_recipe": {
                "description": "在夜晚能够为小伙伴们提供温暖的小火盆.",
@@ -17418,13 +17418,13 @@
             },
             "stone_chest_recipe": {
                "description": "可以存放64个东西.",
-               "recipe_name": "石头柜子",
-               "flavor": "'听好了,孩子,山脚下的Hemgorir里所有的箱子看起来都是这样的'--Edolf, 流浪的诗人"
+               "recipe_name": "石箱",
+               "flavor": "'听好了, 孩子, 山脚下的Hemgorir里所有的箱子看起来都是这样的'--Edolf, 流浪诗人"
             },
             "stone_garden_lantern_recipe": {
-               "description": "古旧的灯笼还是可以营造和谐气氛的.",
+               "description": "古旧的灯笼还是可以营造气氛的.",
                "recipe_name": "石制花园灯饰",
-               "flavor": "看起来有点不祥的感觉."
+               "flavor": "除了有点不祥的感觉."
             },
             "stone_maul_recipe": {
                "description": "完美的钝击工具",
@@ -17452,7 +17452,7 @@
                "flavor": "锤子咣当咣当,大地尽情歌唱,让Brelor灵魂显现,看山脉插上翅膀."
             },
             "mason_pedestal_amberstone_recipe": {
-               "description": "兔子石匠表示同意",
+               "description": "兔子石匠表示认可",
                "recipe_name": "珀石石匠基座",
                "flavor": "石匠的技艺体现在他们工作台的质量上"
             },
