@@ -230,6 +230,21 @@
 				"display_name": "腐烂的蟹",
 				"description": "螃蟹臭得很快..."
 			},
+			"big_fish": {
+				"display_name": "大鲜鱼",
+				"description": "太大了, 一锅炖不下. 还没熟不能吃"
+			},
+			"big_fish_cooked": {
+				"display_name": "烤大鱼",
+				"description": "焦香味美",
+				"recipe": {
+					"description": "放炉子里烤就完事了.",
+					"flavor": "外脆里嫩"
+				}
+			},
+			"big_fish_cooked_serving": {
+				"display_name": "一份烤大鱼"
+			},
 			"fish": {
 				"display_name": "生鱼",
 				"description": "还不能吃"
@@ -241,6 +256,10 @@
 					"description": "只管放在烤炉上好了.",
 					"flavor": "外脆里嫩"
 				}
+			},
+			"big_fish_rotten": {
+				"display_name": "大烂鱼",
+				"description": "鱼臭得很快..."
 			},
 			"fish_rotten": {
 				"display_name": "腐烂的鱼",
@@ -541,7 +560,7 @@
 			"fisher_description": {
 				"display_name": "渔民",
 				"description": "会捉蟹, 采珍珠, 以及其他渔业",
-				"requirements": "由其他工匠打造",
+				"requirements": "由木匠打造",
 				"level_1": {
 					"perk_name": "退而结网",
 					"perk_description": "渔民可以制造渔具来帮助抓鱼."
@@ -590,8 +609,8 @@
 				},
 				"crab_trap_recipe": {
 					"recipe_name": "蟹笼",
-					"description": "放置后可以吸引和捕捉附近的螃蟹.",
-					"flavor": "如果附近没螃蟹, 放置一会就会生成螃蟹的."
+					"description": "放置后可以吸引和捕捉附近的螃蟹, 放在水里或水边才行.",
+					"flavor": ""
 				},
 				"fish_container_recipe": {
 					"recipe_name": "装鱼木箱",
@@ -751,6 +770,12 @@
 				}
 			}
 		},
+		"fishing":{
+			"turtle_shield":{
+				"title":"渔民捡到了个龟甲盾!",
+				"message":"看起来可以做步兵的简陋防具, 即拿即用."
+			}
+		},
 		"monster_tuning": {
 			"forest": {
 				"insane_octopus": {
@@ -810,9 +835,6 @@
 							"title": "又一个箱子...",
 							"message_start": "当心, 我又在你们的小岛上看到了一个箱子! 打开时最好让士兵看守着.",
 							"choice": "告诉我在哪!"
-						},
-						"shield_spawned": {
-							"found": "渔民看到海上有什么东西出现了"
 						},
 						"lets_trade_again": {
 							"title": "我们再来做笔交易?",
