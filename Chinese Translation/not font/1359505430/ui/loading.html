@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Stonehearth Loading UI</title>
+   <link rel="stylesheet" type="text/css" href="/stonehearth/ui/root/css/jqueryui.css" />
+   <link rel="stylesheet" type="text/css" href="/stonehearth/ui/root/css/animate.css" />
+   <link type="text/css" rel="stylesheet" href="/stonehearth/ui/root/css/rickshaw.min.css">
+
+   <!-- core radiant libraries -->
+   <script src="/radiant/js/external/underscore-1.5.2.js"></script>
+   <script src="/radiant/js/external/jquery-2.1.4.min.js"></script>
+   <script src="/radiant/js/external/simple_class.js"></script>
+   <script src="/radiant/js/radiant/core.js"></script>
+   <script src="/radiant/js/radiant/object.js"></script>
+   <script src="/radiant/js/radiant/trace.js"></script>
+   <script src="/radiant/js/radiant/radiant_console.js"></script>
+
+   <!-- ui libraries -->
+   <script src="js/libs/less-1.3.3.js"></script>
+   <script src="js/libs/jquery-ui-1.10.3.js"></script>
+   <script src="js/libs/i18next-1.10.1.js"></script>
+
+   <!-- For standalone pages, e.g. not the main game index -->
+   <script src="/radiant/js/radiant/standalone_page.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="/stonehearth/ui/root/css/fonts/grobold/stylesheet.css">
+   <link rel="stylesheet" type="text/css" href="/stonehearth/ui/root/css/fonts/autourone/stylesheet.css">
+
+   <style>
+      #loadingScreen {
+         position: absolute;
+         top: 0px;
+         left: 0px;
+         right: 0px;
+         bottom: 0px;
+         background-color: black;
+         background-image: url('/stonehearth/ui/shell/loading_screen/images/bg.jpg');
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center center;
+         color: #fff;
+         padding: 20px;
+         display: flex;
+      }
+
+         #randomScreen {
+            position: absolute;
+            background: url('/stonehearth/ui/shell/loading_screen/images/bg0.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+         }
+
+         #controls {
+            position: relative;
+            text-align: center;
+            margin: auto;
+            width: 409px;
+            height: 93px;
+         }
+
+         #message {
+            font-family: 'groboldregular', Microsoft YaHei;
+            position: absolute;
+            top: 24px;
+            width: 100%;
+            color: #fff;
+            font-size: 18px;
+            font-weight:bold;
+         }
+
+         #frame {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('/stonehearth/ui/shell/loading_screen/images/progress_frame.png');
+         }
+
+         .ui-progressbar {
+            height: 20px;
+            text-align: left;
+            overflow: hidden;
+         }
+
+         .ui-progressbar .ui-progressbar-value {
+            position: absolute;
+            margin: 0px;
+            height: 35px;
+            background: #3c51bc;
+            border-width: 5px 5px 10px 5px;
+            border-image: url(/stonehearth/ui/root/css/images/progressbar/meter.png) 5 5 10 5 repeat;
+            border-style: solid;
+         }
+
+         .ui-progressbar-indeterminate .ui-progressbar-value {
+           background-image: none;
+         }
+
+         #progressbar {
+            position: absolute;
+            top: 11px;
+            left: 15px;
+            width: 380px;
+            height: 50px;
+         }
+
+         .outlined {
+            text-shadow: -2px -2px 0px #000, 0px -2px 0px #000, 2px -2px 0px #000, -2px 0px 0px #000, 2px 0px 0px #000, -2px 2px 0px #000, 0px 2px 0px #000, 2px 2px 0px #000;
+         }
+
+         #tip {
+            font-family: 'AutourOneRegular', Microsoft YaHei;
+            position: absolute;
+            bottom: 70px;
+            left: 0px;
+            right: 0px;
+            margin-left: 300px;
+            margin-right: 300px;
+            font-size: 22px;
+            text-align: center;
+         }
+
+   </style>
+
+</head>
+
+<body>
+
+   <div id="loadingScreen">
+      <div id='randomScreen'></div>
+      <img id="logo">
+      <div id="controls">
+         <div id="frame"></div>
+         <div id="progressbar"></div>
+         <div id="message" class="outlined"></div>
+      </div>
+
+      <div id="tip" class="outlined"></div>
+   </div>
+
+   <script>
+      var self = this;
+      var numBackgrounds = 6;
+      var imageUrl = '/stonehearth/ui/shell/loading_screen/images/bg' + Math.floor((Math.random()*numBackgrounds)) +'.jpg';
+      var randomScreen = self.$('#randomScreen');
+      randomScreen.css('background-image', 'url(' + imageUrl + ')');
+      var loadedProgress = 0;
+      var displayedLoadedProgress = 0;
+
+      self._progressbar = $("#progressbar");
+      self._progressbar.progressbar({
+         value: 0
+      });
+
+      var updateLoadingTextTick = 1;
+      var loadingText = null;
+      var tipOfDay = null;
+      var ticksAt100 = 0;
+      var ticksSpentLoading = 0;
+
+      var updateProgressBarVisuals = function() {
+         if (finishedLoading) {
+            if (displayedLoadedProgress > 97) {
+               displayedLoadedProgress = 97;
+            }
+         } else {
+            if (displayedLoadedProgress > 90) {
+               displayedLoadedProgress = 90;
+            }
+         }
+         self._progressbar.progressbar( "option", "value", displayedLoadedProgress);
+      }
+
+      // Call the client to get the loading progress deferred so we can listen on load progress
+      var finishedLoading = false;
+      radiant.call('radiant:get_load_progress_deferred')
+         .progress(function(o){
+            loadedProgress = o.progress;
+            if (loadedProgress > 99) {
+               // If we're done loading, we still need to wait for game warm up time, so set finished loading
+               // to true, but make loaded progress 90% so we still have to go some distance
+               displayedLoadedProgress = 90;
+               finishedLoading = true;
+            } else {
+               if (loadedProgress > displayedLoadedProgress) {
+                  displayedLoadedProgress = loadedProgress;
+                  updateProgressBarVisuals();
+               }
+            }
+         });
+
+      var MAX_TICKS_SPENT_LOADING = 50;
+      var TICKS_WARM_UP_MULTIPLIER = 0.7; // multiply time spent loading by this time to get time to wait for game warmup
+
+         // Note: loc is updated on first tick because otherwise i18n might not be loaded yet.
+      self._intervalTicket = setInterval(function() {
+            if (!loadingText) {
+               // If we have no loading text at all, set it to the "loading game" message
+               loadingText = i18n.t('stonehearth:ui.shell.loading_screen.initial_load_game_text');
+               self.$('#message').html(loadingText);
+            }
+            if (!tipOfDay) {
+               // If we have no tip of the day, display that.
+               var tips = i18n.t('stonehearth:ui.shell.loading_screen.tips', {returnObjectTrees: true});
+               var keys = Object.keys(tips);
+               var random =  Math.floor(Math.random() * keys.length);
+               tipOfDay = tips[keys[random]];
+               self.$('#tip').html(tipOfDay);
+            }
+
+            if (finishedLoading) {
+               ticksAt100++;
+            } else {
+               if (ticksSpentLoading < MAX_TICKS_SPENT_LOADING) { // ticks spent loading is at max 90 * .7
+                  ticksSpentLoading++;
+               }
+            }
+
+            if (displayedLoadedProgress < (loadedProgress + 25)) {
+               displayedLoadedProgress ++;
+            }
+            updateProgressBarVisuals();
+
+            updateLoadingTextTick++;
+            // Update loading message flavor text
+            if (updateLoadingTextTick >= 5) {
+               var tips = i18n.t('stonehearth:ui.shell.loading_screen.loading_map_flavor_text', {returnObjectTrees: true});
+               var keys = Object.keys(tips);
+               var random =  Math.floor(Math.random() * keys.length);
+               loadingText = tips[keys[random]];
+               self.$('#message').html(loadingText);
+               updateLoadingTextTick = 0;
+            }
+
+            if (ticksAt100 > (ticksSpentLoading * TICKS_WARM_UP_MULTIPLIER)) {
+               displayedLoadedProgress = 100;
+               updateProgressBarVisuals(); // Do one final update to say we're at 100%
+
+               // Call the client to refresh browser, which should pull us into the in game UI
+               radiant.call('radiant:reload_browser');
+            }
+         }, 1000);
+
+   </script>
+
+</body>
+</html>
