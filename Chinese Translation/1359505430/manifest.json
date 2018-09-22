@@ -11,8 +11,10 @@
       "stonehearth/locales/supported_languages.json" : "file(added_languages.json)"
    },
    "overrides" : {
+   	"stonehearth/ui/root/css/fonts/autourone/AutourOne-Regular-webfont.woff" : "file(fonts/autourone/zh-CN.woff)",
+   	"stonehearth/ui/root/css/fonts/grobold/grobold-webfont.woff" : "file(fonts/grobold/zh-CN.woff)",
 
-   	"stonehearth/locales/zh-CN.json": "file(translations/stonehearth/zh-CN.json)",
+    "stonehearth/locales/zh-CN.json": "file(translations/stonehearth/zh-CN.json)",
     "rayyas_children/locales/zh-CN.json": "file(translations/rayyas_children/zh-CN.json)",
     "northern_alliance/locales/zh-CN.json": "file(translations/northern_alliance/zh-CN.json)",
      
@@ -34,19 +36,8 @@
     "armis_maximus/locales/zh-CN.json": "file(translations/mods/armis_maximus/zh-CN.json)",
 
 
-    "stonehearth/ui/root/css/variables.less" : "file(ui/less/variables.less)",
-    "stonehearth/ui/root/css/base.less" : "file(ui/less/base.less)",
-    "stonehearth/ui/root/css/material_paper.less" : "file(ui/less/material_paper.less)",
-    "stonehearth/ui/shell/settings/settings.less" : "file(ui/less/settings.less)",
-    "stonehearth/ui/shell/about/about.less" : "file(ui/less/about.less)",
     "stonehearth/ui/game/unit_frame/unit_frame.less" : "file(ui/less/unit_frame.less)",
-    "stonehearth/ui/game/modes/zones_mode/farm/farm.less" : "file(ui/less/farm.less)",
     "stonehearth/ui/game/citizens/citizens.less" : "file(ui/less/citizens.less)",
-    "stonehearth/ui/game/bulletin/bulletin_dialog/town_upgrade_choice_dialog/town_upgrade_choice_dialog.less" : "file(ui/less/town_upgrade_choice_dialog.less)",
-
-    "stonehearth/ui/root/loading.html" : "file(ui/loading.html)",
-    "stonehearth/ui/root/mod_sync.html" : "file(ui/mod_sync.html)",
-
-
+    "stonehearth/ui/shell/title/title.less" : "file(ui/less/title.less)",
    }
 }
