@@ -1,0 +1,108 @@
+#townUpgradeChoiceBulletinDialog {
+   .window {
+      width: 600px;
+      height: 585px;
+      max-height: 585px;
+
+      .title {
+         font-size: 26px;
+         
+         .closeButton {
+            top: 11px;
+         }
+      }
+
+      .contentFrame {
+         background-repeat: no-repeat;
+         margin-top: 10px;
+         height: 420px;
+         padding: 10px;
+         
+         .bannersList {
+            height: 340px;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            .bannerChoice {
+               padding: 5px 15px 5px 15px;
+               margin: 5px;
+               background-color: @lightBrownColor;
+
+               &.selected {
+                  background-image: url('./images/highlight_top_left.png'), url('./images/highlight_top_right.png'), url('./images/highlight_bottom_left.png'), url('./images/highlight_bottom_right.png');
+                  background-position: left top, right top, left bottom, right bottom;
+                  background-repeat: no-repeat;
+                  position: relative;
+                  overflow: visible;
+               }
+
+               img {
+                  width: 80px;
+                  height: 80px;
+                  float: left;
+                  margin-right: 10px;
+               }
+
+               .name {
+                  margin-top: 0;
+                  padding-top: 0;
+               }
+
+               .description {
+                  margin-left: 0px;
+               }
+            }
+         }
+
+         .nameHeader {
+            margin-top: 3px
+         }
+         #name {
+            width: 300px;
+            border: none;
+            background: #e4e1d6;
+            padding: 6px;
+            outline: none;
+            font-family: 'AutourOneRegular', Microsoft YaHei;
+            font-size: 14px;
+            color: black;
+            animation: glowing-town-name-field 2000ms infinite;
+         }
+
+         .reroll {
+            height: 60px;
+            width: 60px;
+            position: relative;
+            left: 7px;
+
+            img {
+               width: 70%;
+               position: absolute;
+               top: 1px;
+               left: 7px;
+            }
+         }
+      }
+
+      .buttonDiv {
+         position: absolute;
+         bottom: 4px;
+         left: 10px;
+         right: 10px;
+         text-align: center;
+      }
+   }
+
+   &.withTownName {
+      .window .contentFrame .bannersList {
+         height: 256px;
+      }
+   }
+}
+
+@keyframes glowing-town-name-field {
+  0% { box-shadow: 0 0 -10px #ffc000; }
+  40% { box-shadow: 0 0 30px #ffc000; }
+  60% { box-shadow: 0 0 30px #ffc000; }
+  100% { box-shadow: 0 0 -10px #ffc000; }
+}
