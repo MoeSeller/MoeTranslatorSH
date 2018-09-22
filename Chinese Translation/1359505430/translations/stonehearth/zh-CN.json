@@ -33,7 +33,7 @@
             "cower": "发抖中",
             "flee": "逃跑中",
             "panic": "恐慌中",
-            "mine": "挖掘",
+            "mine": "挖掘中",
             "sleep_in_bed": "睡觉中",
             "sleep_on_ground": "睡在地上",
             "check_bait_trap": "检查陷阱中",
@@ -60,7 +60,10 @@
             "recuperating": "恢复中",
             "celebrating": "庆祝中",
             "shopping": "交易中",
-            "confused": "混乱中"
+            "confused": "混乱中",
+            "traveler_walking": "游览小镇中",
+            "traveler_looking": "敬仰[name(data.target)]中",
+            "sit": "坐着"
          }
       }
    },
@@ -202,7 +205,9 @@
             "title": "选择一位炉民",
             "select_person": "选择",
             "ownership_current_owner_tooltip": "现拥有者",
-            "ownership_owns_another_tooltip": "已拥有同类物品"
+            "ownership_owns_another_tooltip": "已拥有同类物品",
+            "reserve_for_travelers": "预留给旅行者",
+            "already_reserved_for_travelers": "已预留"
          },
          "player_picker": {
             "title": "选择一位玩家"
@@ -245,7 +250,10 @@
                   "title": "邀请伙伴",
                   "message": "点击 '继续' 来打开Steam嵌入界面. 右击你想邀请进来的朋友然后点击 '邀请进游戏.' 他们就能在Steam对话窗口中看到一个可以参与你游戏的链接."
                }
-            }
+            },
+            "friends_list": "点击邀请!",
+            "away": "离开",
+            "busy": "忙碌"
          },
          "build_workshop": {
             "title": "建造工作台",
@@ -473,6 +481,9 @@
                "quality-2": "精巧品质",
                "quality-3": "卓越品质",
                "quality-4": "师匠品质!"
+            },
+            "traveler": {
+               "gifted_by": "来自[str(gifter_name)]的礼物"
             }
          },
          "citizens": {
@@ -978,6 +989,17 @@
             "quest_bulletin_dialog": {
                "description": "描述",
                "rewards": "奖励"
+            },
+            "traveler": {
+               "first": {
+                  "title": "第一位来访的旅行者!",
+                  "message": "[str(i18n_data.traveler_name)]前来拜访!<br><br>只要有空床位预留给他们, 旅行者便会前来. 他们会羡慕你们的城镇, 和你们炉民交流, 在你们集市买东西, 如果玩得愉快, 他们甚至有可能留下礼物.<br><br>开心的旅行者会和别人谈及你们城镇, 随着时间推移, 你们城镇就会越来越热闹!"
+               },
+               "summary": {
+                  "title": "旅行者的感受",
+                  "text": "今天的拜访十分愉快! 旅行者留下了这些礼品给你们:",
+                  "gifted_by": "来自[str(gifter)]的礼物"
+               }
             }
          },
          "build_mode2": {
@@ -1840,7 +1862,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0版本",
+            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r898)版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到Stonehearth!",
                "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
@@ -10424,8 +10446,8 @@
          },
          "market_shelf_tall_ground_wood": {
             "market_shelf_tall_ground_wood_ghost": {
-               "display_name": "市集高木架",
-               "description": "其他玩家和旅行者可以买在这里储存的物品."
+               "display_name": "市集交易架",
+               "description": "其他玩家和旅行者可以购买储存在这里的物品."
             }
          },
          "gem_chest": {
@@ -10446,6 +10468,18 @@
             "wheat_pile_old_iconic": {
                "display_name": "旧小麦捆",
                "description": "放置在地上时可以收获采集获得小麦"
+            }
+         },
+         "market_shelf_tall_ground_clay": {
+            "market_shelf_tall_ground_clay_ghost": {
+               "display_name": "市集交易架",
+               "description": "其他玩家和旅行者可以购买储存在这里的物品."
+            }
+         },
+         "market_shelf_tall_ground_stone": {
+            "market_shelf_tall_ground_stone_ghost": {
+               "display_name": "市集交易架",
+               "description": "其他玩家和旅行者可以购买储存在这里的物品."
             }
          }
       },
@@ -15828,7 +15862,7 @@
             },
             "blacksmith_workbench_recipe": {
                "description": "用来制造武器和盔甲.",
-               "recipe_name": "铁匠的铁毡",
+               "recipe_name": "铁匠的铁砧",
                "flavor": "匠人优质的性格就像他煅出的器具,这个比喻绝非偶然所得. -Lucan Varius, Artifex Ignis"
             },
             "workbenches_name": "工作台",
@@ -16333,8 +16367,8 @@
                "flavor": "但这群人是谁?他们从何而来?"
             },
             "market_shelf_tall_ground_wood_recipe": {
-               "description": "其他玩家和旅行者可以买在这里储存的物品",
-               "recipe_name": "市集高木架",
+               "description": "其他玩家和旅行者可以购买储存在这里的物品",
+               "recipe_name": "市集交易架",
                "flavor": "你的砒霜或许就是别人的蜜糖... 对吧?"
             },
             "archer_bow_recipe": {
@@ -17736,6 +17770,11 @@
                "description": "栽满紫罗兰的花香, 可以放在窗框下面.",
                "recipe_name": "紫罗兰花箱",
                "flavor": "有品味到了极致."
+            },
+            "market_shelf_tall_ground_stone": {
+               "description": "其他玩家和旅行者可以购买储存在这里的物品.",
+               "recipe_name": "市集交易架",
+               "flavor": "你的砒霜或许就是别人的蜜糖... 对吧?"
             }
          }
       },
@@ -18057,6 +18096,11 @@
                "description": "私人财产不可侵犯.",
                "recipe_name": "粘土围栏柱",
                "flavor": "装饰多于安全."
+            },
+            "market_shelf_tall_ground_clay": {
+               "description": "其他玩家和旅行者可以购买储存在这里的物品.",
+               "recipe_name": "市集交易架",
+               "flavor": "你的砒霜或许就是别人的蜜糖... 对吧?"
             }
          },
          "potter_workbench": {
