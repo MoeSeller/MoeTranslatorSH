@@ -5973,7 +5973,7 @@
                                     "dialog_nodes": {
                                        "simple_message": {
                                           "bulletin_message": {
-                                             "00": "\"谢谢. 但愿我们不会受伤, 但命运只会垂怜于有准备的人. 愿我们的友谊之花继续生根发芽!\" H他给了你们几袋闪闪发亮的东西作为补偿.<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
+                                             "00": "\"谢谢. 但愿我们不会受伤, 但命运只会垂怜于有准备的人. 愿我们的友谊之花继续生根发芽!\" 他给了你们几袋闪闪发亮的东西作为补偿.<br><br><font size=-1><i>[在兔人族中的声望上升]</i></font>"
                                           },
                                           "bulletin_title": "放刁把滥",
                                           "choice_000": "祝好运"
@@ -9728,7 +9728,7 @@
          },
          "picket_fence": {
             "picket_fence_ghost": {
-               "display_name": "围栏",
+               "display_name": "围栏柱",
                "description": "如果它不再是白色的, 我们的生活还会圆满吗?"
             }
          },
@@ -16183,7 +16183,7 @@
             },
             "picket_fence_recipe": {
                "description": "围栏可以保护你的财产.",
-               "recipe_name": "围栏",
+               "recipe_name": "围栏柱",
                "flavor": "如果它不再是白色的, 我们的生活还会圆满吗?"
             },
             "tools_weapons_name": "工具",
