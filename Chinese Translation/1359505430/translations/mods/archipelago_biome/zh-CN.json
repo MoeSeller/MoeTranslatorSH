@@ -102,6 +102,20 @@
 					"flavor": "如果船是一个头, 那锚就是耳环吗?"
 				}
 			},
+			"aquarium": {
+				"display_name": "水族箱",
+				"description": "鱼儿在透明的缸里游着",
+				"recipe": {
+					"flavor": "要么养一缸鱼, 要么养只猫, 两者不可兼得."
+				}
+			},
+			"big_fish_hanging": {
+				"display_name": "大鱼挂饰",
+				"description": "挂在链子上展示的一条大鱼",
+				"recipe": {
+					"flavor": "你最好把它摆出来, 不然没人会相信你能钓到这么大的鱼."
+				}
+			},
 			"dock": {
 				"display_name": "钓鱼码头",
 				"description": "一个能让渔民钓鱼的平台"
@@ -245,6 +259,9 @@
 			"big_fish_cooked_serving": {
 				"display_name": "一份烤大鱼"
 			},
+			"nemo": {
+				"display_name": "尼莫"
+			},
 			"fish": {
 				"display_name": "生鱼",
 				"description": "还不能吃"
@@ -303,6 +320,9 @@
 			"sashimi": {
 				"display_name": "生鱼刺身",
 				"description": "切成片的新鲜的生鱼"
+			},
+			"tropical_fish": {
+				"display_name": "新鲜热带鱼"
 			}
 		},
 		"furniture":{
@@ -330,6 +350,14 @@
 			}
 		},
 		"landmark":{
+			"summon_stone_block_sand": {
+				"display_name": "沙地地块石",
+				"description": "召唤一块8x5x8大小的沙地地块."
+			},
+			"summon_stone_patch_sand": {
+				"display_name": "沙地地片石",
+				"description": "召唤一片沙地, 大小是12x12."
+			},
 			"summon_stone_tropical_island":{
 				"display_name": "热带岛屿",
 				"description": "召唤一整个迷你岛屿."
@@ -419,6 +447,10 @@
 			"hot_rock": {
 				"display_name": "热岩",
 				"description": "矿物质储量丰富, 挖就对了"
+			},
+			"ice_cube": {
+				"display_name": "冰块",
+				"description": "某人钓上来的. 很快就会化掉."
 			}
 		},
 		"toys": {
@@ -676,6 +708,12 @@
 		}
 	},
 	"ui": {
+		"data":{
+			"constants":{
+				"raw_fish_name":"生鱼",
+				"raw_big_fish_name":"大鲜鱼"
+			}
+		},
 		"game": {
 			"build_mode": {
 				"building_templates": {
@@ -774,6 +812,10 @@
 			"turtle_shield":{
 				"title":"渔民捡到了个龟甲盾!",
 				"message":"看起来可以做步兵的简陋防具, 即拿即用."
+			},
+			"nemo":{
+				"title":"发现了一条鱼",
+				"message":"渔民刚刚抓到了这条迷路的可爱小丑鱼."
 			}
 		},
 		"monster_tuning": {

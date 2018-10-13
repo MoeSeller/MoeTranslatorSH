@@ -1862,7 +1862,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r898)版本",
+            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r899)版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到Stonehearth!",
                "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
@@ -16960,7 +16960,7 @@
             }
          },
          "engineer_buffs": {
-            "inventiveness_2_buff": {
+            "diligence_2_buff": {
                "display_name": "勤奋+50",
                "description": "工程师可以更有效地修复门"
             }
@@ -17965,14 +17965,14 @@
                "flavor": "空心砖可以保持凉爽"
             },
             "golden_clay_wall_planter_recipe": {
-               "description": "能照亮一面墙",
-               "recipe_name": "金色墙挂花园土地公",
-               "flavor": "这些花来自哪里?当然是从种植园里! --瑞雅神话里的侍祭"
+               "description": "能点亮一面墙",
+               "recipe_name": "金色墙挂花箱",
+               "flavor": "这些花来自哪里? 当然是花箱里! --瑞雅神话里的侍祭"
             },
             "unfired_clay_vase_recipe": {
                "description": "一个用陶轮制作简单的花瓶,用于更复杂的制作项目",
                "recipe_name": "未烧制的陶花瓶",
-               "flavor": "'始一风火土, 继成原初壶, 而系世人及石炉.' —— 大师 奥里恩"
+               "flavor": "'始一风火土, 继成原初壶, 而系世人与石炉.' —— 大师 奥里恩"
             },
             "clay_pile_recipe": {
                "recipe_name": "粘土堆",
@@ -17987,12 +17987,12 @@
             "clay_tunnel_door_recipe": {
                "description": "用于封闭矿井隧道",
                "recipe_name": "土隧道门",
-               "flavor": "'语友而登室'... 哦, 进来好了, 这门锁不上的. —— 艾博尔, 见习陶艺师"
+               "flavor": "语友而登室... 哦, 等等, 原来这门没锁. --艾博尔, 见习陶艺师"
             },
             "tan_latticed_window_recipe": {
                "recipe_name": "土黄格子窗框",
                "description": "大家又熟悉又喜爱的的格子窗框,黄色版",
-               "flavor": "\"瓢虫能飞进来, 但至少不是大虫子!\" -- 爵恩科·伊斯坎德尔, 前销售合伙人"
+               "flavor": "\"瓢虫能飞进来, 但至少不是什么大虫子!\" --爵恩科·伊斯坎德尔, 前销售合伙人"
             },
             "tall_clay_window_recipe": {
                "recipe_name": "高土窗",
