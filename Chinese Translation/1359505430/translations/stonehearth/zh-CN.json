@@ -1862,7 +1862,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r899)版本",
+            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r907)版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到Stonehearth!",
                "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
@@ -2212,7 +2212,7 @@
                "description": "炉民创造精巧和卓越品质物品几率的加成.",
                "bullet_points": {
                   "000": "炉民至少满师才能制作精巧品质, 至少大师才能制作卓越品质</br>",
-                  "001": "基于炉民的灵感, 概率加成最小-2%, 最大+3%"
+                  "001": "概率根据炉民的精神点数"
                }
             },
             "shelter": {
@@ -2390,6 +2390,7 @@
             "prepared_food_resource_name": "主食",
             "prepared_dessert_resource_name": "甜点",
             "earth_essence_resource": "石炉精华",
+            "feather_resource": "羽毛",
             "gear_resource_name": "零件",
             "ore_resource_name": "矿物",
             "dirt_resource_name": "土堆"
@@ -7244,8 +7245,8 @@
          },
          "slaughter": {
             "display_name": "屠宰",
-            "description": "收获这种动物的肉.",
-            "disabled_description": "这动物营养不良,没什么肉,只有皮和骨头了."
+            "description": "让你们牧羊人杀掉它来获取肉.",
+            "disabled_description": "这动物营养不良, 没什么肉, 只有皮和骨头了."
          },
          "spawn_glory_wave": {
             "display_name": "召唤敌袭",
