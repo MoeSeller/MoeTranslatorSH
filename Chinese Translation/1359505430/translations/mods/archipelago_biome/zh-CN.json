@@ -158,6 +158,10 @@
 					"flavor": "花花可以让墙变得美丽!"
 				}
 			},
+			"magma":{
+				"display_name":"岩浆块",
+				"description":"超烫, 冒着红光, 半凝固的岩浆. 不要碰.",
+			},
 			"pearl_container": {
 				"display_name": "珍珠箱",
 				"description": "出口必备"
@@ -358,9 +362,9 @@
 				"display_name": "沙地地片石",
 				"description": "召唤一片沙地, 大小是12x12."
 			},
-			"summon_stone_tropical_island":{
-				"display_name": "热带岛屿",
-				"description": "召唤一整个迷你岛屿."
+			"summon_stone_volcano":{
+				"display_name": "火山口",
+				"description": "召唤一座小火山."
 			}
 		},
 		"monsters": {
@@ -465,6 +469,22 @@
 				"unripe_description": "还没长出小椰子. 热带岛屿天堂的象征."
 			},
 			"palm_tree": {
+				"seed": {
+					"display_name": "椰种",
+					"description": "种下就会长出一棵椰子树"
+				},
+				"sprout": {
+					"display_name": "椰芽",
+					"description": "需要一些时间与爱心."
+				},
+				"stem": {
+					"display_name": "椰苗",
+					"description": "还在成长!"
+				},
+				"bud": {
+					"display_name": "椰树苗木",
+					"description": "快长成了!  成叶也在慢慢出来!"
+				},
 				"sapling_palm_tree": {
 					"display_name": "椰树苗木"
 				},
@@ -687,14 +707,19 @@
 		},
 		"geomancer": {
 			"recipes": {
-				"summon_stone_tropical_island_recipe":{
-					"recipe_name": "热带岛屿",
-					"description": "召唤一整个迷你岛屿."
+				"summon_stone_volcano_recipe":{
+					"recipe_name": "火山口",
+					"description": "召唤一座小火山."
 				}
 			}
 		},
 		"herbalist": {
 			"recipes": {
+				"palm_transmute_recipe": {
+					"recipe_name": "椰种",
+					"description":"为椰子树提供营养",
+					"flavor":"把切开的两半合上, 就有一个新椰子啦, 随时可以种下去"
+				},
 				"papaya_transmute_recipe": {
 					"recipe_name": "木瓜籽 (x3)"
 				},
