@@ -611,6 +611,8 @@
             "death_notification": "[name(i18n_data.entity)] 已死亡.",
             "imminent_death_notification": "[name(i18n_data.citizen)]的生命值极低!",
             "starving_notification": "[name(i18n_data.citizen)]正忍受着饥饿!",
+            "unreachable_ingredient_notification": "[name(i18n_data.citizen)]拿不到可以制作[str(i18n_data.crafting_order)]的材料.",
+            "where_is_food_notification": "[name(i18n_data.citizen)]找不到任何食物.",
             "health_status_normal": "一般",
             "health": "生命值",
             "gender": {
@@ -1502,7 +1504,8 @@
                   "doug": "",
                   "carl": "",
                   "winnie": "",
-                  "jack": ""
+                  "jack": "",
+                  "gabriel": ""
                }
             }
          },
@@ -1862,7 +1865,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r907)版本",
+            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r909)版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到Stonehearth!",
                "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
@@ -1873,6 +1876,33 @@
                "title": "检测到有冲突的模组!",
                "message": "警告: 你有两个使用相同命名空间的冲突模组. 请在模组界面中确保只启用其中一个使用该命名空间的模组.<br>如果在相同目录下同时存在'.smod'模组文件与该模组的文件夹, 文件夹将会被优先使用. 受影响的模组有: <br><br>",
                "accept": "继续"
+            },
+            "mod_dependency_conflict": {
+               "title": "检测到存在循环依赖的模组!",
+               "message": "警告: 你有存在循环依赖的模组 (例如: A模组依赖B模组, 而B模组有需要依赖A模组). 模组依赖用于鉴别模组的载入顺序, 但如果依赖关系循环, 则无法确定模组的载入顺序.<br><br>需要在相关模组的manifests文件里解决该循环. 当前相应模组已被禁用: <br><br>",
+               "accept": "好的, 继续.",
+               "dependency": ", 依赖于:"
+            },
+            "ace": "ACE!",
+            "ace_dialog": {
+               "title": "启用社区授权拓展包(ACE)?",
+               "message": "ACE模组出自于石炉社区里一群出色成员之手, 他们意在创造一个更丰富更完整的石炉1.0体验. 它包括了对原版石炉游戏体验的提升, 例如新职业, UX改动, 新地图, 矮人族等等!<br><br>是否启用他们的模组?<br><i>(你永远可以在主界面启用/禁用他们的模组, 或者模组界面里也可以).<i>",
+               "accept": "好的!",
+               "cancel": "不, 谢谢."
+            },
+            "ace_toggle": {
+               "enable": {
+                  "title": "是否启用ACE?",
+                  "message": "游戏需要重载以启用ACE. 是否继续?",
+                  "tooltip": "确认启用社区授权拓展包."
+               },
+               "disable": {
+                  "title": "是否禁用ACE?",
+                  "message": "游戏需要重载以禁用ACE. 是否继续?",
+                  "tooltip": "确认禁用社区授权拓展包."
+               },
+               "accept": "继续",
+               "cancel": "取消"
             }
          },
          "mods_menu": {
@@ -7253,6 +7283,11 @@
             "description": "生成下一波敌人来获得更多荣誉.",
             "disabled_description": "你家门口暂时没敌人了.",
             "glory_level_achieved_bulletin": "荣誉等级达成: 等级[str(i18n_data.glory_level)]!"
+         },
+         "teleport": {
+            "display_name": "传送",
+            "description": "炉民受困? 使用紧急传送力量吧. 一天一次!",
+            "disabled_description": "今天已经使用过紧急传送力量了. 明天再用吧!"
          },
          "undeploy_item": {
             "display_name": "取消放置",
