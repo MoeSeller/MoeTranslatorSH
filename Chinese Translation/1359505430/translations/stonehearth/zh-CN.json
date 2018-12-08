@@ -15,6 +15,7 @@
             "heal_ranged_in_sight": "治疗[name(data.target)]中",
             "wait_at_safety_point": "在安全点附近等候中",
             "repair_entity": "修复[name(data.target)]中",
+            "follow_entity": "跟随[name(data.target)]中",
             "resting_by_fire": "在篝火旁休息中",
             "claiming_animal": "领养动物中",
             "looking_for_animals": "寻找动物中",
@@ -300,6 +301,12 @@
             "currently": "当前:",
             "no_unhappy_thoughts": "最近没有什么不开心的!",
             "no_happy_thoughts": "还没什么好开心的呢!",
+            "teleport": {
+               "description": "如果炉民卡住了, 使用这个紧急解困按钮来选择附近一个地点传送过去 (需要他们为空闲状态). 午夜刷新次数.",
+               "disabled_description": "这个炉民今天传送过了. 午夜后再试吧.",
+               "not_idle_description": "解困按钮暂时无法使用, 因为炉民未处于空闲状态.",
+               "different_player_description": "你无法紧急传送其他玩家的镇民."
+            },
             "appeal_headings": {
                "like": "喜欢",
                "like_tooltip": "每个人看到自己周围有喜欢的东西时, 都会觉得这个地方更美丽. 效果叠加上限为三.",
@@ -987,6 +994,16 @@
             "inventory_full": {
                "title": "城镇库存已满",
                "message": "你已达到城镇库存上限! 每位炉民可以给小镇增加物品容量上限. 若小镇物品过剩, 炉民将停止采集. 而制作的箱子等物品容器也算作物品且不会增加城镇可容纳的物品总上限. 请使用销售或者摧毁的方式减少物品数量."
+            },
+            "max_citizens_cap": {
+               "early_warning": {
+                  "title": "你已达到[str(i18n_data.num_citizens)]位镇民!",
+                  "message": "祝贺! 你们的小镇已经成长为一个坚实的社区了.<br><br>关于游戏性能的小警告: 更多的人口意味着更多AI运算. 低配计算机或许会遇到卡顿, 延迟或炉民罢工的现象.<br><br>如果遇到这些问题, 试着在设定菜单的游戏设置条目下减少小镇人口上限. 这样只要人口数量高于设置的值, 便不会有新炉民前来."
+               },
+               "full_warning": {
+                  "message": "镇上居民的数量已达到[str(i18n_data.num_citizens)]位, 已经是镇上能容纳的最大数量了.<br><br>这样新移民也就无法加入小镇了, 除非人口再次低于该数目. <br><br><strong>注意:</strong> 你可以在设定菜单的游戏设置条目下找到并设置人口上限. 小警告 - 有太多人口可能会导致卡顿, 延迟或炉民罢工现象.",
+                  "title": "达到镇民上限!"
+               }
             },
             "quest_bulletin_dialog": {
                "description": "描述",
@@ -1865,7 +1882,7 @@
             "load_game": "加载游戏",
             "mods": "模组",
             "quick_start": "快速开始",
-            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r909)版本",
+            "patch_notes": "显示更新日志 -v24-【倒茶汉化组】 适用于石炉ver_1.0.0(r927)版本",
             "alpha_welcome_dialog": {
                "title": "欢迎来到Stonehearth!",
                "message": "通过自动发送游戏出错报告的匿名信息, 您可以帮助石炉变得更稳定.",
@@ -1912,6 +1929,7 @@
             "open_folder": "打开文件夹",
             "quit_to_menu": "保存并退回首页",
             "base_mod": "基础模组",
+            "modding_guide": "模组制作指南",
             "sections": {
                "base_mods": {
                   "title": "基础模组"
@@ -2946,6 +2964,15 @@
                },
                "shrine_unlock_recipes": {
                   "bulletin_title": "石匠配方解锁: 圣碑"
+               },
+               "returning_collector_encounter": {
+                  "title": "一位探险家来到镇上.",
+                  "trade_details": "你们好, [str(i18n_data.town_name)]! 我是遥远的东方来的探险者, 做过很多交易, 有很多收集品. 最近我发现不远处路旁边闲置着<strong>[str(i18n_data.reward_item)] x [str(i18n_data.reward_number)]</strong>. 虽然不清楚谁落在那的, 但收拾起东西来真好用!  我自己是不需要这种东西啦, 但隔壁有个小镇正好缺<strong>[str(i18n_data.want_item)] x [str(i18n_data.want_number)]</strong>. 我接下去会在周围休息[str(i18n_data.num_days)]天.. 到时候你们有兴趣做个交易吗?",
+                  "waiting_title": "探险者会在[str(i18n_data.hour_counter)][str(i18n_data.period)]后回来!",
+                  "waiting_text": "探险者会在[str(i18n_data.hour_counter)][str(i18n_data.period)]后回来给你<strong>[str(i18n_data.reward_item)] x [str(i18n_data.reward_number)]</strong>来换取<strong>[str(i18n_data.want_item)] x [str(i18n_data.want_number)]</strong>!",
+                  "return_title": "探险者回来了!",
+                  "return_greetings_positive": "我回来了! 看起来你们已经为我准备好了[str(i18n_data.want_item)] x [str(i18n_data.want_number)]. 你们确定要一次来换我手上的[str(i18n_data.reward_item)] x [str(i18n_data.reward_number)]? 我敢向你们保证, 他们绝对比人力搬运要高效得多!",
+                  "return_greetings_negative": "我回来了, 但似乎你们并没有我要的[str(i18n_data.want_item)] x [str(i18n_data.want_number)]. 好吧, 或许回到我村里会有人需要它们."
                }
             },
             "goblin_war": {
@@ -4571,7 +4598,8 @@
                                        },
                                        "bulletin_title": "一个看起来很官方的家伙走了过来!",
                                        "dialog_title": "这次不是只鸟",
-                                       "choice_000": "谢谢!"
+                                       "choice_000": "谢谢!",
+                                       "choice_001": "[跳过] 我们知道要选什么石炉."
                                     },
                                     "glory": {
                                        "bulletin_message": {
@@ -4779,7 +4807,7 @@
                                        "bulletin_title": "梅尔·布利汉德来到了镇上!",
                                        "dialog_title": "梅尔回来了, 还带了客人!",
                                        "choice_000": "哦, 好吧!",
-                                       "choice_001": "我们已经决定了!"
+                                       "choice_001": "[跳过] 我们已经决定了!"
                                     }
                                  }
                               }
@@ -5043,7 +5071,8 @@
                            },
                            "bulletin_title": "一只奇怪的鸟!",
                            "dialog_title": "一只鸟... 信使?",
-                           "choice_000": "拆信"
+                           "choice_000": "拆信",
+                           "choice_001": "[跳过] 我们知道自己需要什么."
                         },
                         "read_letter": {
                            "bulletin_message": {
@@ -6613,6 +6642,300 @@
                      }
                   }
                }
+            },
+            "hestia": {
+               "arcs": {
+                  "trigger": {
+                     "hestia": {
+                        "encounters": {
+                           "dialog_greetings": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "000": "走到城镇旗帜旁, 三个面具人停下了脚步. 他们身上满满的都是神秘色彩. 脸完全被面具遮了起来, 头上戴着兜帽, 手上有手套, 脚[真小!]上穿着靴子.  他们的衣料似乎不属于这个世界, 在日光下闪耀, 随风起舞.  还有 - 最引人注目的是 - 他们每人都戴者一条美丽的金项链, 上面还有块大大的蓝宝石."
+                                       },
+                                       "bulletin_title": "三人在旗帜旁驻足",
+                                       "dialog_title": "三人在旗帜旁驻足",
+                                       "choice_000": "你们是什么人?",
+                                       "choice_001": "[跳过] 我们见过面了..."
+                                    },
+                                    "msg3": {
+                                       "bulletin_message": {
+                                          "000": "戴面具的人互相看了看, 端详着这里的建筑物和衣料.  似乎和我们一样好奇.  最小的一个伸出手来想要摸摸镇上居民的鞋子, 但最高的那个发出'嘶'的一声, 小个子立马往后缩."
+                                       },
+                                       "bulletin_title": "戴面具的人互相望着",
+                                       "dialog_title": "戴面具的人互相望着",
+                                       "choice_000": "(呵呵.)"
+                                    },
+                                    "msg8": {
+                                       "bulletin_message": {
+                                          "000": "艾玛伸进长袖管里掏出一把漂亮的金色皇杖, 上面还有一团魔法火焰装饰着:<p><i>'赫斯提亚, 烁亮明光. 甘露以济. 无索无期... 或有道合, 他日可与交乎?'</i></p>"
+                                       },
+                                       "bulletin_title": "赫斯提亚之光",
+                                       "dialog_title": "赫斯提亚之光",
+                                       "choice_000": "谢谢送我们这份礼物!"
+                                    },
+                                    "msg7": {
+                                       "bulletin_message": {
+                                          "000": "迪兰在丽莉肩膀上搭了个手臂让她安静, 然后自己对周围的炉民说:<p><i>'困苦中的人, 还有很多.  在赫斯提亚, 子嗣们都要四处游历.  戴上面具, 将身份抛弃. 压制黑暗, 带来光明. 从牺牲与献祭, 展示领导的才能.  对弱势和苦难, 伸出帮助的援手.'</i></p>"
+                                       },
+                                       "bulletin_title": "迪兰王子让丽莉冷静下来",
+                                       "dialog_title": "迪兰王子让丽莉冷静下来",
+                                       "choice_000": "光?",
+                                       "choice_001": "来帮忙的吗?"
+                                    },
+                                    "greet_lily": {
+                                       "bulletin_message": {
+                                          "000": "最矮的那个把手举过头顶, 深深地鞠了一躬.  他们的每一个动作, 后面神奇的衣服都会跟着翩翩飘动.  比起人类的嗓音, 他们说起话来更像是吱吱作响的齿轮, 还因为带着面具而又有些许低沉:<p><i>'丽莉.  来自赫斯提亚, 公主, 画家[咯咯笑], 医师, 也是弓箭手.'</i></p>"
+                                       },
+                                       "bulletin_title": "自我介绍: 小不点",
+                                       "dialog_title": "自我介绍: 小不点",
+                                       "choice_000": "很荣幸认识你, 丽莉公主."
+                                    },
+                                    "greet_dylan": {
+                                       "bulletin_message": {
+                                          "000": "体型中等的那位同样抬起手鞠躬.  行动十分迅速利落, 衣服似乎竭力想要跟上他的动作.  其举止让人觉得隐藏着强大的怪力, 与另外两位一样, 一开口便发出了出乎意料的嗓音 - 甚至更为刺耳, 有些破音:<p><i>'迪兰.  来自赫斯提亚, 王子, 诗人, 铁匠, 战士.'</i></p>"
+                                       },
+                                       "bulletin_title": "自我介绍: 中个子",
+                                       "dialog_title": "自我介绍: 中个子",
+                                       "choice_000": "你好, 迪兰王子."
+                                    },
+                                    "rejection": {
+                                       "bulletin_message": {
+                                          "000": "挥了挥下武器, 威胁几下后, 三个面具人转身向其他方向走去了."
+                                       },
+                                       "bulletin_title": "他们离开了",
+                                       "dialog_title": "他们离开了",
+                                       "choice_000": "或许某天会回来吧?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "他们看起来很友好, 用一个奇怪但简单的动作问候着每个走近围观的炉民: 展开双手划一个圈, 然后低头鞠躬合上手."
+                                       },
+                                       "bulletin_title": "三个戴面具的平静地走到城镇旗帜旁",
+                                       "dialog_title": "三个戴面具的人来到了镇上",
+                                       "choice_000": "友好的旅行者?  请进!",
+                                       "choice_001": "不准过来!"
+                                    },
+                                    "msg4": {
+                                       "bulletin_message": {
+                                          "000": "高个子向前一步.  他们手臂像舞蹈般向你们问候, 好像要拥抱所有周围的炉民, 然后开始说话了 - 他们嗓音柔和, 但比身体大小给人的感觉还要高几个八度.<p><i>'圣猕的追随者们, 你们好!  赫斯提亚是我们旅行的起点.  皇族王室是我们血脉的根源.  请允许我们一一介绍自己.'</i></p>"
+                                       },
+                                       "bulletin_title": "高个子开始说话",
+                                       "dialog_title": "高个子开始说话",
+                                       "choice_000": "当然可以..."
+                                    },
+                                    "msg5": {
+                                       "bulletin_message": {
+                                          "000": "艾玛说话的时候, 她看着周围聚上来的镇民的眼睛:<p><i>'繁星指引处, 迢迢千里路. 玉酒琼楼富贵人, 贫病苦痛冻死骨. 一如赫斯提亚贵族所言, 万年不变. 疮痍满...'</i></p>"
+                                       },
+                                       "bulletin_title": "艾玛公主继续说道",
+                                       "dialog_title": "艾玛公主继续说道",
+                                       "choice_000": " ... "
+                                    },
+                                    "msg6": {
+                                       "bulletin_message": {
+                                          "000": "丽莉快步向前, 无法抑制面具背后那即将喷涌而出的激烈感情:<p><i>'疮痍满目! 和你们一样的人!  还有哥布林, 兽人!  绷带药草, 累累伤痕!  还有很伤心的事, 龟甲蜥蜴 - 太可爱了![咯咯笑] 为了让丽莉专心, 迪兰不给养. 放生之前, 把伤治愈. 一摇一摆地爬走, 太可爱了! 丽莉可喜欢...'</i></p>"
+                                       },
+                                       "bulletin_title": "丽莉小公主插话道",
+                                       "dialog_title": "丽莉小公主插话道",
+                                       "choice_000": "我的天...",
+                                       "choice_001": "小姑娘性子还挺急哈?"
+                                    },
+                                    "met_before": {
+                                       "bulletin_message": {
+                                          "000": "<i>啊, 艾玛好似也记得上次与你们的相遇. 世上依然哀鸿遍野, 疮痍满目.  阁下可愿压制黑暗... 接受光明?</i>"
+                                       },
+                                       "bulletin_title": "艾玛向前一步",
+                                       "dialog_title": "艾玛向前一步",
+                                       "choice_000": "好的, 谢谢!"
+                                    },
+                                    "greet_emma": {
+                                       "bulletin_message": {
+                                          "000": "高个子重复着那个姿势, 腰弯得特别低.  尽管体型最大, 她的举止尤其优雅.  他们手臂后面的衣服平稳地浮动着, 好像水中的涟漪:<p><i>'艾玛. 来自赫斯提亚, 公主, 最年长的继承人, 是外交员, 好纺织, 同时也是骑枪兵.'</i></p>"
+                                       },
+                                       "bulletin_title": "自我介绍: 高个子",
+                                       "dialog_title": "自我介绍: 高个子",
+                                       "choice_000": "你好, 艾玛公主.",
+                                       "choice_001": "都欢迎."
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_ends": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "他们完成自己的任务后, 离开了小镇向荒野走去, 可能是去寻找下一个需要帮助的小镇了. 真是一群有意思的人..."
+                                       },
+                                       "bulletin_title": "赫斯提亚人离开了",
+                                       "dialog_title": "赫斯提亚人离开了",
+                                       "choice_000": "祝他们一路平安."
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_continues": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg2": {
+                                       "bulletin_message": {
+                                          "000": "丽莉兴奋地跳着:<p><i>'耶, 哇! 你们的人被打惨了?! 我能帮你们, 丽莉可喜欢治病了!'</i></p>艾玛夸张地做了个手势表示赞成, 丽莉随即冲向镇上寻找受伤了的镇民 - 不论是大病还是小恙."
+                                       },
+                                       "bulletin_title": "丽莉兴奋地跳了起来",
+                                       "dialog_title": "丽莉兴奋地跳了起来",
+                                       "choice_000": "谢谢!"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "艾玛把皇杖插在地上, 慢慢后退, 她的衣服在身后飘舞. 而后她看着周围炉民的脸庞:<p><i>'很好奇, 我们. 想逗留一段时间, 学习交流, 可以吗?'</i></p>"
+                                       },
+                                       "bulletin_title": "艾玛插下了皇杖",
+                                       "dialog_title": "艾玛插下了皇杖",
+                                       "choice_000": "想呆多久呆多久!",
+                                       "choice_001": "你们说, 你们中有个是医师?"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_stickaround": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "最后一次夸张的挥手过后, 艾玛转过身去, 迪兰和丽莉也同样. 背对着小镇, 丽莉说:<p><i>'行不终此, 今当告辞[咯咯笑]. 困苦中的人还有很多, 那是我们要带去光明的地方.'</i></p>"
+                                       },
+                                       "bulletin_title": "三人集合",
+                                       "dialog_title": "三人集合",
+                                       "choice_000": "祝好运!"
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            },
+            "dragonborn_king": {
+               "arcs": {
+                  "trigger": {
+                     "dragonborn_king": {
+                        "encounters": {
+                           "dialog_ask_player_for_help": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "information": {
+                                       "bulletin_message": {
+                                          "000": "我是一个灵魂, 久远时代里早已失势的民族的灵魂. 无数岁月以来我仍滞留在此, 守卫着我们最珍贵的宝物. 但我的力量已经变弱, 而现在更是四面楚歌 - 拜托了, 帮帮我!"
+                                       },
+                                       "bulletin_title": "声音逐渐具像成一个身影",
+                                       "dialog_title": "冰龙弗洛克斯",
+                                       "choice_000": "我们能得到什么好处吗?",
+                                       "choice_001": "四面楚歌?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "拜托了, 帮帮我!  我的城堡被邪恶的亡灵仆从包围了!"
+                                       },
+                                       "bulletin_title": "你们脑海中有一个声音在低语",
+                                       "dialog_title": "阴森的声音",
+                                       "choice_000": "谁? 什么鬼?",
+                                       "choice_001": "哪? 咋帮?",
+                                       "choice_002": "马上来!"
+                                    },
+                                    "theres_no_time_to_explain": {
+                                       "bulletin_message": {
+                                          "000": "没时间了! 亡灵的爪牙在我大门前抓挠, 一旦攻进来我就没有力量保护这座宝库了! 恳求你们, 来帮忙吧!"
+                                       },
+                                       "bulletin_title": "龙裔国王的形象逐渐变弱",
+                                       "dialog_title": "冰龙弗洛克斯",
+                                       "choice_000": "嗯.. 好吧..",
+                                       "choice_001": "我们会出兵的!"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_thank_player_for_help": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "information_howlong": {
+                                       "bulletin_message": {
+                                          "000": "那是很多轮回之前了.. 太多了. 我们宗族早已不复存在, 这副老骨头也好久前就枯朽了. 我的灵魂承担守护龙族的重任也很久了, 久到足以见证许多种族从萌芽到覆灭. 你们族人还是很有意思的, 圣猕的孩子啊, 但我的存在到此为止了."
+                                       },
+                                       "bulletin_title": "龙裔国王叹着气, 低着头",
+                                       "dialog_title": "冰龙弗洛克斯",
+                                       "choice_000": "你在保护什么?",
+                                       "choice_001": "你是谁?",
+                                       "choice_002": "到此为止?"
+                                    },
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "感谢你们前来支援. 这块地我守护了很久, 但我再也不能举剑持盾捍卫它了."
+                                       },
+                                       "bulletin_title": "声音再次说话",
+                                       "dialog_title": "冰龙弗洛克斯",
+                                       "choice_000": "你是谁?",
+                                       "choice_001": "你在保护什么?",
+                                       "choice_002": "你在这多久了?"
+                                    },
+                                    "information_who": {
+                                       "bulletin_message": {
+                                          "000": "我名叫弗洛克斯, 冰龙氏族. 我是个国王, 当然是往事了, 我曾经是龙人的国王, 在一个久远的时代统治着这方土地."
+                                       },
+                                       "bulletin_title": "龙裔国王笑了",
+                                       "dialog_title": "冰龙弗洛克斯",
+                                       "choice_000": "你在这干啥?",
+                                       "choice_001": "你在这多久了?"
+                                    },
+                                    "hatch_and_attach": {
+                                       "bulletin_message": {
+                                          "000": "我一天不如一天了, 但我的所有灵魂都已寄托给这枚伟大龙族的蛋, 这样龙族后代才能有一天被孵化出来. 圣猕的孩子啊, 认识你们时间不长, 但我信任你们会像帮助我一样, 帮助这里的小龙仔的. 愿你们不弃力量与热情, 就像曾经的龙裔一样."
+                                       },
+                                       "bulletin_title": "龙裔国王向他面前的龙蛋里微微吹气",
+                                       "dialog_title": "冰龙弗洛克斯",
+                                       "choice_000": "我们会记得你的, 国王. 一路走好."
+                                    },
+                                    "information_what": {
+                                       "bulletin_message": {
+                                          "000": "保护伟大龙族的血脉是国王的职责 - 即使死亡也要承担的指责. 我的灵力把这块地方藏了起来, 不被任何人感知, 我隐藏地太久了.  眼看我的灵力已经无法再保护这块地方了, 龙族的血脉危在旦夕."
+                                       },
+                                       "bulletin_title": "龙裔的国王骄傲地挺胸",
+                                       "dialog_title": "冰龙弗洛克斯",
+                                       "choice_000": "我们怎么帮助你们的'血脉'呢?",
+                                       "choice_001": "你谁?",
+                                       "choice_002": "你来这多长时间了?"
+                                    }
+                                 }
+                              }
+                           },
+                           "dialog_player_fail": {
+                              "dialog_tree_info": {
+                                 "dialog_nodes": {
+                                    "msg1": {
+                                       "bulletin_message": {
+                                          "000": "我撑不下去了. 宝库沦陷, 和我族最后一丝希望一起破灭. 在沉默中隐藏这么长的时光, 我真是太愚蠢了..."
+                                       },
+                                       "bulletin_title": "声音又来了, 似乎竭尽全力",
+                                       "dialog_title": "阴森的声音",
+                                       "choice_000": "太抱歉了..."
+                                    }
+                                 }
+                              }
+                           },
+                           "spawn_enemy_entities": {
+                              "mission": {
+                                 "sighted_bulletin": {
+                                    "title": "亡灵! 快保护好大门!"
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
             }
          }
       },
@@ -7001,6 +7324,12 @@
                "display_name": "食肉动物",
                "description": "这只宠物只吃肉."
             }
+         },
+         "teleportation_sickness": {
+            "teleportation_sickness_buff": {
+               "display_name": "传送冷却",
+               "description": "传送对心灵打击很大, 需要等一段时间才能再次传送."
+            }
          }
       },
       "build": {
@@ -7283,11 +7612,6 @@
             "description": "生成下一波敌人来获得更多荣誉.",
             "disabled_description": "你家门口暂时没敌人了.",
             "glory_level_achieved_bulletin": "荣誉等级达成: 等级[str(i18n_data.glory_level)]!"
-         },
-         "teleport": {
-            "display_name": "传送",
-            "description": "炉民受困? 使用紧急传送力量吧. 一天一次!",
-            "disabled_description": "今天已经使用过紧急传送力量了. 明天再用吧!"
          },
          "undeploy_item": {
             "display_name": "取消放置",
@@ -8307,6 +8631,12 @@
                "display_name": "泰坦 妖蛆",
                "description": "邪恶. 饕餮."
             }
+         },
+         "undead": {
+            "skeleton_giants": {
+               "display_name": "巨型骷髅",
+               "description": "它们巨大骨头发出的'格格'声足以让所有人战栗!"
+            }
          }
       },
       "saved_objects": {
@@ -8347,6 +8677,9 @@
             },
             "blacksmith_house": {
                "display_name": "铁匠铺"
+            },
+            "weaver_house": {
+               "display_name": "纺织屋"
             }
          }
       },
@@ -8619,7 +8952,13 @@
                "display_name": "风暴追逐",
                "description": "雷暴, 沙暴, 暴雪, [name(i18n_data.entity)]全部都要!"
             }
-          }
+         },
+         "hestian": {
+            "hestian_trait": {
+               "display_name": "赫斯提亚人",
+               "description": "这人来自于一个叫赫斯提亚的遥远国度. 他们知道什么秘密吗?"
+            }
+         }
       },
       "happiness": {
          "thoughts": {
@@ -13012,11 +13351,11 @@
             },
             "entling": {
                "display_name": "树灵",
-               "description": "统治着森林."
+               "description": "森林里的仆从."
             },
             "entling_mage": {
                "display_name": "树灵法师",
-               "description": "统治着森林"
+               "description": "森林里的仆从"
             },
             "stone_golem": {
                "display_name": "石魔像",
@@ -13361,6 +13700,10 @@
                "dragon_nature_egg_fertilized_ghost": {
                   "display_name": "自然龙蛋",
                   "description": "十分神秘!  得放在安全又温暖的地方..."
+               },
+               "dragon_copper_egg_fertilized_ghost": {
+                  "display_name": "古铜色的龙蛋",
+                  "description": "如此神秘!  或许国王能孵化他..."
                }
             }
          },
@@ -13368,6 +13711,10 @@
             "display_name": "冰结幼龙",
             "description": "一条幼龙, 冷藏食物的利器.  这种龙特别喜欢冷藏的肉食.",
             "species": "龙"
+         },
+         "dragon_whelp_copper": {
+            "display_name": "古铜幼龙",
+            "description": "给小镇添了点光.  这种龙喜欢吃肉."
          }
       },
       "plants": {
@@ -14957,7 +15304,7 @@
                   "description": "橡树幼树"
                },
                "sapling_oak_tree_iconic": {
-                  "description": "植物生长在地球上,慢慢看着它成长."
+                  "description": "种下去, 看着它慢慢长大."
                }
             },
             "stem": {
@@ -15057,7 +15404,7 @@
          },
          "giant_bone_axe": {
             "display_name": "巨骨斧",
-            "description": "用一些巨大野兽的锁骨雕刻而成.(双持)",
+            "description": "用一些巨大野兽的锁骨雕刻而成.(双手武器)",
             "giant_bone_axe_iconic": {
                "display_name": "巨骨斧",
                "description": "用一些巨大野兽的锁骨雕刻而成."
@@ -15065,7 +15412,7 @@
          },
          "giant_bone_mace": {
             "display_name": "巨骨锤",
-            "description": "非常重, 适合用来猛击.(双持)",
+            "description": "非常重, 适合用来猛击.(双手武器)",
             "giant_bone_mace_iconic": {
                "display_name": "巨骨锤",
                "description": "照脸招呼"
@@ -15081,7 +15428,7 @@
          },
          "iron_pike": {
             "display_name": "铁矛",
-            "description": "很锋利.长长的.尖尖的.(双持)",
+            "description": "很锋利.长长的.尖尖的.(双手武器)",
             "iron_pike_iconic": {
                "display_name": "铁矛",
                "description": "很锋利,长长的,尖尖的."
@@ -15129,7 +15476,7 @@
          },
          "two_handed_sword": {
             "display_name": "双手剑",
-            "description": "七尺长剑双手握, 两倍责任肩头落.(双持)",
+            "description": "七尺长剑双手握, 两倍责任肩头落.(双手武器)",
             "two_handed_sword_iconic": {
                "display_name": "双手剑",
                "description": "七尺长剑双手握, 两倍责任肩头落."
@@ -15177,7 +15524,7 @@
          },
          "ogos_bone_mace": {
             "display_name": "骷髅棒槌",
-            "description": "由 奥戈·斯伽尔邦克 亲自设计 (双持)",
+            "description": "由 奥戈·斯伽尔邦克 亲自设计 (双手武器)",
             "ogos_bone_mace_iconic": {
                "display_name": "骷髅棒槌",
                "description": "奥戈·斯伽尔邦克 的前财产"
@@ -15214,6 +15561,12 @@
          "corruption_beam": {
             "display_name": "腐化光线",
             "description": "隐形的武器可以让你瞬间置身腐化之中"
+         },
+         "maul_lantern": {
+            "maul_lantern_iconic": {
+               "display_name": "圣灯权杖",
+               "description": "挥起赫斯提亚的圣光来保卫你的家园吧."
+            }
          }
       },
       "consumables": {
@@ -15460,6 +15813,26 @@
                   "display_name": "捷足飒沙",
                   "description": "来自珀石部落的使节"
                }
+            }
+         },
+         "dragonborn": {
+            "dragonborn_king": {
+               "display_name": "冰龙弗洛克斯",
+               "description": "龙裔国王"
+            }
+         },
+         "hestia": {
+            "hestia_dylan": {
+               "display_name": "迪兰王子",
+               "description": "和蔼可亲的赫斯提亚皇室"
+            },
+            "hestia_lily": {
+               "display_name": "丽莉公主",
+               "description": "谜一般的赫斯提亚皇室"
+            },
+            "hestia_emma": {
+               "display_name": "艾玛公主",
+               "description": "神妙莫测的赫斯提亚皇室"
             }
          }
       },
@@ -17112,6 +17485,18 @@
             "spear_horn_buff": {
                "display_name": "猎人意志",
                "description": "意志力提升20%"
+            },
+            "maul_lantern_buff": {
+               "display_name": "赫斯提亚的馈赠",
+               "description": "提升勇气, 回复生命值"
+            },
+            "lonelyness_buff": {
+               "display_name": "孤独增加",
+               "description": "增加孤独"
+            },
+            "hestia_greetings_buff": {
+               "display_name": "赫斯提亚交谈",
+               "description": "与赫斯提亚人交流"
             }
          },
          "footman_outfit": {
@@ -18400,6 +18785,7 @@
                "recipe_name": "毛茸茸的玩具兔兔",
                "flavor": "她爱你!"
             },
+            "weapons_name": "武器",
             "clothing_armor_name": "衣服&护甲",
             "toys_name": "玩具",
             "storage_name": "存储用具",
@@ -18555,7 +18941,7 @@
          },
          "winter_worker_outfit": {
             "display_name": "冬季工人服",
-            "description": "沉重的羊毛外套.度过寒冷的冬天夜晚.",
+            "description": "沉重的羊毛外套.度过寒冷的冬天夜晚. 提升速度.",
             "winter_worker_outfit_iconic": {
                "display_name": "冬季工人服",
                "description": "好温暖..."
@@ -18567,7 +18953,7 @@
          },
          "worker_outfit_2": {
             "display_name": "高级工人服",
-            "description": "加强工人的工作效率!",
+            "description": "加强工人的工作效率! 提升速度",
             "worker_outfit_2_iconic": {
                "display_name": "高级工人服",
                "description": "编织牢固耐穿增加工人的效率"
