@@ -721,7 +721,8 @@
                            },
                            "bulletin_title": "奈瑞椰走了过来, 没带上商队",
                            "dialog_title": "正式访问",
-                           "choice_000": "谢谢!"
+                           "choice_000": "谢谢!",
+                           "choice_001": "[跳过] 我们知道想要什么."
                         }
                      }
                   }
@@ -894,7 +895,7 @@
                            "bulletin_title": "爱蜜莉雅·伊斯坎德尔到来了!",
                            "dialog_title": "爱蜜莉雅来了, 还带了客人!",
                            "choice_000": "哦, 好的!",
-                           "choice_001": "我们已经有决定了!"
+                           "choice_001": "[跳过] 我们已经有决定了!"
                         },
                         "clergy": {
                            "bulletin_message": {
@@ -1049,7 +1050,8 @@
                            },
                            "bulletin_title": "一只耳廓狐跑了过来",
                            "dialog_title": "一只狐狸... 信使?",
-                           "choice_000": "打开背包"
+                           "choice_000": "打开背包",
+                           "choice_001": "[跳过] 我们知道要什么旗帜."
                         },
                         "read_letter": {
                            "bulletin_message": {
