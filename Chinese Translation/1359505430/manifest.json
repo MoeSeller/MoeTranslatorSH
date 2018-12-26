@@ -35,6 +35,7 @@
     "floating_physics/locales/zh-CN.json": "file(translations/mods/floating_physics/zh-CN.json)",
     "yangessential/locales/zh-CN.json": "file(translations/mods/yangessential/zh-CN.json)",
     "armis_maximus/locales/zh-CN.json": "file(translations/mods/armis_maximus/zh-CN.json)",
+    "stonehearth_ace/locales/zh-CN.json": "file(translations/mods/stonehearth_ace/zh-CN.json)",
 
 
     "stonehearth/ui/game/unit_frame/unit_frame.less" : "file(ui/less/unit_frame.less)",
