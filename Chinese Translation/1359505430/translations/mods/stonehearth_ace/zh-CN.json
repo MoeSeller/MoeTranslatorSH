@@ -90,7 +90,7 @@
                         },
                         "drink_shop_1": {
                            "shop_info": {
-                              "name": "优堡蓝酿业",
+                              "name": "优堡蓝酿造",
                               "title": "载着饮料美酒的商队在周围安营扎寨"
                            }
                         },
@@ -146,130 +146,130 @@
                         },
                         "bonecarver_shop_2": {
                            "shop_info": {
-                              "name": "Atikin the 骨Carver",
-                              "title": "A survivalist hermit arrives with bone trinkets and items to sell"
+                              "name": "骨雕师阿提金",
+                              "title": "一位野外经验丰富的隐士带着骨器前来出售"
                            }
                         },
                         "charcoal_shop_2": {
                            "shop_info": {
-                              "name": "Orim Lake Charcoal Burners",
-                              "title": "A group of charcoal burners is in town for business"
+                              "name": "欧润姆湖炭业",
+                              "title": "一群烧炭的来镇上做生意"
                            }
                         },
                         "drink_shop_2": {
                            "shop_info": {
-                              "name": "The Thoto Brewery",
-                              "title": "A northerner brewer has arrived with drinks for sale"
+                              "name": "壶图酿业",
+                              "title": "一位北方的酿造师来卖东西了"
                            }
                         },
                         "training_shop_2": {
                            "shop_info": {
-                              "name": "The Military Academy",
-                              "title": "A representative of the military academy is in town"
+                              "name": "军事学院",
+                              "title": "一位军校代表来到了镇上"
                            }
                         },
                         "engineering_shop_2": {
                            "shop_info": {
-                              "name": "Barzak Cobaltfist's Workshop",
-                              "title": "An engineer from the mountain folk is camping nearby"
+                              "name": "巴札克·科博费的商店",
+                              "title": "一位来自山脉高原的工程师来到附近做生意"
                            }
                         },
                         "forager_shop_2": {
                            "shop_info": {
-                              "name": "The Rangers' Guild",
-                              "title": "Members of a guild of rangers are passing by selling foraging goods"
+                              "name": "护林员工会",
+                              "title": "护林员工会的会员们来此售卖丛林里的野味"
                            }
                         },
                         "fishing_shop_2": {
                            "shop_info": {
-                              "name": "'Smells Fishy Fishery'",
-                              "title": "Traders from a large fishing business have arrived with wares"
+                              "name": "'鱼味杂渔'",
+                              "title": "来自一个大渔镇的渔夫们带着货物来到镇上"
                            }
                         },
                         "quarry_shop_2": {
                            "shop_info": {
-                              "name": "Big Chunk Quarry & Co.",
-                              "title": "A big company of masons and miners is in town for business"
+                              "name": "大块头采石公司",
+                              "title": "一家大公司的石匠与矿工来镇上做生意"
                            }
                         },
                         "rc_weapon_armor_shop_2": {
                            "shop_info": {
-                              "name": "拉金's Finest Blade",
-                              "title": "The desert smith 拉金 has come with some of his finest wares"
+                              "name": "拉金的精工刀刃店",
+                              "title": "沙漠铁匠拉金带着他最好的刀具来了"
                            }
                         },
                         "na_weapon_armor_shop_2": {
                            "shop_info": {
-                              "name": "The Wolfbite Forge",
-                              "title": "A smith from the 北地 Alliance is available for bartering"
+                              "name": "狼口铁匠铺",
+                              "title": "一位北方的铁匠带着武器护甲前来换售"
                            }
                         }
                      },
                      "tier_3_shops": {
                         "blacksmith_shop_3": {
                            "shop_info": {
-                              "name": "The Mightiest Hammer",
-                              "title": "A famous blacksmith's caravan has arrived and wants to trade"
+                              "name": "强锤商贾",
+                              "title": "远近闻名的铁匠商队来到镇上想做几笔生意"
                            }
                         },
                         "bonecarver_shop_3": {
                            "shop_info": {
-                              "name": "Kita's Rattle & Rib Shop",
-                              "title": "A renowned bone carver is visiting and willing to trade"
+                              "name": "姬塔的哐啷骨器店",
+                              "title": "一位知名骨雕师来访交易"
                            }
                         },
                         "charcoal_shop_3": {
                            "shop_info": {
-                              "name": "Seaside Charcoal Burners",
-                              "title": "A large caravan of charcoal burners is camping nearby"
+                              "name": "海湾炭业",
+                              "title": "一支大型卖炭商队在附近扎寨"
                            }
                         },
                         "drink_shop_3": {
                            "shop_info": {
-                              "name": "The Wulfkin Meadery",
-                              "title": "A popular brand of drinks and beverages has sent us a trader"
+                              "name": "霍夫金家族酿业",
+                              "title": "一家有名的饮料品牌店派来了一位商人"
                            }
                         },
                         "training_shop_3": {
                            "shop_info": {
-                              "name": "Hadrian's School of Chivalry",
-                              "title": "The Knight Hadrian has arrived with training ware for sale"
+                              "name": "海德连骑士军官学院",
+                              "title": "骑士海德连前来售卖训练器材"
                            }
                         },
                         "engineering_shop_3": {
                            "shop_info": {
-                              "name": "Wrynn's Wonderful Wares",
-                              "title": "A famous dwarven artificer is in town with wares to sell"
+                              "name": "莱茵特色百货",
+                              "title": "一位知名的矮人工艺师来镇上售卖"
                            }
                         },
                         "forager_shop_3": {
                            "shop_info": {
-                              "name": "Elven Caravan",
-                              "title": "Elves! A group of woodland rangers is camped nearby and wants to trade"
+                              "name": "精灵商队",
+                              "title": "小精灵! 一队丛林里来的护林员在附近安营扎寨做生意"
                            }
                         },
                         "fishing_shop_3": {
                            "shop_info": {
-                              "name": "Bruno the Fisher's Shop",
-                              "title": "A famous fisherman is in town with many exotic wares to sell"
+                              "name": "布鲁诺的鱼店",
+                              "title": "一位著名的渔夫带着异域的水产前来售卖"
                            }
                         },
                         "quarry_shop_3": {
                            "shop_info": {
-                              "name": "Jonar Hillcrown's Quarry",
-                              "title": "A bunch of dwarven miners from Hillcrown are in town for business"
+                              "name": "乔纳西科朗采石场",
+                              "title": "一群来自西科朗地区的矮人来到了镇上做生意"
                            }
                         },
                         "rc_weapon_armor_shop_3": {
                            "shop_info": {
-                              "name": "Thali Pandora's Blacksmith Shop",
-                              "title": "A famous desert smith has arrived with her almost legendary wares"
+                              "name": "塔莉·潘多拉的铁匠商店",
+                              "title": "一位著名的沙漠铁匠带着她传说一般的商品前来售卖"
                            }
                         },
                         "na_weapon_armor_shop_3": {
                            "shop_info": {
-                              "name": "Novgnar 银fist's Shop",
-                              "title": "The legendary northern smith Novgnar is in town with goods to sell"
+                              "name": "诺夫戈纳·西弗费的商店",
+                              "title": "传说级别的北方铁匠前来出售商品"
                            }
                         }
                      }
@@ -3370,10 +3370,10 @@
             "display_name": "青铜链甲"
          },
          "na_bronze_helm": {
-            "display_name": "北地青铜盔"
+            "display_name": "极地青铜盔"
          },
          "na_cloth_padded_helmet": {
-            "display_name": "北地棉帽"
+            "display_name": "极地棉帽"
          },
          "na_cloth_padded_vest": {
             "display_name": "棉铠甲"
@@ -3388,22 +3388,22 @@
             "display_name": "嵌铁皮甲"
          },
          "na_iron_helmet": {
-            "display_name": "北地铁盔甲"
+            "display_name": "极地铁盔甲"
          },
          "na_iron_mail": {
             "display_name": "铁链甲"
          },
          "na_iron_helm": {
-            "display_name": "北地铁盔"
+            "display_name": "极地铁盔"
          },
          "na_steel_chainmail": {
             "display_name": "钢链甲"
          },
          "na_steel_helm": {
-            "display_name": "北地钢盔"
+            "display_name": "极地钢盔"
          },
          "na_steel_helmet": {
-            "display_name": "北地钢盔甲"
+            "display_name": "极地钢盔甲"
          },
          "na_steel_mail": {
             "display_name": "嵌钢皮甲"
@@ -3412,34 +3412,34 @@
             "display_name": "嵌银皮甲"
          },
          "na_silver_helmet": {
-            "display_name": "北地银盔甲"
+            "display_name": "极地银盔甲"
          },
          "na_bronze_circlet": {
-            "display_name": "北地青铜镯子"
+            "display_name": "极地青铜镯子"
          },
          "na_iron_circlet": {
-            "display_name": "北地铁镯子"
+            "display_name": "极地铁镯子"
          },
          "na_steel_circlet": {
-            "display_name": "北地钢镯子"
+            "display_name": "极地钢镯子"
          },
          "na_bronze_shield": {
-            "display_name": "青铜北地盾"
+            "display_name": "极地青铜盾"
          },
          "na_iron_shield": {
-            "display_name": "北地重铁盾"
+            "display_name": "极地重铁盾"
          },
          "na_light_iron_shield": {
-            "display_name": "北地铁盾"
+            "display_name": "极地铁盾"
          },
          "na_light_steel_shield": {
-            "display_name": "北地钢盾"
+            "display_name": "极地钢盾"
          },
          "na_silver_shield": {
-            "display_name": "北地重银盾"
+            "display_name": "极地重银盾"
          },
          "na_steel_shield": {
-            "display_name": "北地重钢盾"
+            "display_name": "极地重钢盾"
          },
          "light_giant_bone_shield": {
             "display_name": "巨骨轻盾",
@@ -3552,7 +3552,7 @@
          },
          "rc_bronze_hatchet": {
             "display_name": "大漠青铜短斧",
-            "recipe_name": "副手装备的大漠青铜短斧"
+            "recipe_name": "大漠副手青铜短斧"
          },
          "rc_bronze_mace": {
             "display_name": "大漠青铜槌"
@@ -3574,7 +3574,7 @@
          },
          "rc_iron_hatchet": {
             "display_name": "大漠铁短斧",
-            "recipe_name": "副手装备的大漠铁短斧"
+            "recipe_name": "大漠副手铁短斧"
          },
          "rc_iron_pike": {
             "display_name": "铁战叉"
@@ -3614,7 +3614,7 @@
          },
          "rc_steel_dagger": {
             "display_name": "大漠钢匕首",
-            "recipe_name": "副手装备的大漠钢匕首"
+            "recipe_name": "大漠副手钢匕首"
          },
          "rc_steel_lance": {
             "display_name": "钢三叉戟"
@@ -3629,17 +3629,17 @@
             "display_name": "大漠铁槌"
          },
          "na_bow": {
-            "display_name": "北地弓"
+            "display_name": "极地弓"
          },
          "na_bronze_axe": {
-            "display_name": "北地青铜斧"
+            "display_name": "极地青铜斧"
          },
          "na_bronze_crossbow": {
-            "display_name": "北地青铜弩"
+            "display_name": "极地青铜弩"
          },
          "na_bronze_hatchet": {
-            "display_name": "北地青铜短斧",
-            "recipe_name": "副手装备的北地青铜短斧"
+            "display_name": "极地青铜短斧",
+            "recipe_name": "极地副手青铜短斧"
          },
          "na_bronze_mace": {
             "display_name": "青铜战锤"
@@ -3648,66 +3648,66 @@
             "display_name": "青铜宽剑"
          },
          "na_composite_bow": {
-            "display_name": "北地复合弓"
+            "display_name": "极地复合弓"
          },
          "na_crossbow": {
-            "display_name": "北地弩"
+            "display_name": "极地弩"
          },
          "na_iron_axe": {
-            "display_name": "北地铁斧"
+            "display_name": "极地铁斧"
          },
          "na_iron_battle_axe": {
-            "display_name": "北地铁战斧"
+            "display_name": "极地铁战斧"
          },
          "na_iron_hatchet": {
-            "display_name": "北地铁短斧",
-            "recipe_name": "副手装备的北地铁短斧"
+            "display_name": "极地铁短斧",
+            "recipe_name": "极地副手铁短斧"
          },
          "na_iron_mace": {
             "display_name": "铁战锤"
          },
          "na_iron_pike": {
-            "display_name": "北地铁矛"
+            "display_name": "极地铁矛"
          },
          "na_iron_short_sword": {
-            "display_name": "北地铁短剑"
+            "display_name": "极地铁短剑"
          },
          "na_iron_sword": {
             "display_name": "铁宽剑"
          },
          "na_long_bow": {
-            "display_name": "北地长弓"
+            "display_name": "极地长弓"
          },
          "na_long_sword": {
             "display_name": "宽剑"
          },
          "na_recurve_bow": {
-            "display_name": "北地反曲弓"
+            "display_name": "极地反曲弓"
          },
          "na_short_sword": {
-            "display_name": "北地短剑"
+            "display_name": "极地短剑"
          },
          "na_silver_halberd": {
-            "display_name": "北地银斩矛"
+            "display_name": "极地银斩矛"
          },
          "na_silver_mace": {
             "display_name": "银战锤"
          },
          "na_silver_short_sword": {
-            "display_name": "北地银短剑"
+            "display_name": "极地银短剑"
          },
          "na_steel_axe": {
-            "display_name": "北地钢斧"
+            "display_name": "极地钢斧"
          },
          "na_steel_crossbow": {
-            "display_name": "北地钢弩"
+            "display_name": "极地钢弩"
          },
          "na_steel_dagger": {
-            "display_name": "北地钢刃匕",
-            "recipe_name": "副手装备的北地钢刃匕"
+            "display_name": "极地钢刃匕",
+            "recipe_name": "极地副手钢刃匕"
          },
          "na_steel_lance": {
-            "display_name": "北地钢矛"
+            "display_name": "极地钢矛"
          },
          "na_steel_mace": {
             "display_name": "钢战锤"
@@ -3905,7 +3905,7 @@
          },
          "fish_salmon": {
             "display_name": "极北鲑",
-            "description": "北地苔原特有的美味的鱼类.",
+            "description": "极地苔原特有的美味的鱼类.",
             "iconic": {
                "display_name": "被抓的极北鲑",
                "description": "活不过几天, 最好找个地方放生了!"
