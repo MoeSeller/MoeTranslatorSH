@@ -35,6 +35,14 @@
       }
    }
 
+   &.ace_enabled {
+      #currentSplash, #lastSplash {
+         background-image: url(./images/stonehearth_ace_foreground.png) !important;
+         background-size: contain !important;
+         background-position: bottom left !important;
+      }
+   }
+
    #splashContainer {
       position: absolute;
       top: 0;
@@ -91,6 +99,18 @@
       top: 60px;
       right: 100px;
       content: url(./images/stonehearth_logo.png);
+   }
+
+   .lightBlueButton {
+      .borderImageBackground;
+      .outlined(#000) !important;
+      background-image: url(images/button_light_blue.png);
+      border-image: url(images/button_light_blue.png) 8 8 14 8 repeat;
+      border-style: solid;
+      font-family: @controlFontFamily;
+      margin: 0px;
+      color: white;
+      text-align: center;
    }
 
    #about {
@@ -225,7 +245,7 @@
             max-width: inherit;
             overflow: hidden;
             text-align: center;
-            font-family: @baseFontFamily;
+            font-family: 'AutourOneRegular', Microsoft YaHei;//default
             padding-top: 15px;
             padding-bottom: 10px;
          }
@@ -241,6 +261,38 @@
 
       #quickStartButton {
          display: none;
+      }
+
+
+      #aceButton {
+         .lightBlueButton;
+         width: 228px;
+         display: inline-flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+
+         #aceCheck {
+            margin-right: 10px;
+            width: 31px;
+            height: 31px;
+            opacity: 1;
+            background-image: url(images/checkbox.png);
+            background-size: cover;
+
+            &.checked {
+               background-image: url(images/checkbox_checked.png);
+            }
+         }
+
+         &.hidden {
+            display: none;
+         }
+      }
+
+      #modsButton.aceActive {
+         display: inline-block;
+         width: 465px;
       }
 
       #aboutButton, #settingsButton, #exitButton {
