@@ -27,7 +27,7 @@
 				"description": "可以采集木头和里面的黄金."
 			},
 			"oyster": {
-				"display_name": "贝",
+				"display_name": "牡蛎",
 				"description": "珍珠的家.",
 				"unripe_description": "只有两片空壳."
 			},
@@ -353,6 +353,15 @@
 				"description": "吸引螃蟹然后抓住它们."
 			}
 		},
+		"humans": {
+			"anya": {
+				"display_name": "安雅"
+			},
+			"captain_miranda": {
+				"display_name": "米兰达船长",
+				"description": "大海是她的家乡"
+			}
+		},
 		"landmark":{
 			"summon_stone_block_sand": {
 				"display_name": "沙地地块石",
@@ -383,6 +392,15 @@
 			"octopus": {
 				"display_name": "章鱼怪",
 				"description": "手臂, 多到你数不过来"
+			},
+			"oyster": {
+				"display_name": "牡蛎怪",
+				"description": "背着硬壳的愤怒大牡蛎"
+			}
+		},
+		"outfit": {
+			"visitor_outfit": {
+				"description": "来自另一个岛屿的工作装"
 			}
 		},
 		"plants": {
@@ -578,20 +596,6 @@
 				"display_name": "咸鱼箭失",
 				"description": "飞鱼骑脸, 对面谁敢上."
 			}
-		},
-		"humans": {
-			"anya": {
-				"display_name": "安雅"
-			},
-			"captain_miranda": {
-				"display_name": "米兰达船长",
-				"description": "大海是她的家乡"
-			}
-		},
-		"outfit": {
-			"visitor_outfit": {
-				"description": "来自另一个岛屿的工作装"
-			}
 		}
 	},
 	"jobs": {
@@ -605,7 +609,7 @@
 		},
 		"cook": {
 			"recipes": {
-				"tropical_recipes_name": "热带菜系"
+				"tropical_recipes_name": "海鲜与热带菜系"
 			}
 		},
 		"fisher": {
@@ -637,6 +641,11 @@
 			"fisher_rod": {
 				"display_name": "鱼竿",
 				"description": "长长的, 弹性十足的竿子, 可以用来捕鱼"
+			},
+			"fisher_workbench": {
+				"display_name": "工作台",
+				"description": "渔民能在这里做点事儿",
+				"flavor": "别碰渔具"
 			},
 			"fisher_firepit": {
 				"display_name": "烤架",
@@ -744,6 +753,8 @@
 				"building_templates": {
 					"template_names": {
 						"fisher_hut": "渔棚",
+						"fisher_hut_rayya": "渔棚 (瑞亚)",
+						"fisher_hut_north": "渔棚 (北方)",
 						"shaded_hammock": "阴凉吊床",
 						"beach_tower": "沙滩瞭望塔",
 						"little_pier": "小码头",
@@ -782,8 +793,7 @@
 			"select_settlement": {
 				"terrain_codes": {
 					"water": "大洋",
-					"plains_2": "沙滩",
-					"foothills_1": "平原"
+					"plains_2": "沙滩"
 				}
 			}
 		}
@@ -847,6 +857,9 @@
 			"forest": {
 				"insane_octopus": {
 					"description": "小章鱼常常会在聚在它们周围."
+				},
+				"insane_oyster": {
+					"description": "小牡蛎常常会在聚在它们周围."
 				}
 			}
 		},
@@ -878,7 +891,9 @@
 						"miranda_before_selling_clay": {
 							"title": "黏土超重",
 							"message_start": "我和一位瑞娅商人做了笔交易. 你知道他们手头总是有超多的粘土吗? 超便宜! 完全拒绝不了, 不过现在我买太多了!",
-							"message_convincing": "太重了, 我的船都开不动了! 你说什么? 我能卖些给你嘛? 我觉得你们会需要的, 因为这种地方能挖的地也不是很多..."
+							"message_convincing": "太重了, 我的船都开不动了! 你说什么? 我能卖些给你嘛? 我觉得你们会需要的, 因为这种地方能挖的地也不是很多...",
+
+							"rc_message_start": "我又换了个瑞娅商人做了笔生意. 你也知道粘土太重要了, 不是吗? 完全停不下来, 然后又买多了!"
 						},
 						"miranda_clay_shop": "米兰达船长的过剩粘土",
 						"miranda_notice_a_lost_crate": {
