@@ -1,0 +1,12 @@
+{
+	"ui": {
+		"shell": {
+			"select_settlement": {
+				"world_size": "世界大小:",
+				"small": "小型",
+				"normal": "普通",
+				"large": "大型"
+			}
+		}
+	}
+}
