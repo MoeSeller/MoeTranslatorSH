@@ -38,6 +38,16 @@
     "stonehearth_ace/locales/zh-CN.json": "file(translations/mods/stonehearth_ace/zh-CN.json)",
 
 
+    "giant_map/locales/zh-CN.json": "file(translations/mods/giant_map/zh-CN.json)",
+    "balista/locales/zh-CN.json": "file(translations/mods/balista/zh-CN.json)",
+    "primitive_armory/locales/zh-CN.json": "file(translations/mods/primitive_armory/zh-CN.json)",
+    "glassworks/locales/zh-CN.json": "file(translations/mods/glassworks/zh-CN.json)",
+    "trapper_plus/locales/zh-CN.json": "file(translations/mods/trapper_plus/zh-CN.json)",
+    "norsehearth/locales/zh-CN.json": "file(translations/mods/norsehearth/zh-CN.json)",
+    "fortify/locales/zh-CN.json": "file(translations/mods/fortify/zh-CN.json)",
+    "homesweethome/locales/zh-CN.json": "file(translations/mods/homesweethome/zh-CN.json)",
+
+
     "stonehearth/ui/game/unit_frame/unit_frame.less" : "file(ui/less/unit_frame.less)",
     "stonehearth/ui/game/citizens/citizens.less" : "file(ui/less/citizens.less)",
     "stonehearth/ui/shell/title/title.less" : "file(ui/less/title.less)",
