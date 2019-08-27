@@ -47,7 +47,24 @@
 			"enable_egg_spot":{
 				"display_name":"生蛋",
 				"description":"叫一名哥布林来生个蛋",
-				"disabled_description":"已占用",
+				"disabled_description":"已占用"
+			},
+			"goblinpedia":{
+				"display_name":"打开哥布林百科",
+				"description":"点击阅读"
+			}
+		},
+		"gm":{
+			"campaigns":{
+				"town_progression":{
+					"trigger":{
+						"before_chosing_banner":{
+							"title":"时机正好",
+							"dialog_title":"时机正好",
+							"message":"不用再等待了, 萨满准备就绪了, 我们随时等候差遣.<br>来选择旗帜吧."
+						}
+					}
+				}
 			}
 		},
 		"loadouts": {
@@ -71,6 +88,13 @@
 							"tooltip": "噫! 我不要走进这种泥浆里啊."
 						}
 					}
+				}
+			}
+		},
+		"monster_tuning":{
+			"forest":{
+				"insane_bear":{
+					"description":"熊出没 请注意"
 				}
 			}
 		},
@@ -182,6 +206,20 @@
 			}
 		},
 		"construction": {
+			"goblin_barricade": {
+				"display_name": "双路障",
+				"description": "让路更堵",
+				"flavor":"原始双倍长的围栏"
+			},
+			"goblin_barricade_single": {
+				"display_name": "路障",
+				"description": "堵路用",
+				"flavor":"原始围栏"
+			},
+			"curtains_door": {
+				"display_name": "挂帘门",
+				"description": "大门. 挺好看的."
+			},
 			"wooden_door": {
 				"display_name": "木门",
 				"description": "开个口子"
@@ -207,7 +245,7 @@
 		},
 		"containers":{
 			"chest":{
-				"display_name": "编织箱子",
+				"display_name": "木制箱子",
 				"description": "能储存24件物品"
 			}
 		},
@@ -219,6 +257,26 @@
 			}
 		},
 		"decoration": {
+			"big_firefly_essense": {
+				"display_name": "大号流萤精华",
+				"description": "等于8小瓶流萤精华. 在黑暗中闪耀",
+				"flavor": "能使用采集重新获得8小瓶流萤精华"
+			},
+			"certificate": {
+				"display_name": "哥布林证书",
+				"description": "在某件事上干得漂亮的证明",
+				"flavor": "可以是发给转职的, 或者赢了吐口水比赛的, 随便什么事"
+			},
+			"fiber_rug": {
+				"display_name": "粗布料",
+				"description": "手工编紧的纤维束, 可以直接光脚踩在上面.",
+				"flavor": "用后易清洗."
+			},
+			"hourglass": {
+				"display_name": "巨大沙漏",
+				"description": "内装沙子的. 形状滑稽的玻璃制品, 沙子从一端流向另一端",
+				"flavor": "还没轮到我去翻呢!"
+			},
 			"large_candle": {
 				"display_name": "大蜡烛",
 				"description": "高又大的蜡烛"
@@ -229,10 +287,35 @@
 			},
 			"wall_candle": {
 				"display_name": "墙烛",
-				"description": "Small candle hangable in walls"
+				"description": "能挂在墙上的小蜡烛"
+			},
+			"goblin_large_totem": {
+				"display_name": "流萤大图腾",
+				"description": "纪念性的图腾, 像极了部落里的某个人",
+				"flavor": "别担心, 不是真颅骨做的, 白漆而已"
+			},
+			"goblin_small_totem": {
+				"display_name": "流萤小图腾",
+				"description": "纪念性的图腾, 像极了部落里的某个人",
+				"flavor": "别担心, 不是真颅骨做的, 白漆而已"
 			},
 			"goblin_market_stall": {
 				"display_name": "流萤露天商店"
+			},
+			"pole_banner": {
+				"display_name": "高杆旗",
+				"description": "印着部落颜色的旗,高高挂起, 让每个人都看到",
+				"flavor": "战斗单位会巡逻经过此地"
+			},
+			"potted_cattail": {
+				"display_name": "罐栽香蒲",
+				"description": "沼泽地里的自然植物, 现在是你家里的了",
+				"flavor": "嘿, 我不在的时候能帮浇下水吗?"
+			},
+			"potted_giple": {
+				"display_name": "罐栽大芽化",
+				"description": "沼泽地里的自然植物, 现在是你家里的了",
+				"flavor": "嘿, 我不在的时候能帮浇下水吗?"
 			},
 			"sign": {
 				"goblin": {
@@ -276,6 +359,10 @@
 				"display_name": "风铃",
 				"description": "令人惬意的欢乐音符",
 				"flavor": "若风向改变, 演奏出的又是另一首旋律"
+			},
+			"window_box_wood": {
+				"display_name": "盆栽箱",
+				"description": "植物的干净的家."
 			}
 		},
 		"food": {
@@ -294,6 +381,14 @@
 			"hammock": {
 				"display_name": "吊床",
 				"description": "远离地面睡觉"
+			},
+			"mush_chair": {
+				"display_name": "蘑菇椅",
+				"description": "坐上去试试. 很软的."
+			},
+			"mush_table": {
+				"display_name": "蘑菇桌",
+				"description": "桌子, 能在这里做台面上的事情. 有点不稳."
 			},
 			"simple_chair": {
 				"display_name": "简易椅子",
@@ -318,6 +413,21 @@
 			"camp_standard": {
 				"display_name": "营地旗帜",
 				"description": "家的标志"
+			},
+			"goblin_camp_standard": {
+				"display_name": "哥布林旗",
+				"description": "回家的标志",
+				"town_bonus_description": "<i>该据点会在我们坚定的信念和强壮的肌肉支撑下逐渐成长.</i><ul><li>挖掘获得矿物, 石头和粘土提升50</li><li>哥布林们不再介意拥挤的环境</li></ul>"
+			},
+			"varanus_camp_standard": {
+				"display_name": "自然旗帜",
+				"description": "回家的标志",
+				"town_bonus_description": "<i>该据点将与自然统一.</i><ul><li>树木产出的木头提高25%</li><li>植物作物都会提高25%生长速度</li><li>植物美丽值翻倍</li></ul>"
+			},
+			"goblinpedia": {
+				"display_name": "哥布林百科",
+				"description": "关于沼泽和哥布林的一切",
+				"flavor":"用这个打开真实的百科全书, 里面详细记载了<b>流萤族</b>和<b>沼泽区系</b>. 浏览完成后还能做个装饰品摆着"
 			}
 		},
 		"monsters": {
@@ -339,7 +449,15 @@
 			"cattail": {
 				"display_name": "香蒲",
 				"description": "这种植物的纤维可以纺成丝..",
-				"unripe_description": "这株植物近期已经采集过了, 还没长好"
+				"unripe_description": "这株植物近期已经采集过了, 还没长好",
+				"seed":{
+					"display_name": "香蒲种子",
+					"description": "大植物的小种子"
+				},
+				"sprout":{
+					"display_name": "香蒲嫩芽",
+					"description": "还需要一些时间与关爱."
+				}
 			},
 			"fern": {
 				"display_name": "蕨菜",
@@ -349,12 +467,28 @@
 			"giant_flower": {
 				"display_name": "大芽花",
 				"description": "采集能获得有治疗效果的药草",
-				"unripe_description": "这株植物近期已经采集过了, 还没长好"
+				"unripe_description": "这株植物近期已经采集过了, 还没长好"",
+				"seed":{
+					"display_name": 大芽花种子",
+					"description": "巨大植物的小种子"
+				},
+				"sprout":{
+					"display_name": "大芽花嫩芽",
+					"description": "还需要一些时间与关爱."
+				}
 			},
 			"mushroom": {
 				"display_name": "蘑菇",
 				"description": "采下后能塞塞牙缝.",
-				"unripe_description": "这株植物近期已经采集过了, 还没长好"
+				"unripe_description": "这株植物近期已经采集过了, 还没长好",
+				"seed":{
+					"display_name": "蘑菇种子",
+					"description": "大蘑菇上切下来的一小片"
+				},
+				"sprout":{
+					"display_name": "蘑菇芽",
+					"description": "还需要一些时间与关爱."
+				}
 			},
 			"log": {
 				"display_name": "木头",
@@ -402,6 +536,10 @@
 				"display_name": "G老哥",
 				"description": "受人爱戴, 平易近人, 曾帮助他那一代渡过困难的时光"
 			},
+			"big_wolf": {
+				"display_name": "巨狼",
+				"description": "对友军很温顺, 对敌人很野蛮."
+			},
 			"goblin_spirit": {
 				"display_name": "哥布林灵魂",
 				"description": "被召唤回来的一名先祖"
@@ -432,10 +570,6 @@
 					"description": "成长中"
 				}
 			},
-			"swirl": {
-				"display_name": "风卷树",
-				"description": "了不起的活化石."
-			},
 			"cypress": {
 				"display_name": "沼地柏",
 				"description": "根系深深地扎入土壤",
@@ -455,6 +589,14 @@
 					"display_name": "抽条的柏树",
 					"description": "成长中"
 				}
+			},
+			"stump": {
+				"display_name": "树桩",
+				"description": "一棵树残留下来的东西."
+			},
+			"swirl": {
+				"display_name": "风卷树",
+				"description": "了不起的活化石."
 			}
 		},
 		"weapons": {
@@ -522,10 +664,6 @@
 			},
 			"recipes": {
 				"potions": "药剂"
-			},
-			"weaving_table": {
-				"display_name": "编织台",
-				"description": "编织护甲, 甚至是那种硬甲的地方"
 			}
 		},
 		"spirit_walker": {
@@ -629,16 +767,14 @@
 		},
 		"scavenger": {
 			"scavenger_description": {
-				"display_name": "清道夫",
-				"description": "不只是个陷阱猎人, 可以捡拾收集石炉世界里的东西",
 				"requirements": "由萨满制作"
 			},
 			"scavenger_backpack": {
-				"display_name": "清道夫背包",
+				"display_name": "猎人背包",
 				"scavenger_backpack_talisman": {
-					"display_name": "清道夫背包",
+					"display_name": "猎人背包",
 					"description": "装捡到的好东西",
-					"flavor": "将一名哥布林转职成清道夫"
+					"flavor": "将一名哥布林转职成猎人"
 				}
 			}
 		},
@@ -682,13 +818,18 @@
 			},
 			"recipes": {
 				"signs": "标志"
+			},
+			"weaving_table": {
+				"display_name": "编织台",
+				"description": "编织护甲, 甚至是那种硬甲的地方"
 			}
 		},
 		"beast_tamer": {
 			"beast_tamer_description": {
 				"display_name": "御兽师",
 				"description": "召集并命令动物参与战斗",
-				"requirements": "由萨满制作",
+				"requirements": "由木匠制作",
+				"goblin_requirements": "由萨满制作",
 				"level_1_data": {
 					"perk_000_name": "四翎",
 					"perk_000_description": "一队名叫四翎的精英波波鸡将会参与协助战斗"
@@ -711,7 +852,9 @@
 				},
 				"level_6_data": {
 					"perk_000_name": "龙兆",
-					"perk_000_description": "有了灵魂行者(最高级)的协助, 他们可以召唤古老的龙族灵魂前来助战"
+					"perk_000_description": "(哥布林专属)<br>有了灵魂行者(最高级)的协助, 他们可以召唤古老的龙族灵魂前来助战",
+					"perk_001_name": "奔狼",
+					"perk_001_description": "(炉民专属)<br>召唤一头巨狼, 鼓舞友军士气, 威吓敌人."
 				}
 			},
 			"beast_tamer_flute": {
@@ -719,7 +862,7 @@
 				"beast_tamer_flute_talisman": {
 					"display_name": "御兽师的长笛",
 					"description": "可与野兽交流",
-					"flavor": "把一名哥布林转职成御兽师"
+					"flavor": "转职成御兽师"
 				}
 			},
 			"beast_tamer_claw": {
@@ -753,6 +896,95 @@
 				"tooltips": {
 					"fiber_resource": "纤维",
 					"bone_resource": "骨材"
+				}
+			},
+			"goblinpedia":{
+				"title":"哥布林百科",
+				"menu":{
+					"display_name":"菜单",
+					"goblin_button":"流萤族",
+					"goblin":{
+						"growth":{
+							"display_name":"城镇建设",
+							"pedestal":"基座",
+							"egg":"蛋",
+							"baby":"幼年期",
+							"goblin":"哥布林",
+						},
+						"jobs":{
+							"display_name":"职业",
+							"beast_tamer":"御兽师"
+						}
+					},
+					"swamp_button":"沼泽区系",
+					"swamp":{
+						"fauna":{
+							"display_name":"物种"
+						}
+					}
+				},
+				"page":{
+					"cover":{
+						"title":"哥布林与沼泽",
+						"text":"选择感兴趣的话题在侧边菜单中阅读"
+					},
+					"growth":{
+						"pedestal":{
+							"title":"承蛋基座",
+							"description1":"在重要场合下使用的带有隆重仪式感的精美台桌",
+							"category1":"制作:",
+							"text1":"承蛋基座由部落中的萨满负责制作",
+							"category2":"如何使用:",
+							"text2":"放下后, 单击它. 你可以在屏幕左下方看到按钮. 点击蛋图标.",
+							"text3":"One of your goblins (worker only) will come to this pedestal and lay an egg."
+						},
+						"egg":{
+							"title":"Goblin Egg",
+							"description1":"Who came first, the egg or the goblin?",
+							"description2":"Many goblins wondered about it for as long as they remember, but no one knows for sure.",
+							"description3":"The goblins current most acceptable hypotesys is that it was neither. It was a tie.",
+							"category1":"How to get:",
+							"text1":"An egg pedestal is needed first, for a goblin to lay his egg.",
+							"category2":"Hatching:",
+							"text2":"After a day, the egg will hatch into a baby goblin.",
+							"category3":"Protecting:",
+							"text3":"Watch out, the egg may attract wild animals."
+						},
+						"baby":{
+							"title":"Baby Goblin",
+							"description1":"Little devils",
+							"category1":"Behaviour:",
+							"text1":"Eat, sleep, ask for attention, repeat.",
+							"category2":"Raising:",
+							"text2":"Just feed it, a lot. Babies eat 5 times more than adults, so watch your stocks!",
+							"category3":"Grow:",
+							"text3":"One more day and they grow into adult goblins."
+						},
+						"goblin":{
+							"title":"Goblin",
+							"description1":"Firefly Goblin",
+							"category1":"Firefly Clan:",
+							"text1":"Now a fully member of society.",
+							"category2":"Jobs:",
+							"text2":"Can be promoted to Warrior, Shaman, Spirit Walker, Trapper, Beast Tamer, Bonesmith and Earthmaster.",
+							"text3":"(With mods, some other jobs may be possible too)",
+							"category3":"The good guys:",
+							"text4":"Different from the green goblins, often associated with trouble, these ones are way more behaved and rooted."
+						}
+					},
+					"jobs":{
+						"beast_tamer":{
+							"title":"Beast Tamer",
+							"description1":"Synergy with the animals",
+							"category1":"Description:",
+							"text1":"Fighter class, promoted from a Trapper. Can summon animals to fight, from little poyos to giant dragons.",
+							"category2":"What it does:",
+							"text2":"Aside from summoning animals, they can trap enemies and cast a firefly cloud, blinding and confusing them.",
+							"text3":"With the help of a Spirit Walker, they join forces and can summon an ancient dragon spirit.",
+							"category3":"Hearthling variation:",
+							"text4":"Hearthlings can be promoted to it too. Though the Spirit Walker teamwork to summon a dragon is now a solo effort to summon a Big Wolf."
+						}
+					}
 				}
 			},
 			"menu": {
